@@ -1,0 +1,24 @@
+#!name= iRingo: 🔍 Siri & Search
+#!desc=V1 & iOS 17.5⬇️\n全面自定义「Siri与搜索」的功能。
+#!openUrl=http://boxjs.com/#/app/iRingo.Siri
+#!author=VirgilClyne
+#!homepage=https://github.com/VirgilClyne
+#!manual=https://github.com/VirgilClyne/iRingo/wiki/🔍-Siri与搜索
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png
+#!category= iRingo
+
+#[rewrite_local]
+# 🔍 Siri Bag (iOS/macOS)
+^https?:\/\/api\.smoot\.apple\.(com|cn)\/bag url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+^https?:\/\/api\.smoot\.apple\.(com|cn)\/bag url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# 🔍 Siri Suggestion & Look Up Search (iOS/macOS)
+^https?:\/\/api-(.*)\.smoot\.apple\.com\/search url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+^https?:\/\/api-(.*)\.smoot\.apple\.com\/search url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# 🔍 Siri Infomation Card (macOS)
+^https?:\/\/api-(.*)\.smoot\.apple\.com\/card url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+^https?:\/\/api-(.*)\.smoot\.apple\.com\/card url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# 🔍 Siri Flight Search (iOS/macOS)
+^https?:\/\/api-(.*)\.smoot\.apple\.com\/flight url script-request-header https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+
+#[mitm]
+hostname = api*.smoot.apple.com, api.smoot.apple.cn
