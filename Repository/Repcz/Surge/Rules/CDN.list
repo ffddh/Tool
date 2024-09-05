@@ -142,6 +142,7 @@ DOMAIN,assets.the-independent.com
 DOMAIN,assets.time.com
 DOMAIN,assets.toot.cafe
 DOMAIN,assets.tumblr.com
+DOMAIN,assets.twitch.tv
 DOMAIN,assets.unifi-ai.com
 DOMAIN,assets.upload.io
 DOMAIN,assets.vercel.com
@@ -612,6 +613,7 @@ DOMAIN,files.slack.com
 DOMAIN,files.writefreely.org
 DOMAIN,files.yande.re
 DOMAIN,filestore.fortinet.com
+DOMAIN,firefox.settings.services.mozilla.com
 DOMAIN,fiverr-res.cloudinary.com
 DOMAIN,flows.trysavvy.com
 DOMAIN,fontbit.io
@@ -1271,6 +1273,7 @@ DOMAIN,static.ietf.org
 DOMAIN,static.incapsula.com
 DOMAIN,static.independent.co.uk
 DOMAIN,static.infomaniak.ch
+DOMAIN,static.institution.grammarly.com
 DOMAIN,static.itch.io
 DOMAIN,static.javcdn.info
 DOMAIN,static.killedbygoogle.com
@@ -1802,6 +1805,7 @@ DOMAIN-SUFFIX,ingest.sentry.io
 DOMAIN-SUFFIX,instant.page
 DOMAIN-SUFFIX,intercomassets.com
 DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,intuitcdn.net
 DOMAIN-SUFFIX,invisionapp-cdn.com
 DOMAIN-SUFFIX,ipfs-gateway.cloud
 DOMAIN-SUFFIX,ipfs.1-2.dev
