@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-09-06 08:03:27(GMT+8) 
-! Total count: 34207
+! ! Version: 2024-09-06 18:30:16(GMT+8) 
+! Total count: 34213
  
 ###ADtip
 ###AdBlockDialog
@@ -1108,6 +1108,7 @@
 ##DIV.row.no-gutters.m-0
 ##DIV.stui-player__item.clearfix > img[url]
 ##DIV.swiper2.swiper-initialized.swiper-horizontal
+##DIV.theme-hope-content.ads-container
 ##DIV[allowtransparency='true'][scrolling='no']
 ##DIV[class$='_ad_wrap']
 ##DIV[class*='home'][class*='Ads']
@@ -1205,6 +1206,7 @@
 ##[href*='.top/?token=']
 ##[href*='.xacg.info/']
 ##[href*='3400.org']
+##[href*='amu6v.com']
 ##[href*='anrvl.com']
 ##[href*='baidugg123.cc']
 ##[href*='pojuko.buzz']
@@ -6758,7 +6760,8 @@ aliyun.com##.yq-ads-blog
 aliyun.com##.yq-main-left > a:first-child
 allboxing.ru#$#abort-current-inline-script document.querySelector open
 allegro.*##div[data-box-name^="ads"]
-allegro.*#$#hide-if-contains-visible-text /Sponzorováno|Sponzorované|Sponsorowane|Sponsored|Спонсоровано/ 'div[data-analytics-category="layout.container"]:not([data-box-name="dsa container"]), div[data-box-name^="caro"], div[data-box-name="plz stop"], div[data-box-name="pls stop"], div[data-box-name^="card carousel"], div[data-box-name="d"], div[data-box-name="b"],div[data-box-name^="Carousel card"],div[data-box-name^="department"], div[data-box-name="layout"], div[data-box-name^="container.department"], div[data-box-name^="bottom"], div[data-box-name^="container.moreOf"], div[data-box-name^="Car0usel card"], div[data-box-name^="bottom car0usels"], div[data-box-name^="car0usels.base"], div[data-box-name^="structure-container"], div[data-box-name^="Version 2 Wrapper"], div[data-box-name^="car0usels container"], div[data-box-name^="bottom carousels"], div[data-box-name^="moreOf"]' 'div>div ^^sh^^ span';
+allegro.*#$#hide-if-contains-visible-text /Sponsorowane|Sponsored|Спонсороване/ 'article' 'div[class]>div ^^sh^^ div>span'
+allegro.*#$#hide-if-contains-visible-text /Sponzorováno|Sponzorované|Sponsorowane|Sponsored|Спонсоровано/ 'div[data-analytics-category="layout.container"]:not([data-box-name="dsa container"]):not([data-analytics-groups*="allegro.product.fiche"]), div[data-box-name^="caro"], div[data-box-name="plz stop"], div[data-box-name="pls stop"], div[data-box-name^="card carousel"], div[data-box-name="d"], div[data-box-name="b"],div[data-box-name^="Carousel card"],div[data-box-name^="department"], div[data-box-name="layout"], div[data-box-name^="container.department"], div[data-box-name^="bottom"], div[data-box-name^="container.moreOf"], div[data-box-name^="Car0usel card"], div[data-box-name^="bottom car0usels"], div[data-box-name^="car0usels.base"], div[data-box-name^="structure-container"], div[data-box-name^="Version 2 Wrapper"], div[data-box-name^="car0usels container"], div[data-box-name^="bottom carousels"], div[data-box-name^="moreOf"]' 'div>div ^^sh^^ span';
 allegro.*#$#hide-if-matches-xpath './/div[contains(@data-analytics-view-label,"sponsored")]/parent::div/ancestor::div[contains(@data-analytics-groups,"ads")]'
 allegro.*#$#hide-if-matches-xpath './/h2[text()][@data-role="replaceable-title"]/following::span[.="Sponsorowane" or .="Sponsored" or .="Спонсоровано" or .="Sponzorováno"]//ancestor::div[contains(@data-analytics-groups,"ads")]'; hide-if-matches-xpath './/h2[text()][@data-role="replaceable-title"]/following::span[.="Sponsorowane" or .="Sponsored" or .="Спонсоровано" or .="Sponzorováno"]/ancestor::div[@style][1]//ancestor::div[@data-box-name="structure-container" or @data-box-name="Car0usel card"]';
 allegro.*#$#hide-if-matches-xpath './/span[.="Sponsorowane" or .="Sponzorováno"]/ancestor::div[@data-box-id][contains(@data-analytics-tags,"advertising")]';
@@ -12191,7 +12194,7 @@ linfoweb.com#$#abort-on-property-write num
 linkdecode.com#@#.adsbygoogle
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
-linkneverdie.net#$#abort-current-inline-script document.createElement optad;abort-on-property-read pushOnPageGala
+linkneverdie.net,linkneverdie.top#$#abort-current-inline-script document.createElement optad;abort-on-property-read pushOnPageGala
 linkshrink.net#@##overlay_ad
 linkshrink.net#@#.overlay_ad
 linovelib.com#$##byspider { display: none !important; }
@@ -23272,6 +23275,7 @@ zzzyk.com###Tinfo
 ||fpvdrzx.xyz^
 ||fq01.shop^
 ||fq02.shop^
+||fq03.shop^
 ||fq67.top^
 ||fqbjzj.xyz^
 ||fqfclmlo.xyz^
@@ -25817,6 +25821,7 @@ zzzyk.com###Tinfo
 ||jy.zhongxues.com^
 ||jy01.shop^
 ||jy04.shop^
+||jy05.shop^
 ||jy135.com/js/pubuliu.
 ||jy135.com^$third-party
 ||jy147a.com^
@@ -26736,6 +26741,7 @@ zzzyk.com###Tinfo
 ||lrlsrz.xyz^
 ||lrqpyhn.icu^
 ||lrtlisl.top^
+||lrutvncl.top^
 ||lrxdnyq.cn^
 ||lryqef.xyz^
 ||lsancil.top^
