@@ -1,17 +1,22 @@
+import { translationAtom } from "@/atoms/translations-atom";
+import { useAtomValue } from "jotai";
 import React from "react";
 
 export function ResetSettings() {
+  const t = useAtomValue(translationAtom);
   return (
     <div className="flex flex-col items-start gap-2">
-      <p className="text-sm font-medium">RESET UPSCAYL</p>
+      <p className="text-sm font-medium">
+        {t("SETTINGS.RESET_SETTINGS.BUTTON_TITLE")}
+      </p>
       <button
         className="btn btn-primary"
         onClick={async () => {
           localStorage.clear();
-          alert("Upscayl has been reset. Please restart the app.");
+          alert(t("SETTINGS.RESET_SETTINGS.ALERT"));
         }}
       >
-        RESET UPSCAYL
+        {t("SETTINGS.RESET_SETTINGS.BUTTON_TITLE")}
       </button>
     </div>
   );

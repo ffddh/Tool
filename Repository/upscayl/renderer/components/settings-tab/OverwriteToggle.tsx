@@ -1,16 +1,19 @@
+import { translationAtom } from "@/atoms/translations-atom";
 import { overwriteAtom } from "@/atoms/userSettingsAtom";
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import React, { useEffect } from "react";
 
 const OverwriteToggle = () => {
   const [overwrite, setOverwrite] = useAtom(overwriteAtom);
+  const t = useAtomValue(translationAtom);
 
   return (
     <div className="flex flex-col gap-2">
-      <p className="text-sm font-medium">OVERWRITE PREVIOUS UPSCALE</p>
+      <p className="text-sm font-medium">
+        {t("SETTINGS.OVERWRITE_TOGGLE.TITLE")}
+      </p>
       <p className="text-xs text-base-content/80">
-        If enabled, Upscayl will process the image again instead of loading it
-        directly.
+        {t("SETTINGS.OVERWRITE_TOGGLE.DESCRIPTION")}
       </p>
       <input
         type="checkbox"

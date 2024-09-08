@@ -1,5 +1,6 @@
+import { translationAtom } from "@/atoms/translations-atom";
 import { useCustomWidthAtom } from "@/atoms/userSettingsAtom";
-import { useAtom, useAtomValue } from "jotai";
+import { useAtomValue } from "jotai";
 
 type ImageScaleSelectProps = {
   scale: string;
@@ -13,6 +14,7 @@ export function ImageScaleSelect({
   hideInfo,
 }: ImageScaleSelectProps) {
   const useCustomWidth = useAtomValue(useCustomWidthAtom);
+  const t = useAtomValue(translationAtom);
 
   return (
     <div className={`${useCustomWidth && "opacity-50"}`}>
@@ -20,13 +22,14 @@ export function ImageScaleSelect({
         {hideInfo ? (
           <>
             <p className="text-sm">
-              Image Scale <span className="text-xs">({scale}X)</span>
+              {t("SETTINGS.IMAGE_SCALE.TITLE")}{" "}
+              <span className="text-xs">({scale}X)</span>
             </p>
             {hideInfo && parseInt(scale) >= 6 && (
               <p
                 className="badge badge-warning text-xs font-bold"
                 data-tooltip-id="tooltip"
-                data-tooltip-content="Anything above 5X may cause performance issues on some devices!"
+                data-tooltip-content={t("SETTINGS.IMAGE_SCALE.WARNING")}
               >
                 !
               </p>
@@ -34,19 +37,19 @@ export function ImageScaleSelect({
           </>
         ) : (
           <p className="text-sm font-medium">
-            IMAGE SCALE ({scale}X) {useCustomWidth && "DISABLED"}
+            {t("SETTINGS.IMAGE_SCALE.TITLE")} ({scale}X){" "}
+            {useCustomWidth && "DISABLED"}
           </p>
         )}
       </div>
       {!hideInfo && (
         <p className="text-xs text-base-content/80">
-          Anything above 4X (except 16X Double Upscayl) only resizes the image
-          and does not use AI upscaling.
+          {t("SETTINGS.IMAGE_SCALE.DESCRIPTION")}
         </p>
       )}
       {!hideInfo && parseInt(scale) >= 6 && (
         <p className="text-xs text-base-content/80 text-red-500">
-          This may cause performance issues on some devices!
+          {t("SETTINGS.IMAGE_SCALE.ADDITIONAL_WARNING")}
         </p>
       )}
 
