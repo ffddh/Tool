@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 (update frequency)
 ! Description: The DNS Filters
-! Total count: 121893 
-! Update: 2024-09-10 08:03:32(GMT+8)
+! Total count: 121915 
+! Update: 2024-09-10 18:38:46(GMT+8)
 /^.+stat\.kugou\.com/
 /^admarvel\./
 /^admaster\./
@@ -2155,6 +2155,7 @@
 ||592fd0d4b9.70be76b98c.com^
 ||5934.5clo0xmbf.com^
 ||5944.4puuqeh41.com^
+||595image.com^
 ||5980.5clo0xmbf.com^
 ||5981397f6e.63f2778501.com^
 ||598f0ce32f.com^
@@ -2488,7 +2489,6 @@
 ||7-7-7-partner.com^
 ||7-cracker.com^
 ||7-itrndsbrands.com^
-||7.shopsharm.ru^
 ||7.tracktrack.org^
 ||7.y2sysv81v.com^
 ||7011.stia.cn^
@@ -2534,6 +2534,7 @@
 ||73-j-pinnable.com^
 ||7325.79j68qav2.com^
 ||7326.sosqboh85.com^
+||73336zubo25326.com^
 ||7345023508.fxm9485766783.com^
 ||7345023508.fxmconnect.com^
 ||7349.cosmicnewspulse.com^
@@ -10777,6 +10778,7 @@
 ||aldenvids.com^
 ||aldimsallow.life^
 ||aldkfsd.cn^
+||aldofashion.com^
 ||aldosesmajeure.com^
 ||aldragalgean.com^
 ||ale-gratka.pl^
@@ -14290,6 +14292,7 @@
 ||aps.hearstnp.com^
 ||apsalar.com^
 ||apsatnlfylz.com^
+||apsehick.date^
 ||apsidalmungoos.top^
 ||apsmediaagency.com^
 ||apsoacou.xyz^
@@ -16799,6 +16802,7 @@
 ||bantgoau.com^
 ||bantygoozle.top^
 ||baoyatu.cc^
+||bapa215.top^
 ||bapages.carte-gr.total.fr^
 ||bapdvtk.com^
 ||bappeewit.top^
@@ -16920,6 +16924,7 @@
 ||bat.heelix.be^
 ||bat.maydream.com^
 ||batatasendere.top^
+||bataviforsee.com^
 ||batbuilding.com^
 ||batch.com^
 ||batchhermichermicsecondly.com^
@@ -17270,7 +17275,6 @@
 ||beacon-fullpage-predictor.goguardian.com^
 ||beacon.adelphic.com^
 ||beacon.affil.walmart.com^
-||beacon.apsehick.date^
 ||beacon.carfax.com^
 ||beacon.cdn.qq.com^
 ||beacon.cdnma.com^
@@ -19818,6 +19822,7 @@
 ||brillianthack.com^
 ||brimmallow.com^
 ||brimmedbryozoa.com^
+||bringchukker.com^
 ||bringclockwise.com^
 ||bringglacier.com^
 ||bringmethehats.com^
@@ -25060,6 +25065,7 @@
 ||comihon.com^
 ||comilar-efferiff.icu^
 ||comitalmows.com^
+||comityunvoid.com^
 ||comm.toro.com^
 ||commamarrock.top^
 ||commander1.com^
@@ -36673,6 +36679,7 @@
 ||elasticdestruct.com^
 ||elasticmujeres.com^
 ||elasticstuffyhideous.com^
+||elatedynast.com^
 ||elaterconditing.info^
 ||elboncoin.fr^
 ||elbowfixes.com^
@@ -41293,6 +41300,7 @@
 ||fleraprt.com^
 ||fleshlightcash.com^
 ||flewroundandro.info^
+||flewvisto.click^
 ||flex.msn.com^
 ||flexbanner.com^
 ||flexcheekadversity.com^
@@ -43097,6 +43105,7 @@
 ||funtoday.info^
 ||funyarewesbegi.com^
 ||fuooms.aetrex.com^
+||fuphekaur.net^
 ||fuphugccgowp.com^
 ||fuqcxz.tennis-point.it^
 ||furded.com^
@@ -47064,6 +47073,7 @@
 ||griksoud.net^
 ||grillcheekunfinished.com^
 ||grilledcolmars.top^
+||grillvaleria.com^
 ||grimacecalumny.com^
 ||grimdeplorable.com^
 ||grimsecretary.com^
@@ -48704,6 +48714,7 @@
 ||hdc.maxli.cn^
 ||hde1.repentignychevrolet.com^
 ||hdfoweey.com^
+||hdickeu.top^
 ||hdicsm.autoscout24.be^
 ||hdipsumu.top^
 ||hdjfeed.top^
@@ -50927,6 +50938,7 @@
 ||hystericalarraignment.com^
 ||hystericalhelp.com^
 ||hystericalpotprecede.com^
+||hyth74.fun^
 ||hytxg2.com^
 ||hytzp.cn^
 ||hyusnisu.top^
@@ -57853,7 +57865,6 @@
 ||kmqhmn.helen-marlen.com^
 ||kmrilock.com^
 ||kmruv.cn^
-||kms-full.com^
 ||kms-pc.com^
 ||kms-tool.com^
 ||kmsauto.info^
@@ -58157,6 +58168,7 @@
 ||krebsonsecurity.top^
 ||kredit-rupiah.com^
 ||krediteksklusif.com^
+||kreditmudah.shop^
 ||kreisis.top^
 ||krful.com^
 ||krgoad.mauboussin.fr^
@@ -59335,6 +59347,7 @@
 ||ledger.limited^
 ||ledgerlivewallets.com^
 ||ledgerliveweb.com^
+||ledgers.network^
 ||ledgerwallet.life^
 ||ledgerweb.dev^
 ||ledgerweb.exchange^
@@ -71262,7 +71275,6 @@
 ||navi10.ru^
 ||navi100.com^
 ||navi12.com^
-||navi13.ru^
 ||navi18.com^
 ||navi2.com^
 ||navi20.com^
@@ -72648,7 +72660,6 @@
 ||nonfictiontickle.com^
 ||nonglirili.net^
 ||nongrayrestis.com^
-||nonofy.com^
 ||nonoossol.xyz^
 ||nonpareilanticipatedintention.com^
 ||nonprofit.aon.com^
@@ -80435,6 +80446,7 @@
 ||predictivdisplay.com^
 ||predominanttamper.com^
 ||predskolaci.cz^
+||preeditreviler.com^
 ||prefaceanything.com^
 ||prefecturecagesgraphic.com^
 ||prefecturesolelysadness.com^
@@ -83470,6 +83482,7 @@
 ||rac.ruutu.fi^
 ||raccoon.jaronheard.com^
 ||racecadettyran.com^
+||racedinvict.com^
 ||racemanager-app.sapsailing.com^
 ||racepaddlesomewhere.com^
 ||racesundermine.com^
@@ -83780,6 +83793,7 @@
 ||rbbgnn.hanshintigers.jp^
 ||rbbko.com^
 ||rbc-anth-ogrn.com^
+||rbc-clientsupport1.com^
 ||rbcfecxs.com^
 ||rbcore-wlc-3.net.jumia.co.ke^
 ||rbcxttd.com^
@@ -98074,6 +98088,7 @@
 ||stats.albert-kropp-gmbh.de^
 ||stats.alibhai.co^
 ||stats.alleaktien.de^
+||stats.allenai.org^
 ||stats.allliquid.com^
 ||stats.alocreativa.com^
 ||stats.am.ai^
@@ -109429,7 +109444,12 @@
 ||ttzmedia.com^
 ||tu.tantrumslab.com^
 ||tu.zx110.org^
+||tu1500919341.cc^
 ||tu2024020388.com^
+||tu3168509469.cc^
+||tu3921276844.cc^
+||tu4038097360.cc^
+||tu6767109513.cc^
 ||tuagol.gartenmoebel.de^
 ||tubberlo.com^
 ||tubbing.net^
@@ -115156,6 +115176,7 @@
 ||whichcandiedhandgrip.com^
 ||whickazoxy.top^
 ||whickgiunta.com^
+||whidribsiheg.net^
 ||whileinferioryourself.com^
 ||whilieesrogs.top^
 ||whilroacix.com^
@@ -115895,6 +115916,7 @@
 ||woodhenmils.com^
 ||woodlandsmonthlyelated.com^
 ||woodlandsveteran.com^
+||woodlotrubato.com^
 ||woodpecker.binario11.de^
 ||woodpecker.ember.ly^
 ||woodpecker.mikehalliday.com^
