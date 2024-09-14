@@ -487,16 +487,7 @@ jobs:
         git clone -b main https://github.com/DualSubs/BoxJs.git  zcx_Tmp
         cp -r zcx_Tmp/* Tool-repo/Repository/DualSubs/BoxJS
         rm -rf zcx_Tmp 
-
-      # fork XPTV 
-    - name: Fork XPTV Source
-      run: |
-        mkdir -p Tool-repo/XPTV
-        git clone -b main https://github.com/fangkuia/XPTV.git  mki_Tmp
-        cp -r mki_Tmp/* Tool-repo/XPTV
-        rm -rf mki_Tmp  
-
-
+  
       # fork githubdulong
     - name: Fork githubdulong Script
       run: |
