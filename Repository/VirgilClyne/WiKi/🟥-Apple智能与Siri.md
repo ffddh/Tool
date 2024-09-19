@@ -1,5 +1,5 @@
 ```
-⚠️注意
+⚠️注意，本文适用于 iOS 18、macOS 15、watchOS 11 及以上版本
 Siri 区分「Siri 请求」和「Siri 建议」两部分
 注意鉴别需求与说明
 ```
@@ -41,7 +41,7 @@ R.I.P🪦(2021.10.16~2024.05.21)
 ```
 
 ## 简介
-  * 
+ 
 
 ## 使用说明
 
@@ -54,27 +54,5 @@ R.I.P🪦(2021.10.16~2024.05.21)
 
 ## 安装链接
 
-
-## 已知「Siri建议」服务器列表
-* 可通过Surge的`工具`-`最近请求`或`请求查看器`或`Quantumult X`的`网络活动`查看最近的*.smoot.apple.com前缀判断当前服务器   
-
-|  域名前缀  | 对应地区 | MitM |
-|   :-:   |   :-:   |   :-:   |
-|api|未知|有效|
-|api-aka|未知|有效|
-|api-glb|未知|有效|
-|api-glb-apne|亚太东北|有效|
-|api-glb-apse|亚太东南|有效|
-|api-glb-usw|西美|有效|
-|api-glb-euc|中欧|有效|
-|api-glb-euw|西欧|有效|
-|api-glb-nyc|纽约|未知|
-|api-glb-ash|Nashua(US)|未知|
-|api-glb-sjc|圣何塞|未知|
-|api-glb-ams|阿姆斯特丹|未知|
-|api-glb-fra|法兰克福|未知|
-|api-glb-man|曼彻斯特|未知|
-|api-glb-jnb|约翰内斯堡|未知|
-|api-chi|芝加哥|未知|
 
 ## 更新日志
