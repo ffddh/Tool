@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-09-22 08:04:07(GMT+8) 
-! Total count: 34199
+! ! Version: 2024-09-22 10:09:59(GMT+8) 
+! Total count: 34202
  
 ###ADtip
 ###AdBlockDialog
@@ -19862,6 +19862,7 @@ zzzyk.com###Tinfo
 ||badmintoncn.com/cbo_include/js/cboaaa.js
 ||baeldung.com/*/library/dist/js/ad-recovery.min.js
 ||bagbeam.com^$third-party
+||baggvon.icu^
 ||bahamut.com.tw/js/ad.js
 ||bai.luyouwang.com^
 ||bai128.xyz^
@@ -20984,6 +20985,7 @@ zzzyk.com###Tinfo
 ||ce.wlaoc.cn^$third-party
 ||cee1.iteye.com^
 ||ceh.cehbh.com^
+||ceiqox.com^
 ||ceisip.com/static/js/plugin.js
 ||ceiuip.icu^
 ||celestialquasar.com^$third-party
@@ -33214,6 +33216,7 @@ zzzyk.com###Tinfo
 ||xxsmad1.com^
 ||xxsmad2.com^
 ||xxsmad3.com^
+||xxsmad4.com^
 ||xxsmcps.com^
 ||xxsywxj.com^
 ||xxtalp.xyz^
