@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-09-24 08:03:41(GMT+8) 
-! Total count: 34234
+! ! Version: 2024-09-24 15:41:38(GMT+8) 
+! Total count: 34244
  
 ###ADtip
 ###AdBlockDialog
@@ -1903,7 +1903,7 @@ $third-party,xmlhttprequest,websocket,domain=qiyoudy2.com|qiyoudy4.com
 .gif$third-party,domain=m.7ktw.com
 .gif$third-party,domain=yasem5.com
 .gif|$domain=7mshipin.org|viidii.info
-.gif|$domain=8724ck.cc|aeahsck.cc
+.gif|$domain=8726ck.cc|8724ck.cc|aeahsck.cc
 .gif|$domain=99re.com
 .html?$third-party,domain=m.800xs.net
 .html?android=hx*&_$csp=script-src
@@ -2770,6 +2770,7 @@ $third-party,xmlhttprequest,websocket,domain=qiyoudy2.com|qiyoudy4.com
 /proxy.html?id=
 /proxy_top_banner_js.php
 /public/imgbed/gg/*
+/public/tingshu/foor.js$~third-party
 /pushportal/PushPortalServer$popup,third-party
 /pushstart.aspx?$popup,third-party
 /pushstart.aspx|$subdocument,third-party
@@ -4272,8 +4273,8 @@ $third-party,xmlhttprequest,websocket,domain=qiyoudy2.com|qiyoudy4.com
 85wp.com##.top-ad-img
 8684.cn,8684.com##div[id*="adid"]
 8684.cn,8684.com,iyxdm.org,iyxdm.one,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
-8724ck.cc##body > div[style] > a[href][target="_blank"]
-8724ck.cc,aeahsck.cc##.stui-vodlist  > li:has(> div.stui-vodlist__box > a[href][target="_blank"])
+8726ck.cc,8724ck.cc##body > div[style] > a[href][target="_blank"]
+8726ck.cc,8724ck.cc,aeahsck.cc##.stui-vodlist  > li:has(> div.stui-vodlist__box > a[href][target="_blank"])
 880sy.com##.foot_gg
 880sy.com##.fot_btom
 88448.com###ad_forum_banner
@@ -7230,6 +7231,8 @@ baidu.com##.c-result[data-tpl="adv_wenku_fc"]
 baidu.com##.cbg-Ads
 baidu.com##.chunwan-wrapper
 baidu.com##.commentEmbed-backHomeCard
+baidu.com##.container:has(>.bottom-section>.item_voice_room[data-yysid])
+baidu.com##.container_frs:has(>.voice_room_card_frs[data-url*="yylive"])
 baidu.com##.content-adv
 baidu.com##.corneradv
 baidu.com##.cpc-adv-container
@@ -7359,6 +7362,8 @@ baidu.com#$#.ec_wise_ad { position: absolute !important; left: -3000px !importan
 baidu.com#$#hide-if-contains 广告 #content_left>div .ec-tuiguang
 baidu.com#$#hide-if-contains 广告 #content_right>div .ec-tuiguang
 baidu.com#?#.c-gap-bottom-small:-abp-has(>a>div>div[class^="jr-stock-open-account-"])
+baidu.com#?#.container:-abp-has(>.bottom-section>.item_voice_room[data-yysid])
+baidu.com#?#.container_frs:-abp-has(>.voice_room_card_frs[data-url*="yylive"])
 baidu.com#?#.rec-item:-abp-has(> .vbox > div > .appad-relate-rectpl)
 baidu.com#@##header > div:last-child
 baidu.com#@##page-pre
@@ -13343,6 +13348,7 @@ news.mydrivers.com##.baidu_left
 news.mydrivers.com##div[style="width:1000px;padding-top:16px;padding-bottom:12px;"]
 news.mydrivers.com#?#.news_info > p:has(> a[href^="https://dt.mydrivers.com/"])
 news.mydrivers.com#?#.news_info > p:has(> strong:contains(双11红包活动推荐))
+news.owlting.com##.profit-wrapper
 news.pchome.com.tw##div[class^="adnewlist"]
 news.qq.com###focus-bar
 news.qq.com##.download-banner-wrap
@@ -24894,6 +24900,7 @@ zzzyk.com###Tinfo
 ||igexin.com^
 ||igidskio.top^
 ||igkgag.xyz^
+||ignslkgs.com^
 ||ignulsniy.com^
 ||igo.cn/liuxue/js/slideBar
 ||igo99.cn/js/freetest.js
@@ -25059,7 +25066,7 @@ zzzyk.com###Tinfo
 ||imgs.cc^$domain=fun1shot.com
 ||imgs.itxueyuan.com/advPicture/
 ||imgsicily.it/dist/sweetalert
-||imgsrc.baidu.com/*/pic/*.jpg$domain=8724ck.cc|aeahsck.cc
+||imgsrc.baidu.com/*/pic/*.jpg$domain=8726ck.cc|8724ck.cc|aeahsck.cc
 ||imgsrc.baidu.com/tieba/pic/item/$image
 ||imgtg.com^*.gif
 ||imgtp.com/2023/02/18/KkRe64ff.png
@@ -25422,6 +25429,7 @@ zzzyk.com###Tinfo
 ||jcjzikj.xyz^
 ||jcodecraeer.com/plus/fuckblok.
 ||jcpecb.com^
+||jcppcmqa.icu^
 ||jcrb.com/ZYW$subdocument
 ||jcreje.com^
 ||jcwtml.icu^
@@ -27844,6 +27852,7 @@ zzzyk.com###Tinfo
 ||nmgyllh.cn^
 ||nmkghh.com^
 ||nmm9i.xyz^
+||nmmemzi.icu^
 ||nmntgd.cn^
 ||nmrdnqn.cn^
 ||nmssdbgmf.xyz^
@@ -30759,6 +30768,7 @@ zzzyk.com###Tinfo
 ||swad332.fun^
 ||swankysquare.com^$third-party
 ||swarku.xyz^
+||swaterb.top^
 ||sweepsheep.com^$third-party
 ||swellstocking.com^$third-party
 ||swelteringsleep.com^$third-party
