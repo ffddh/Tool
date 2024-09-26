@@ -1,14 +1,14 @@
 /*
-Surge Panel：https://raw.githubusercontent.com/githubdulong/Scripts/main/Oil.sgmodule
+Surge Panel：https://raw.githubusercontent.com/githubdulong/Script/master/Surge/Oil.sgmodule
 
-今日油价
-
+今日油价，仅限Surge Panel使用
 */
 
 const params = getParams($argument);
-const provinceName = params.provname || "广东";
+const provinceName = params.provname || "湖南";
+const apiKey = params.apikey;  // 使用模块参数填写Apikey.申请地址：https://www.tianapi.com/apiview/104 (该接口普通会员每天赠送100次调用额度);
 const apiUrls = [
-    `https://apis.tianapi.com/oilprice/index?key=0502a67aa1632678f596891c4af219a8&prov=${encodeURIComponent(provinceName)}`,
+    `https://apis.tianapi.com/oilprice/index?key=${apiKey}&prov=${encodeURIComponent(provinceName)}`,
     `https://apis.tianapi.com/oilprice/index?key=231de491563c35731436829ac52aad43&prov=${encodeURIComponent(provinceName)}`,
     `https://apis.tianapi.com/oilprice/index?key=a2bc7a0e01be908881ff752677cf94b7&prov=${encodeURIComponent(provinceName)}`,
     `https://apis.tianapi.com/oilprice/index?key=1bcc67c0114bc39a8818c8be12c2c9ac&prov=${encodeURIComponent(provinceName)}`,
@@ -53,31 +53,35 @@ function handleResponse(data) {
                 if (tishiMatch) {
                     let tishiContent = tishiMatch[1];
 
-                    // 1. 动态匹配日期并加1天
                     const dateMatch = tishiContent.match(/(\d{1,2})月(\d{1,2})日/);
                     let formattedDate = "未知日期";
+                    let logDate = "未知日期"; 
                     if (dateMatch) {
-                        let [month, day] = [parseInt(dateMatch[1]), parseInt(dateMatch[2]) + 1];
-                        formattedDate = `${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+                        let [month, day] = [parseInt(dateMatch[1]), parseInt(dateMatch[2])];
+                        logDate = `${month}月${day}日`;
+                        formattedDate = `${month.toString().padStart(2, '0')}-${(day + 1).toString().padStart(2, '0')}`;
                     }
 
-                    // 2. 动态匹配“下跌”或“下调”变为符号“▼”，“上涨”或“上调”变为符号“▲”
-                    let adjustmentType = "";
+                    let adjustmentSymbols = "";
                     const adjustmentMatch = tishiContent.match(/(下调|下跌|上调|上涨)/);
                     if (adjustmentMatch) {
-                        adjustmentType = (adjustmentMatch[1].includes("下")) ? "▼" : "▲";
+                        adjustmentSymbols = (adjustmentMatch[1].includes("下")) ? "▼△" : "▽▲";
                     }
 
-                    // 3. 动态匹配价格区间，去掉 "元" 并将 "-" 改为 "~"
                     const priceRangeMatch = tishiContent.match(/(\d+\.\d+)元\/升-(\d+\.\d+)元\/升/);
-                    let priceAdjustment = "0.00~0.00";
+                    let priceAdjustment = "0.00~0.00元";
                     if (priceRangeMatch) {
                         priceAdjustment = `${priceRangeMatch[1]}~${priceRangeMatch[2]}`;
                     }
 
-                    // 在标题中加入从 tishiContent 提取的动态信息
+                    // 日志记录部分
+                    const currentTime = new Date().toISOString().replace('T', ' ').split('.')[0];
+                    console.log(`${currentTime} 今日油价：\n${message}\n`);
+                    console.log(`${currentTime} 油价预告：\n下次油价${logDate}24点开始调整\n目前预计${adjustmentMatch[1]}油价(${priceRangeMatch[1]}元/升-${priceRangeMatch[2]}元/升)，大家相互转告油价开始${adjustmentMatch[1] === '上调' ? '涨了' : '降了'}。\n`);
+                    console.log(`${currentTime} [Script Completed]`);
+
                     const body = {
-                        title: `今日油价 | ${formattedDate} ${priceAdjustment} ${adjustmentType}`,
+                        title: `${params.title} | ${formattedDate} ${adjustmentSymbols} ${priceAdjustment}`, 
                         content: `${message}`,
                         provname: params.provname,
                         icon: params.icon,
