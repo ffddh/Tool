@@ -100,8 +100,10 @@ DOMAIN,assets.euractiv.com
 DOMAIN,assets.exercism.org
 DOMAIN,assets.extension.grammarly.com
 DOMAIN,assets.fastly.com
+DOMAIN,assets.fe.itv.com
 DOMAIN,assets.fireside.fm
 DOMAIN,assets.flodesk.com
+DOMAIN,assets.foxdcg.com
 DOMAIN,assets.garr.it
 DOMAIN,assets.gcore.pro
 DOMAIN,assets.genius.com
@@ -194,6 +196,7 @@ DOMAIN,at.cbsi.com
 DOMAIN,autoupdate.termius.com
 DOMAIN,avatar.freepik.com
 DOMAIN,avatar.stefanjudis.com
+DOMAIN,avatar2.bahamut.com.tw
 DOMAIN,avatars.dicebear.com
 DOMAIN,avatars.dzeninfra.ru
 DOMAIN,avatars.hubspot.net
@@ -375,6 +378,7 @@ DOMAIN,cdn.kinsta.com
 DOMAIN,cdn.koala.live
 DOMAIN,cdn.kobo.com
 DOMAIN,cdn.langshop.app
+DOMAIN,cdn.libravatar.org
 DOMAIN,cdn.linearicons.com
 DOMAIN,cdn.linkmink.com
 DOMAIN,cdn.livechatinc.com
@@ -586,6 +590,7 @@ DOMAIN,cp2.cloudflare.com
 DOMAIN,cp3.cloudflare.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,cpwebassets.codepen.io
+DOMAIN,craftassets.unraid.net
 DOMAIN,creativajs.altervista.org
 DOMAIN,crl.usertrust.com
 DOMAIN,crl.verisign.com
@@ -759,6 +764,7 @@ DOMAIN,i.vgy.me
 DOMAIN,i.xozilla.xxx
 DOMAIN,i0.wp.com
 DOMAIN,i1.wp.com
+DOMAIN,i2.bahamut.com.tw
 DOMAIN,i2.hentaifox.com
 DOMAIN,i2.wp.com
 DOMAIN,i3.wp.com
@@ -1086,11 +1092,13 @@ DOMAIN,osint.digitalside.it
 DOMAIN,oss-binaries.phusionpassenger.com
 DOMAIN,oss.moe.cat
 DOMAIN,ovo.wxw.moe
+DOMAIN,ovp.itv.com
 DOMAIN,p-smith.com
 DOMAIN,p.inari.site
 DOMAIN,p.sda1.dev
 DOMAIN,p.typekit.com
 DOMAIN,p.typekit.net
+DOMAIN,p2.bahamut.com.tw
 DOMAIN,pacdn.500px.org
 DOMAIN,packages-cf.termux.dev
 DOMAIN,packages.argotunnel.com
@@ -1354,6 +1362,7 @@ DOMAIN,static-id.fc2.com
 DOMAIN,static-landing.probit.com
 DOMAIN,static-lccn.leetcode.com
 DOMAIN,static-main.moovit.com
+DOMAIN,static-media.fox.com
 DOMAIN,static-mh.content.disney.io
 DOMAIN,static-overlay.ubisoft.com
 DOMAIN,static-production.npmjs.com
@@ -1373,6 +1382,7 @@ DOMAIN,static.arxiv.org
 DOMAIN,static.assetlab.io
 DOMAIN,static.axios.com
 DOMAIN,static.bangumi.moe
+DOMAIN,static.bbc.co.uk
 DOMAIN,static.bbci.co.uk
 DOMAIN,static.bit.cloud
 DOMAIN,static.bit.dev
@@ -1585,6 +1595,7 @@ DOMAIN,ton.local.twitter.com
 DOMAIN,topbar-static.piano.io
 DOMAIN,torrindex.net
 DOMAIN,tracker.cdnbye.com
+DOMAIN,truth.bahamut.com.tw
 DOMAIN,tuf-repo-cdn.sigstore.dev
 DOMAIN,tuf-repo.github.com
 DOMAIN,tvdownloaddw-a.akamaihd.net
@@ -1650,6 +1661,7 @@ DOMAIN,wac-cdn.atlassian.com
 DOMAIN,waitlisted.co
 DOMAIN,wandi-6402.kxcdn.com
 DOMAIN,wcpstatic.microsoft.com
+DOMAIN,weather.istatmenus.app
 DOMAIN,web-assets.esetstatic.com
 DOMAIN,web-assets.ifttt.com
 DOMAIN,web-assets.otogi-frontier.com
@@ -1969,6 +1981,7 @@ DOMAIN-SUFFIX,hackerone-user-content.com
 DOMAIN-SUFFIX,hardbin.com
 DOMAIN-SUFFIX,hbfile.net
 DOMAIN-SUFFIX,hembed.com
+DOMAIN-SUFFIX,hgagecdn.com
 DOMAIN-SUFFIX,highwinds-cdn.com
 DOMAIN-SUFFIX,himg.nl
 DOMAIN-SUFFIX,hits.b3log.org
@@ -2071,6 +2084,7 @@ DOMAIN-SUFFIX,ipfscdn.io
 DOMAIN-SUFFIX,ipfsgateway.makersplace.com
 DOMAIN-SUFFIX,ipns.co
 DOMAIN-SUFFIX,itsre-sumo.mozilla.net
+DOMAIN-SUFFIX,itvstatic.com
 DOMAIN-SUFFIX,javplayer.me
 DOMAIN-SUFFIX,javtxt.com
 DOMAIN-SUFFIX,jbkcdn.com
@@ -2306,6 +2320,7 @@ DOMAIN-SUFFIX,sny.monosnap.com
 DOMAIN-SUFFIX,snzypic.com
 DOMAIN-SUFFIX,someonewhocares.org
 DOMAIN-SUFFIX,sourceforge.io
+DOMAIN-SUFFIX,splunkcloud.com
 DOMAIN-SUFFIX,sqspcdn.com
 DOMAIN-SUFFIX,squarespace-cdn.com
 DOMAIN-SUFFIX,ss-cdn.com
@@ -2360,6 +2375,7 @@ DOMAIN-SUFFIX,tile.openstreetmap.org
 DOMAIN-SUFFIX,tile.osm.org
 DOMAIN-SUFFIX,timg135.top
 DOMAIN-SUFFIX,tiqcdn.com
+DOMAIN-SUFFIX,tmsimg.com
 DOMAIN-SUFFIX,tnastatic.com
 DOMAIN-SUFFIX,trackerslist.com
 DOMAIN-SUFFIX,transcend-cdn.com
