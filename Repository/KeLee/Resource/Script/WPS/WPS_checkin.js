@@ -1,6 +1,6 @@
 /*
 脚本作者：小白脸
-更新时间：2024-10-11 20:02:08
+更新时间：2024-10-11 20:13:43
 */
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
@@ -224,7 +224,7 @@ class Wps {
 //主逻辑
 const main = async () => {
   const WPS_info = $.readJson("WPS_info");
-  if (!WPS_info) throw new Error("WPS每日签到,,未捕获Cookie, 请先打开捕获开关");
+  if (!WPS_info) throw new Error("未捕获Cookie, 请先打开捕获开关");
   const wps = new Wps(WPS_info);
 
   const checkinAttempt = async (retryCount = 0) => {
@@ -252,18 +252,18 @@ const main = async () => {
     const { msg, result } = await wps.checkin(position);
 
      if (result === "ok" || msg === "ClockAgent") {
-      return await wps.rewardInfo(msg ? "WPS每日签到,,今日已签到" : "WPS每日签到,,今日签到成功");
+      return await wps.rewardInfo(msg ? "今日已签到" : "今日签到成功");
     } else if (retryCount >= MAX_RETRIES - 1) {
       return $.notifyAndLog({
         info: true,
         msg: true,
-        message: [`WPS每日签到,,签到失败，已重试最大限制 ${MAX_RETRIES} 次`],
+        message: [`签到失败，已重试最大限制 ${MAX_RETRIES} 次`],
       });
     } else if (result === "UserNotLogin") {
-      return $.msg("WPS每日签到,,Cookie无效，请重新捕获。");
+      return $.msg("Cookie无效，请重新捕获。");
     }
 
-    $.info(`WPS每日签到,,签到失败，重试次数: ${retryCount + 1}`);
+    $.info(`签到失败，重试次数: ${retryCount + 1}`);
     return checkinAttempt(retryCount + 1);
   };
 
