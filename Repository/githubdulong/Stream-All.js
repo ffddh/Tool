@@ -62,7 +62,7 @@ let args = getArgs();
 
   content += ` ${gptSupportStatus}${traceData.loc}`;
 
-  let log = `${hour}:${minutes}.${now.getMilliseconds()} 解锁检测完成：${content}`;
+  let log = `${hour}:${minutes}.${now.getMilliseconds()}\n◼︎ 检测结果:\n${content}`;
   console.log(log);
 
   panel_result['content'] = content;
@@ -218,12 +218,12 @@ async function check_netflix() {
 async function testDisneyPlus() {
   try {
     let { region, cnbl } = await Promise.race([testHomePage(), timeout(7000)]);
-    console.log(`homepage: region=${region}, cnbl=${cnbl}`);
+   // console.log(`homepage: region=${region}, cnbl=${cnbl}`); //调试日志
     let { countryCode, inSupportedLocation } = await Promise.race([getLocationInfo(), timeout(7000)]);
-    console.log(`getLocationInfo: countryCode=${countryCode}, inSupportedLocation=${inSupportedLocation}`);
+   // console.log(`getLocationInfo: countryCode=${countryCode}, inSupportedLocation=${inSupportedLocation}`); //调试日志
 
     region = countryCode ?? region;
-    console.log("region:" + region);
+   // console.log("region:" + region);
     // 即将登陆
     if (inSupportedLocation === false || inSupportedLocation === 'false') {
       return { region, status: STATUS_COMING };
