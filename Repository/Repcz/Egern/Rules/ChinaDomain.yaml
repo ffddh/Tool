@@ -1,5 +1,8 @@
 domain_set:
 - this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
+- url.cn
+- acg.tv
+- b23.tv
 - www.intel.cn
 - lv.queniujq.cn
 - dl.ubnt.com
@@ -10,6 +13,7 @@ domain_set:
 domain_suffix_set:
 - chaoxing.cc
 - 3.cn
+- 6.cn
 - t.cn
 - 22.cn
 - sm.cn
@@ -26,8 +30,8 @@ domain_suffix_set:
 - gov.cn
 - itc.cn
 - nmc.cn
+- org.cn
 - php.cn
-- url.cn
 - wps.cn
 - 2144.cn
 - cctv.cn
@@ -75,6 +79,7 @@ domain_suffix_set:
 - mifile.cn
 - mybank.cn
 - neixin.cn
+- pplive.cn
 - qqmail.cn
 - roblox.cn
 - sinajs.cn
@@ -133,8 +138,7 @@ domain_suffix_set:
 - qbox.me
 - coding.me
 - oppoer.me
-- acg.tv
-- b23.tv
+- fun.tv
 - pps.tv
 - douyu.tv
 - maoyun.tv
@@ -159,6 +163,7 @@ domain_suffix_set:
 - bh3.com
 - ccb.com
 - id6.com
+- ku6.com
 - qcc.com
 - vip.com
 - ys7.com
@@ -186,7 +191,9 @@ domain_suffix_set:
 - mubu.com
 - oppo.com
 - oray.com
+- pptv.com
 - psbc.com
+- qiku.com
 - qiyi.com
 - qyer.com
 - sina.com
@@ -431,7 +438,6 @@ domain_suffix_set:
 - netease.com
 - oppopay.com
 - orayimg.com
-- qhimgs?.com
 - qihucdn.com
 - qingcdn.com
 - qiyipic.com
@@ -697,9 +703,6 @@ domain_suffix_set:
 - aliapp.org
 - docschina.org
 - icourse163.org
-- dns.pub
-- doh.pub
-- dot.pub
 - landian.vip
 - 126.link
 - yqkk.link
@@ -751,8 +754,6 @@ domain_suffix_set:
 - ubionline.com.cn
 - chinatelecom.com.cn
 - assets.msn.cn
-- ntp.org.cn
-- moegirl.org.cn
 - 71.am.com
 - steam.ksyna.com
 - steam.clngaa.com
@@ -762,6 +763,7 @@ domain_suffix_set:
 - dl.delivery.mp.microsoft.com
 domain_keyword_set:
 domain_regex_set:
+- .*.qhimgs?.com
 ip_cidr_set:
 ip_cidr6_set:
 asn_set:
