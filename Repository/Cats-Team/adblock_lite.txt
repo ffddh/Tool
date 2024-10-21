@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-10-20 15:01:39(GMT+8) 
-! Total count: 34653
+! ! Version: 2024-10-21 08:04:02(GMT+8) 
+! Total count: 34655
  
 ###ADtip
 ###AdBlockDialog
@@ -2101,7 +2101,6 @@ $websocket,domain=wap.yushuwu.cloud
 /9CCMSPC/images/*.gif
 /://666(7|8)[0-9]{2}.xyz\//$image,third-party
 /?bn=*&ord=$xmlhttprequest,script,domain=expres.cz|idnes.cz
-/?placementName=$script,redirect=noopjs,domain=vpslog.net
 /A-Tian/Tian-*-good.js
 /A-duoduo/Add-
 /AD2v1.1.js
@@ -14825,6 +14824,7 @@ shuowan.com##.side_flash
 sibnet.ru#$#prevent-listener DOMContentLoaded /pon-/
 sigure.tw##.Ads-Sidebar
 sigure.tw##.reds
+siguyy.tv##[style^="position: fixed;"]
 silisili.in##.play_ad
 silkengirl.net##a[href*="jaxofuna.com"]
 silkengirl.net#$#hide-if-matches-xpath './/a[@target][contains(@href,"playboy.com")]/img[@alt="playboy.com"]/ancestor-or-self::div[@class="block_row"][1]'
@@ -16232,7 +16232,6 @@ vpsdx.com##.gsfha3-form
 vpsdx.com##.gthfdsa
 vpser.net##.ab_cpb
 vpser.net##.ab_cpr
-vpslog.net#%#(()=>{(function(d){window.addEventListener("error",function(a){if(a.srcElement&&a.srcElement.src){const b=new RegExp(d);if(b.test(a.srcElement.src)){if("function"==typeof a.srcElement.onload)return void(a.srcElement.onerror=a.srcElement.onload);a.srcElement.onerror=function(){}}}},!0)})("placementName")})();
 vsadu.ru##.adb-block
 vsaduidoma.com##.ABD_display_wrapper
 vsetut.su,animedia.tv#$#abort-on-property-read zfgformats
@@ -18741,6 +18740,7 @@ zzzyk.com###Tinfo
 ||999xx999kk.com^
 ||999zz333zz.com^
 ||99danji.com/kchtml/
+||99jinpin.com^
 ||99kubo.tv/static/img/adsfree.png
 ||99lb.net/index_files/*/970
 ||99meiju.tv/js/tj.js
@@ -24054,6 +24054,7 @@ zzzyk.com###Tinfo
 ||gp123.cc/20*ad/
 ||gpiagk.xyz^
 ||gpmzkg.xyz^
+||gpowow.xyz^
 ||gpqkeq.xyz^
 ||gpxxbyf.cn^
 ||gpxz.com/js2/
@@ -27073,6 +27074,7 @@ zzzyk.com###Tinfo
 ||luolikong.net^$third-party
 ||luolitang.com^$third-party
 ||luoyangjinmeii.com^
+||luresdl.top^
 ||lutouwang.net/static/images/boss_gao_hb.jpeg
 ||lutouwang.net/static/js/mv_ad
 ||lutrbr.xyz^
