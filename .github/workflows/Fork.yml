@@ -119,37 +119,37 @@ jobs:
             fi
           done
 
-      # Fork 可莉插件、脚本
-    - name: Fork lodepuly Plugin&Script
-      run: |
-        mkdir -p Tool-repo/Repository/KeLee
-        git clone https://gitlab.com/lodepuly/vpn_tool.git lodepuly_Tmp
-        cp -r lodepuly_Tmp/* Tool-repo/Repository/KeLee
-        rm -rf lodepuly_Tmp
-      # 修改脚本链接
-    - name: Edit KeLee/QuantumultX
-      run: |
-        cd Tool-repo/Repository/KeLee/Tool/QuantumultX/Rewrite
-        for file in *.snippet; do
-            if [ "$file" ] ; then
-              # 修改脚本链接
-              sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/KeLee\/Resource\/Script/g' "$file"
-            else
-              echo "$file not found."
-            fi
-          done
-      # 修改脚本链接
-    - name: Edit KeLee/Loon
-      run: |
-        cd Tool-repo/Repository/KeLee/Tool/Loon/Plugin
-        for file in *.plugin; do
-            if [ "$file" ] ; then
-              # 修改脚本链接
-              sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/KeLee\/Resource\/Script/g' "$file"
-            else
-              echo "$file not found."
-            fi
-          done
+#      # Fork 可莉插件、脚本
+#    - name: Fork lodepuly Plugin&Script
+#      run: |
+#        mkdir -p Tool-repo/Repository/KeLee
+#        git clone https://gitlab.com/lodepuly/vpn_tool.git lodepuly_Tmp
+#        cp -r lodepuly_Tmp/* Tool-repo/Repository/KeLee
+#        rm -rf lodepuly_Tmp
+#      # 修改脚本链接
+#    - name: Edit KeLee/QuantumultX
+#      run: |
+#        cd Tool-repo/Repository/KeLee/Tool/QuantumultX/Rewrite
+#        for file in *.snippet; do
+#            if [ "$file" ] ; then
+#              # 修改脚本链接
+#              sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/KeLee\/Resource\/Script/g' "$file"
+#            else
+#              echo "$file not found."
+#            fi
+#          done
+#      # 修改脚本链接
+#    - name: Edit KeLee/Loon
+#      run: |
+#        cd Tool-repo/Repository/KeLee/Tool/Loon/Plugin
+#        for file in *.plugin; do
+#            if [ "$file" ] ; then
+#              # 修改脚本链接
+#              sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/KeLee\/Resource\/Script/g' "$file"
+#            else
+#              echo "$file not found."
+#            fi
+#          done
 
       # Fork Peng-YM 定时任务&重写规则
     - name: Fork  Peng-YM Tasks&Rewrite
