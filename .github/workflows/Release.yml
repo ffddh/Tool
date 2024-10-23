@@ -6,23 +6,20 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-      
     steps:
       - uses: actions/checkout@v4.1.0
         with:
-          ref: main
-      - name: Clear Commits
+          ref: X
+      - name: Configure Git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout --orphan clearhistory
-          git branch -D main
-          git checkout --orphan main
+          git branch -D X
+          git checkout --orphan X
           git add .
-          git commit -m "2024-08-08 09:19"
-          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git push -f -u origin main
-          
+          git commit -m "ㅤ"
+          git push -f -u origin X
       - name: Cleanup Workflow
         uses: Mattraks/delete-workflow-runs@main
         with:
