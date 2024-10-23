@@ -1,5 +1,6 @@
-# 最后更新时间: 2024-10-21 21:01
-name: Fork & Edit
+# 2024-03-31 21:55
+
+name: Fork & Edit-axtye
 
 on:
   workflow_dispatch:
@@ -16,9 +17,8 @@ jobs:
     - name: Checkout target repository
       uses: actions/checkout@v4.1.0
       with:
-        repository: Repcz/Tool
+        repository: axtyet/Tool
         path: Tool-repo
-
 
 ###### GeoIP
 
@@ -1107,8 +1107,9 @@ jobs:
             echo "$file not found."
           fi
         done
-       
-###### Commit
+
+   
+        
     - name: Add and Commits
       run: |
         cd Tool-repo
@@ -1116,7 +1117,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git commit -m "$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
           git push origin HEAD
         else
           echo "No changes to commit."
