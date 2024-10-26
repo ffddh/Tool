@@ -13,6 +13,7 @@ domain_set:
 - dl.ubnt.com
 - config.ubnt.com
 - www.layuicdn.com
+- cdnstatic.tencentcs.com
 - cn.download.nvidia.com
 - gstore.val.manlaxy.com
 domain_suffix_set:
@@ -135,6 +136,7 @@ domain_suffix_set:
 - jd.hk
 - juejin.im
 - netease.im
+- gitee.io
 - jianshu.io
 - air-matters.io
 - openinstall.io
@@ -459,6 +461,7 @@ domain_suffix_set:
 - tnkjmec.com
 - toutiao.com
 - udqqimg.com
+- upaiyun.com
 - volccdn.com
 - weidian.com
 - xoyocdn.com
@@ -665,6 +668,7 @@ domain_suffix_set:
 - 360.net
 - 3322.net
 - csdn.net
+- cz88.net
 - duba.net
 - ipip.net
 - jb51.net
@@ -715,6 +719,7 @@ domain_suffix_set:
 - 9966.org
 - aliapp.org
 - docschina.org
+- miot-spec.org
 - icourse163.org
 - landian.vip
 - 126.link

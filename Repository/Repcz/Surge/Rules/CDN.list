@@ -327,6 +327,7 @@ DOMAIN,cdn.cnx-software.com
 DOMAIN,cdn.cocoapods.org
 DOMAIN,cdn.codeblackbelt.com
 DOMAIN,cdn.commento.io
+DOMAIN,cdn.comparitech.com
 DOMAIN,cdn.concert.io
 DOMAIN,cdn.consentmanager.net
 DOMAIN,cdn.contentful.com
@@ -1162,6 +1163,7 @@ DOMAIN,pic.cangku.moe
 DOMAIN,pic.cdnclouder.com
 DOMAIN,pic.imge.cc
 DOMAIN,pic.libilibi.top
+DOMAIN,pic.macked.app
 DOMAIN,pic.onlinewebfonts.com
 DOMAIN,pic.skk.moe
 DOMAIN,pic.ziyuan.wang
@@ -1442,6 +1444,7 @@ DOMAIN,static.bytepan.com
 DOMAIN,static.chaika.moe
 DOMAIN,static.change.org
 DOMAIN,static.cloud.coveo.com
+DOMAIN,static.cloudcachetci.com
 DOMAIN,static.cnbeta.com.tw
 DOMAIN,static.codepen.io
 DOMAIN,static.coinall.ltd
@@ -2274,7 +2277,6 @@ DOMAIN-SUFFIX,pinimg.com
 DOMAIN-SUFFIX,pixelcdn.net
 DOMAIN-SUFFIX,pixfs.net
 DOMAIN-SUFFIX,pixhost.to
-DOMAIN-SUFFIX,piximg.net
 DOMAIN-SUFFIX,pixiv.cat
 DOMAIN-SUFFIX,pixiv.nl
 DOMAIN-SUFFIX,pixiv.re
@@ -2308,6 +2310,7 @@ DOMAIN-SUFFIX,public.cdn.office.net
 DOMAIN-SUFFIX,public.ecr.aws
 DOMAIN-SUFFIX,push.services.mozilla.com
 DOMAIN-SUFFIX,pxgcdn.com
+DOMAIN-SUFFIX,pximg.net
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,pztv.ca

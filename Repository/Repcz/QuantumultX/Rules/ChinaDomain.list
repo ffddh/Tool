@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-25T00:06:25.649Z
-# Size: 736
+# Last Updated: 2024-10-26T10:15:55.167Z
+# Size: 741
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -129,6 +129,7 @@ HOST-SUFFIX,douban.fm,DIRECT
 HOST-SUFFIX,jd.hk,DIRECT
 HOST-SUFFIX,juejin.im,DIRECT
 HOST-SUFFIX,netease.im,DIRECT
+HOST-SUFFIX,gitee.io,DIRECT
 HOST-SUFFIX,jianshu.io,DIRECT
 HOST-SUFFIX,air-matters.io,DIRECT
 HOST-SUFFIX,openinstall.io,DIRECT
@@ -455,6 +456,7 @@ HOST-SUFFIX,tencent.com,DIRECT
 HOST-SUFFIX,tnkjmec.com,DIRECT
 HOST-SUFFIX,toutiao.com,DIRECT
 HOST-SUFFIX,udqqimg.com,DIRECT
+HOST-SUFFIX,upaiyun.com,DIRECT
 HOST-SUFFIX,volccdn.com,DIRECT
 HOST-SUFFIX,weidian.com,DIRECT
 HOST-SUFFIX,xoyocdn.com,DIRECT
@@ -661,6 +663,7 @@ HOST-SUFFIX,263.net,DIRECT
 HOST-SUFFIX,360.net,DIRECT
 HOST-SUFFIX,3322.net,DIRECT
 HOST-SUFFIX,csdn.net,DIRECT
+HOST-SUFFIX,cz88.net,DIRECT
 HOST-SUFFIX,duba.net,DIRECT
 HOST-SUFFIX,ipip.net,DIRECT
 HOST-SUFFIX,jb51.net,DIRECT
@@ -711,6 +714,7 @@ HOST-SUFFIX,8866.org,DIRECT
 HOST-SUFFIX,9966.org,DIRECT
 HOST-SUFFIX,aliapp.org,DIRECT
 HOST-SUFFIX,docschina.org,DIRECT
+HOST-SUFFIX,miot-spec.org,DIRECT
 HOST-SUFFIX,icourse163.org,DIRECT
 HOST,dns.pub,DIRECT
 HOST,doh.pub,DIRECT
@@ -735,6 +739,7 @@ HOST-SUFFIX,steam.ksyna.com,DIRECT
 HOST-SUFFIX,steam.clngaa.com,DIRECT
 HOST-SUFFIX,dl.eccdnx.com,DIRECT
 HOST,www.layuicdn.com,DIRECT
+HOST,cdnstatic.tencentcs.com,DIRECT
 HOST-SUFFIX,dl.pinyuncloud.com,DIRECT
 HOST-SUFFIX,dl.bscstorage.net,DIRECT
 HOST,cn.download.nvidia.com,DIRECT
