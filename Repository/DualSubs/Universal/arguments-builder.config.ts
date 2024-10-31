@@ -3,26 +3,26 @@ import { defineConfig } from "@iringo/arguments-builder";
 export default defineConfig({
 	output: {
 		surge: {
-			path: "./dist/Universal.sgmodule",
+			path: "./dist/DualSubs.Universal.sgmodule",
 		},
 		loon: {
-			path: "./dist/Universal.plugin",
+			path: "./dist/DualSubs.Universal.plugin",
 		},
 		customItems: [
 			{
-				path: "./dist/Universal.stoverride",
+				path: "./dist/DualSubs.Universal.stoverride",
 				template: "./template/stash.handlebars",
 			},
 			{
-				path: "./dist/Universal.yaml",
+				path: "./dist/DualSubs.Universal.yaml",
 				template: "./template/egern.handlebars",
 			},
 			{
-				path: "./dist/Universal.snippet",
+				path: "./dist/DualSubs.Universal.snippet",
 				template: "./template/quantumultx.handlebars",
 			},
 			{
-				path: "./dist/Universal.srmodule",
+				path: "./dist/DualSubs.Universal.srmodule",
 				template: "./template/shadowrocket.handlebars",
 			},
 		],
@@ -194,8 +194,25 @@ export default defineConfig({
 			],
 		},
 		{
+			key: "Vendor",
+			name: "[翻译器] 服务商API",
+			defaultValue: "Google",
+			type: "string",
+			options: [
+				{
+					"key": "Google",
+					"label": "Google Translate"
+				},
+				{
+					"key": "Microsoft",
+					"label": "Microsoft Translator（需填写API）"
+				},
+			],
+			description: "请选择翻译器所使用的服务商API，更多翻译选项请使用BoxJs。",
+		},
+		{
 			key: "ShowOnly",
-			name: "[翻译字幕] 只显示翻译后字幕",
+			name: "[翻译器] 只显示翻译后字幕",
 			defaultValue: false,
 			type: "boolean",
 			description: "开启后仅显示翻译字幕，不做字幕合并操作。",
