@@ -4,6 +4,7 @@ import database from "./function/database.mjs";
 import setENV from "./function/setENV.mjs";
 import { WireType, UnknownFieldHandler, reflectionMergePartial, MESSAGE_TYPE, MessageType, BinaryReader, isJsonObject, typeofJsonValue, jsonWriteOptions } from "@protobuf-ts/runtime";
 import { ViewReply } from "./protobuf/bilibili/app/viewunite/v1/viewunite.js";
+import { ViewPgcAny } from "./protobuf/bilibili/app/viewunite/pgcanymodel.js";
 /***************** Processing *****************/
 // 解构URL
 const url = new URL($request.url);
@@ -18,7 +19,10 @@ log(`⚠ METHOD: ${METHOD}, HOST: ${HOST}, PATH: ${PATH}`, "");
 const FORMAT = ($response.headers?.["Content-Type"] ?? $response.headers?.["content-type"])?.split(";")?.[0];
 log(`⚠ FORMAT: ${FORMAT}`, "");
 !(async () => {
-	// 读取设置
+	/**
+	 * 设置
+	 * @type {{Settings: import('./types').Settings}}
+	 */
 	const { Settings, Caches, Configs } = setENV("BiliBili", "Global", database);
 	log(`⚠ Settings.Switch: ${Settings?.Switch}`, "");
 	switch (Settings.Switch) {
@@ -105,7 +109,8 @@ log(`⚠ FORMAT: ${FORMAT}`, "");
 											break;
 									}
 									break;
-								case "/pgc/view/v2/app/season": { // 番剧页面-内容-app
+								case "/pgc/view/v2/app/season": {
+									// 番剧页面-内容-app
 									const data = body.data;
 									infoGroup.seasonTitle = data?.season_title ?? infoGroup.seasonTitle;
 									infoGroup.seasonId = data?.season_id ?? infoGroup.seasonId;
@@ -133,7 +138,8 @@ log(`⚠ FORMAT: ${FORMAT}`, "");
 									break;
 								}
 								case "/pgc/view/web/season": // 番剧-内容-web
-								case "/pgc/view/pc/season": { // 番剧-内容-pc
+								case "/pgc/view/pc/season": {
+									// 番剧-内容-pc
 									const result = body.result;
 									infoGroup.seasonTitle = result.season_title ?? infoGroup.seasonTitle;
 									infoGroup.seasonId = result.season_id ?? infoGroup.seasonId;
@@ -184,6 +190,7 @@ log(`⚠ FORMAT: ${FORMAT}`, "");
 							// 主机判断
 							switch (HOST) {
 								case "grpc.biliapi.net": // HTTP/2
+								case "app.biliapi.net": // HTTP/1.1
 								case "app.bilibili.com": // HTTP/1.1
 									switch (PATHs?.[0]) {
 										case "bilibili.app.viewunite.v1.View":
@@ -191,23 +198,37 @@ log(`⚠ FORMAT: ${FORMAT}`, "");
 												case "View": // 播放页
 													body = ViewReply.fromBinary(rawBody);
 													log(`🚧 body: ${JSON.stringify(body)}`, "");
-													rawBody = ViewReply.toBinary(body);
 													infoGroup.seasonTitle = body?.arc?.title ?? body?.supplement?.ogv_data?.title ?? infoGroup.seasonTitle;
 													infoGroup.seasonId = Number.parseInt(body?.report?.season_id, 10) || body?.supplement?.ogv_data?.season_id || infoGroup.seasonId;
 													infoGroup.mId = Number.parseInt(body?.report?.up_mid, 10) || body?.owner?.mid || infoGroup.mId;
 													//infoGroup.evaluate = result?.evaluate ?? infoGroup.evaluate;
 													if (infoGroup.seasonId || infoGroup.epId) infoGroup.type = "PGC";
 													switch (body?.supplement?.typeUrl) {
-														case "type.googleapis.com/bilibili.app.viewunite.pgcanymodel.ViewPgcAny":
+														case "type.googleapis.com/bilibili.app.viewunite.pgcanymodel.ViewPgcAny": {
 															infoGroup.type = "PGC";
+															const PgcBody = ViewPgcAny.fromBinary(body.supplement.value);
+															log(`🚧 PgcBody: ${JSON.stringify(PgcBody)}`, "");
+															infoGroup.seasonTitle = PgcBody?.ogvData?.title || infoGroup.seasonTitle;
+															infoGroup.seasonId = PgcBody?.ogvData?.seasonId || infoGroup.seasonId;
+															_.set(PgcBody, "ogvData.rights.allowDownload", 1);
+															_.set(PgcBody, "ogvData.rights.allowReview", 1);
+															_.set(PgcBody, "ogvData.rights.allowBp", 1);
+															_.set(PgcBody, "ogvData.rights.areaLimit", 0);
+															_.set(PgcBody, "ogvData.rights.banAreaShow", 1);
+															log(`🚧 PgcBody: ${JSON.stringify(PgcBody)}`, "");
+															body.supplement.value = ViewPgcAny.toBinary(PgcBody);
 															break;
+														}
 														case "type.googleapis.com/bilibili.app.viewunite.ugcanymodel.ViewUgcAny":
-														default:
+														default: {
 															infoGroup.type = "UGC";
 															break;
+														}
 													}
 													infoGroup.locales = detectLocales(infoGroup);
 													setCache(infoGroup, [], Caches);
+													log(`🚧 body: ${JSON.stringify(body)}`, "");
+													rawBody = ViewReply.toBinary(body);
 													break;
 											}
 											break;
