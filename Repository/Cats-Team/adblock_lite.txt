@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-11-03 08:05:07(GMT+8) 
-! Total count: 34799
+! ! Version: 2024-11-04 08:04:24(GMT+8) 
+! Total count: 34809
  
 ###ADtip
 ###AdBlockDialog
@@ -10508,6 +10508,7 @@ haoweichi.com#%#//scriptlet("prevent-setTimeout", "adsbygoogle")
 haoxxoo.com##.nrad1
 haoxxoo.com##.nrad2
 happymh.com##[src="https://c.nationaltcm.com/ad/tm1111dd.png"]
+happymh.com##a[href*=".taobao.com"]
 hardwareluxx.ru#$#abort-current-inline-script jQuery backgroundImage
 hawak.net,rotana.video#$#abort-on-property-read atob
 hayan.tv#@##uzcrsite
@@ -18552,6 +18553,7 @@ zzzyk.com###Tinfo
 ||7down.com/static/js/foot_
 ||7dqjgdk.com^
 ||7dusx.xyz^
+||7f7rt.icu^
 ||7j4tpio.com^
 ||7jkzmbd.cn^
 ||7junshi.com/con/ad
@@ -20302,6 +20304,7 @@ zzzyk.com###Tinfo
 ||bdates.fun^
 ||bdawrsi.icu^
 ||bdcm.kandianla.com^
+||bdcmwcl.icu^
 ||bdcode.2345.com^
 ||bdcode.35d1.com^
 ||bdcode.qinglm.com^
@@ -22633,6 +22636,7 @@ zzzyk.com###Tinfo
 ||dsdklnks.com^
 ||dsdsa33.fun^
 ||dsdsg44.fun^
+||dsfh2.icu^
 ||dshangyan.com/pc/advertising/
 ||dshapv.xyz^
 ||dshjbn.xyz^
@@ -23229,6 +23233,7 @@ zzzyk.com###Tinfo
 ||ezprice.com.tw/ezysm/
 ||ezprice.com.tw/js/*_ysm_
 ||ezraahdn.icu^
+||ezrcowa.icu^
 ||ezu6rd5.houge.in^
 ||f*.baidu.com/it/u=*,*&fm=$third-party,domain=~hao123.com|~haokan.com|~yoojia.com
 ||f1.06ps.com^
@@ -31781,6 +31786,7 @@ zzzyk.com###Tinfo
 ||totheglory.im/pic/fangtuo.jpg
 ||totheglory.im/pic/ttg-
 ||totheglory.im/pic/ttg_
+||toublii.top^
 ||touimg.com/u/20200306/12094716.gif
 ||touimg.com/u/20200419/18431854.gif
 ||touimg.com/u/20200510/2142*.gif
@@ -32304,6 +32310,7 @@ zzzyk.com###Tinfo
 ||uopsawxst.cyou^
 ||uoqsxdpx.xyz^
 ||uosxdmk.cn^
+||uoublit.top^
 ||uouvxlit.top^
 ||up.qingdaonews.com/up/$object,script
 ||upailek.cn^
@@ -32340,6 +32347,7 @@ zzzyk.com###Tinfo
 ||urlbeat.net/Webservices/jsParseLinks.aspx$script,third-party
 ||urlbeat.net/visitScript/$script,third-party
 ||urlkwqi.cn^
+||urpkktc.icu^
 ||urqwzbu.cn^
 ||ursegreatm.fun^
 ||urtlist.top^
@@ -32423,6 +32431,7 @@ zzzyk.com###Tinfo
 ||uwerpyh.cn^
 ||uwgnpkd.cn^
 ||uwnvcxb.cn^
+||uwsaqoi.icu^
 ||uwumr.cn^
 ||uwursert.top^
 ||uxbd4id.xyz^
@@ -32713,6 +32722,7 @@ zzzyk.com###Tinfo
 ||vrrw.net//templets/default/js/ad.js
 ||vs1.exo01.xyz^$image,third-party
 ||vsjrnh.xyz^
+||vsojfsoj.com^
 ||vsping-*.myqcloud.com/ggw/
 ||vsping.com/website/adLinks?
 ||vsping.com/website/ads?
