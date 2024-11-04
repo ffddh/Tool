@@ -1280,6 +1280,7 @@ domain:2rwonuh.com
 domain:2s02keqc1.com
 domain:2s2enegt0.de
 domain:2s8s.com
+domain:2sfpy.icu
 domain:2shocking4you.com
 domain:2site.com
 domain:2smarttracker.com
@@ -20662,6 +20663,7 @@ domain:canadapost-paymentservice.com
 domain:canadapost-postescanada.uwpackege.top
 domain:canadapost.helpdag.top
 domain:canadapost.mydelivery1.com
+domain:canadapost.postescanadad.xyz
 domain:canadapostarticle.com
 domain:canadianbedevil.com
 domain:canadianmedstores.org
@@ -53037,6 +53039,7 @@ domain:ipmentrandingsw.com
 domain:ipnkkmxo.com
 domain:ipp2s.xyz
 domain:ippleshiswashis.info
+domain:ipqajyy.icu
 domain:ipqc5ejfe.icu
 domain:ipqnteseqrf.xyz
 domain:ipredictive.com
