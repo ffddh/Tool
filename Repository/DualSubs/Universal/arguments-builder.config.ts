@@ -4,6 +4,10 @@ export default defineConfig({
 	output: {
 		surge: {
 			path: "./dist/DualSubs.Universal.sgmodule",
+			transformEgern: {
+				enable: true,
+				path: "./dist/DualSubs.Universal.yaml",
+			},
 		},
 		loon: {
 			path: "./dist/DualSubs.Universal.plugin",
@@ -12,10 +16,6 @@ export default defineConfig({
 			{
 				path: "./dist/DualSubs.Universal.stoverride",
 				template: "./template/stash.handlebars",
-			},
-			{
-				path: "./dist/DualSubs.Universal.yaml",
-				template: "./template/egern.handlebars",
 			},
 			{
 				path: "./dist/DualSubs.Universal.snippet",
@@ -32,7 +32,7 @@ export default defineConfig({
 		},
 		boxjsSettings: {
 			path: "./template/boxjs.settings.json",
-			scope: "@DualSubs.YouTube.Settings",
+			scope: "@DualSubs.Universal.Settings",
 		},
 	},
 	args: [
