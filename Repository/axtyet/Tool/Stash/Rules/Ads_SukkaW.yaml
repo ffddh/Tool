@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-11-12T14:49:14.110Z
-  # Size: 109225
+  # Last Updated: 2024-11-13T09:16:37.827Z
+  # Size: 109240
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -8728,6 +8728,7 @@ payload:
   - DOMAIN-SUFFIX,ggwcash.com
   - DOMAIN-SUFFIX,ggxcoez.com
   - DOMAIN-SUFFIX,ggzkgfe.com
+  - DOMAIN-SUFFIX,gheqien.com
   - DOMAIN-SUFFIX,ghtk247.com
   - DOMAIN-SUFFIX,gianwho.com
   - DOMAIN-SUFFIX,gigjjgb.com
@@ -11656,6 +11657,7 @@ payload:
   - DOMAIN-SUFFIX,linezing.com
   - DOMAIN-SUFFIX,linkfars.com
   - DOMAIN-SUFFIX,linkmepu.com
+  - DOMAIN-SUFFIX,linkmink.com
   - DOMAIN-SUFFIX,list-ads.com
   - DOMAIN-SUFFIX,liverail.com
   - DOMAIN-SUFFIX,livestat.com
@@ -11816,6 +11818,7 @@ payload:
   - DOMAIN-SUFFIX,myadcash.com
   - DOMAIN-SUFFIX,mybestdc.com
   - DOMAIN-SUFFIX,mybmrtrg.com
+  - DOMAIN-SUFFIX,mycuegxt.com
   - DOMAIN-SUFFIX,myiphost.com
   - DOMAIN-SUFFIX,mypopads.com
   - DOMAIN-SUFFIX,mytanwan.com
@@ -37538,6 +37541,7 @@ payload:
   - DOMAIN-SUFFIX,bxqgk.icu
   - DOMAIN-SUFFIX,c05ua.icu
   - DOMAIN-SUFFIX,cadcc.icu
+  - DOMAIN-SUFFIX,chupl.icu
   - DOMAIN-SUFFIX,d2tf0.icu
   - DOMAIN-SUFFIX,dfan4.icu
   - DOMAIN-SUFFIX,dk45h.icu
@@ -37613,6 +37617,7 @@ payload:
   - DOMAIN-SUFFIX,xs6po.icu
   - DOMAIN-SUFFIX,xszw0.icu
   - DOMAIN-SUFFIX,xuakn.icu
+  - DOMAIN-SUFFIX,y0mwy.icu
   - DOMAIN-SUFFIX,yj2nf.icu
   - DOMAIN-SUFFIX,z3zex.icu
   - DOMAIN-SUFFIX,zjib0.icu
@@ -37895,6 +37900,7 @@ payload:
   - DOMAIN-SUFFIX,megydyk.icu
   - DOMAIN-SUFFIX,meqanhm.icu
   - DOMAIN-SUFFIX,mfemiac.icu
+  - DOMAIN-SUFFIX,mjbidlg.icu
   - DOMAIN-SUFFIX,mqaoweu.icu
   - DOMAIN-SUFFIX,mqcoycx.icu
   - DOMAIN-SUFFIX,mtwuxss.icu
@@ -37929,6 +37935,7 @@ payload:
   - DOMAIN-SUFFIX,pviasld.icu
   - DOMAIN-SUFFIX,pwcegau.icu
   - DOMAIN-SUFFIX,pxqqytk.icu
+  - DOMAIN-SUFFIX,pxyjqea.icu
   - DOMAIN-SUFFIX,qdjsiyt.icu
   - DOMAIN-SUFFIX,qfaaokr.icu
   - DOMAIN-SUFFIX,qkgllif.icu
@@ -37942,6 +37949,7 @@ payload:
   - DOMAIN-SUFFIX,rdsgick.icu
   - DOMAIN-SUFFIX,reisyxy.icu
   - DOMAIN-SUFFIX,rgmmeff.icu
+  - DOMAIN-SUFFIX,rjwpwod.icu
   - DOMAIN-SUFFIX,rmioswx.icu
   - DOMAIN-SUFFIX,rnwenpn.icu
   - DOMAIN-SUFFIX,romiyee.icu
@@ -38052,6 +38060,7 @@ payload:
   - DOMAIN-SUFFIX,lbjekygz.icu
   - DOMAIN-SUFFIX,lfrdskwj.icu
   - DOMAIN-SUFFIX,ljzcawea.icu
+  - DOMAIN-SUFFIX,locpikbb.icu
   - DOMAIN-SUFFIX,nbfsvreu.icu
   - DOMAIN-SUFFIX,nlxgjwye.icu
   - DOMAIN-SUFFIX,ntpnfyga.icu
@@ -40293,6 +40302,7 @@ payload:
   - DOMAIN-SUFFIX,8020solutions.net
   - DOMAIN-SUFFIX,admarketplace.net
   - DOMAIN-SUFFIX,air360tracker.net
+  - DOMAIN-SUFFIX,athalarilouwo.net
   - DOMAIN-SUFFIX,avazutracking.net
   - DOMAIN-SUFFIX,bannerconnect.net
   - DOMAIN-SUFFIX,bannernetwork.net
@@ -41799,6 +41809,7 @@ payload:
   - DOMAIN-SUFFIX,ctyusif.top
   - DOMAIN-SUFFIX,curesdf.top
   - DOMAIN-SUFFIX,cwaterf.top
+  - DOMAIN-SUFFIX,cweisif.top
   - DOMAIN-SUFFIX,cweriof.top
   - DOMAIN-SUFFIX,cyjqgpf.top
   - DOMAIN-SUFFIX,cyretuf.top
@@ -43284,6 +43295,7 @@ payload:
   - DOMAIN-SUFFIX,atmdew.xyz
   - DOMAIN-SUFFIX,atorks.xyz
   - DOMAIN-SUFFIX,ausfyk.xyz
+  - DOMAIN-SUFFIX,avspda.xyz
   - DOMAIN-SUFFIX,awuvcq.xyz
   - DOMAIN-SUFFIX,awyuge.xyz
   - DOMAIN-SUFFIX,ayebsc.xyz
@@ -62164,6 +62176,7 @@ payload:
   - DOMAIN-SUFFIX,rechenschieber.transfermarkt.mx
   - DOMAIN-SUFFIX,data-1c0a3d83e3.transfermarkt.mx
   - DOMAIN-SUFFIX,data-84a0f3455d.transfermarkt.mx
+  - DOMAIN-SUFFIX,collector.xhamsterporno.mx
   - DOMAIN-SUFFIX,kgbokc.masrefacciones.mx
   - DOMAIN-SUFFIX,smetrics.circulodelasalud.mx
   - DOMAIN-SUFFIX,rtrck.orogoldcosmetics.mx
@@ -77076,6 +77089,7 @@ payload:
   - DOMAIN-SUFFIX,collector.xhamster.com
   - DOMAIN-SUFFIX,rockpoint.xhamster.com
   - DOMAIN-SUFFIX,collector1.xhamster.com
+  - DOMAIN-SUFFIX,collector-direct.xhamster.com
   - DOMAIN-SUFFIX,adx.xiaodutv.com
   - DOMAIN,ad.ximalaya.com
   - DOMAIN,dns.ximalaya.com
@@ -80565,6 +80579,7 @@ payload:
   - DOMAIN-SUFFIX,6eec76752e.adfaae31e2.com
   - DOMAIN-SUFFIX,53f2216e35.adfb5b0a32.com
   - DOMAIN-SUFFIX,analytics.adfreetime.com
+  - DOMAIN-SUFFIX,ads.adinmotech.com
   - DOMAIN-SUFFIX,trk.admtoronto.com
   - DOMAIN-SUFFIX,branchlink.adobespark.com
   - DOMAIN-SUFFIX,xml.adportonic.com
