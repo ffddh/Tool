@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-10-26 23:00
+# 最后更新时间: 2024-11-17 20:40
 #
 # ================
 
@@ -67,6 +67,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['*', '+.lan', '+.local', '+.direct', '+.msftconnecttest.com', '+.msftncsi.com']
   nameserver: [223.5.5.5, 119.29.29.29]
+  nameserver-policy: {"rule-set:AD": rcode://success}
 
 # 锚点参数
 pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
@@ -89,7 +90,6 @@ proxy-groups:
   - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
   - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
-  - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
   - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
   - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
   - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
@@ -116,7 +116,7 @@ rule-providers:
   HBO: {<<: *c, path: ./rules/HBO.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list}
 
 rules:
-  - RULE-SET,AD,广告拦截
+# - RULE-SET,AD,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Apple,苹果服务
   - RULE-SET,YouTube,谷歌服务
