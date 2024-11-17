@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-11-17 20:40
+# 最后更新时间: 2024-11-17 20:55
 #
 # ================
 
@@ -79,7 +79,7 @@ c: &c {type: http, behavior: classical, format: text, interval: 86400}
 
 proxy-groups:
 
-  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png}
+  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT], icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png}
   - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
   - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
   - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
@@ -99,21 +99,21 @@ proxy-groups:
 
 rule-providers:
   AD: {<<: *c, path: ./rules/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
-  Apple: {<<: *c, path: ./rules/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
-  YouTube: {<<: *c, path: ./rules/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
-  Google: {<<: *c, path: ./rules/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
-  Telegram: {<<: *c, path: ./rules/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
-  Twitter: {<<: *c, path: ./rules/Twitter.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
-  Steam: {<<: *c, path: ./rules/Steam.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
-  Epic: {<<: *c, path: ./rules/Epic.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
-  AI: {<<: *c, path: ./rules/AI.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list}
-  Emby: {<<: *c, path: ./rules/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
-  Spotify: {<<: *c, path: ./rules/Spotify.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Spotify.list}
-  Bahamut: {<<: *c, path: ./rules/Bahamut.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bahamut.list}
-  Netflix: {<<: *c, path: ./rules/Netflix.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Netflix.list}
-  Disney: {<<: *c, path: ./rules/Disney.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Disney.list}
-  PrimeVideo: {<<: *c, path: ./rules/PrimeVideo.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/PrimeVideo.list}
-  HBO: {<<: *c, path: ./rules/HBO.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list}
+  Apple: {<<: *c, path: ./rules/Apple.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
+  YouTube: {<<: *c, path: ./rules/YouTube.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
+  Google: {<<: *c, path: ./rules/Google.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
+  Telegram: {<<: *c, path: ./rules/Telegram.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
+  Twitter: {<<: *c, path: ./rules/Twitter.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
+  Steam: {<<: *c, path: ./rules/Steam.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
+  Epic: {<<: *c, path: ./rules/Epic.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
+  AI: {<<: *c, path: ./rules/AI.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list}
+  Emby: {<<: *c, path: ./rules/Emby.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
+  Spotify: {<<: *c, path: ./rules/Spotify.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Spotify.list}
+  Bahamut: {<<: *c, path: ./rules/Bahamut.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bahamut.list}
+  Netflix: {<<: *c, path: ./rules/Netflix.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Netflix.list}
+  Disney: {<<: *c, path: ./rules/Disney.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Disney.list}
+  PrimeVideo: {<<: *c, path: ./rules/PrimeVideo.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/PrimeVideo.list}
+  HBO: {<<: *c, path: ./rules/HBO.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list}
 
 rules:
 # - RULE-SET,AD,REJECT
