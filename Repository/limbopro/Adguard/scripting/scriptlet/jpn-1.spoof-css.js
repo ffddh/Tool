@@ -21,7 +21,6 @@
 */
 
 /* eslint-disable indent */
-/* global cloneInto */
 
 // ruleset: jpn-1
 
@@ -58,16 +57,20 @@ function spoofCSS(
     if ( selector === '' ) { return; }
     const toCamelCase = s => s.replace(/-[a-z]/g, s => s.charAt(1).toUpperCase());
     const propToValueMap = new Map();
+    const privatePropToValueMap = new Map();
     for ( let i = 0; i < args.length; i += 2 ) {
-        if ( typeof args[i+0] !== 'string' ) { break; }
-        if ( args[i+0] === '' ) { break; }
-        if ( typeof args[i+1] !== 'string' ) { break; }
-        propToValueMap.set(toCamelCase(args[i+0]), args[i+1]);
+        const prop = toCamelCase(args[i+0]);
+        if ( prop === '' ) { break; }
+        const value = args[i+1];
+        if ( typeof value !== 'string' ) { break; }
+        if ( prop.charCodeAt(0) === 0x5F /* _ */ ) {
+            privatePropToValueMap.set(prop, value);
+        } else {
+            propToValueMap.set(prop, value);
+        }
     }
     const safe = safeSelf();
     const logPrefix = safe.makeLogPrefix('spoof-css', selector, ...args);
-    const canDebug = scriptletGlobals.canDebug;
-    const shouldDebug = canDebug && propToValueMap.get('debug') || 0;
     const instanceProperties = [ 'cssText', 'length', 'parentRule' ];
     const spoofStyle = (prop, real) => {
         const normalProp = toCamelCase(prop);
@@ -89,7 +92,7 @@ function spoofCSS(
     self.getComputedStyle = new Proxy(self.getComputedStyle, {
         apply: function(target, thisArg, args) {
             // eslint-disable-next-line no-debugger
-            if ( shouldDebug !== 0 ) { debugger; }
+            if ( privatePropToValueMap.has('_debug') ) { debugger; }
             const style = Reflect.apply(target, thisArg, args);
             const targetElements = new WeakSet(document.querySelectorAll(selector));
             if ( targetElements.has(args[0]) === false ) { return style; }
@@ -132,18 +135,28 @@ function spoofCSS(
     Element.prototype.getBoundingClientRect = new Proxy(Element.prototype.getBoundingClientRect, {
         apply: function(target, thisArg, args) {
             // eslint-disable-next-line no-debugger
-            if ( shouldDebug !== 0 ) { debugger; }
+            if ( privatePropToValueMap.has('_debug') ) { debugger; }
             const rect = Reflect.apply(target, thisArg, args);
             const targetElements = new WeakSet(document.querySelectorAll(selector));
             if ( targetElements.has(thisArg) === false ) { return rect; }
-            let { height, width } = rect;
-            if ( propToValueMap.has('width') ) {
+            let { x, y, height, width } = rect;
+            if ( privatePropToValueMap.has('_rectx') ) {
+                x = parseFloat(privatePropToValueMap.get('_rectx'));
+            }
+            if ( privatePropToValueMap.has('_recty') ) {
+                y = parseFloat(privatePropToValueMap.get('_recty'));
+            }
+            if ( privatePropToValueMap.has('_rectw') ) {
+                width = parseFloat(privatePropToValueMap.get('_rectw'));
+            } else if ( propToValueMap.has('width') ) {
                 width = parseFloat(propToValueMap.get('width'));
             }
-            if ( propToValueMap.has('height') ) {
+            if ( privatePropToValueMap.has('_recth') ) {
+                height = parseFloat(privatePropToValueMap.get('_recth'));
+            } else if ( propToValueMap.has('height') ) {
                 height = parseFloat(propToValueMap.get('height'));
             }
-            return new self.DOMRect(rect.x, rect.y, width, height);
+            return new self.DOMRect(x, y, width, height);
         },
         get(target, prop) {
             if ( prop === 'toString' ) {
@@ -425,44 +438,7 @@ argsList.length = 0;
 
 /******************************************************************************/
 
-// Inject code
-
-// https://bugzilla.mozilla.org/show_bug.cgi?id=1736575
-//   'MAIN' world not yet supported in Firefox, so we inject the code into
-//   'MAIN' ourself when environment in Firefox.
-
-const targetWorld = 'MAIN';
-
-// Not Firefox
-if ( typeof wrappedJSObject !== 'object' || targetWorld === 'ISOLATED' ) {
-    return uBOL_spoofCSS();
-}
-
-// Firefox
-{
-    const page = self.wrappedJSObject;
-    let script, url;
-    try {
-        page.uBOL_spoofCSS = cloneInto([
-            [ '(', uBOL_spoofCSS.toString(), ')();' ],
-            { type: 'text/javascript; charset=utf-8' },
-        ], self);
-        const blob = new page.Blob(...page.uBOL_spoofCSS);
-        url = page.URL.createObjectURL(blob);
-        const doc = page.document;
-        script = doc.createElement('script');
-        script.async = false;
-        script.src = url;
-        (doc.head || doc.documentElement || doc).append(script);
-    } catch (ex) {
-        console.error(ex);
-    }
-    if ( url ) {
-        if ( script ) { script.remove(); }
-        page.URL.revokeObjectURL(url);
-    }
-    delete page.uBOL_spoofCSS;
-}
+uBOL_spoofCSS();
 
 /******************************************************************************/
 

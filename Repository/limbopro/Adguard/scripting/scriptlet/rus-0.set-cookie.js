@@ -21,7 +21,6 @@
 */
 
 /* eslint-disable indent */
-/* global cloneInto */
 
 // ruleset: rus-0
 
@@ -40,9 +39,9 @@ const uBOL_setCookie = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["KUF_SUGGESTER_SHOW_2_ITERATION","1"],["adBlockModal","true"],["callToRegisterClosed","true"],["cookieAccepted","true"],["cookie_accept","1"],["ha","1"],["kuf_agr","true"],["pg_SuggestGameFollow","true"],["telegram_popup","Y"]];
+const argsList = [["KUF_SUGGESTER_SHOW_2_ITERATION","1"],["adBlockModal","true"],["callToRegisterClosed","true"],["cookieAccepted","true"],["cookie_accept","1"],["cookie_consent_shown","1"],["ha","1"],["kuf_agr","true"],["pg_SuggestGameFollow","true"],["telegram_popup","Y"]];
 
-const hostnamesMap = new Map([["kufar.by",[0,6]],["myshows.me",1],["direct.farm",2],["liga.net",3],["ixbt.com",4],["forum.ixbt.com",5],["playground.ru",7],["kinotv.ru",8]]);
+const hostnamesMap = new Map([["kufar.by",[0,7]],["myshows.me",1],["direct.farm",2],["liga.net",3],["ixbt.com",4],["avito.ru",5],["forum.ixbt.com",6],["playground.ru",8],["kinotv.ru",9]]);
 
 const entitiesMap = new Map([]);
 
@@ -63,9 +62,9 @@ function setCookie(
     const unquoted = match && match[2] || normalized;
     const validValues = getSafeCookieValuesFn();
     if ( validValues.includes(unquoted) === false ) {
-        if ( /^\d+$/.test(unquoted) === false ) { return; }
-        const n = parseInt(value, 10);
-        if ( n > 32767 ) { return; }
+        if ( /^-?\d+$/.test(unquoted) === false ) { return; }
+        const n = parseInt(value, 10) || 0;
+        if ( n < -32767 || n > 32767 ) { return; }
     }
 
     const done = setCookieFn(
@@ -444,44 +443,7 @@ argsList.length = 0;
 
 /******************************************************************************/
 
-// Inject code
-
-// https://bugzilla.mozilla.org/show_bug.cgi?id=1736575
-//   'MAIN' world not yet supported in Firefox, so we inject the code into
-//   'MAIN' ourself when environment in Firefox.
-
-const targetWorld = 'ISOLATED';
-
-// Not Firefox
-if ( typeof wrappedJSObject !== 'object' || targetWorld === 'ISOLATED' ) {
-    return uBOL_setCookie();
-}
-
-// Firefox
-{
-    const page = self.wrappedJSObject;
-    let script, url;
-    try {
-        page.uBOL_setCookie = cloneInto([
-            [ '(', uBOL_setCookie.toString(), ')();' ],
-            { type: 'text/javascript; charset=utf-8' },
-        ], self);
-        const blob = new page.Blob(...page.uBOL_setCookie);
-        url = page.URL.createObjectURL(blob);
-        const doc = page.document;
-        script = doc.createElement('script');
-        script.async = false;
-        script.src = url;
-        (doc.head || doc.documentElement || doc).append(script);
-    } catch (ex) {
-        console.error(ex);
-    }
-    if ( url ) {
-        if ( script ) { script.remove(); }
-        page.URL.revokeObjectURL(url);
-    }
-    delete page.uBOL_setCookie;
-}
+uBOL_setCookie();
 
 /******************************************************************************/
 

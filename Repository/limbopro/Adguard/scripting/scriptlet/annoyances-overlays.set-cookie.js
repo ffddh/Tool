@@ -21,7 +21,6 @@
 */
 
 /* eslint-disable indent */
-/* global cloneInto */
 
 // ruleset: annoyances-overlays
 
@@ -40,9 +39,9 @@ const uBOL_setCookie = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["exit-intent","true"],["cp_style_3841","true"],["m6e-newsletter","1"],["awpopup_501941328","1"],["popup_closed","true"],["SuppressInterstitial","true","","reload","1"],["marketing-modal-closed-1","2"],["r_p_s_n","1"],["viewedOuibounceModal","true"],["hidePopUp","true"],["newsletter","true"],["isNewsletterPopupShown","false","","reload","1"],["mailerlite:forms:shown:109925949413262377","1"],["pum-276000","true"],["uf_signup_bar","1"],["client-mailingListModalShown","true"],["jetpack_post_subscribe_modal_dismissed","true"],["newsletterLightboxDisplayed","true"],["MCPopupClosed","yes"],["welcome_modal_email_ts","1"],["newsletter-newsletter-popup","true"],["Columbia_IT_emailPopup","1"],["Columbia_AT_emailPopup","1"],["Columbia_DE_emailPopup","1"],["Columbia_FR_emailPopup","1"],["Columbia_ES_emailPopup","1"],["Columbia_UK_emailPopup","1"],["mystery_popup","true"],["sws-gwpop","1"],["popup-newsletter","true"],["sabl","1"],["logged_in","1","","reload","1"],["ezgwcc","1"]];
+const argsList = [["exit-intent","true"],["cp_style_3841","true"],["m6e-newsletter","1"],["awpopup_501941328","1"],["popup_closed","true"],["SuppressInterstitial","true","","reload","1"],["marketing-modal-closed-1","2"],["r_p_s_n","1"],["viewedOuibounceModal","true"],["hidePopUp","true"],["newsletter","true"],["isNewsletterPopupShown","false","","reload","1"],["mailerlite:forms:shown:109925949413262377","1"],["pum-276000","true"],["uf_signup_bar","1"],["client-mailingListModalShown","true"],["jetpack_post_subscribe_modal_dismissed","true"],["newsletterLightboxDisplayed","true"],["MCPopupClosed","yes"],["welcome_modal_email_ts","1"],["newsletter-newsletter-popup","true"],["Columbia_IT_emailPopup","1"],["Columbia_AT_emailPopup","1"],["Columbia_DE_emailPopup","1"],["Columbia_FR_emailPopup","1"],["Columbia_ES_emailPopup","1"],["Columbia_UK_emailPopup","1"],["mystery_popup","true"],["sws-gwpop","1"],["popup-newsletter","true"],["logged_in","1","","reload","1"],["ezgwcc","1"]];
 
-const hostnamesMap = new Map([["monarchmoney.com",0],["railsnotes.xyz",0],["breachmedia.ca",1],["artribune.com",2],["oled-info.com",3],["lowpass.cc",4],["readergrev.com",4],["objectivebayesian.com",4],["monopoly.marketecture.tv",4],["jointhefollowup.com",4],["gourmetfoodstore.com",5],["theinformation.com",6],["in.investing.com",7],["intellinews.com",8],["kermitlynch.com",9],["jingdaily.com",10],["babiesrus.ca",11],["toysrus.ca",11],["clevercreations.org",12],["thefederalist.com",13],["30seconds.com",14],["iconduck.com",15],["shojiwax.com",16],["skepticalraptor.com",16],["girlscoutshop.com",17],["yvonnebennetti.com",18],["funko.com",19],["loungefly.com",19],["saucerco.com",20],["columbiasportswear.it",21],["columbiasportswear.at",22],["columbiasportswear.de",23],["columbiasportswear.fr",24],["columbiasportswear.es",25],["columbiasportswear.co.uk",26],["sharperimage.com",27],["sweetwater.com",28],["assos.com",29],["techonthenet.com",30],["tumblr.com",31],["scitechdaily.com",32]]);
+const hostnamesMap = new Map([["monarchmoney.com",0],["railsnotes.xyz",0],["breachmedia.ca",1],["artribune.com",2],["oled-info.com",3],["lowpass.cc",4],["readergrev.com",4],["objectivebayesian.com",4],["monopoly.marketecture.tv",4],["jointhefollowup.com",4],["gourmetfoodstore.com",5],["theinformation.com",6],["in.investing.com",7],["intellinews.com",8],["kermitlynch.com",9],["jingdaily.com",10],["babiesrus.ca",11],["toysrus.ca",11],["clevercreations.org",12],["thefederalist.com",13],["30seconds.com",14],["iconduck.com",15],["shojiwax.com",16],["skepticalraptor.com",16],["girlscoutshop.com",17],["yvonnebennetti.com",18],["funko.com",19],["loungefly.com",19],["saucerco.com",20],["columbiasportswear.it",21],["columbiasportswear.at",22],["columbiasportswear.de",23],["columbiasportswear.fr",24],["columbiasportswear.es",25],["columbiasportswear.co.uk",26],["sharperimage.com",27],["sweetwater.com",28],["assos.com",29],["tumblr.com",30],["scitechdaily.com",31]]);
 
 const entitiesMap = new Map([]);
 
@@ -63,9 +62,9 @@ function setCookie(
     const unquoted = match && match[2] || normalized;
     const validValues = getSafeCookieValuesFn();
     if ( validValues.includes(unquoted) === false ) {
-        if ( /^\d+$/.test(unquoted) === false ) { return; }
-        const n = parseInt(value, 10);
-        if ( n > 32767 ) { return; }
+        if ( /^-?\d+$/.test(unquoted) === false ) { return; }
+        const n = parseInt(value, 10) || 0;
+        if ( n < -32767 || n > 32767 ) { return; }
     }
 
     const done = setCookieFn(
@@ -444,44 +443,7 @@ argsList.length = 0;
 
 /******************************************************************************/
 
-// Inject code
-
-// https://bugzilla.mozilla.org/show_bug.cgi?id=1736575
-//   'MAIN' world not yet supported in Firefox, so we inject the code into
-//   'MAIN' ourself when environment in Firefox.
-
-const targetWorld = 'ISOLATED';
-
-// Not Firefox
-if ( typeof wrappedJSObject !== 'object' || targetWorld === 'ISOLATED' ) {
-    return uBOL_setCookie();
-}
-
-// Firefox
-{
-    const page = self.wrappedJSObject;
-    let script, url;
-    try {
-        page.uBOL_setCookie = cloneInto([
-            [ '(', uBOL_setCookie.toString(), ')();' ],
-            { type: 'text/javascript; charset=utf-8' },
-        ], self);
-        const blob = new page.Blob(...page.uBOL_setCookie);
-        url = page.URL.createObjectURL(blob);
-        const doc = page.document;
-        script = doc.createElement('script');
-        script.async = false;
-        script.src = url;
-        (doc.head || doc.documentElement || doc).append(script);
-    } catch (ex) {
-        console.error(ex);
-    }
-    if ( url ) {
-        if ( script ) { script.remove(); }
-        page.URL.revokeObjectURL(url);
-    }
-    delete page.uBOL_setCookie;
-}
+uBOL_setCookie();
 
 /******************************************************************************/
 
