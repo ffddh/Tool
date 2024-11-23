@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Adblock4limbo.[github]
 // @namespace    https://github.com/limbopro/Adblock4limbo/raw/main/Adguard/Adblock4limbo.user.js
-// @version      0.2024.11.20
+// @version      0.2024.11.23
 // @license      CC BY-NC-SA 4.0
 // @description  毒奶去网页广告计划用户脚本 For Quantumult X & Surge & Shadowrocket & Loon & Stash & 油猴 ；1.新增页面右下角导航；2.通过 JavaScript 移除特定网站网页广告 —— 搜索引擎（Bing/Google）广告及内容农场结果清除/低端影视/欧乐影院/iyf爱壹帆/哔滴影视/Pornhub/Javbus/Supjav/Jable/MissAv/91porn/hitomi/紳士漫畫/禁漫天堂/等视频&ACG&小说&漫画网站上的弹窗广告&视频广告&Gif图片广告等，保持网页清爽干净无打扰！ P.S. 欢迎提交issue
 // @author       limbopro
@@ -43,15 +43,19 @@
 /// 当你浏览成人网站时，切换到别的应用或页面再返回时，网站页面将被模糊
 /// 可在 导航 - **反馈/建议/功能设置//** 关闭成人保护模式；
 
-// **如何【禁用页面右下角导航按钮（iOS）】**
+// **如何【全局禁用页面右下角导航按钮及成人保护模式（iOS）】**
 /// iOS QX/Stash/Surge/等用户禁用导航按钮图片即可...
-/// 1.添加主机名， limbopro.com
-/// 2.添加重写， url 填写 Adblock4limbo.png ，类型选择 reject
+/// 1.添加主机名， **limbopro.com**
+/// 2.添加重写， **匹配的url** 填写正则表达式 **Adblock4limbo.user.js** ，类型选择 **response-body/http-response**
+/// 3.匹配的body处 填写正则表达式 **daohangMode|adultMode** ，替换处 填写 **off**
+/// 4.daohangMode 代表导航，adultMode 代表成人保护模式，你可以都关闭或只关闭其一
 
-// **如何【禁用页面右下角导航按钮（PC/Mac）】**
+// **如何【全局隐藏/禁用右下角导航按钮以及成人保护模式（PC/Mac）】**
 /// PC/Mac 油猴用户...
-/// 进入 Tampermonkey 管理面板 - 找到Adblock4limbo.[github]
-/// 找到 daohang_build() ，将其注释即可 -> ;daohang_build()；
+/// 进入 Tampermonkey 管理面板 - 找到 **Adblock4limbo.[github]**
+/// 找到 daohang_build()  大概在 210 多行
+/// 然后将 daohangMode/adultMode 的值修改成 false 即可
+
 
 */
 
@@ -196,16 +200,26 @@
 */
 
 
-daohang_build(); // 为页面增加导航按钮
-// 如不要导航可注释该行代码 在代码前加两行斜杆 //
-// daohang_build() 就像这样
+// 是否（默认）开启导航🧭按钮🔘 moren
+// 如【不需要开启导航🧭按钮🔘】 可将 cookie 的值从 true 改为 false
 
+settingCookie('daohangMode', 'true', '114154');
+console.log('是否（默认）开启导航🧭按钮🔘：' + getCookie_('daohangMode'))
+
+// 是否（默认）开启成人🔞网站保护模式
+// 如【不需要开启成人网站保护模式】 可将 cookie 的值从 true 改为 false
+settingCookie('adultMode', 'true', '114154');
+console.log('是否（默认）开启成人🔞网站保护模式：' + getCookie_('adultMode'))
+
+// 是否开启导航🧭按钮🔘
+// 如【不需要开启导航🧭按钮🔘】可直接将 daohang_build() 进行注释
+// //daohang_build() 就像这样 
+daohang_build();
 
 // 一些常量
 /* Start */
 
 var uBlockOrigin = {
-
 
     // uBlockOrigin 默认脚本
     // https://github.com/uBlockOrigin/uBOL-home/tree/main/chromium/rulesets/scripting/scriptlet
@@ -706,7 +720,7 @@ function adsDomain_switch(x) { // 匹配参数值 执行相应函数
                     ele_dynamicAppend("div.container-xl", "onclick", "隐藏公告", "position:inherit; right:92px;" + "padding: 6px 6px 6px 6px; display: inline-block; color: white;z-index: 114154 !important; border-right: 6px solid #38a3fd; border-left: #292f33 !important; border-top: #292f33 !important; border-bottom: #292f33 !important; background: #2563eb; border-radius: 0px 0px 0px 0px; font-weight: 800 !important; text-align: right !important;", "", "bdys", 1, "button");
                     addListenerById("bdys", () => { notice_hidden("div.col-12") }, 2000);
                 }
-                if (getCookie("hidden") == 1) {
+                if (getCookie_("hidden") == 1) {
                     notice_hidden("div.col-12");
                 }
             }
@@ -787,7 +801,7 @@ function adsDomain_switch(x) { // 匹配参数值 执行相应函数
         case 'xiaobaotv':
             // nothing to do.
             break;
-            case 'cupfoxapp':
+        case 'cupfoxapp':
             css_adsRemove(imax.css.cupfoxapp, 100, 'fuckcupfoxapp');
             break;
         case 'iyf':
@@ -1079,7 +1093,7 @@ function adsDomain_switch(x) { // 匹配参数值 执行相应函数
 
             noWindowOpenIf('window.open')
             noWindowOpenIf('touchend')
-            
+
             break;
         case "njav":
             css_adsRemove(imax.css.njav, 0, 'njav');
@@ -1985,7 +1999,7 @@ function tag_ads_traversal(selector, i) {
 }
 
 // Get Cookies 获取指定命名的cookie 的值
-function getCookie(cname) {
+function getCookie_(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
@@ -2601,3 +2615,6 @@ function aopr() {
         }
     }.bind();
 };
+
+// 设置 cookie 饼
+function settingCookie(cname, cvalue, exdays) { var d = new Date(); d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); var expires = "expires=" + d.toGMTString(); document.cookie = cname + "=" + cvalue + "; path=/;" + expires; }
