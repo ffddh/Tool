@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-11-30 08:04:05(GMT+8) 
-! Total count: 35105
+! ! Version: 2024-11-30 13:13:44(GMT+8) 
+! Total count: 35113
  
 ###ADtip
 ###AdBlockDialog
@@ -4371,6 +4371,7 @@ $websocket,domain=wap.yushuwu.cloud
 91lai.com##.D_guanggaotu3
 91lai.com##.showimgs
 91porn.com##.preroll-blocker
+91porn.com#@#.vjs-preroll
 91porna.com##.carousel-container-bottom
 91porna.com##.carousel-container:has(#carouselExampleInterval)
 91porna.com##.row > div.flex-container:has(> a[href][target="_blank"] > img)
@@ -18845,6 +18846,7 @@ zzzyk.com###Tinfo
 ||9669.com^$script,third-party
 ||96696612.top^
 ||96kso.online^
+||96rj.icu^
 ||973.com/static/js/pccom.js
 ||97ii.cn^
 ||97kpz.com/js/bbk/g.js
@@ -20714,6 +20716,7 @@ zzzyk.com###Tinfo
 ||bm.h576.com^
 ||bmatgg18.xyz^
 ||bmhept.xyz^
+||bmhtwefv.icu^
 ||bmiea.xyz^
 ||bmjs.xzw.com^
 ||bmnbyn.icu^
@@ -24684,6 +24687,7 @@ zzzyk.com###Tinfo
 ||hdtvnr.xyz^
 ||hdtvtuga.com/canais/jsads.js$script
 ||hdvkl.cn^
+||hdwiey.com^
 ||hdxjtl.xyz^
 ||hdxyj.icu^
 ||hdypw.com^
@@ -26477,6 +26481,7 @@ zzzyk.com###Tinfo
 ||kc-valves.com^
 ||kccdk.com/Content/img/*.gif
 ||kcnwe.xyz^
+||kdamcsd.top^
 ||kdcl.pchome.com.tw^
 ||kdcxhr.cn^
 ||kdeh.cn^
@@ -30290,6 +30295,7 @@ zzzyk.com###Tinfo
 ||runoob.com/images/re/
 ||runsky.com/phpstat/
 ||rupmlh.cn^
+||ruqaks.com^
 ||ruqwgb.icu^
 ||ruralrobin.com^$third-party
 ||rusnext.ru/advar.js$script
@@ -33653,6 +33659,7 @@ zzzyk.com###Tinfo
 ||x6img.com^$domain=picturedata.org
 ||x81zw.co/js/dsnmd.
 ||x8kwcr3l.xyz^
+||xa7j.icu^
 ||xadulxs.cn^
 ||xafuzcxr.xyz^
 ||xahycw.com^
@@ -34397,6 +34404,7 @@ zzzyk.com###Tinfo
 ||youfap.me/Webservices/jsParseLinks.aspx$script,third-party
 ||youfap.me/visitScript/$script,third-party
 ||youivr.com/image/*-960x80
+||youjiudilai.com^
 ||youku.com/dress/
 ||youku6.top^
 ||youle55.com^$third-party
