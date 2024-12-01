@@ -9469,6 +9469,7 @@ domain:af.wenerhema.com
 domain:af043ebde4.10a03eb82c.com
 domain:af07fa0ce8.6662a5efa0.com
 domain:af5b2ff170.e3aa58c849.com
+domain:af6s.icu
 domain:af9dc9.xyz
 domain:afafevk.com
 domain:afahivar.com
@@ -12694,6 +12695,7 @@ domain:ao1118kas.top
 domain:ao1120kas.top
 domain:ao1122kas.top
 domain:ao1123kas.top
+domain:ao1201kas.top
 domain:aoakss.com
 domain:aoalmfwinbsstec23.com
 domain:aoao11111iis.top
@@ -19463,6 +19465,7 @@ domain:brinkprovenanceamenity.com
 domain:brinstascooter.eccocar.com
 domain:brioletredeyes.com
 domain:brioscoot.eccocar.com
+domain:brircel.com
 domain:briskeagle.io
 domain:briskpelican.io
 domain:bristlemarinade.com
@@ -54025,6 +54028,7 @@ domain:jcqueawk.xyz
 domain:jcr3.onlyyouhotels.com
 domain:jcreje.com
 domain:jcrnbnw.com
+domain:jcwlsofn.icu
 domain:jcwtml.icu
 domain:jczunp.xyz
 domain:jd2ujc.cn

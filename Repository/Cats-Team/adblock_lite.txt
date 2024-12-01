@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-12-01 08:04:35(GMT+8) 
-! Total count: 35117
+! ! Version: 2024-12-01 10:29:20(GMT+8) 
+! Total count: 35121
  
 ###ADtip
 ###AdBlockDialog
@@ -3478,7 +3478,6 @@ $websocket,domain=wap.yushuwu.cloud
 17yy.com###addiv
 17yy.com##.t2_3
 17yy.com##.t2r_3
-18-comic.work,18-comicfreedom.org,18-comicfreedom.xyz,18-comicstellar.art,18comic.org,18comic.vip,jm-comic1.cc,jm-comic2.cc,jmcomic.me,jmcomic1.me,jmcomic2.me#@#.col-lg-3.col-xs-6 > .well
 18-comicfrieren.xyz,18comic.org,18comic.vip###guide-modal
 18-comicfrieren.xyz,18comic.org,18comic.vip##.div_sticky2
 18-comicfrieren.xyz,18comic.org,18comic.vip##.modal-backdrop
@@ -9575,6 +9574,7 @@ f2dsex1.com##a[href="https://kf2828.com/"]
 f2dsex1.com##div.link
 faayoo.com###footer_fd
 faayoo.com##.qr_code
+facebook.com#@#script:not([src]) + style + div[id]:not([class]):not([style])
 facebookproxy.info###overlay-holder
 facet.wp.pl,ksiazki.wp.pl,tech.wp.pl,money.pl,moneyv.wp.pl#$#abort-on-property-read pbjs.bidderSettings
 factfeed.com,mdrntoday.com,travelroo.com###vidazooAd
@@ -19374,6 +19374,7 @@ zzzyk.com###Tinfo
 ||aeyyck.xyz^
 ||af29.com/banner/
 ||af31f.site^
+||af6s.icu^
 ||af9dc9.xyz^
 ||afablca.cn^
 ||afafevk.com^
@@ -19767,11 +19768,12 @@ zzzyk.com###Tinfo
 ||anyshare.icu^*.js
 ||anyunwl04.com^
 ||anywlan.com/link/*.gif
-||ao11*kas.top/$script,third-party
+||ao1*kas.top/$script,third-party
 ||ao1118kas.top^
 ||ao1120kas.top^
 ||ao1122kas.top^
 ||ao1123kas.top^
+||ao1201kas.top^
 ||aoakss.com^
 ||aoao11*iis.top/$script,third-party
 ||aoao11111iis.top^
@@ -20849,6 +20851,7 @@ zzzyk.com###Tinfo
 ||brfvyrrp.com^
 ||bridgetnbe.com^
 ||briefstem.com^$third-party
+||brircel.com^
 ||brixel.cn^
 ||broadboundary.com^$third-party
 ||broadcastbed.com^$third-party
@@ -25926,6 +25929,7 @@ zzzyk.com###Tinfo
 ||jcppcmqa.icu^
 ||jcrb.com/ZYW$subdocument
 ||jcreje.com^
+||jcwlsofn.icu^
 ||jcwtml.icu^
 ||jczunp.xyz^
 ||jd-bbs.com^*/gif/
