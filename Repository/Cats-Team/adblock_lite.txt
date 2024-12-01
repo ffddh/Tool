@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-11-30 13:13:44(GMT+8) 
-! Total count: 35113
+! ! Version: 2024-12-01 08:04:35(GMT+8) 
+! Total count: 35117
  
 ###ADtip
 ###AdBlockDialog
@@ -922,6 +922,8 @@
 ##.tab-content + .col-pd
 ##.test-adblock-overlay
 ##.textadlist
+##.tg-m.tg-site
+##.tg-pc.tg-site
 ##.theme-dark > .ayx > a
 ##.theme_custom_slidebox-ad-below
 ##.title > .gg
@@ -4087,7 +4089,6 @@ $websocket,domain=wap.yushuwu.cloud
 5217kdy1.xyz##.alert-success + center
 5217kdy1.xyz##a[href$="/smsf.php"]
 5253.com###android-qr
-526bt.com,daniao.org,eroacg.com,laod.cn,myqqjd.com,ninpang.com##.tg-site
 526bt.com,guojitv.com###slider
 5278.cc###leftside_banner_top
 5278.cc###list_top_ad
@@ -28705,6 +28706,7 @@ zzzyk.com###Tinfo
 ||olgame.tw/home/attachment/
 ||olgcpwc.icu^
 ||olgrae.com^
+||olkoins.com^
 ||olltcqg.xyz^
 ||olmnvbgufy.top^
 ||olmsoneenh.info^$domain=avgle.com
@@ -30514,6 +30516,7 @@ zzzyk.com###Tinfo
 ||sd1v.yitongwl.cn/site/
 ||sd2ua.icu^
 ||sd6hon.cn^
+||sdamcsb.top^
 ||sdbeta.com/statics/mystyle/js/1
 ||sdchb2.com^
 ||sdcuo.com^
@@ -33074,6 +33077,7 @@ zzzyk.com###Tinfo
 ||w3xue.com/js/pro541.js
 ||w41.i7x3.fun^
 ||w51t.com^$subdocument
+||w59g.icu^
 ||w7044.com^
 ||w94.1qlgi.top^
 ||wa.kuwo.cn/lyrics/img/kwgg/
