@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 (update frequency)
 ! Description: The DNS Filters
-! Total count: 118743 
-! Update: 2024-12-01 20:09:28(GMT+8)
+! Total count: 118744 
+! Update: 2024-12-01 20:22:32(GMT+8)
 /^.+stat\.kugou\.com/
 /^admarvel\./
 /^admaster\./
@@ -46807,6 +46807,7 @@
 ||h1.ripway.com^
 ||h1.wk2.com^
 ||h12-media.com^
+||h1v3fa.com^
 ||h1z1.cash^
 ||h1z1echange.com^
 ||h1z1trade.online^
