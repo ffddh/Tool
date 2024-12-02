@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2024-12-02 08:04:39(GMT+8) 
-! Total count: 35132
+! ! Version: 2024-12-02 12:13:32(GMT+8) 
+! Total count: 35140
  
 ###ADtip
 ###AdBlockDialog
@@ -2079,6 +2079,7 @@ $websocket,domain=wap.yushuwu.cloud
 .xyz/xefeliffng_$third-party
 .xyz/xling_*_*_*.js?
 .xyz/z/*/code.js$script,third-party
+.xyz:*/bug?*=$third-party
 .xyz:8009/11?x=
 .xyz:9002/*?x=$websocket,script,third-party
 .zone/ads/
@@ -7193,6 +7194,7 @@ azulyblanco.co###notice
 azulyblanco.co###vlay
 azulyblanco.co#@##adblock
 b-website.com#@##adsense
+b0d8a0f6.com##DIV[id^="content_"]
 babesxworld.com##img[onclick*="spons"]
 babesxworld.com#$#abort-on-property-read ExoooLoooader
 babesxworld.com,lesbian8.com,older-women-porn.com,pifansubs.com,pimpandhost.com,silkengirl.net#$#abort-on-property-read adProvider
@@ -22504,6 +22506,7 @@ zzzyk.com###Tinfo
 ||divehope.com^$third-party
 ||divergentoffer.com^$third-party
 ||divxrj.xyz^
+||diyibanzhu*/js/cdn.js$~third-party
 ||diyifanwen.com/siteimages/jiqiren
 ||diyijjj.com/data/content
 ||dj09j5u.cn^
@@ -22846,6 +22849,7 @@ zzzyk.com###Tinfo
 ||duyvtanrheje.xyz^
 ||dv.amtwcvh.cn^
 ||dv.taolingjing.com^
+||dv0i.icu^
 ||dv4ku.icu^
 ||dvbnmikxh.xyz^
 ||dvclhmt.cn^
@@ -24958,6 +24962,7 @@ zzzyk.com###Tinfo
 ||hongi7ie8owiie03.site^
 ||honglingjin.co.uk/wp-content/uploads/*-Homepage-Takeover-BG-
 ||hongmao39.top^
+||hongosi.xn--*.cc$third-party
 ||hongteng.xyz^
 ||hongyingbbs.com/jj/
 ||honknl.xyz^
@@ -25369,6 +25374,7 @@ zzzyk.com###Tinfo
 ||ifsdg.xyz^
 ||ifunmac.com/wp-content/uploads/*/alipay-
 ||ifxqubw.icu^
+||ig69.vip^
 ||igabcgnh.icu^
 ||igame2steam.com^
 ||igamepark.biz/ads_output.php
@@ -29568,6 +29574,7 @@ zzzyk.com###Tinfo
 ||qczcxe.cn^
 ||qd.x4399.com^
 ||qdaily.com/mount_details/pc/
+||qdamcsy.top^
 ||qdcxia.xyz^
 ||qdczx66.com^
 ||qdickey.top^
@@ -33944,6 +33951,7 @@ zzzyk.com###Tinfo
 ||xn--bqro42frpg5up.cn^
 ||xn--gmq238c5fy.com^
 ||xn--gov-x68dy61b.shop^
+||xn--jor0b302fdhgwnccw8g.com^
 ||xn--jvrp4x1zyfta.net^
 ||xn--m7r781dz66a.cn^
 ||xn--mts60is5y5uk.com^
