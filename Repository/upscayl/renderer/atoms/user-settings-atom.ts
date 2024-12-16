@@ -58,6 +58,8 @@ export const turnOffNotificationsAtom = atomWithStorage(
   false,
 );
 
+export const ttaModeAtom = atomWithStorage("ttaMode", false);
+
 export const viewTypeAtom = atomWithStorage<"slider" | "lens">(
   "viewType",
   "slider",
@@ -83,3 +85,13 @@ export const enableContributionAtom = atomWithStorage(
   "enableContribution",
   true,
 );
+
+export const userStatsAtom = atomWithStorage("userStats", {
+  totalUpscayls: 0,
+  doubleUpscayls: 0,
+  batchUpscayls: 0,
+  imageUpscayls: 0,
+  averageUpscaylTime: 0,
+  lastUpscaylDuration: 0,
+  lastUsedAt: 0,
+});
