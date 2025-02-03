@@ -3,7 +3,7 @@
 Cubox：https://apps.apple.com/app/id1113361350
 
 [rewrite_local]
-^https?:\/\/cubox\.(cc|pro)\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Cubox.js
+^https?:\/\/cubox\.(cc|pro)\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Cubox.js
 
 [MITM]
 hostname = cubox.cc, cubox.pro

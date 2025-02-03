@@ -9,7 +9,7 @@
 *******************************
 [rewrite_local]
 # > 我的番茄解锁永久会员
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/\$RCAnonymousID%3A\w{32}|receipts)$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/FocusPomoForeverVipCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/\$RCAnonymousID%3A\w{32}|receipts)$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/FocusPomoForeverVipCrack.js
 [mitm] 
 hostname = api.revenuecat.com
 

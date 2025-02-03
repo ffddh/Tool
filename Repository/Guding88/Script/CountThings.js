@@ -3,7 +3,7 @@
 CountThings from Photos：https://apps.apple.com/app/id1196810823
 
 [rewrite_local]
-^https?:\/\/my\.countingthings\.com\/api\/v2.0\/users\/GetUserAndSubscription url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/CountThings.js
+^https?:\/\/my\.countingthings\.com\/api\/v2.0\/users\/GetUserAndSubscription url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/CountThings.js
 
 [MITM]
 hostname = my.countingthings.com

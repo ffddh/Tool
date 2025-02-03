@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Adblock4limbo——导航及各类功能函数合集.[github]
 // @namespace    https://limbopro.com/Adguard/Adblock4limbo.function.js
-// @version      0.2024.12.11
+// @version      0.2025.01.05
 // @license      CC BY-NC-SA 4.0
 // @description  实用网站导航 —— 免费在线影视/前端学习/开发者社区/新闻/建站/下载工具/格式转换工具/电子书/新闻/写作/免费漫画等；
 // @author       limbopro
@@ -1092,10 +1092,12 @@ function _blank() {
 
 var parentNodeX = [['Cloudflare', 'https://speed.cloudflare.com/', '_blank', '0', 'better'],
 ['SpeedTest', 'https://www.speedtest.net/', '_blank', '0', 'common'],
+['FANZA|R18成人站', 'https://www.dmm.co.jp/', '_blank', 'porn', 'better'],
 ['溜池ゴロー', 'https://tameikegoro.jp/', '_blank', 'porn', 'better'],
 ['s1s1s1 S1/エスワンー', 'https://s1s1s1.com/', '_blank', 'porn', 'better'],
 ['VENUSーＳ級熟女メーカ|Ｓ級熟女メーカー', 'https://venus-av.com/', '_blank', 'porn', 'special'],
 ['Glory Questー「禁断介護」や逆ショタ元祖', 'https://www.gloryquest.tv/', '_blank', 'porn', 'special'],
+['ながえSTYLE(NTR)', 'https://www.nagae-style.com/', '_blank', 'porn', 'common'],
 ['Madonna（マドンナ）', 'https://www.madonna-av.com/top/', '_blank', 'porn', 'common'],
 ['SOD（ソフトオンデマンド）', 'https://www.sod.co.jp/', '_blank', 'poxrn', 'common'],
 ['ATTACKERS（アタッカーズ）', 'https://www.attackers.net/top/', '_blank', 'porn', 'common'],
@@ -1107,7 +1109,6 @@ var parentNodeX = [['Cloudflare', 'https://speed.cloudflare.com/', '_blank', '0'
 ['【kawaii*】公式サイト', 'https://www.kawaiikawaii.jp/top/', '_blank', 'porn', 'common'],
 ['肉感あふれる女優', 'https://www.fitch-av.com/top/', '_blank', 'porn', 'common'],
 ['タカラ映像 TAKARA', 'https://www.takara-tv.jp/', '_blank', 'porn', 'common'],
-['ながえSTYLE(NTR)', 'https://www.nagae-style.com/', '_blank', 'porn', 'common'],
 ['トップページ - AVメーカー【ダスッ！】公式サイト', 'https://www.dasdas.jp/top/', '_blank', 'porn', 'common'],
 ['レズ・素人ナンパを中心', 'https://deeps.net/', '_blank', 'porn', 'common'],
 ['変態紳士倶楽部】公式サイト', 'https://www.to-satsu.com/top/', '_blank', 'porn', 'common'],
@@ -1151,7 +1152,7 @@ var parentNodeX = [['Cloudflare', 'https://speed.cloudflare.com/', '_blank', '0'
 ['NameCheap', 'https://www.namecheap.com/', '_blank', 'domain-buy', 'common'],
 ['freenom', 'https://www.freenom.com/zh/freeandpaiddomains.html', '_blank', 'domain-buy', 'common'],
 ['Jable', 'https://jable.tv/', '_blank', 'xOnline', 'special'],
-['Missav', 'https://missav.com/cn/', '_blank', 'xOnline', 'special'],
+['Missav', 'https://missav.ws/cn/', '_blank', 'xOnline', 'special'],
 ['Supjav', 'https://supjav.com/zh/', '_blank', 'xOnline', 'special'],
 ['Javbus', 'https://www.javbus.com/', '_blank', 'xOnline', 'special'],
 ['Jav.land', 'https://jav.land/', '_blank', 'xOnline', 'special'],
@@ -1455,6 +1456,7 @@ function parentElement_add() {
                 parent_push('.echo', 'PornMaker', 4, '著名片商//', 'porn')
                 parent_push('.echo', 'comic18', 4, '漫画//', 'comic18')
                 parent_push('.echo', 'Tools', 4, "多宝盒//", "Tools")
+                parent_push('.echo', 'bookreadanddownload', '4', '电子书//', 'bookreadanddownload')
                 parent_push('.echo', 'dload', 4, '下载工具//', 'dload')
                 parent_push(".echo", 'Search', 4, '搜索引擎//', 'search')
                 parent_push('.echo', 'Social', 4, '社交媒体//', 'Social')
@@ -1464,7 +1466,6 @@ function parentElement_add() {
                 parent_push('.echo', 'news', '10', '时事新闻//', 'currentnews')
                 parent_push('.echo', 'technews', '10', '科技新闻//', 'technews')
                 parent_push('.echo', 'writer', '10', '广告与写作//', 'writer')
-                parent_push('.echo', 'bookreadanddownload', '4', '电子书//', 'bookreadanddownload')
                 parent_push('.echo', 'seoandmore', 4, "建站指北//", "seoandmore")
                 parent_push('.echo', 'front-build', 4, "建站工具//", "front-build")
                 parent_push('.echo', 'domain-buy', 4, "域名注册商//", "domain-buy")
@@ -1488,6 +1489,7 @@ function parentElement_add() {
                 parent_push('.echo', 'comic18', 4, '漫画//', 'comic18')
                 parent_push('.echo', 'Tools', 4, "多宝盒//", "Tools")
                 parent_push('.echo', 'dload', 4, '下载工具//', 'dload')
+                parent_push('.echo', 'bookreadanddownload', '4', '电子书//', 'bookreadanddownload')
                 parent_push(".echo", 'Search', 4, '搜索引擎//', 'search')
                 parent_push('.echo', 'Social', 4, '社交媒体//', 'Social')
                 parent_push('.echo', 'Media', 4, '流媒体//', 'Media')
@@ -1496,7 +1498,6 @@ function parentElement_add() {
                 parent_push('.echo', 'news', '10', '时事新闻//', 'currentnews')
                 parent_push('.echo', 'technews', '10', '科技新闻//', 'technews')
                 parent_push('.echo', 'writer', '10', '广告与写作//', 'writer')
-                parent_push('.echo', 'bookreadanddownload', '4', '电子书//', 'bookreadanddownload')
                 parent_push('.echo', 'seoandmore', 4, "建站指北//", "seoandmore")
                 parent_push('.echo', 'front-build', 4, "建站工具//", "front-build")
                 parent_push('.echo', 'domain-buy', 4, "域名注册商//", "domain-buy")
@@ -2369,7 +2370,7 @@ function tmd(parentsSelector, code, textContent) {
             p2.appendChild(lable)
         }
 
-        aAdd2Parent('MissAV[720P]', 'https://missav.com/search', '/' + code)
+        aAdd2Parent('MissAV[720P]', 'https://missav.ws/search', '/' + code)
         aAdd2Parent('Jable[HD]', 'https://jable.tv/search', '/' + code + '/')
         aAdd2Parent('Supjav[ultraHD]', 'https://supjav.com/?s=', code)
         aAdd2Parent('番号搜索[聚合]', 'https://limbopro.com/btsearch.html#gsc.tab=0&gsc.q=', code + "&gsc.sort=")

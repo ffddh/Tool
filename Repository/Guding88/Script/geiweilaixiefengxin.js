@@ -3,7 +3,7 @@
 给未来写封信：https://apps.apple.com/app/id1330852849
 
 [rewrite_local]
-^https?:\/\/api\.to-future\.net\/user\/get_user_info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/geiweilaixiefengxin.js
+^https?:\/\/api\.to-future\.net\/user\/get_user_info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/geiweilaixiefengxin.js
 
 [MITM]
 hostname = api.to-future.net

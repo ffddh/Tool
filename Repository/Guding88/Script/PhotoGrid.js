@@ -3,7 +3,7 @@
 PhotoGrid：https://apps.apple.com/app/id543577420
 
 [rewrite_local]
-^https?:\/\/pgapi\.ksmobile\.com\/v1\/ios\/auth url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/PhotoGrid.js
+^https?:\/\/pgapi\.ksmobile\.com\/v1\/ios\/auth url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/PhotoGrid.js
 
 [MITM]
 hostname = pgapi.ksmobile.com

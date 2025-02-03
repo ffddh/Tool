@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/yimuapp\.com:8082\/bookkeeping\/user\/getUserInfoById url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/yimujizhang.js
+^https?:\/\/yimuapp\.com:8082\/bookkeeping\/user\/getUserInfoById url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/yimujizhang.js
 
 [mitm]
 hostname = yimuapp.com

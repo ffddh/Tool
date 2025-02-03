@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.qonversion\.io\/v\d\/user\/(init|purchase) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/qonversion.js
+^https?:\/\/api\.qonversion\.io\/v\d\/user\/(init|purchase) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/qonversion.js
 
 [mitm]
 hostname = api.qonversion.io

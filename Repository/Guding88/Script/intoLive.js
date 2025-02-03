@@ -3,7 +3,7 @@
 ‎intoLive：https://apps.apple.com/app/id1061859052
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/‎intoLive.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/‎intoLive.js
 
 [MITM]
 hostname = buy.itunes.apple.com

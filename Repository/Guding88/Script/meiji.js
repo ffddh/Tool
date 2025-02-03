@@ -3,7 +3,7 @@
 每记：https://apps.apple.com/app/id1572586388
 
 [rewrite_local]
-^https?:\/\/api\.wemore\.com\/mylogs\/users url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/meiji.js
+^https?:\/\/api\.wemore\.com\/mylogs\/users url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/meiji.js
 
 [MITM]
 hostname = api.wemore.com

@@ -1,15 +1,13 @@
 # 规则名称: Emby
-# 规则统计: 166
+# 规则统计: 163
 
 no_resolve: true
 domain_set:
   - 195.201.86.86
-  - aca.misakaf.org
   - cc.coemn.com
   - cminf.sfcat.link
   - cuinf.sfcat.link
   - notnetflix.cos.cat
-  - oversea.alphatvapp.top
 domain_suffix_set:
   - 123456.al
   - 16bit.cfd
@@ -28,6 +26,8 @@ domain_suffix_set:
   - agan2.vip
   - agasg.odysseyplus.site
   - agon.cf
+  - alphatvapp.top
+  - as174.de
   - az-hk.embyclub.com
   - azsgp.embyclub.com
   - baisi.pro
@@ -52,7 +52,6 @@ domain_suffix_set:
   - emby-cf.plusmedia.site
   - emby-sg.plusmedia.site
   - emby.aiyowei.ml
-  - emby.as174.com
   - emby.bid
   - emby.cjpc.cc
   - emby.cl
@@ -102,7 +101,6 @@ domain_suffix_set:
   - gugumedia.link
   - happyav.eu.org
   - hovervan.org
-  - hxd.as174.com
   - i109.com
   - ii00.cc
   - imetyou.top
@@ -116,7 +114,6 @@ domain_suffix_set:
   - magpie.cyou
   - magpiecdn.tech
   - mcjoker.xyz
-  - misakaf.org
   - misty.ltd
   - mius.uk
   - mjjemby.org

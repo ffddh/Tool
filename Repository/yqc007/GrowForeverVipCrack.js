@@ -10,7 +10,7 @@
  ******************************************
 [rewrite_local]
 # > Grow Unlock Permanent VIP
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/GrowForeverVipCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/GrowForeverVipCrack.js
 [mitm] 
 hostname = api.revenuecat.com
 ******************************************/

@@ -10,7 +10,7 @@
 *******************************
 [rewrite_local]
 # > 起伏冥想解锁永久会员
-^https?:\/\/api\.risingfalling\.com\/api\/vip\/detail url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/RisingFallingVipCrack.js
+^https?:\/\/api\.risingfalling\.com\/api\/vip\/detail url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/RisingFallingVipCrack.js
 [mitm] 
 hostname = api.risingfalling.com
 

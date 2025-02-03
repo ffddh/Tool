@@ -39,9 +39,9 @@ const uBOL_preventRequestAnimationFrame = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["exoframe"],["style.opacity"]];
+const argsList = [["exoframe"],["style.opacity"],["/^/"]];
 
-const hostnamesMap = new Map([["pussyspace.com",0],["pussyspace.net",0],["dudestream.com",1]]);
+const hostnamesMap = new Map([["pussyspace.com",0],["pussyspace.net",0],["dudestream.com",1],["japscan.lol",2]]);
 
 const entitiesMap = new Map([]);
 
@@ -252,7 +252,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -330,7 +330,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

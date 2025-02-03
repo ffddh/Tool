@@ -3,7 +3,7 @@
 疯狂百科知识问答：https://apps.apple.com/app/id1225435117
 
 [rewrite_local]
-^https?:\/\/newos\.glassmarket\.cn\/index\.php url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/fengkuangbaikezhishiwenda.js
+^https?:\/\/newos\.glassmarket\.cn\/index\.php url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/fengkuangbaikezhishiwenda.js
 
 [MITM]
 hostname = newos.glassmarket.cn

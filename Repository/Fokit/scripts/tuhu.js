@@ -13,9 +13,9 @@
 hostname = api.tuhu.cn
 
 [Script]
-途虎养车# = type=http-request,pattern=https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js
+途虎养车# = type=http-request,pattern=https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js
 
-途虎养车 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js,script-update-interval=0
+途虎养车 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -23,9 +23,9 @@ hostname = api.tuhu.cn
 hostname = api.tuhu.cn
 
 [Script]
-http-request https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo tag=途虎养车#, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js,requires-body=0
+http-request https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo tag=途虎养车#, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js,requires-body=0
 
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js,tag = 途虎养车,enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js,tag = 途虎养车,enable=true
 
 -------------- Quantumult X 配置 --------------
 
@@ -33,10 +33,10 @@ cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = api.tuhu.cn
 
 [rewrite_local]
-https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js
+https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js
 
 [task_local]
-17 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js, tag=途虎养车, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png, enabled=true
+17 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js, tag=途虎养车, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -57,7 +57,7 @@ http:
 
 script-providers:
   途虎养车:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tuhu.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tuhu.js
     interval: 86400
 
  */

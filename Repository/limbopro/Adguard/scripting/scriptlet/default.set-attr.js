@@ -39,9 +39,9 @@ const uBOL_setAttr = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["iframe[data-src-cmplz][src=\"about:blank\"]","src","[data-src-cmplz]"],[".video-skip[data-time]","data-time","0"],[".lazy","src","[data-sco-src]"],["c-wiz[data-p] [data-query] a[target=\"_blank\"][role=\"link\"]","rlhc","1"],[":is(.watch-on-link-logo, li.post) img.ezlazyload[src^=\"data:image\"][data-ezsrc]","src","[data-ezsrc]"],["span[class] img.lazyload[width]","src","[data-src]"]];
+const argsList = [[".lazy","src","[data-sco-src]"],["iframe[data-src-cmplz][src=\"about:blank\"]","src","[data-src-cmplz]"],[".video-skip[data-time]","data-time","0"],["c-wiz[data-p] [data-query] a[target=\"_blank\"][role=\"link\"]","rlhc","1"],[":is(.watch-on-link-logo, li.post) img.ezlazyload[src^=\"data:image\"][data-ezsrc]","src","[data-ezsrc]"],["span[class] img.lazyload[width]","src","[data-src]"]];
 
-const hostnamesMap = new Map([["statisticsanddata.org",0],["18kalebettv.xyz",1],["19kalebettv.xyz",1],["rocketnews24.com",2],["soranews24.com",2],["youpouch.com",2],["wnynewsnow.com",4],["phileweb.com",5]]);
+const hostnamesMap = new Map([["rocketnews24.com",0],["soranews24.com",0],["youpouch.com",0],["statisticsanddata.org",1],["18kalebettv.xyz",2],["19kalebettv.xyz",2],["wnynewsnow.com",4],["phileweb.com",5]]);
 
 const entitiesMap = new Map([["www.google",3]]);
 
@@ -171,7 +171,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -249,7 +249,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }
@@ -282,7 +282,7 @@ function setAttrFn(
         let elems;
         try {
             elems = document.querySelectorAll(selector);
-        } catch(_) {
+        } catch {
             return false;
         }
         for ( const elem of elems ) {

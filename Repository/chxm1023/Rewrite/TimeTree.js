@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.timetreeapp\.com\/.+\/user\/.+ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/TimeTree.js
+^https?:\/\/api\.timetreeapp\.com\/.+\/user\/.+ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/TimeTree.js
 
 [mitm]
 hostname = api.timetreeapp.com

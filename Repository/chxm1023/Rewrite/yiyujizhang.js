@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/www\.yiyujizhang\.cn\/yiyujizhang\/vip\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/yiyujizhang.js
+^https?:\/\/www\.yiyujizhang\.cn\/yiyujizhang\/vip\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/yiyujizhang.js
 
 [mitm]
 hostname = www.yiyujizhang.cn

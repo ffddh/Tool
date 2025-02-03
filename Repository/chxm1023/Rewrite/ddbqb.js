@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/www\.dbbqb\.com\/api\/(refresh\/token|login|sms\/register|user\/expire|orderForm) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/ddbqb.js
+^https?:\/\/www\.dbbqb\.com\/api\/(refresh\/token|login|sms\/register|user\/expire|orderForm) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/ddbqb.js
 
 [mitm]
 hostname = www.dbbqb.com

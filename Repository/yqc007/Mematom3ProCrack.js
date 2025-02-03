@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > 年轮3解锁永久订阅
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/Mematom3ProCrack.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/Mematom3ProCrack.js
 
 [mitm] 
 hostname = buy.itunes.apple.com

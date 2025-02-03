@@ -3,7 +3,7 @@
 简讯 - 短阅读秒懂：https://apps.apple.com/app/id1160249028
 
 [rewrite_local]
-^https?:\/\/api\.tipsoon\.com/api\/v1\/(user\/info|login\/account) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/jianxun.js
+^https?:\/\/api\.tipsoon\.com/api\/v1\/(user\/info|login\/account) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/jianxun.js
 
 [MITM]
 hostname = api.tipsoon.com

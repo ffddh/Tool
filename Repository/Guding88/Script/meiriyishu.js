@@ -3,7 +3,7 @@
 每日艺术：https://apps.apple.com/app/id547982045
 
 [rewrite_local]
-^https?:\/\/api\.getdailyart\.com\/api\/check-logged url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/meiriyishu.js
+^https?:\/\/api\.getdailyart\.com\/api\/check-logged url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/meiriyishu.js
 
 [MITM]
 hostname = api.getdailyart.com

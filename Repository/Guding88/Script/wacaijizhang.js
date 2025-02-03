@@ -3,7 +3,7 @@
 挖财记账：https://apps.apple.com/app/id1544045905
 
 [rewrite_local]
-^https?:\/\/jz\.wacai\.com\/api\/vipmember\/v3\/index url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/wacaijizhang.js
+^https?:\/\/jz\.wacai\.com\/api\/vipmember\/v3\/index url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/wacaijizhang.js
 
 [MITM]
 hostname = jz.wacai.com

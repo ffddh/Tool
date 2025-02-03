@@ -3,7 +3,7 @@
 西窗烛：https://apps.apple.com/app/id912139104
 
 [rewrite_local]
-^https?:\/\/lchttpapi\.xczim\.com\/1.1\/users url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/xichuangzhu.js
+^https?:\/\/lchttpapi\.xczim\.com\/1.1\/users url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/xichuangzhu.js
 
 [MITM]
 hostname = lchttpapi.xczim.com

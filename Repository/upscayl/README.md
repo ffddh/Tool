@@ -1,6 +1,6 @@
 <div align="center">
 
-  # v2.11 is out! 🥳 [Download v2.11! ⬇️](https://github.com/upscayl/upscayl/releases/latest)
+  # v2.15 is out! 🥳 [Download Now ⬇️](https://github.com/upscayl/upscayl/releases/latest)
 
 <a href="https://github.com/upscayl/upscayl/releases/latest">
   
@@ -204,8 +204,9 @@ npm run publish-app
 [Real-ESRGAN: Copyright (c) 2021, Xintao Wang](https://github.com/xinntao/Real-ESRGAN/)
 - @JanDeDinoMan, @xanderfrangos, @Fdawgs, @keturn for their code contributions
 - @aaronliu0130 for providing community support :)
-- Foolhardy for their [Remacri model](https://upscale.wiki/wiki/Model_Database).
-- [Kim2091](https://upscale.wiki/wiki/User:Kim2091)	for their [Ultrasharp and Ultramix Balanced model](https://upscale.wiki/wiki/Model_Database).
+- Helaman for their [HFA2k model](https://openmodeldb.info/models/4x-HFA2k) (included as "High Fidelity")
+- Foolhardy for their [Remacri model](https://openmodeldb.info/models/4x-Remacri).
+- [Kim2091](https://upscale.wiki/wiki/User:Kim2091)	for their [Ultrasharp and Ultramix Balanced model](https://openmodeldb.info/models/4x-UltraSharp).
 - @NicKoehler for their amazing logo :)
 #
 

@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/.*\.guwendao\.net\/(api\/user\/getVip|router\/user\/getUserInfo) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/guwendao.js
+^https?:\/\/.*\.guwendao\.net\/(api\/user\/getVip|router\/user\/getUserInfo) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/guwendao.js
 
 [mitm]
 hostname = *.guwendao.net

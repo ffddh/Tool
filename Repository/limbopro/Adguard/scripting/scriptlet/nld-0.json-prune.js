@@ -39,9 +39,9 @@ const uBOL_jsonPrune = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["assets.preroll"]];
+const argsList = [["assets.preroll"],["adUrl"]];
 
-const hostnamesMap = new Map([["npo.nl",0]]);
+const hostnamesMap = new Map([["npo.nl",0],["nos.nl",1]]);
 
 const entitiesMap = new Map([]);
 
@@ -223,7 +223,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -301,7 +301,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

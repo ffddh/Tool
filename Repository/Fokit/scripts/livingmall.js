@@ -13,9 +13,9 @@
 hostname = rest.zhimatech.com
 
 [Script]
-丽影云街# = type=http-request,pattern=https:\/\/rest\.zhimatech\.com\/v3\/api,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js
+丽影云街# = type=http-request,pattern=https:\/\/rest\.zhimatech\.com\/v3\/api,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js
 
-丽影云街 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js,script-update-interval=0
+丽影云街 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -23,9 +23,9 @@ hostname = rest.zhimatech.com
 hostname = rest.zhimatech.com
 
 [Script]
-http-request https:\/\/rest\.zhimatech\.com\/v3\/api tag=丽影云街#, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js,requires-body=1
+http-request https:\/\/rest\.zhimatech\.com\/v3\/api tag=丽影云街#, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js,requires-body=1
 
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js,tag = 丽影云街,enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js,tag = 丽影云街,enable=true
 
 -------------- Quantumult X 配置 --------------
 
@@ -33,10 +33,10 @@ cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = rest.zhimatech.com
 
 [rewrite_local]
-https:\/\/rest\.zhimatech\.com\/v3\/api url script-request-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js
+https:\/\/rest\.zhimatech\.com\/v3\/api url script-request-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js
 
 [task_local]
-17 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js, tag=丽影云街, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png, enabled=true
+17 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js, tag=丽影云街, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -57,7 +57,7 @@ http:
 
 script-providers:
   丽影云街:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/livingmall.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/livingmall.js
     interval: 86400
 
  */

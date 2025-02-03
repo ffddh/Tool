@@ -39,11 +39,11 @@ const uBOL_abortOnStackTrace = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["document.open","eval"],["alert","eval"],["history.go","eval"],["JSON.parse","showPopup"]];
+const argsList = [["alert","eval"],["history.go","eval"],["JSON.parse","showPopup"]];
 
-const hostnamesMap = new Map([["cursomecanet.com",0],["netcine3.la",[1,2]],["toonscrab.com",3]]);
+const hostnamesMap = new Map([["netcine3.la",[0,1]],["toonscrab.com",2]]);
 
-const entitiesMap = new Map([["netcine",[1,2]]]);
+const entitiesMap = new Map([["netcine",[0,1]]]);
 
 const exceptionsMap = new Map([]);
 
@@ -64,13 +64,15 @@ function abortOnStackTrace(
             let v = owner[chain];
             Object.defineProperty(owner, chain, {
                 get: function() {
-                    if ( matchesStackTraceFn(needleDetails, extraArgs.log) ) {
+                    const log = safe.logLevel > 1 ? 'all' : 'match';
+                    if ( matchesStackTraceFn(needleDetails, log) ) {
                         throw new ReferenceError(getExceptionToken());
                     }
                     return v;
                 },
                 set: function(a) {
-                    if ( matchesStackTraceFn(needleDetails, extraArgs.log) ) {
+                    const log = safe.logLevel > 1 ? 'all' : 'match';
+                    if ( matchesStackTraceFn(needleDetails, log) ) {
                         throw new ReferenceError(getExceptionToken());
                     }
                     v = a;
@@ -258,7 +260,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -336,7 +338,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

@@ -5,7 +5,7 @@ Authenticator：https://apps.apple.com/app/id1538761576
 Photo Vault：https://apps.apple.com/app/id1562839653
 
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/2Stable.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/2Stable.js
 
 [MITM]
 hostname = api.revenuecat.com

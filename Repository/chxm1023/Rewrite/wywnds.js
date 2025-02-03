@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/wywnds.js
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/wywnds.js
 
 [mitm]
 hostname = p.du.163.com

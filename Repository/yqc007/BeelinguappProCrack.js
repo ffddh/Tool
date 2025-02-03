@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > Beelinguapp解锁永久高级版
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/BeelinguappProCrack.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/BeelinguappProCrack.js
 
 [mitm] 
 hostname = buy.itunes.apple.com

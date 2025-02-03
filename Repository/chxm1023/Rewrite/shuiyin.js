@@ -13,7 +13,7 @@
 **************************************
 
 [rewrite_local]
-https?:\/\/water.*\.yunxiaoguo\.cn\/user\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/shuiyin.js
+https?:\/\/water.*\.yunxiaoguo\.cn\/user\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/shuiyin.js
 
 [mitm]
 hostname = water*.yunxiaoguo.cn

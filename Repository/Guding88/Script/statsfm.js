@@ -3,7 +3,7 @@
 stats.fm：https://apps.apple.com/app/id1526912392
 
 [rewrite_local]
-^https?:\/\/api\.stats\.fm\/api\/v1\/me$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/statsfm.js
+^https?:\/\/api\.stats\.fm\/api\/v1\/me$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/statsfm.js
 
 [MITM]
 hostname = api.stats.fm

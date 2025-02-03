@@ -3,7 +3,7 @@
 飞鱼计划：https://apps.apple.com/app/id1571229028
 
 [rewrite_local]
-^https?:\/\/getway-plan\.bjsybw\.cn\/api\/sync\/putNeedUpdateData url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/feiyujihua.js
+^https?:\/\/getway-plan\.bjsybw\.cn\/api\/sync\/putNeedUpdateData url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/feiyujihua.js
 
 [MITM]
 hostname = getway-plan.bjsybw.cn

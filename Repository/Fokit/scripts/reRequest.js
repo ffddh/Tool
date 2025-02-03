@@ -10,10 +10,10 @@
 hostname = m.360.cn
 
 [rewrite_local]
-^https:\/\/m\.360\.cn url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/reRequest.js
+^https:\/\/m\.360\.cn url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/reRequest.js
 
 [task_local]
-7 7 7 7 7 https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/reRequest.js, tag=请求重放, img-url=https://github.com/FoKit/Scripts/blob/main/images/debug.png?raw=true, enabled=true
+7 7 7 7 7 https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/reRequest.js, tag=请求重放, img-url=https://github.com/FoKit/Scripts/blob/main/images/debug.png?raw=true, enabled=true
 
  */
 

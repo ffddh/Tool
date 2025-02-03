@@ -13,7 +13,7 @@
 [rewrite_local]
 
 # ～ 傲软抠图解锁会员权限（2023-11-30）@ddgksf2013
-^https?:\/\/.*aoscdn\.com\/base\/vip\/v\d\/vips url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/ApowersoftProCrack.js
+^https?:\/\/.*aoscdn\.com\/base\/vip\/v\d\/vips url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/ApowersoftProCrack.js
 
 [mitm] 
 

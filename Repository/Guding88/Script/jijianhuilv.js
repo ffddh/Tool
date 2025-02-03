@@ -3,7 +3,7 @@
 极简汇率：https://apps.apple.com/app/id851033695
 
 [rewrite_local]
-^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/jijianhuilv.js
+^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/jijianhuilv.js
 
 [MITM]
 hostname = explorer.tratao.com

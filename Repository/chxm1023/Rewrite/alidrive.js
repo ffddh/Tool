@@ -2,14 +2,15 @@
 
 项目名称：阿里云盘 净化/解锁SVIP
 下载地址：https://t.cn/A6GqTACm
-脚本作者：chxm1023
+更新日期：2025-01-08
+脚本作者：@ddm1023
+电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
-使用说明：非一次性解锁，每次解锁需打开脚本
 
 **************************************
 
 [rewrite_local]
-^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/alidrive.js
+^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/alidrive.js
 
 [mitm]
 hostname = *.aliyundrive.com, *.alipan.com

@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > 尽简衣橱解锁永久会员
-^https?:\/\/closet\.jinjian\.tech\/api\/v3\/apple_app_store\/resolve_receipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/WardrobeVipCrack.js
+^https?:\/\/closet\.jinjian\.tech\/api\/v3\/apple_app_store\/resolve_receipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/WardrobeVipCrack.js
 
 [mitm] 
 hostname = closet.jinjian.tech

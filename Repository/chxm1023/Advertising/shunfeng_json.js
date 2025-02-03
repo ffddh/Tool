@@ -7,7 +7,7 @@
 
 [rewrite_local]
 
-https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Advertising/shunfeng_json.js
+https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Advertising/shunfeng_json.js
 
 [mitm]
 

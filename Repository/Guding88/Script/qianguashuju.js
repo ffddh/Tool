@@ -4,7 +4,7 @@
 跳过手机号绑定，跳过用户信息认证
 
 [rewrite_local]
-^https?:\/\/openapi.qian-gua.com\/v2\/(Login\/LoginByWechat|User\/GetUserInfo) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/qianguashuju.js
+^https?:\/\/openapi.qian-gua.com\/v2\/(Login\/LoginByWechat|User\/GetUserInfo) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/qianguashuju.js
 
 [MITM]
 hostname = openapi.qian-gua.com

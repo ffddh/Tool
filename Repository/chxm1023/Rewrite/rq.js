@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/www\.freshhome\.top url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/rq.js
+^https:\/\/www\.freshhome\.top url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/rq.js
 
 [mitm]
 hostname = www.freshhome.top

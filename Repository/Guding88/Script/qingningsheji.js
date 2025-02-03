@@ -3,7 +3,7 @@
 青柠设计：https://apps.apple.com/app/id1584730935
 
 [rewrite_local]
-^https?:\/\/api\.qingning6\.com\/api\/user\/getUserInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/qingningsheji.js
+^https?:\/\/api\.qingning6\.com\/api\/user\/getUserInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/qingningsheji.js
 
 [MITM]
 hostname = api.qingning6.com

@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/.*\.imendon\.com\/v2\/purchase\/vip\/verification url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/lgxj.js
+^https:\/\/.*\.imendon\.com\/v2\/purchase\/vip\/verification url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/lgxj.js
 
 [mitm]
 hostname = *.imendon.com

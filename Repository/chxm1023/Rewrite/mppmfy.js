@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/youxifanyizhushou\.com\/ios\/api\/product\/user\/remain\/ios url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/mppmfy.js
+^https?:\/\/youxifanyizhushou\.com\/ios\/api\/product\/user\/remain\/ios url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/mppmfy.js
 
 [mitm]
 hostname = youxifanyizhushou.com

@@ -16,7 +16,7 @@
 [rewrite_local]
 
 # > AudioMack解锁永久订阅
-^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(identify|\d+)$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/AudioMackFProCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(identify|\d+)$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/AudioMackFProCrack.js
 
 [mitm] 
 

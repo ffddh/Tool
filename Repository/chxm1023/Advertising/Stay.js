@@ -5,7 +5,7 @@
             
 [rewrite_local]
 
-^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Advertising/Stay.js
+^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Advertising/Stay.js
 
 [mitm]
 

@@ -3,7 +3,7 @@
 [rewrite_local]
 
 # 阿里云盘-优化首页display
-^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/apps\/widgets$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Advertising/alidrive.js
+^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/apps\/widgets$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Advertising/alidrive.js
 
 [mitm]
 

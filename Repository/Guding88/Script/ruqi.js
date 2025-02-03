@@ -3,7 +3,7 @@
 如期：https://apps.apple.com/app/id1579532060
 
 [rewrite_local]
-^https?:\/\/www\.freshhome\.top\/mngruqi\/api\/reg\/push url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/ruqi.js
+^https?:\/\/www\.freshhome\.top\/mngruqi\/api\/reg\/push url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/ruqi.js
 
 [MITM]
 hostname = www.freshhome.top

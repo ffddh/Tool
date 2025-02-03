@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/calendars.js
+^https:\/\/license\.pdfexpert\.com\/api\/.+\/calendarslite\/subscription\/refresh url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/calendars.js
 
 [mitm]
 hostname = license.pdfexpert.com

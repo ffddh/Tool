@@ -14,27 +14,27 @@
 【QuantumultX】 :
 *************************
 [rewrite_local]
-http://wap.js.10086.cn/nact/action.do url script-request-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js
+http://wap.js.10086.cn/nact/action.do url script-request-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js
 [task_local]
-15 7,15 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js, tag=江苏移动, img-url=https://github.com/ddgksf2013/Icon/raw/master/cmcc.png
+15 7,15 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js, tag=江苏移动, img-url=https://github.com/ddgksf2013/Icon/raw/master/cmcc.png
 *************************
 【Loon】 :
 *************************
 [Script]
-http-request http://wap.js.10086.cn/nact/action.do tag=江苏移动Cookie, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js
-cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js,tag=江苏移动
+http-request http://wap.js.10086.cn/nact/action.do tag=江苏移动Cookie, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js
+cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js,tag=江苏移动
 *************************
 【Surge】 :
 *************************
 [Script]
-江苏移动 = type=cron,cronexp="15 7,15 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js
-江苏移动Cookie = type=http-request,pattern=http://wap.js.10086.cn/nact/action.do,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js
+江苏移动 = type=cron,cronexp="15 7,15 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js
+江苏移动Cookie = type=http-request,pattern=http://wap.js.10086.cn/nact/action.do,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js
 *************************
 【小火箭】 :
 *************************
 [Script]
-江苏移动 = type=cron,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js, cronexpr="15 7,15 * * *", timeout=500, enable=true
-江苏移动Cookie = type=http-request,pattern=http://wap.js.10086.cn/nact/action.do,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/cmccjs.js
+江苏移动 = type=cron,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js, cronexpr="15 7,15 * * *", timeout=500, enable=true
+江苏移动Cookie = type=http-request,pattern=http://wap.js.10086.cn/nact/action.do,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/cmccjs.js
 *************************
 [mitm]
 hostname = wap.js.10086.cn

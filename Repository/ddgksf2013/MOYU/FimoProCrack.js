@@ -7,11 +7,11 @@
 > Contribute        https://t.me/ddgksf2013_bot
 > Feedback          📮 ddgksf2013@163.com 📮
 > UpdateTime        2023-04-13
-> ScriptURL         https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/FimoProCrack.js
+> ScriptURL         https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/FimoProCrack.js
 
 [rewrite_local]
 
-^https?:\/\/server\.zbisq\.com\/fimo-user url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/FimoProCrack.js
+^https?:\/\/server\.zbisq\.com\/fimo-user url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/FimoProCrack.js
 
 [mitm] 
 

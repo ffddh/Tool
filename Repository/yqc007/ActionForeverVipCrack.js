@@ -9,7 +9,7 @@
 *******************************
 [rewrite_local]
 # > 开拍解锁永久会员
-^https?:\/\/api-sub\.meitu\.com\/v2\/user\/(login_vip_check|vip_info|info_by_entrance).*json url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/ActionForeverVipCrack.js
+^https?:\/\/api-sub\.meitu\.com\/v2\/user\/(login_vip_check|vip_info|info_by_entrance).*json url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/ActionForeverVipCrack.js
 [mitm] 
 hostname = api-sub.meitu.com
 

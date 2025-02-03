@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > 幻休解锁永久会员
-^https?:\/\/api\.shaolinzen\.com\/user\/v1\/info$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/HuanXiuVipCrack.js
+^https?:\/\/api\.shaolinzen\.com\/user\/v1\/info$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/HuanXiuVipCrack.js
 
 [mitm] 
 hostname = api.shaolinzen.com

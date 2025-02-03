@@ -41,7 +41,7 @@ const scriptletGlobals = {}; // eslint-disable-line
 
 const argsList = [["enabled","testhide"]];
 
-const hostnamesMap = new Map([["tv2.no",0],["vgtv.no",0]]);
+const hostnamesMap = new Map([["tv2.no",0],["www-tv2-no.translate.goog",0],["vgtv.no",0]]);
 
 const entitiesMap = new Map([]);
 
@@ -223,7 +223,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -301,7 +301,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

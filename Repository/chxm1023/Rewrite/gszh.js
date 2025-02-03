@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-http:\/\/format-api\.netpock\.com\/api\/user_info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/gszh.js
+http:\/\/format-api\.netpock\.com\/api\/user_info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/gszh.js
 
 [mitm]
 hostname = format-api.netpock.com

@@ -3,7 +3,7 @@
 PocketLists：https://apps.apple.com/app/id1272049520
 
 [rewrite_local]
-^https?:\/\/pocketlists\.com\/api\/v1\/pocketlists.me.get url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/PocketLists.js
+^https?:\/\/pocketlists\.com\/api\/v1\/pocketlists.me.get url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/PocketLists.js
 
 [MITM]
 hostname = pocketlists.com

@@ -41,7 +41,7 @@ const scriptletGlobals = {}; // eslint-disable-line
 
 const argsList = [["adsbygoogle"]];
 
-const hostnamesMap = new Map([["kritiker.se",0],["bio-link.se",0],["web-tools.se",0]]);
+const hostnamesMap = new Map([["kritiker.se",0],["bio-link.se",0],["web-tools.se",0],["medibok.se",0]]);
 
 const entitiesMap = new Map([]);
 
@@ -68,7 +68,7 @@ function preventXhrFn(
     const safeDispatchEvent = (xhr, type) => {
         try {
             xhr.dispatchEvent(new Event(type));
-        } catch(_) {
+        } catch {
         }
     };
     const XHRBefore = XMLHttpRequest.prototype;
@@ -310,7 +310,7 @@ function matchObjectProperties(propNeedles, ...objs) {
         if ( value === undefined ) { continue; }
         if ( typeof value !== 'string' ) {
             try { value = safe.JSON_stringify(value); }
-            catch(ex) { }
+            catch { }
             if ( typeof value !== 'string' ) { continue; }
         }
         if ( safe.testPattern(details, value) ) { continue; }
@@ -325,8 +325,12 @@ function parsePropertiesToMatch(propsToMatch, implicit = '') {
     if ( propsToMatch === undefined || propsToMatch === '' ) { return needles; }
     const options = { canNegate: true };
     for ( const needle of safe.String_split.call(propsToMatch, /\s+/) ) {
-        const [ prop, pattern ] = safe.String_split.call(needle, ':');
+        let [ prop, pattern ] = safe.String_split.call(needle, ':');
         if ( prop === '' ) { continue; }
+        if ( pattern !== undefined && /[^$\w -]/.test(prop) ) {
+            prop = `${prop}:${pattern}`;
+            pattern = undefined;
+        }
         if ( pattern !== undefined ) {
             needles.set(prop, safe.initPattern(pattern, options));
         } else if ( implicit !== '' ) {
@@ -436,7 +440,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -514,7 +518,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

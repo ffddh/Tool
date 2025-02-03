@@ -22,10 +22,10 @@ https://raw.githubusercontent.com/FoKit/Scripts/main/rewrite/geocaching_helper.s
 hostname = api.groundspeak.com
 
 [Script]
-Geocaching logs = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}\/geocachelogs\?onlyFriendLogs=\w+&skip=\d+&take=20,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
-Geocaching cache = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
-Geocaching gps = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/map\/search\?adventuresTake,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
-Geocaching unlock = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
+Geocaching logs = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}\/geocachelogs\?onlyFriendLogs=\w+&skip=\d+&take=20,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
+Geocaching cache = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
+Geocaching gps = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/map\/search\?adventuresTake,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
+Geocaching unlock = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
 
 ------------------ Loon 配置 ------------------
 
@@ -33,10 +33,10 @@ Geocaching unlock = type=http-response,pattern=^https:\/\/api\.groundspeak\.com\
 hostname = api.groundspeak.com
 
 [Script]
-http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}\/geocachelogs\?onlyFriendLogs=\w+&skip=\d+&take=20 tag=Geocaching logs, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js,requires-body=1
-http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}$ tag=Geocaching logs, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js,requires-body=1
-http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/map\/search\?adventuresTake tag=Geocaching cache, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js,requires-body=1
-http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview tag=Geocaching unlock, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js,requires-body=1
+http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}\/geocachelogs\?onlyFriendLogs=\w+&skip=\d+&take=20 tag=Geocaching logs, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js,requires-body=1
+http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}$ tag=Geocaching logs, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js,requires-body=1
+http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/map\/search\?adventuresTake tag=Geocaching cache, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js,requires-body=1
+http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview tag=Geocaching unlock, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js,requires-body=1
 
 -------------- Quantumult X 配置 --------------
 
@@ -44,10 +44,10 @@ http-response ^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview tag=Geoc
 hostname = api.groundspeak.com
 
 [rewrite_local]
-^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}\/geocachelogs\?onlyFriendLogs=\w+&skip=\d+&take=20 url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
-^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
-^https:\/\/api\.groundspeak\.com\/mobile\/v1\/map\/search\?adventuresTake url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
-^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
+^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}\/geocachelogs\?onlyFriendLogs=\w+&skip=\d+&take=20 url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
+^https:\/\/api\.groundspeak\.com\/mobile\/v1\/geocaches\/[A-Z0-9]{7}$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
+^https:\/\/api\.groundspeak\.com\/mobile\/v1\/map\/search\?adventuresTake url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
+^https:\/\/api\.groundspeak\.com\/mobile\/v1\/profileview url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
 
 ------------------ Stash 配置 -----------------
 
@@ -74,7 +74,7 @@ http:
 
 script-providers:
   Geocaching helper:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/geocaching_helper.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/geocaching_helper.js
     interval: 86400
 
 */

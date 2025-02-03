@@ -18,7 +18,7 @@
 [rewrite_local]
   
 # > 财新周刊☆解锁阅读权限（2024-08-07）@ddgksf2013
-^https?:\/\/ipadcms\.caixin\.com\/(api\/article\/getMagazineArticleList|tmp\/articles) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/CaiXinZhouKanProCrack.js
+^https?:\/\/ipadcms\.caixin\.com\/(api\/article\/getMagazineArticleList|tmp\/articles) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/CaiXinZhouKanProCrack.js
 
 
 [mitm] 

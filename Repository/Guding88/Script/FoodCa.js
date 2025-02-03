@@ -3,7 +3,7 @@
 FoodCa：https://apps.apple.com/app/id6451112435
 
 [rewrite_local]
-^https?:\/\/service-ei2k47mp-1251731618\.bj\.apigw\.tencentcs\.com/release\/aifood_order url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/FoodCa.js
+^https?:\/\/service-ei2k47mp-1251731618\.bj\.apigw\.tencentcs\.com/release\/aifood_order url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/FoodCa.js
 
 [MITM]
 hostname = service-ei2k47mp-1251731618.bj.apigw.tencentcs.com

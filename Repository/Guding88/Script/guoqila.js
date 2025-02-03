@@ -3,7 +3,7 @@
 过期啦：https://apps.apple.com/app/id1470339754
 
 [rewrite_local]
-^https:\/\/api\.guoqi365\.com\/1\.1\/functions\/getUserInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/guoqila.js
+^https:\/\/api\.guoqi365\.com\/1\.1\/functions\/getUserInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/guoqila.js
 
 [MITM]
 hostname = http://api.guoqi365.com

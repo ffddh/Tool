@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/(api|m)\.uaa.*\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/uua.js
+^https?:\/\/(api|m)\.uaa.*\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/uua.js
 
 [mitm]
 hostname = *.uaa*.com

@@ -19,7 +19,7 @@
 [rewrite_local]
 
 # ～ Pixiv去除广告（2022-12-03）@ddgksf2013
-^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/pixivAds.js
+^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/pixivAds.js
 
 [mitm] 
 

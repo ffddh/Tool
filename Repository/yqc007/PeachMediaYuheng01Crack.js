@@ -15,7 +15,7 @@ hostname = *m6aw*, *3ju7q*, *gar48*, *68bhf*, *z0pf9*, *cloudfront*, plkxo.vg4b3
 
 [rewrite_local]
 # > 蜜桃传媒破解全部视频
-^http[s]?:\/\/.*(m6aw0|3ju7q|gar48|68bhf|z0pf9|cloudfront|vg4b3|ie3x0|b1tp).+\/api\/app\/(recommend\/vid\/(list|ad)|mine\/info|ping\/domain\/h5|vid\/(section|info|list|user\/count)|recreation\/list) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/PeachMediaYuheng01Crack.js
+^http[s]?:\/\/.*(m6aw0|3ju7q|gar48|68bhf|z0pf9|cloudfront|vg4b3|ie3x0|b1tp).+\/api\/app\/(recommend\/vid\/(list|ad)|mine\/info|ping\/domain\/h5|vid\/(section|info|list|user\/count)|recreation\/list) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/PeachMediaYuheng01Crack.js
 
 *******************************/
 

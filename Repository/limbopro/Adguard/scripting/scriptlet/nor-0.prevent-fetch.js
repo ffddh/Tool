@@ -41,7 +41,7 @@ const scriptletGlobals = {}; // eslint-disable-line
 
 const argsList = [["damoh"]];
 
-const hostnamesMap = new Map([["vg.no",0]]);
+const hostnamesMap = new Map([["vg.no",0],["www-vg-no.translate.goog",0]]);
 
 const entitiesMap = new Map([]);
 
@@ -86,7 +86,7 @@ function noFetchIf(
                 responseProps[p] = { value: v };
             });
         }
-        catch(ex) {}
+        catch { }
     } else if ( responseType !== '' ) {
         if ( validResponseProps.type.includes(responseType) ) {
             responseProps.type = { value: responseType };
@@ -104,7 +104,7 @@ function noFetchIf(
                 let v = details[prop];
                 if ( typeof v !== 'string' ) {
                     try { v = safe.JSON_stringify(v); }
-                    catch(ex) { }
+                    catch { }
                 }
                 if ( typeof v !== 'string' ) { continue; }
                 props.set(prop, v);
@@ -126,7 +126,7 @@ function noFetchIf(
                     break;
                 }
             }
-        } catch(ex) {
+        } catch {
         }
         if ( proceed ) {
             return context.reflect();
@@ -387,7 +387,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -465,7 +465,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

@@ -3,7 +3,7 @@
 ‎Focos：https://apps.apple.com/app/id1274938524
 
 [rewrite_local]
-^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v2\/users\/setup url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Focos.js
+^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v2\/users\/setup url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Focos.js
 
 [MITM]
 hostname = focos.oracle.bendingspoonsapps.com

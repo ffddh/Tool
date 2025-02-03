@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/.*\.kuaidi100\.com\/(mkt\/courier\/open|open\/test|advertisement) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/kuaidi100.js
+^https?:\/\/.*\.kuaidi100\.com\/(mkt\/courier\/open|open\/test|advertisement) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/kuaidi100.js
 
 [mitm]
 hostname = *.kuaidi100.com

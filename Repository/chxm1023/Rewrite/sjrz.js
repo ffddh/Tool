@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^http:\/\/liujia95\.xyz\/v\d\/user\/(get_user|register) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/sjrz.js
+^http:\/\/liujia95\.xyz\/v\d\/user\/(get_user|register) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/sjrz.js
 
 [mitm]
 hostname = liujia95.xyz

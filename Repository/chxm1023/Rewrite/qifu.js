@@ -8,7 +8,7 @@
 **************************************
 
 [rewrite_local]
-https?:\/\/api\.risingfalling\.com\/api\/vip\/detail url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/qifu.js
+https?:\/\/api\.risingfalling\.com\/api\/vip\/detail url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/qifu.js
 
 [mitm] 
 hostname = api.risingfalling.com

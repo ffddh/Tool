@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/dashen.*\.shuiyinyu\.com\/m\/user\/get_user_info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/dssy.js
+^https:\/\/dashen.*\.shuiyinyu\.com\/m\/user\/get_user_info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/dssy.js
 
 [mitm]
 hostname = dashen*.shuiyinyu.com

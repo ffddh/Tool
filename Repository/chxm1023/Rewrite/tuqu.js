@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/meitu\.minecaller\.com\/api\/users url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/tuqu.js
+^https?:\/\/meitu\.minecaller\.com\/api\/users url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/tuqu.js
 
 [mitm]
 hostname = meitu.minecaller.com

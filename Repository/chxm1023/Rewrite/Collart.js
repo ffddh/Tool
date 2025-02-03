@@ -21,7 +21,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/iap\.etm\.tech\/receipts url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/Collart.js
+^https:\/\/iap\.etm\.tech\/receipts url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/Collart.js
 
 [mitm]
 hostname = iap.etm.tech

@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > MallocVPN解锁永久订阅
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36})$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/MallocVPNProCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36})$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/MallocVPNProCrack.js
 
 [mitm] 
 hostname = api.revenuecat.com

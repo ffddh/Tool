@@ -3,15 +3,14 @@
 项目名称：壁纸-高清墙纸/背景主题
 下载地址：https://t.cn/A6WmzYvC
 更新日期：2023-11-20
-脚本作者：chxm1023
-电报频道：https://t.me/chxm1023
+脚本作者：@ddm1023
+电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
-特别说明：打开APP登录账号，再开规则重新进入，
 
 **************************************
 
 [rewrite_local]
-^https?:\/\/leancloud\.emotionwp\.com\/.+\/(classes|batch\/save) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/bizhi.js
+^https?:\/\/leancloud\.emotionwp\.com\/.+\/(classes|batch\/save) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/bizhi.js
 
 [mitm]
 hostname = leancloud.emotionwp.com

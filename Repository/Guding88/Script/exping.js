@@ -3,7 +3,7 @@
 exping：https://apps.apple.com/app/id1581529305
 
 [rewrite_local]
-^https?://api.expingworld.com/users url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/exping.js
+^https?://api.expingworld.com/users url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/exping.js
 
 [MITM]
 hostname = api.expingworld.com

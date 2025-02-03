@@ -6,7 +6,7 @@ TG群组：https://t.me/GudingChat
 iTunes解锁合集，已解锁APP及下载地址请见说明：https://github.com/Guding88/Script/blob/main/Readme.md
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/APPheji_iTunes.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/APPheji_iTunes.js
 
 [MITM]
 hostname = buy.itunes.apple.com

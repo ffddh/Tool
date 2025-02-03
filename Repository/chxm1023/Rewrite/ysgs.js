@@ -12,7 +12,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/apps-api\.(lianaishouce|lingege)\.cn\/user\/(public\/login.*|getUserInfo) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/ysgs.js
+^https?:\/\/apps-api\.(lianaishouce|lingege)\.cn\/user\/(public\/login.*|getUserInfo) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/ysgs.js
 
 [mitm]
 hostname = apps-api.lianaishouce.cn, apps-api.lingege.cn

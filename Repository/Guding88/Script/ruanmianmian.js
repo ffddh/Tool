@@ -3,7 +3,7 @@
 软眠眠：https://apps.apple.com/app/id1640036657
 
 [rewrite_local]
-^https?:\/\/ruanmianmian\.xinzhi\.space\/api\/v1\/getUserByToken url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/ruanmianmian.js
+^https?:\/\/ruanmianmian\.xinzhi\.space\/api\/v1\/getUserByToken url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/ruanmianmian.js
 
 [MITM]
 hostname = ruanmianmian.xinzhi.space

@@ -17,7 +17,7 @@
 # > 携程旅行小程序_热门活动@ddgksf2013
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/queryWeChatHotEvent url reject-200
 # > 携程旅行小程序_信息流@ddgksf2013
-^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/getWaterflowInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/ctripAds.js
+^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/getWaterflowInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/ctripAds.js
 # > 携程旅行小程序_广告请求@ddgksf2013
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/tripAds\.json url reject-200
 # > 携程旅行小程序_热搜词@ddgksf2013

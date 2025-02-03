@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > 麻豆社区解锁全部视频
-^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/mdsqallcrack.js
+^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/mdsqallcrack.js
 
 [mitm] 
 hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com

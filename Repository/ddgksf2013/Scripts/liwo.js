@@ -12,10 +12,10 @@
 // hostname=api.m.jd.com
 
 // [rewrite_local]
-// ^https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign url script-request-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/liwo.js
+// ^https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign url script-request-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/liwo.js
 
 // [local_tasK]
-// 5 0 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/liwo.js, tag=梨涡签到得现金
+// 5 0 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/liwo.js, tag=梨涡签到得现金
 
 // ----------------------------------------------------------------------------
 // Loon
@@ -24,8 +24,8 @@
 // hostname=api.m.jd.com
 
 // [Script]
-// http-request ^https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/liwo.js, requires-body=true, timeout=10, tag=梨涡签到Cookie
-// cron "7 0 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/liwo.js,tag=梨涡签到
+// http-request ^https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/liwo.js, requires-body=true, timeout=10, tag=梨涡签到Cookie
+// cron "7 0 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/liwo.js,tag=梨涡签到
 
 // ----------------------------------------------------------------------------
 

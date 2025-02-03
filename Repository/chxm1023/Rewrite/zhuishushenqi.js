@@ -12,7 +12,7 @@
 
 [rewrite_local]
 # VIP/净化
-^https?:\/\/.*\.zhuishushenqi\.com\/(user|charge\/voice\/state|pay\/products|advert_center|push\/pop-config|book\/recommend-pop|api|video\/adConfig|book\/bookshelf.*|activity\/popup\/scenes\/init) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/zhuishushenqi.js
+^https?:\/\/.*\.zhuishushenqi\.com\/(user|charge\/voice\/state|pay\/products|advert_center|push\/pop-config|book\/recommend-pop|api|video\/adConfig|book\/bookshelf.*|activity\/popup\/scenes\/init) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/zhuishushenqi.js
 # 开屏广告/也可去除其他APP的广告，用处广泛
 ^https?:\/\/.*\.pangolin-sdk-toutiao.*\.com url reject
 ^https?:\/\/mhjk\.1391\.com url reject-200

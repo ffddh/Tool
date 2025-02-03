@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 757
+# 规则统计: 759
 
 domain_set:
   - acg.tv
@@ -30,7 +30,6 @@ domain_suffix_set:
   - 12306.com
   - 123pan.com
   - 126.com
-  - 126.link
   - 126.net
   - 127.com
   - 127.net
@@ -227,6 +226,7 @@ domain_suffix_set:
   - cnnic.cn
   - cnspeedtest.cn
   - cntv.cn
+  - codehub.cn
   - coding.me
   - coding.net
   - coloros.com
@@ -295,6 +295,7 @@ domain_suffix_set:
   - eastmoney.com
   - eatuo.com
   - ebay.cn
+  - edge-byted.com
   - edu.cn
   - ele.me
   - elemecdn.com
@@ -420,9 +421,8 @@ domain_suffix_set:
   - jomoxc.com
   - jpush.cn
   - jstarkan.com
-  - juejin.cn
   - kaiyanapp.com
-  - kdslife.net
+  - kdslife.com
   - keepcdn.com
   - kingsoft-office-service.com
   - kkmh.com
@@ -524,7 +524,6 @@ domain_suffix_set:
   - oppopay.com
   - opposhop.cn
   - opstatics.com
-  - oray-img.com
   - oray.com
   - oray.net
   - orayimg.com
@@ -614,6 +613,7 @@ domain_suffix_set:
   - sinajs.cn
   - sinajs.com
   - sm.cn
+  - smtcdns.net
   - smzdm.com
   - snssdk.com
   - so.com
@@ -683,6 +683,7 @@ domain_suffix_set:
   - vmallres.com
   - volccdn.com
   - volces.com
+  - volcvideo.com
   - wandoujia.com
   - wangsu.com
   - weathercn.com
@@ -720,6 +721,7 @@ domain_suffix_set:
   - xiaomiyoupin.com
   - xiaote.net
   - ximalaya.com
+  - xincai.com
   - xinhuanet.com
   - xiniu.com
   - xmcdn.com

@@ -18,7 +18,7 @@
 [rewrite_local]
   
 # > 每日凯格尔☆解锁会员权限（2024-01-29）@ddgksf2013
-^https?:\/\/kegelapi\.dailystretch\.app\/api\/v\d\/(profile|subject) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/MeiRiKaiGeErProCrack.js
+^https?:\/\/kegelapi\.dailystretch\.app\/api\/v\d\/(profile|subject) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/MeiRiKaiGeErProCrack.js
 
 
 [mitm]

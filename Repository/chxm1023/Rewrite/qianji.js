@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/qianji\.xxoojoke\.com\/vip\/configios url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/qianji.js
+^https?:\/\/qianji\.xxoojoke\.com\/vip\/configios url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/qianji.js
 
 [mitm]
 hostname = qianji.xxoojoke.com

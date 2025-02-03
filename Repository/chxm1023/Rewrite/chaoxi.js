@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/tide-api\.moreless\.io\/v\d\/users\/self url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/chaoxi.js
+^https?:\/\/tide-api\.moreless\.io\/v\d\/users\/self url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/chaoxi.js
 
 [mitm]
 hostname = tide-api.moreless.io

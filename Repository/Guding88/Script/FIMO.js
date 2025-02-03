@@ -3,7 +3,7 @@
 FIMO：https://apps.apple.com/app/id1454219307
 
 [rewrite_local]
-^https?:\/\/server\.zbisq\.com\/fimo-user\/user url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/FIMO.js
+^https?:\/\/server\.zbisq\.com\/fimo-user\/user url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/FIMO.js
 
 [MITM]
 hostname = server.zbisq.com

@@ -17,7 +17,7 @@
 [rewrite_local]
 
 ^https:\/\/(cn|www)\.pornhub\.com\/_xa\/ads url reject-dict
-^https?:/\/(cn|www)\.pornhub\.com\/($|(view|video).*$) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/pornhub.js
+^https?:/\/(cn|www)\.pornhub\.com\/($|(view|video).*$) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/pornhub.js
 
 [mitm] 
 

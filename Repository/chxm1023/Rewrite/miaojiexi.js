@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/tcb-api\.tencentcloudapi\.com\/web url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/miaojiexi.js
+^https?:\/\/tcb-api\.tencentcloudapi\.com\/web url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/miaojiexi.js
 
 [mitm]
 hostname = tcb-api.tencentcloudapi.com

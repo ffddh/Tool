@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/mate.js
+^https:\/\/asia\.gikken\.co\/matesync\/(subscription|login|register_user|check_user) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/mate.js
 
 [mitm]
 hostname = asia.gikken.co

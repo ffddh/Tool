@@ -9,7 +9,7 @@
 *******************************
 [rewrite_local]
 # > 一键抠图解锁永久会员
-^https?:\/\/api\.mattingm\.com\/receipt_api\/user\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/OneClickCoutVipCrack.js
+^https?:\/\/api\.mattingm\.com\/receipt_api\/user\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/OneClickCoutVipCrack.js
 [mitm] 
 hostname = api.mattingm.com
 

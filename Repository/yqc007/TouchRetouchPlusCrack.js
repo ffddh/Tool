@@ -12,7 +12,7 @@
 
 [rewrite_local]
 # > TouchRetouch 解锁永久 Plus
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/\$RCAnonymousID%3A\w{32}|receipts)$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/TouchRetouchPlusCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/\$RCAnonymousID%3A\w{32}|receipts)$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/TouchRetouchPlusCrack.js
 
 [mitm] 
 hostname = api.revenuecat.com

@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > AnyBox 解锁Pro永久版
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/AnyBoxProCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/AnyBoxProCrack.js
 
 [mitm] 
 hostname = api.revenuecat.com

@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > AdGuard 解锁永久高级版
-^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/AdGuardProCrack.js
+^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/AdGuardProCrack.js
 
 [mitm] 
 hostname = *.adguard.org

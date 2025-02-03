@@ -4,7 +4,7 @@
 夸克浏览器搜索：夸克扫描王
 
 [rewrite_local]
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.sm\.order\.service\.member\.getmemberinfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/kuakesaomiaowang.js
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.sm\.order\.service\.member\.getmemberinfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/kuakesaomiaowang.js
 
 [MITM]
 hostname = acs.m.taobao.com

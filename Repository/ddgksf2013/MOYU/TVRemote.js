@@ -18,7 +18,7 @@
 [rewrite_local]
   
 # > TVRemote&ScreenMirror☆解锁会员权限（2024-03-22）@ddgksf2013
-^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/in-apps\/apple\/receipt\/validate url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/TVRemote.js
+^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/in-apps\/apple\/receipt\/validate url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/TVRemote.js
 
 [mitm] 
 

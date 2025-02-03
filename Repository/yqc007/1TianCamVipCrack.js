@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > 一甜相机解锁会员
-^https?:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v2\/vip\/vipUserInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/1TianCamVipCrack.js
+^https?:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v2\/vip\/vipUserInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/1TianCamVipCrack.js
 
 [mitm] 
 hostname = m2u-api.getkwai.com

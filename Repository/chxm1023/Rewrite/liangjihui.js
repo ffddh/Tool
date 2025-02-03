@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # 解锁会员信息
-^https?:\/\/guapi\.liangjihui\.com\/(front\/(quote\/look.+|user\/memberInfo)|api) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/liangjihui.js
+^https?:\/\/guapi\.liangjihui\.com\/(front\/(quote\/look.+|user\/memberInfo)|api) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/liangjihui.js
 # 屏蔽顶部滚屏
 ^https:\/\/ljh\.dianxiaoman\.com\/ljh\/api\/home\/getHomeList url reject
 

@@ -39,11 +39,11 @@ const uBOL_removeClass = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["b-global-branding","html"],["has-fullscreen-banner|has-right-direct",".public__root","stay"],["noscroll","body"]];
+const argsList = [["b-global-branding","html"],["noscroll","body"],["has-fullscreen-banner|has-right-direct",".public__root","stay"]];
 
-const hostnamesMap = new Map([["mag.relax.by",0],["disk.yandex.by",1],["disk.yandex.com",1],["disk.yandex.kz",1],["disk.yandex.ru",1],["disk.yandex.uz",1],["motorpage.ru",2]]);
+const hostnamesMap = new Map([["mag.relax.by",0],["motorpage.ru",1],["disk.yandex.ru",2]]);
 
-const entitiesMap = new Map([]);
+const entitiesMap = new Map([["disk.yandex",2]]);
 
 const exceptionsMap = new Map([]);
 
@@ -75,7 +75,7 @@ function removeClass(
                 node.classList.remove(...tokens);
                 safe.uboLog(logPrefix, 'Removed class(es)');
             }
-        } catch(ex) {
+        } catch {
         }
         if ( mustStay ) { return; }
         if ( document.readyState !== 'complete' ) { return; }
@@ -241,7 +241,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -319,7 +319,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

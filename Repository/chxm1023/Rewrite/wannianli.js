@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/.*\.jiemengjia\.com\/(member\/(member_info|pay_verify_new|create_order)|dialogue\/adspace) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/wannianli.js
+^https?:\/\/.*\.jiemengjia\.com\/(member\/(member_info|pay_verify_new|create_order)|dialogue\/adspace) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/wannianli.js
 
 [mitm]
 hostname = *.jiemengjia.com

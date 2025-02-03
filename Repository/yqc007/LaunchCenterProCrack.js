@@ -16,7 +16,7 @@
 [rewrite_local]
 
 # LaunchCenter解锁订阅
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/LaunchCenterProCrack.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/LaunchCenterProCrack.js
 
 [mitm] 
 

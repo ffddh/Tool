@@ -9,9 +9,9 @@ BoxJs订阅：https://raw.githubusercontent.com/FoKit/Scripts/main/boxjs/fokit.b
 ------------------ Surge 配置 ------------------
 
 [Script]
-京东 WSKEY = type=http-request,pattern=https:\/\/blackhole\.m\.jd\.com\/getinfo,requires-body=0,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_jd_wskey.js,script-update-interval=0
+京东 WSKEY = type=http-request,pattern=https:\/\/blackhole\.m\.jd\.com\/getinfo,requires-body=0,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_jd_wskey.js,script-update-interval=0
 
-京东 PIN = type=http-request,pattern=https:\/\/perf\.m\.jd\.com\/app_monitor\/\w{1,}\/getRule,requires-body=0,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_jd_wskey.js,script-update-interval=0
+京东 PIN = type=http-request,pattern=https:\/\/perf\.m\.jd\.com\/app_monitor\/\w{1,}\/getRule,requires-body=0,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_jd_wskey.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% blackhole.m.jd.com, perf.m.jd.com
@@ -22,9 +22,9 @@ hostname = %APPEND% blackhole.m.jd.com, perf.m.jd.com
 hostname = blackhole.m.jd.com, perf.m.jd.com
 
 [Script]
-http-request https:\/\/blackhole\.m\.jd\.com\/getinfo tag=京东 WSKEY,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_jd_wskey.js,requires-body=0
+http-request https:\/\/blackhole\.m\.jd\.com\/getinfo tag=京东 WSKEY,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_jd_wskey.js,requires-body=0
 
-http-request https:\/\/perf\.m\.jd\.com\/app_monitor\/\w{1,}\/getRule tag=京东 PIN,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_jd_wskey.js,requires-body=0
+http-request https:\/\/perf\.m\.jd\.com\/app_monitor\/\w{1,}\/getRule tag=京东 PIN,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_jd_wskey.js,requires-body=0
 
 --------------- Quantumult X 配置 ---------------
 
@@ -33,9 +33,9 @@ hostname = blackhole.m.jd.com, perf.m.jd.com
 
 [rewrite_local]
 
-https:\/\/blackhole\.m\.jd\.com\/getinfo url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_jd_wskey.js
+https:\/\/blackhole\.m\.jd\.com\/getinfo url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_jd_wskey.js
 
-https:\/\/perf\.m\.jd\.com\/app_monitor\/\w{1,}\/getRule url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_jd_wskey.js
+https:\/\/perf\.m\.jd\.com\/app_monitor\/\w{1,}\/getRule url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_jd_wskey.js
 
 ------------------------------------------------
  */

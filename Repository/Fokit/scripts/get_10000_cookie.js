@@ -8,17 +8,17 @@ BoxJs 订阅：https://raw.githubusercontent.com/FoKit/Scripts/main/boxjs/fokit.
 
 ================Quantumult X配置=================
 [rewrite_local]
-^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_10000_cookie.js
+^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_10000_cookie.js
 [MITM]
 hostname = e.189.cn, open.e.189.cn
 ====================Surge配置====================
 [Script]
-中国电信 Cookie = type=http-request,pattern=^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do),requires-body=0,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_10000_cookie.js,script-update-interval=0
+中国电信 Cookie = type=http-request,pattern=^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do),requires-body=0,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_10000_cookie.js,script-update-interval=0
 [MITM]
 hostname = %APPEND% e.189.cn, open.e.189.cn
 ====================Loon配置=====================
 [Script]
-http-request ^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) tag=中国电信 Cookie, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/get_10000_cookie.js,requires-body=1
+http-request ^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) tag=中国电信 Cookie, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/get_10000_cookie.js,requires-body=1
 [MITM]
 hostname = e.189.cn, open.e.189.cn
 */

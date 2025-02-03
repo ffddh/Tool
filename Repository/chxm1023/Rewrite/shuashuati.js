@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.shuashuati\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/shuashuati.js
+^https?:\/\/api\.shuashuati\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/shuashuati.js
 
 [mitm]
 hostname = api.shuashuati.com

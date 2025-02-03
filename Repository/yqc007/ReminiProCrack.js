@@ -10,7 +10,7 @@
  ******************************************
 [rewrite_local]
 # > 𝑅𝑒𝑚𝑖𝑛𝑖 𝐶𝑟𝑎𝑐𝑘 𝑃𝑟𝑜
-^https?:\/\/remini\.oracle\.bendingspoonsapps\.com\/v2\/users\/setup$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/ReminiProCrack.js
+^https?:\/\/remini\.oracle\.bendingspoonsapps\.com\/v2\/users\/setup$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/ReminiProCrack.js
 [mitm] 
 hostname = remini.oracle.bendingspoonsapps.com
 ******************************************/

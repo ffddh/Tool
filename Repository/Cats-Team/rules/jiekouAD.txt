@@ -1,10 +1,26 @@
 [Adblock Plus 2.0]
 ! Title: 轻量广告拦截规则
 ! Homepage: https://github.com/damengzhu/banad
-! Update Time: 2024-12-17 09:48:07（北京时间）
-! Total Count: 5534
+! Update Time: 2025-01-27 12:19:55（北京时间）
+! Total Count: 5570
 ! by: 酷安@大萌主
 ! domain name
+||bjfsk.xyz^
+||pinglun11223.xyz^
+||btcili.top^
+||17282.org^
+||xxaks01121sspao.xyz^
+||trafficjunky.com^
+||trafficjunky.net^
+||gxxyclub.top^
+||lqweqk61qlih.click^
+||ygz1pd7.online^
+||tbl258ym4.cc^
+||bhgzwqy.top^
+||mvwitz.xyz^
+||abernc.xyz^
+||trjfoagf.icu^
+||g7htk7ls7.com^
 ||ktgpgoa.top^
 ||xxsmad4.com^
 ||xn--jor0b302fdhgwnccw8g.com^
@@ -4411,6 +4427,8 @@
 ||sugar.zhihu.com^
 ||stat.meitudata.com^
 ! url
+@@||cqshuda.com/template/conch/asset/js/conch.vip.js
+@@||cloudflare.com/cdn-cgi/trace$domain=net.ljxnet.cn
 @@||ecmb.bdimg.com/*.jpg
 @@||ecmb.bdimg.com/*.png
 @@.cn:8005/$domain=www.ntdm9.com|www.mxdm9.com|mxdm6.com|ntdm6.com
@@ -4437,10 +4455,16 @@
 @@||guokr.com/apis/flowingboard/item/m_home_
 @@||sobot.com^
 @@||wan.douyu.com^
+||cupfox*.com/statics/js/ing.js
 ||qishula.com/css/ding.js
 ||adutp.com^$third-party
 ||aiqu2727.com/da/
 ||www.hdmp4.cc/js/foot.js
+.fun/*/17*/*.css?r=0$third-party
+.fun/*.jss?17*&r=0$third-party
+.top/*_*_vw*sbjs?$third-party
+.top/gluinfo.php?s=$third-party
+-1325890192.cos.
 ||google-analytics.com/analytics.js
 ||www.cartoon18.com/assets/*/jquery.js
 ||onesignal.com^$third-party
@@ -4449,9 +4473,8 @@
 ||browser.sentry-cdn.com^$third-party
 ||baidu.com/newspage/api/getmobads?
 ||ifeng.com/*&adids=
-.xyz$domain=btsj6.com|yinghua8.tv|iyinghua.io|yhdmba.net
+.xyz$domain=btsj6.com|yinghua8.tv|iyinghua.io|yhdmba.net|xiakexsw.com
 .buzz$domain=btsj6.com|yinghua8.tv|iyinghua.io|yhdmba.net
-.com/sh/to/$third-partyyhdmba.net
 .xyz/svelte?$third-party
 .xyz/alpine?$third-party
 ||iyinghua.io/bar/
@@ -4484,7 +4507,6 @@ unpkg.com/aladug/*.js
 :8008/*/*?is_not=
 .cn:8005/cc/*?is_not=
 ||myqcloud.com/uploads/m3u8/*.ts$third-party
-trafficjunky.com$third-part
 .cn/2023/*/*.txt$third-party
 .cn/2022/*/*.txt$third-party
 .xyz/qby_*.js?$third-party
@@ -4697,6 +4719,10 @@ Mplay/kk1.js
 ||y3600.cc/js/jquery.min.js
 ||shimo.im/lizard-api/ads
 /adjs
+/assets/js/se.js$~third-party
+/assets/publish/*.2.js$~third-party
+/assets/publish/*.1.js$~third-party
+/assets/publish/*.3.js$~third-party
 ||pki.net.cn/public/1/plugins
 .com/xz/*?token8=
 ||zhanzhang.baidu.com/push.js
@@ -4762,6 +4788,8 @@ _/bigREDcat.css?
 /v0/amp-addthis-*.js
 .com:8010/cc/
 /js/gg123/*
+||3qxsa.cc/js/news2.js
+/static/lbsite/*/*.js?v=$third-party
 ||dytt8.com/js*
 ||aiqu288.com/da/
 .buzz/*0*0*0*==$third-party
@@ -4777,6 +4805,8 @@ x.com/*/videoads/
 ||ykmh.com/js/aajquery.img01.js
 ||zd518.cn/statics/js/home.js
 template/m1938pc/ads/*.js
+||dyxz*.com/static/jquery.js?
+||dyxz*.com/static/gdw.js
 ||mipcdn.com/c/s/by.manhuachi.com
 ||qimiaomh.com/muban/m/static/js/hhh.js
 ||qimiaomh.com/muban/m/static/js/common.js
@@ -4858,6 +4888,7 @@ wen.baidu.com##.related-asp-new
 pan.baidu.com##A.active-msg
 pan.baidu.com##div.content DIV.photo-banner
 mobile.baidu.com##SECTION.detail-banner.banner-ck
+bing.com,cn.bing.net##LI.b_ans
 bing.com,cn.bing.net##.pa_sb
 bing.com,cn.bing.net##.adsMvC
 bing.com,cn.bing.net##.pa_sb
@@ -4978,6 +5009,8 @@ jav777.cc,jav777.xyz###playertopads
 jav777.cc,jav777.xyz##.myad_alert_82_box
 jav777.cc,jav777.xyz##[src='/close.gif']
 jav777.cc,jav777.xyz##.myad_alert_82
+163.com##.js-open-app
+163.com##.freeVip
 webtor.io##DIV.ad
 webtor.io##[data-element='empty']
 webtor.io##IFRAME[scrolling='no']
@@ -4987,17 +5020,18 @@ achaec.cc##[style*='px; top: 0px; left: 0px; z-index:']
 achaec.cc##[style*='px; bottom: 0px; left: 0px; z-index: ']
 cqjschungao.com##[style='bottom: 132px;']
 cqjschungao.com##[style*='px no-repeat; position: relative;']
+quark.cn##.ad-wolong-container
 www.meijuii.cc##DIV[style*='vw; display: block;']
 www.hzw.com.cn##.xfb_close_icon,#xfb_lbox,.xfb_close_btn
 www.hbhtyl.com##P[style^='width: 100% !important; margin: 0p']
 www.ydyse.com##.left,.bottom,.right,.ad,.adimage
 m.kdslife.com###app.Card.DownloadGuide
 m.guancha.cn##.g_header.go-to-app
+douyin.com##[class*='h5-ad-']
 thepaper.cn##[class^='index_footer_banner']
 www.wenshushu.cn##A[href^='https://wenshushu.cn/ad/']
 cupfox.app##IMG[class^='jsx-'][width='100%'],.swiper-wrapper img[class^='jsx-'][class*='a']:only-child,.cupfox-content.right,.cupfox-content.left
 youtube.com##AD-SLOT-RENDERER
-163.com##.js-open-app
 90mh.org##[style$='background-size: 393px 125px !important;']
 118pan.com##.card.mt-2:nth-child(2)
 m.autohome.com.cn##section > ol
@@ -5288,6 +5322,7 @@ javbus.com##.container-fluid:nth-child(9) > .row > .ad-list:nth-child(3)
 ##A[href^='https://www.nonstopclub.xyz']
 ##A[href^='https://js.iconiclee.com']
 ##[alt='ad']
+##body > DIV.ad3
 ##A[href*='zbkrv.com']
 ##div.container > DIV.t-img-box
 ##A[href='/?'][target='_blank']
@@ -5509,6 +5544,7 @@ javbus.com##.container-fluid:nth-child(9) > .row > .ad-list:nth-child(3)
 ##[href*='slkdnlkfnskl.com']
 ##[onclick*='fjbglfrv.com']
 ##.adwap
+##DIV[style='position:relative !important;padding:0px !important;margin:0px !important;width:100% !important;overflow:hidden !important;font-size:0px !important;line-height:0px !important;']
 ##DIV.theme-hope-content.ads-container
 ##[href*='amu6v.com']
 ##.vp-project-home > .ads-container

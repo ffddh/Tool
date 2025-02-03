@@ -7,7 +7,7 @@ author      ddgksf2013
 
 
 [rewrite_local]
-https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/shunfeng_json.js
+https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/shunfeng_json.js
 
 [mitm]
 hostname = ccsp-egmas.sf-express.com

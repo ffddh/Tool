@@ -16,7 +16,7 @@
 [rewrite_local]
 
 # 酷我2496解锁会员
-^https?:\/\/api_2496\.kuwo\.cn\/front\/user\/vipstatus$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/KWLongPlayProCrack.js
+^https?:\/\/api_2496\.kuwo\.cn\/front\/user\/vipstatus$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/KWLongPlayProCrack.js
 
 [mitm] 
 

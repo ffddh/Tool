@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/prod\.dengziwl\.com\/light-shadow\/member\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/gybk.js
+^https?:\/\/prod\.dengziwl\.com\/light-shadow\/member\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/gybk.js
 
 [mitm]
 hostname = prod.dengziwl.com

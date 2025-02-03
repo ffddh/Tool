@@ -15,7 +15,7 @@
 [rewrite_local]
 
 # 计算器HD解锁会员
-^https?:\/\/www\.40sishi\.com\/(list|currency|calculator)\/user\/profile$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/CalculatorHDProCrack.js
+^https?:\/\/www\.40sishi\.com\/(list|currency|calculator)\/user\/profile$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/CalculatorHDProCrack.js
 
 [mitm] 
 

@@ -3,7 +3,7 @@
 Ease助眠：https://apps.apple.com/app/id1549614554
 
 [rewrite_local]
-^https?:\/\/api0\.easeprime\.com\/api\/(login\/loginByWeChatCode|memberInfo\/myInfo) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Ease.js
+^https?:\/\/api0\.easeprime\.com\/api\/(login\/loginByWeChatCode|memberInfo\/myInfo) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Ease.js
 
 [MITM]
 hostname = api0.easeprime.com

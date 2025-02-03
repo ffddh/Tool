@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get.+ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/woniushuimian.js
+^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get.+ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/woniushuimian.js
 
 [mitm]
 hostname = snailsleep.net

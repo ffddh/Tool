@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/www\.zhouyilive\.com\/qm-api\/nm_user\.php url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/zyqmds.js
+^https?:\/\/www\.zhouyilive\.com\/qm-api\/nm_user\.php url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/zyqmds.js
 
 [mitm]
 hostname = www.zhouyilive.com

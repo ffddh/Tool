@@ -3,7 +3,7 @@
 佐糖：https://apps.apple.com/app/id1609584814
 
 [rewrite_local]
-^https?:\/\/gw\.aoscdn\.com\/base\/vip\/v2\/vips url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/zuotang.js
+^https?:\/\/gw\.aoscdn\.com\/base\/vip\/v2\/vips url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/zuotang.js
 
 [MITM]
 hostname = gw.aoscdn.com

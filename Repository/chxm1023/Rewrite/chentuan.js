@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^http[s]?:\/\/api\.chentuanbazi\.cn\/(recharge\/vipRechargeList|user\/userInfo) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/chentuan.js
+^http[s]?:\/\/api\.chentuanbazi\.cn\/(recharge\/vipRechargeList|user\/userInfo) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/chentuan.js
 
 [mitm]
 hostname = api.chentuanbazi.cn

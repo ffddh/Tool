@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/iosdzhtyqy\.sanwubeixin\.cn\/ct\/user\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/dzhtyqy.js
+^https?:\/\/iosdzhtyqy\.sanwubeixin\.cn\/ct\/user\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/dzhtyqy.js
 
 [mitm]
 hostname = iosdzhtyqy.sanwubeixin.cn

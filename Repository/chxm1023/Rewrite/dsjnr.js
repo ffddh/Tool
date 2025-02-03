@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^https:\/\/day-api\.xixitime\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/dsjnr.js
+^https:\/\/day-api\.xixitime\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/dsjnr.js
 
 [mitm]
 

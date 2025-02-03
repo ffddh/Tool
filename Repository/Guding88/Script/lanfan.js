@@ -3,7 +3,7 @@
 懒饭：https://apps.apple.com/app/id1377082167
 
 [rewrite_local]
-^https?:\/\/lanfanapp\.com\/api\/v1 url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/lanfan.js
+^https?:\/\/lanfanapp\.com\/api\/v1 url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/lanfan.js
 
 [MITM]
 hostname = lanfanapp.com

@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/lepai-api\.faceqianyan\.com\/(apple\/product|account\/profile|faceFusion|toolCollection) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/lepai.js
+^https?:\/\/lepai-api\.faceqianyan\.com\/(apple\/product|account\/profile|faceFusion|toolCollection) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/lepai.js
 
 [mitm]
 hostname = lepai-api.faceqianyan.com

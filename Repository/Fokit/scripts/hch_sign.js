@@ -11,9 +11,9 @@
 hostname = member.mowgz.com
 
 [Script]
-花城汇# = type=http-request,pattern=^https:\/\/member\.mowgz\.com\/bus\/getFunc\?busId=Member&methodId=getMember&getPram=gold%2Clevel&compId=\d+?&userId=\w+,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js
+花城汇# = type=http-request,pattern=^https:\/\/member\.mowgz\.com\/bus\/getFunc\?busId=Member&methodId=getMember&getPram=gold%2Clevel&compId=\d+?&userId=\w+,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js
 
-花城汇 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js,script-update-interval=0
+花城汇 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -21,9 +21,9 @@ hostname = member.mowgz.com
 hostname = member.mowgz.com
 
 [Script]
-http-request ^https:\/\/member\.mowgz\.com\/bus\/getFunc\?busId=Member&methodId=getMember&getPram=gold%2Clevel&compId=\d+?&userId=\w+ tag=花城汇#, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js,requires-body=0
+http-request ^https:\/\/member\.mowgz\.com\/bus\/getFunc\?busId=Member&methodId=getMember&getPram=gold%2Clevel&compId=\d+?&userId=\w+ tag=花城汇#, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js,requires-body=0
 
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js,tag = 花城汇,enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js,tag = 花城汇,enable=true
 
 -------------- Quantumult X 配置 --------------
 
@@ -31,10 +31,10 @@ cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = member.mowgz.com
 
 [rewrite_local]
-^https:\/\/member\.mowgz\.com\/bus\/getFunc\?busId=Member&methodId=getMember&getPram=gold%2Clevel&compId=\d+?&userId=\w+ url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js
+^https:\/\/member\.mowgz\.com\/bus\/getFunc\?busId=Member&methodId=getMember&getPram=gold%2Clevel&compId=\d+?&userId=\w+ url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js
 
 [task_local]
-17 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js, tag=花城汇, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/hch.png, enabled=true
+17 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js, tag=花城汇, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/hch.png, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -55,7 +55,7 @@ http:
 
 script-providers:
   花城汇:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/hch_sign.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/hch_sign.js
     interval: 86400
 
  */

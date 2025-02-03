@@ -8,7 +8,7 @@
 **************************************
 
 [rewrite_local]
-^http[s]?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad.+ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Advertising/wxgzhad.js
+^http[s]?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad.+ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Advertising/wxgzhad.js
 
 [mitm]
 hostname = mp.weixin.qq.com

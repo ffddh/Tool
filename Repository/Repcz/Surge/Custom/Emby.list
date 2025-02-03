@@ -1,12 +1,6 @@
-# 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间：2024-12-15 14:30
-
+# 最后更新时间：2025-01-21 23:35
 
 ##### A #####
-
-# ACA & MisakaF
-DOMAIN,aca.misakaf.org
-
 
 # 阿甘
 DOMAIN-SUFFIX,agan2.vip
@@ -15,7 +9,7 @@ DOMAIN-SUFFIX,agan2.vip
 DOMAIN-SUFFIX,emby.aiyowei.ml
 
 # AlphaTV
-DOMAIN,oversea.alphatvapp.top
+DOMAIN-SUFFIX,alphatvapp.top
 
 ##### B #####
 
@@ -86,8 +80,7 @@ DOMAIN-SUFFIX,gtlx.org
 ##### H #####
 
 # HXD(Porn)
-DOMAIN-SUFFIX,hxd.as174.com
-DOMAIN-SUFFIX,emby.as174.com
+DOMAIN-SUFFIX,as174.de
 DOMAIN-SUFFIX,bili.rip
 DOMAIN-SUFFIX,bili.de
 DOMAIN-SUFFIX,nvidia.rip
@@ -156,9 +149,6 @@ DOMAIN-SUFFIX,blueseacdn.com
 IP-CIDR,212.90.120.164/32,no-resolve
 
 ##### M #####
-
-# MisakaF
-DOMAIN-SUFFIX,misakaf.org
 
 # MjjEmby
 DOMAIN-SUFFIX,mjjemby.org

@@ -10,10 +10,10 @@
 hostname = tslmember-crm.tslj.com.cn
 
 [Script]
-谢瑞麟² = type=http-response,pattern=https:\/\/tslmember-crm\.tslj\.com\.cn\/api\/auth\/login,requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js,script-update-interval=0
+谢瑞麟² = type=http-response,pattern=https:\/\/tslmember-crm\.tslj\.com\.cn\/api\/auth\/login,requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js,script-update-interval=0
 
 [Script]
-谢瑞麟 = type=cron,cronexp=17 7 * * *,timeout=300,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js,script-update-interval=0
+谢瑞麟 = type=cron,cronexp=17 7 * * *,timeout=300,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -21,19 +21,19 @@ hostname = tslmember-crm.tslj.com.cn
 hostname = tslmember-crm.tslj.com.cn
 
 [Script]
-http-response https:\/\/tslmember-crm\.tslj\.com\.cn\/api\/auth\/login tag=谢瑞麟²,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js,requires-body=1
+http-response https:\/\/tslmember-crm\.tslj\.com\.cn\/api\/auth\/login tag=谢瑞麟²,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js,requires-body=1
 
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js,tag = 谢瑞麟,enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js,tag = 谢瑞麟,enable=true
 
 -------------- Quantumult X 配置 --------------
 [MITM]
 hostname = tslmember-crm.tslj.com.cn
 
 [rewrite_local]
-https:\/\/tslmember-crm\.tslj\.com\.cn\/api\/auth\/login url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js
+https:\/\/tslmember-crm\.tslj\.com\.cn\/api\/auth\/login url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js
 
 [task_local]
-17 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js, tag=谢瑞麟, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tsl.png, enabled=true
+17 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js, tag=谢瑞麟, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tsl.png, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -54,7 +54,7 @@ http:
 
 script-providers:
   谢瑞麟:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/tsl_sign.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/tsl_sign.js
     interval: 86400
 
  */

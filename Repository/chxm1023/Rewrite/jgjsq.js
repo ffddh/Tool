@@ -11,7 +11,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/calc\.kuaicad\.com\/authority\/verify_vip url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/jgjsq.js
+^https?:\/\/calc\.kuaicad\.com\/authority\/verify_vip url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/jgjsq.js
 
 [mitm]
 hostname = calc.kuaicad.com

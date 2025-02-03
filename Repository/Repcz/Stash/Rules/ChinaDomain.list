@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 758
+# 规则统计: 760
 
 DOMAIN,acg.tv
 DOMAIN,assets1.xboxlive.cn
@@ -28,7 +28,6 @@ DOMAIN-SUFFIX,12306.cn
 DOMAIN-SUFFIX,12306.com
 DOMAIN-SUFFIX,123pan.com
 DOMAIN-SUFFIX,126.com
-DOMAIN-SUFFIX,126.link
 DOMAIN-SUFFIX,126.net
 DOMAIN-SUFFIX,127.com
 DOMAIN-SUFFIX,127.net
@@ -225,6 +224,7 @@ DOMAIN-SUFFIX,cnblogs.com
 DOMAIN-SUFFIX,cnnic.cn
 DOMAIN-SUFFIX,cnspeedtest.cn
 DOMAIN-SUFFIX,cntv.cn
+DOMAIN-SUFFIX,codehub.cn
 DOMAIN-SUFFIX,coding.me
 DOMAIN-SUFFIX,coding.net
 DOMAIN-SUFFIX,coloros.com
@@ -293,6 +293,7 @@ DOMAIN-SUFFIX,dxycdn.com
 DOMAIN-SUFFIX,eastmoney.com
 DOMAIN-SUFFIX,eatuo.com
 DOMAIN-SUFFIX,ebay.cn
+DOMAIN-SUFFIX,edge-byted.com
 DOMAIN-SUFFIX,edu.cn
 DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,elemecdn.com
@@ -418,9 +419,8 @@ DOMAIN-SUFFIX,jomodns.com
 DOMAIN-SUFFIX,jomoxc.com
 DOMAIN-SUFFIX,jpush.cn
 DOMAIN-SUFFIX,jstarkan.com
-DOMAIN-SUFFIX,juejin.cn
 DOMAIN-SUFFIX,kaiyanapp.com
-DOMAIN-SUFFIX,kdslife.net
+DOMAIN-SUFFIX,kdslife.com
 DOMAIN-SUFFIX,keepcdn.com
 DOMAIN-SUFFIX,kingsoft-office-service.com
 DOMAIN-SUFFIX,kkmh.com
@@ -522,7 +522,6 @@ DOMAIN-SUFFIX,oppomobile.com
 DOMAIN-SUFFIX,oppopay.com
 DOMAIN-SUFFIX,opposhop.cn
 DOMAIN-SUFFIX,opstatics.com
-DOMAIN-SUFFIX,oray-img.com
 DOMAIN-SUFFIX,oray.com
 DOMAIN-SUFFIX,oray.net
 DOMAIN-SUFFIX,orayimg.com
@@ -612,6 +611,7 @@ DOMAIN-SUFFIX,sinaimg.com
 DOMAIN-SUFFIX,sinajs.cn
 DOMAIN-SUFFIX,sinajs.com
 DOMAIN-SUFFIX,sm.cn
+DOMAIN-SUFFIX,smtcdns.net
 DOMAIN-SUFFIX,smzdm.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,so.com
@@ -681,6 +681,7 @@ DOMAIN-SUFFIX,vmall.com
 DOMAIN-SUFFIX,vmallres.com
 DOMAIN-SUFFIX,volccdn.com
 DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,volcvideo.com
 DOMAIN-SUFFIX,wandoujia.com
 DOMAIN-SUFFIX,wangsu.com
 DOMAIN-SUFFIX,weathercn.com
@@ -718,6 +719,7 @@ DOMAIN-SUFFIX,xiaomixiaoai.com
 DOMAIN-SUFFIX,xiaomiyoupin.com
 DOMAIN-SUFFIX,xiaote.net
 DOMAIN-SUFFIX,ximalaya.com
+DOMAIN-SUFFIX,xincai.com
 DOMAIN-SUFFIX,xinhuanet.com
 DOMAIN-SUFFIX,xiniu.com
 DOMAIN-SUFFIX,xmcdn.com

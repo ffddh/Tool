@@ -17,7 +17,7 @@
 [rewrite_local]
   
 # > 极简汇率☆解锁会员权限（2023-12-30）@ddgksf2013
-^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/JiJianHuiLvProCrack.js
+^https?:\/\/explorer\.tratao\.com\/api\/client\/xtool\/vip url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/JiJianHuiLvProCrack.js
 
 
 [mitm] 

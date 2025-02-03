@@ -18,7 +18,7 @@
 [rewrite_local]
 
 # Huluwa解锁会员
-^https?:\/\/api(-hlw\.\d+|\.\w{8,9})\.com\/api\/web\/(video|member).+ url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/HLSPCrack.js
+^https?:\/\/api(-hlw\.\d+|\.\w{8,9})\.com\/api\/web\/(video|member).+ url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/HLSPCrack.js
 
 [mitm] 
 

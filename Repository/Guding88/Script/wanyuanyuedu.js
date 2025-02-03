@@ -3,7 +3,7 @@
 万源阅读：https://apps.apple.com/app/id6446446808
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/wanyuanyuedu.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/wanyuanyuedu.js
 
 [MITM]
 hostname = buy.itunes.apple.com

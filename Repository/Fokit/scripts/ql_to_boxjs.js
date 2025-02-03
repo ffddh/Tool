@@ -1,6 +1,6 @@
 /*
 京东账号同步工具，QL ---> BOXJS
-40 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/ql_to_boxjs.js
+40 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/ql_to_boxjs.js
 */
 
 const $ = new API('ql', true);
@@ -15,7 +15,7 @@ const jd_cookies = JSON.parse($.read(cookiesKey) || '[]');
 
 async function getScriptUrl() {
   const response = await $.http.get({
-    url: 'https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/ql_api.js',
+    url: 'https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/ql_api.js',
   })
   return response.body
 }

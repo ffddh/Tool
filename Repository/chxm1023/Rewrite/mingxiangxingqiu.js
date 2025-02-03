@@ -8,7 +8,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/kc\.xinli001\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/mingxiangxingqiu.js
+^https?:\/\/kc\.xinli001\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/mingxiangxingqiu.js
 
 [mitm]
 hostname = kc.xinli001.com

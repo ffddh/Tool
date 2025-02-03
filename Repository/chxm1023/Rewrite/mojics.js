@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/mojics.js
+^https:\/\/api\.mojidict\.com\/parse\/functions\/getNPrivileges url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/mojics.js
 
 [mitm]
 hostname = api.mojidict.com

@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^https:\/\/www2\.tigeroom\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/zpqlds.js
+^https:\/\/www2\.tigeroom\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/zpqlds.js
 
 [mitm] 
 

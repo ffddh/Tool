@@ -39,9 +39,9 @@ const uBOL_noFetchIf = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["adsbygoogle"],["pagead2.googlesyndication.com"],["tpc.googlesyndication.com"],["cdn.adschill.com"]];
+const argsList = [["pagead2.googlesyndication.com"],["adsbygoogle"],["tpc.googlesyndication.com"],["cdn.adschill.com"]];
 
-const hostnamesMap = new Map([["rxlife.net",0],["gunauc.net",1],["success-corp.co.jp",1],["audio-sound-premium.com",1],["tojav.net",1],["asobicreate.net",1],["kledgeb.blogspot.com",1],["rocketnews24.com",2],["youpouch.com",2]]);
+const hostnamesMap = new Map([["pvpoke-re.com",0],["gunauc.net",0],["success-corp.co.jp",0],["audio-sound-premium.com",0],["tojav.net",0],["asobicreate.net",0],["kledgeb.blogspot.com",0],["rxlife.net",1],["rocketnews24.com",2],["youpouch.com",2]]);
 
 const entitiesMap = new Map([["manga1001",3]]);
 
@@ -86,7 +86,7 @@ function noFetchIf(
                 responseProps[p] = { value: v };
             });
         }
-        catch(ex) {}
+        catch { }
     } else if ( responseType !== '' ) {
         if ( validResponseProps.type.includes(responseType) ) {
             responseProps.type = { value: responseType };
@@ -104,7 +104,7 @@ function noFetchIf(
                 let v = details[prop];
                 if ( typeof v !== 'string' ) {
                     try { v = safe.JSON_stringify(v); }
-                    catch(ex) { }
+                    catch { }
                 }
                 if ( typeof v !== 'string' ) { continue; }
                 props.set(prop, v);
@@ -126,7 +126,7 @@ function noFetchIf(
                     break;
                 }
             }
-        } catch(ex) {
+        } catch {
         }
         if ( proceed ) {
             return context.reflect();
@@ -387,7 +387,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -465,7 +465,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

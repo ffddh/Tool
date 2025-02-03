@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/service\.perfect365\.com\/svr\/perfect365\/services url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/Perfect365.js
+^https?:\/\/service\.perfect365\.com\/svr\/perfect365\/services url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/Perfect365.js
 
 [mitm]
 hostname = service.perfect365.com

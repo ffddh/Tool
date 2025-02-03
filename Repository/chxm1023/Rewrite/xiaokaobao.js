@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/www\.119xkb\.com\/api\/(theory|user|index|type|Practical) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/xiaokaobao.js
+^https?:\/\/www\.119xkb\.com\/api\/(theory|user|index|type|Practical) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/xiaokaobao.js
 
 [mitm]
 hostname = www.119xkb.com

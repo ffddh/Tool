@@ -13,7 +13,7 @@
 *******************************
 [rewrite_local]
 # > 欲漫涩解锁会员视频
-^https?:\/\/.*\.com\/api\/app\/media url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/PornVideosCrack.js
+^https?:\/\/.*\.com\/api\/app\/media url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/PornVideosCrack.js
 
 [mitm] 
 hostname = zjgeo.eqobc.com, xnour.xonap.com, opzzy.kefsww.com, tqrbq.mpckv.com

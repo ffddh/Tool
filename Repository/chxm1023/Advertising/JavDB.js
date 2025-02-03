@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.((pxxgg|yijingluowangluo)\.xyz|ujvnmkx\.cn)\/api url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Advertising/JavDB.js
+^https?:\/\/api\.((pxxgg|yijingluowangluo)\.xyz|ujvnmkx\.cn)\/api url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Advertising/JavDB.js
 
 [mitm]
 hostname = api.pxxgg.xyz, api.ujvnmkx.cn, api.yijingluowangluo.xyz

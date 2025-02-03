@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/purchase-soda-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/soda.js
+^https?:\/\/purchase-soda-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/soda.js
 
 [mitm]
 hostname = purchase-soda-api.snow.me

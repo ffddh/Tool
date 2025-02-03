@@ -13,9 +13,9 @@
 hostname = api.aeonbuy.com
 
 [Script]
-永旺 Aeon² = type=http-response,pattern=https:\/\/api\.aeonbuy\.com\/api\/access-auth-api\/auth\/third\/silentWechatMiniLogin,requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js,script-update-interval=0
+永旺 Aeon² = type=http-response,pattern=https:\/\/api\.aeonbuy\.com\/api\/access-auth-api\/auth\/third\/silentWechatMiniLogin,requires-body=1,max-size=0,binary-body-mode=0,timeout=30,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js,script-update-interval=0
 
-永旺 Aeon = type=cron,cronexp="20 8 * * *",timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js,script-update-interval=0
+永旺 Aeon = type=cron,cronexp="20 8 * * *",timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js,script-update-interval=0
 
 ------------------- Loon 配置 -------------------
 
@@ -23,9 +23,9 @@ hostname = api.aeonbuy.com
 hostname = api.aeonbuy.com
 
 [Script]
-http-response https:\/\/api\.aeonbuy\.com\/api\/access-auth-api\/auth\/third\/silentWechatMiniLogin tag=永旺 Aeon²,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js,requires-body=1
+http-response https:\/\/api\.aeonbuy\.com\/api\/access-auth-api\/auth\/third\/silentWechatMiniLogin tag=永旺 Aeon²,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js,requires-body=1
 
-cron "20 8 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js,tag=永旺 Aeon,enable=true
+cron "20 8 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js,tag=永旺 Aeon,enable=true
 
 --------------- Quantumult X 配置 ---------------
 
@@ -33,10 +33,10 @@ cron "20 8 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = api.aeonbuy.com
 
 [rewrite_local]
-https:\/\/api\.aeonbuy\.com\/api\/access-auth-api\/auth\/third\/silentWechatMiniLogin url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js
+https:\/\/api\.aeonbuy\.com\/api\/access-auth-api\/auth\/third\/silentWechatMiniLogin url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js
 
 [task_local]
-20 8 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js, tag=永旺 Aeon, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png, enabled=true
+20 8 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js, tag=永旺 Aeon, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png, enabled=true
 
 ------------------ Stash 配置 ------------------
 
@@ -57,7 +57,7 @@ http:
 
 script-providers:
   永旺 Aeon:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/aeon_sign.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/aeon_sign.js
     interval: 86400
 
  */

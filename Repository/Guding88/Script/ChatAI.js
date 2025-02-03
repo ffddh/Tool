@@ -3,7 +3,7 @@
 ‎Chat AI：https://apps.apple.com/app/id1660877567
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/ChatAI.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/ChatAI.js
 
 [MITM]
 hostname = buy.itunes.apple.com

@@ -3,7 +3,7 @@
 百色特：https://apps.apple.com/app/id515094775
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Bazaart.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Bazaart.js
 
 [MITM]
 hostname = buy.itunes.apple.com

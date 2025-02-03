@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/dejianxiaoshuo.js
+^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/dejianxiaoshuo.js
 
 [mitm]
 

@@ -5,28 +5,28 @@
 * @TgChannel         https://t.me/ddgksf2021
 * @WechatID          墨鱼手记
 * @UpdateTime        2024.07.27
-* @ScriptURL         https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/Olympic2024.js
+* @ScriptURL         https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/Olympic2024.js
 * ==/UserScript==
 
 【QuantumultX】 :
 *************************
 [task_local]
-15 7,15 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/Olympic2024.js, tag=巴黎奥运会奖牌榜, img-url=https://s2.loli.net/2024/07/27/vaK6ExBzHgsW98e.png
+15 7,15 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/Olympic2024.js, tag=巴黎奥运会奖牌榜, img-url=https://s2.loli.net/2024/07/27/vaK6ExBzHgsW98e.png
 *************************
 【Loon】 :
 *************************
 [Script]
-cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/Olympic2024.js,tag=巴黎奥运会奖牌榜
+cron "15 7,15 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/Olympic2024.js,tag=巴黎奥运会奖牌榜
 *************************
 【Surge】 :
 *************************
 [Script]
-巴黎奥运会奖牌榜 = type=cron,cronexp="15 7,15 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/Olympic2024.js
+巴黎奥运会奖牌榜 = type=cron,cronexp="15 7,15 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/Olympic2024.js
 *************************
 【小火箭】 :
 *************************
 [Script]
-巴黎奥运会奖牌榜 = type=cron,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/Olympic2024.js, cronexpr="15 7,15 * * *", timeout=500, enable=true
+巴黎奥运会奖牌榜 = type=cron,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/Olympic2024.js, cronexpr="15 7,15 * * *", timeout=500, enable=true
 *************************
 
 */

@@ -39,9 +39,9 @@ const uBOL_addEventListenerDefuser = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["error","event.target.tagName"],["","showRemoveAdBlocker"],["DOMContentLoaded","document.createElement"]];
+const argsList = [["DOMContentLoaded","check"],["error","event.target.tagName"],["","showRemoveAdBlocker"],["DOMContentLoaded","document.createElement"]];
 
-const hostnamesMap = new Map([["rjno1.com",0],["xiebruce.top",1],["85tube.com",2]]);
+const hostnamesMap = new Map([["xchina.co",0],["rjno1.com",1],["xiebruce.top",2],["85tube.com",3]]);
 
 const entitiesMap = new Map([]);
 
@@ -114,7 +114,7 @@ function addEventListenerDefuser(
                 } else {
                     h = String(callArgs[1]);
                 }
-            } catch(ex) {
+            } catch {
             }
             if ( type === '' && pattern === '' ) {
                 safe.uboLog(logPrefix, `Called: ${t}\n${h}\n${elementDetails(thisArg)}`);
@@ -336,7 +336,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -414,7 +414,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

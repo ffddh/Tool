@@ -4,7 +4,7 @@
 解锁冥想模块，声音模块可在冥想的背景音乐中使用，计划模块不可用。
 
 [rewrite_local]
-^https:\/\/kc\.xinli001\.com\/lingxikc\/(?!.*plan).* url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/mingxiangxingqiu.js
+^https:\/\/kc\.xinli001\.com\/lingxikc\/(?!.*plan).* url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/mingxiangxingqiu.js
 
 [MITM]
 hostname = kc.xinli001.com

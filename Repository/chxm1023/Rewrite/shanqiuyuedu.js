@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^http:\/\/(m\.815616\.xyz|175\.178\.52\.149:88)\/api\/v\d\/myinfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/shanqiuyuedu.js
+^http:\/\/(m\.815616\.xyz|175\.178\.52\.149:88)\/api\/v\d\/myinfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/shanqiuyuedu.js
 
 [mitm]
 hostname = m.815616.xyz

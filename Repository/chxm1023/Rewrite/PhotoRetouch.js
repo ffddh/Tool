@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/PhotoRetouch.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/PhotoRetouch.js
 
 [mitm]
 hostname = buy.itunes.apple.com

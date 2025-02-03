@@ -97,6 +97,9 @@
     "TTA_MODE": {
       "TITLE": "TTA Mode",
       "DESCRIPTION": "Enable Test Time Augmentation for better results, such as removing artifacts BUT this will increase the processing time by 8x!"
+    },
+    "SYSTEM_INFO": {
+      "TITLE": "System Info"
     }
   },
   "APP": {
@@ -141,6 +144,10 @@
         "digital-art-4x": {
           "NAME": "Digital Art",
           "DESCRIPTION": "For digital art and illustrations."
+        },
+        "high-fidelity-4x": {
+          "NAME": "High Fidelity",
+          "DESCRIPTION": "For all kinds of images with a focus on realistic details and smooth textures."
         }
       }
     },
@@ -169,7 +176,6 @@
       "LENS_VIEW_TITLE": "Lens View",
       "SLIDER_VIEW_TITLE": "Slider View",
       "ZOOM_AMOUNT_TITLE": "Zoom Amount",
-      "LENS_SIZE_TITLE": "Lens Size",
       "TOTAL_UPSCAYLS": "Total Upscayls",
       "TOTAL_BATCH_UPSCAYLS": "Total Batch Upscayls",
       "TOTAL_IMAGE_UPSCAYLS": "Total Image Upscayls",

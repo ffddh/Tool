@@ -39,13 +39,13 @@ const uBOL_trustedReplaceArgument = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["document.getElementById","0","null","condition","adsense-container"],["document.getElementById","0","null","condition","modal"],["document.querySelector","0","json:\"body\"","condition",".ad-zone"],["Range.prototype.createContextualFragment","0","","condition","WebAssembly"],["document.querySelector","0","json:\"div[align='center']\"","condition",".adsbygoogle.adsbygoogle-noablate"],["HTMLScriptElement.prototype.setAttribute","1","{\"value\": \"(function(){let link=document.createElement('link');link.rel='stylesheet';link.href='//image.ygosu.com/style/main.css';document.head.appendChild(link)})()\"}","condition","error-report"],["HTMLScriptElement.prototype.setAttribute","1","{\"value\": \"(function(){let link=document.createElement('link');link.rel='stylesheet';link.href='https://loawa.com/assets/css/loawa.min.css';document.head.appendChild(link)})()\"}","condition","error-report"],["document.querySelector","0","noopFunc","condition","adblock"],["Array.prototype.find","0","undefined","condition","affinity-qi"],["String.prototype.includes","0","undefined","condition","/^checkout$/"],["HTMLAnchorElement.prototype.getAttribute","0","json:\"class\"","condition","data-direct-ad"],["history.replaceState","2","''","condition","?orgRef"],["document.querySelector","0","{\"value\": \".ad-placement-interstitial\"}","condition",".easyAdsBox"],["String.prototype.split","0","json:\"/1\"","condition","/^\\/$/"],["HTMLLIElement.prototype.querySelector","0","undefined","condition","/^a?\\.tilk$/"],["HTMLLIElement.prototype.querySelector","0","undefined","condition",".b_title > h2 > a"]];
+const argsList = [["HTMLScriptElement.prototype.setAttribute","1","{\"value\": \"(function(){let link=document.createElement('link');link.rel='stylesheet';link.href='//image.ygosu.com/style/main.css';document.head.appendChild(link)})()\"}","condition","error-report"],["HTMLScriptElement.prototype.setAttribute","1","{\"value\": \"(function(){let link=document.createElement('link');link.rel='stylesheet';link.href='https://loawa.com/assets/css/loawa.min.css';document.head.appendChild(link)})()\"}","condition","error-report"],["HTMLScriptElement.prototype.setAttribute","1","noopFunc","condition","error-report.com"],["document.querySelector","0","noopFunc","condition","adblock"],["Array.prototype.find","0","undefined","condition","affinity-qi"],["document.getElementById","0","null","condition","adsense-container"],["document.getElementById","0","null","condition","modal"],["document.querySelector","0","json:\"body\"","condition",".ad-zone"],["Range.prototype.createContextualFragment","0","","condition","WebAssembly"],["document.querySelector","0","json:\"div[align='center']\"","condition",".adsbygoogle.adsbygoogle-noablate"],["HTMLAnchorElement.prototype.getAttribute","0","json:\"class\"","condition","data-direct-ad"],["history.replaceState","2","''","condition","?orgRef"],["document.querySelector","0","{\"value\": \".ad-placement-interstitial\"}","condition",".easyAdsBox"]];
 
-const hostnamesMap = new Map([["copyseeker.net",0],["zonebourse.com",1],["scimagojr.com",2],["coomer.su",3],["kemono.su",3],["gecmisi.com.tr",4],["ygosu.com",5],["bamgosu.site",5],["loawa.com",6],["autosport.com",7],["motorsport.com",7],["motorsport.uol.com.br",7],["startpage.com",8],["energiasolare100.it",9],["lundracing.com",9],["red17.co.uk",9],["workplace-products.co.uk",9],["slant.co",10],["www.lenovo.com",11],["purepeople.com",12],["dogdrip.net",13],["infinityfree.com",13],["smsonline.cloud",13],["webdesignledger.com",13],["bing.com",[14,15]]]);
+const hostnamesMap = new Map([["ygosu.com",0],["bamgosu.site",0],["loawa.com",1],["picrew.me",2],["winfuture.de",2],["autosport.com",3],["motorsport.com",3],["motorsport.uol.com.br",3],["startpage.com",4],["copyseeker.net",5],["zonebourse.com",6],["scimagojr.com",7],["coomer.su",8],["kemono.su",8],["gecmisi.com.tr",9],["slant.co",10],["www.lenovo.com",11],["purepeople.com",12]]);
 
 const entitiesMap = new Map([]);
 
-const exceptionsMap = new Map([["forum.infinityfree.com",[13]]]);
+const exceptionsMap = new Map([]);
 
 /******************************************************************************/
 
@@ -62,7 +62,7 @@ function trustedReplaceArgument(
     const replacer = argraw.startsWith('repl:/') &&
         parseReplaceFn(argraw.slice(5)) || undefined;
     const value = replacer === undefined &&
-        validateConstantFn(true, argraw, extraArgs) || undefined;
+        validateConstantFn(true, argraw, extraArgs);
     const reCondition = extraArgs.condition
         ? safe.patternToRegex(extraArgs.condition)
         : /^/;
@@ -89,8 +89,10 @@ function trustedReplaceArgument(
             return context.reflect();
         }
         const argBefore = getArg(context);
-        if ( safe.RegExp_test.call(reCondition, argBefore) === false ) {
-            return context.reflect();
+        if ( extraArgs.condition !== undefined ) {
+            if ( safe.RegExp_test.call(reCondition, argBefore) === false ) {
+                return context.reflect();
+            }
         }
         const argAfter = replacer && typeof argBefore === 'string'
             ? argBefore.replace(replacer.re, replacer.replacement)
@@ -121,7 +123,7 @@ function parseReplaceFn(s) {
     const flags = s.slice(parser.separatorEnd);
     try {
         return { re: new RegExp(pattern, flags), replacement };
-    } catch(_) {
+    } catch {
     }
 }
 
@@ -306,7 +308,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -384,7 +386,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }
@@ -425,9 +427,9 @@ function validateConstantFn(trusted, raw, extraArgs = {}) {
         if ( Math.abs(raw) > 0x7FFF ) { return; }
     } else if ( trusted ) {
         if ( raw.startsWith('json:') ) {
-            try { value = safe.JSON_parse(raw.slice(5)); } catch(ex) { return; }
+            try { value = safe.JSON_parse(raw.slice(5)); } catch { return; }
         } else if ( raw.startsWith('{') && raw.endsWith('}') ) {
-            try { value = safe.JSON_parse(raw).value; } catch(ex) { return; }
+            try { value = safe.JSON_parse(raw).value; } catch { return; }
         }
     } else {
         return;

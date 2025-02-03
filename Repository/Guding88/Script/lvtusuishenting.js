@@ -3,7 +3,7 @@
 旅途随身听：https://apps.apple.com/app/id1622788638
 
 [rewrite_local]
-^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user\/getInfo|guideScenic\/getScenicAllMarkerList) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/lvtusuishenting.js
+^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(user\/getInfo|guideScenic\/getScenicAllMarkerList) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/lvtusuishenting.js
 
 [MITM]
 hostname = www.1314zhilv.com

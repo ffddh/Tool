@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > 悦色视频解锁会员
-^https?:\/\/ys\.huajibh\.com\/api\/video url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/PleasantVideoCrack.js
+^https?:\/\/ys\.huajibh\.com\/api\/video url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/PleasantVideoCrack.js
 
 [mitm] 
 hostname = ys.huajibh.com

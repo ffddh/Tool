@@ -10,7 +10,7 @@
 [rewrite_local]
 
 ^https:\/\/tk\.lanjiyin\.com\.cn\/img url reject
-^https:\/\/(tk|course)\.lanjiyin\.com\.cn url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/lanjiyin.js
+^https:\/\/(tk|course)\.lanjiyin\.com\.cn url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/lanjiyin.js
 
 [mitm]
 

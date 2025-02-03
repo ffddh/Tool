@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > Art Widget 解锁永久会员
-^https?:\/\/www\.40sishi\.com\/artwidget\/user\/profile$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/ArtWidgetVipCrack.js
+^https?:\/\/www\.40sishi\.com\/artwidget\/user\/profile$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/ArtWidgetVipCrack.js
 
 [mitm] 
 hostname = www.40sishi.com

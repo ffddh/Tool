@@ -8,7 +8,7 @@
 
 3、清除QX的DNS缓存，添加定时脚本from@unknowntokyo(每天晚9点清理一次）
 
-0 21 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/clear_qxdns_cache.js
+0 21 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/clear_qxdns_cache.js
 
 以上三种方式，可自行尝试，选择适合自己的使用
 

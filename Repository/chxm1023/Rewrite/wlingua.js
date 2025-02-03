@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.wlingua\.io\/v\d+\/user\/\d+\/meta-course\/\d+\/get$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/wlingua.js
+^https?:\/\/api\.wlingua\.io\/v\d+\/user\/\d+\/meta-course\/\d+\/get$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/wlingua.js
 
 [mitm]
 hostname = api.wlingua.io

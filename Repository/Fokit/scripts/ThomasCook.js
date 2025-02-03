@@ -13,20 +13,20 @@
 hostname = apis.folidaymall.com
 
 [Script]
-获取托迈酷客Cookie = type=http-request,pattern=^https:\/\/apis\.folidaymall\.com\/online\/capi\/uc\/getCount,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/ThomasCook.js
+获取托迈酷客Cookie = type=http-request,pattern=^https:\/\/apis\.folidaymall\.com\/online\/capi\/uc\/getCount,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/ThomasCook.js
 
 
-托迈酷客 = type=cron,cronexp=15 10 * * *,timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/ThomasCook.js,script-update-interval=0
+托迈酷客 = type=cron,cronexp=15 10 * * *,timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/ThomasCook.js,script-update-interval=0
 ----------------------------------------------------------------------------------------------------
 配置 (QuanX)
 [MITM]
 hostname = apis.folidaymall.com
 
 [rewrite_local]
-^https:\/\/apis\.folidaymall\.com\/online\/capi\/uc\/getCount url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/ThomasCook.js
+^https:\/\/apis\.folidaymall\.com\/online\/capi\/uc\/getCount url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/ThomasCook.js
 
 [task_local]
-15 10 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/ThomasCook.js, tag=托迈酷客, enabled=true
+15 10 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/ThomasCook.js, tag=托迈酷客, enabled=true
 ====================================================================================================
 */
 

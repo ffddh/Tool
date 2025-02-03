@@ -13,8 +13,10 @@ import {
   autoUpdateAtom,
   enableContributionAtom,
 } from "@/atoms/user-settings-atom";
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import useTranslation from "../hooks/use-translation";
+import LanguageSwitcher from "../sidebar/settings-tab/language-switcher";
+import { localeAtom } from "@/atoms/translations-atom";
 
 type OnboardingStep = {
   title: string;
@@ -35,6 +37,7 @@ export function OnboardingDialog() {
 
   const [currentStep, setCurrentStep] = useState(0);
   const [settings, setSettings] = useState<Record<string, any>>({});
+  const locale = useAtomValue(localeAtom);
 
   const [open, setOpen] = useState(false);
 
@@ -44,6 +47,14 @@ export function OnboardingDialog() {
         title: t("ONBOARDING_DIALOG.STEP_1.TITLE"),
         description: t("ONBOARDING_DIALOG.STEP_1.DESCRIPTION"),
         type: "info",
+        configurationOptions: [
+          {
+            type: "component",
+            label: t("SETTINGS.LANGUAGE.TITLE"),
+            component: <LanguageSwitcher hideLabel={true} />,
+            key: "theme",
+          },
+        ],
       },
       {
         title: t("ONBOARDING_DIALOG.STEP_2.TITLE"),
@@ -88,7 +99,7 @@ export function OnboardingDialog() {
         type: "info",
       },
     ],
-    [],
+    [locale],
   );
 
   const currentStepData = onboardingSteps[currentStep];
@@ -142,8 +153,9 @@ export function OnboardingDialog() {
           <div
             className={cn(
               "flex h-full w-full flex-col rounded-sm bg-primary p-8",
-              currentStepData.type === "settings" && "h-auto w-auto gap-8",
-              currentStepData.configurationOptions[0].type === "video" && "p-0",
+              "h-auto w-auto gap-8",
+              currentStepData.configurationOptions[0].type === "video" &&
+                "h-full w-full gap-0 p-0",
             )}
           >
             {currentStepData.configurationOptions.map((option) => (
@@ -219,11 +231,6 @@ export function OnboardingDialog() {
         )}
 
         <DialogFooter className="gap-2 md:gap-0">
-          <button onClick={handleNext} className="btn btn-secondary w-40">
-            {isLastStep
-              ? t("ONBOARDING_DIALOG.GET_STARTED_BUTTON_TITLE")
-              : t("ONBOARDING_DIALOG.NEXT_BUTTON_TITLE")}
-          </button>
           {!isFirstStep && (
             <button
               onClick={() => setCurrentStep((prev) => prev - 1)}
@@ -232,6 +239,11 @@ export function OnboardingDialog() {
               {t("ONBOARDING_DIALOG.BACK_BUTTON_TITLE")}
             </button>
           )}
+          <button onClick={handleNext} className="btn btn-secondary w-40">
+            {isLastStep
+              ? t("ONBOARDING_DIALOG.GET_STARTED_BUTTON_TITLE")
+              : t("ONBOARDING_DIALOG.NEXT_BUTTON_TITLE")}
+          </button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

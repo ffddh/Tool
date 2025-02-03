@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > 饭橘减肥解锁永久会员
-^https?:\/\/funjoy-api\.aiyouaiyou\.cn\/api\/User\/GetInfoByCode$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/FunJoyVipCrack.js
+^https?:\/\/funjoy-api\.aiyouaiyou\.cn\/api\/User\/GetInfoByCode$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/FunJoyVipCrack.js
 
 [mitm] 
 hostname = funjoy-api.aiyouaiyou.cn

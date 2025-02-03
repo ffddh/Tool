@@ -8,7 +8,7 @@ Air系列解锁，具体生效范围请自行测试同一开发者的同系列�
 习惯Air：https://apps.apple.com/app/id1608575722
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Air.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Air.js
 
 [MITM]
 hostname = buy.itunes.apple.com

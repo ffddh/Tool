@@ -3,7 +3,7 @@
 ToonMe：https://apps.apple.com/app/id1508120751
 
 [rewrite_local]
-^https?:\/\/purchases\.ws\.pho\.to\/api\/v2\/apple\/verifyReceipt url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/ToonMe.js
+^https?:\/\/purchases\.ws\.pho\.to\/api\/v2\/apple\/verifyReceipt url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/ToonMe.js
 
 [MITM]
 hostname = purchases.ws.pho.to

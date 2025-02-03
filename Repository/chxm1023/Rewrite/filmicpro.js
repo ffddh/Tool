@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/filmicpro\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/filmicpro.js
+^https:\/\/filmicpro\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/filmicpro.js
 
 [mitm]
 hostname = filmicpro.oracle.bendingspoonsapps.com

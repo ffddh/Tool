@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > 91短视频解锁会员&金币视频
-^https?:\/\/.+\.(my10api|(.*91.*))\.\w{3,4}(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/91SVCrack.js
+^https?:\/\/.+\.(my10api|(.*91.*))\.\w{3,4}(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/91SVCrack.js
 
 [mitm] 
 hostname = *.91api*

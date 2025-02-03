@@ -39,9 +39,9 @@ const uBOL_removeNodeText = function() {
 
 const scriptletGlobals = {}; // eslint-disable-line
 
-const argsList = [["script","adblock"],["script","hargamenu"],["script","replaceState","condition","shope.ee"],["script","showModal"]];
+const argsList = [["script","adblock"],["script","hargamenu"],["script","modalAdsPopup"],["script","replaceState","condition","shope.ee"],["script","showModal"]];
 
-const hostnamesMap = new Map([["almaftuchin.com",0],["wisatalova.com",1],["gramedia.com",2],["carisinyal.com",3]]);
+const hostnamesMap = new Map([["almaftuchin.com",0],["wisatalova.com",1],["katadata.co.id",2],["gramedia.com",3],["carisinyal.com",4]]);
 
 const entitiesMap = new Map([]);
 
@@ -294,7 +294,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -372,7 +372,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

@@ -18,7 +18,7 @@
 [rewrite_local]
   
 # > 莉景天气☆解锁会员权限（2024-01-28）@ddgksf2013
-^https?:\/\/ljwapi\.baichuan\.tech\/(VIP\/GetState|Login\/Device|User\/GetPrivateUsers|Vip\/GetVipType) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/LiJingTianQiProCrack.js
+^https?:\/\/ljwapi\.baichuan\.tech\/(VIP\/GetState|Login\/Device|User\/GetPrivateUsers|Vip\/GetVipType) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/LiJingTianQiProCrack.js
 
 
 [mitm]

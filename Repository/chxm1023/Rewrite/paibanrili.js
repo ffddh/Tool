@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vip_detail) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/paibanrili.js
+^https?:\/\/schedule-api\.julanling\.com\/api\/(get_member_info|vip_detail) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/paibanrili.js
 
 [mitm]
 hostname = schedule-api.julanling.com

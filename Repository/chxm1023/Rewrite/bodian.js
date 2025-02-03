@@ -3,14 +3,14 @@
 项目名称：波点音乐
 下载地址：https://t.cn/A6NLgAZW
 更新日期：2023-12-11
-脚本作者：chxm1023
-电报频道：https://t.me/chxm1023
+脚本作者：@ddm1023
+电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
 
 **************************************
 
 [rewrite_local]
-^https:\/\/bd-api\.kuwo\.cn\/api\/(ucenter\/users|play\/listening\/user|service\/(home\/index|banner\/myPage|advert\/watch)) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/bodian.js
+^https:\/\/bd-api\.kuwo\.cn\/api\/(ucenter\/users|play\/listening\/user|service\/(home\/index|banner\/myPage|advert\/watch)) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/bodian.js
 
 [mitm]
 hostname = bd-api.kuwo.cn

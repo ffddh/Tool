@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > Pixelance解锁永久高级版
-^https?:\/\/iap\.etm\.tech\/receipts$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/PixelanceProCrack.js
+^https?:\/\/iap\.etm\.tech\/receipts$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/PixelanceProCrack.js
 
 [mitm] 
 hostname = iap.etm.tech

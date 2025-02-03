@@ -3,7 +3,7 @@
 Fomz：https://apps.apple.com/app/id1615744942
 
 [rewrite_local]
-^https:\/\/fz68resapi\.imendon\.com\/v2\/purchase\/vip\/verification url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Fomz.js
+^https:\/\/fz68resapi\.imendon\.com\/v2\/purchase\/vip\/verification url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Fomz.js
 
 [MITM]
 hostname = fz68resapi.imendon.com

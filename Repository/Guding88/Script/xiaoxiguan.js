@@ -3,7 +3,7 @@
 小习惯：https://apps.apple.com/app/id1455083310
 
 [rewrite_local]
-^https?:\/\/xianbeikeji\.com\/daily\/app\/user\/query$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/xiaoxiguan.js
+^https?:\/\/xianbeikeji\.com\/daily\/app\/user\/query$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/xiaoxiguan.js
 
 [MITM]
 hostname = xianbeikeji.com

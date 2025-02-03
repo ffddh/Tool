@@ -19,7 +19,7 @@ host, gg.caixin.com, direct
 [rewrite_local]
 
 # ～ 财新（2024-01-14）@ddgksf2013
-^https?:\/\/gg\.caixin\.com\/s\?z=caixin&op=1&c=3362 url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/Scripts/caixinads.js
+^https?:\/\/gg\.caixin\.com\/s\?z=caixin&op=1&c=3362 url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/Scripts/caixinads.js
 
 [mitm]
 

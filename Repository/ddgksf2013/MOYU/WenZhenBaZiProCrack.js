@@ -18,7 +18,7 @@
 [rewrite_local]
   
 # > 问真八字☆解锁钻石会员权限（2023-08-04）@ddgksf2013
-^https?:\/\/bzpp2\.iwzbz\.com\/api\/.*\/user\/getvipinfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/WenZhenBaZiProCrack.js
+^https?:\/\/bzpp2\.iwzbz\.com\/api\/.*\/user\/getvipinfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/WenZhenBaZiProCrack.js
 
 
 [mitm] 

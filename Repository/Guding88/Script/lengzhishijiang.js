@@ -3,7 +3,7 @@
 冷知识酱：https://apps.apple.com/app/id6443612500
 
 [rewrite_local]
-^https?:\/\/lengapp\.com\/api\/v1\/mine url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/lengzhishijiang.js
+^https?:\/\/lengapp\.com\/api\/v1\/mine url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/lengzhishijiang.js
 
 [MITM]
 hostname = lengapp.com

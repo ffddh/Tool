@@ -13,7 +13,7 @@
 
 [rewrite_local]
 # > NotePlan3解锁永久订阅
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/NotePlan3ProCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/NotePlan3ProCrack.js
 
 [mitm] 
 hostname = api.revenuecat.com

@@ -14,7 +14,7 @@ const PostHogProviderWrapper = ({
   useEffect(() => {
     posthog.init("phc_QMcmlmComdofjfaRPzoN4KV9ziV2KgOwAOVyu4J3dIc", {
       api_host: "https://us.i.posthog.com",
-      person_profiles: "identified_only",
+      person_profiles: "always",
       autocapture: false,
       capture_pageview: false,
       capture_pageleave: false,
@@ -27,21 +27,17 @@ const PostHogProviderWrapper = ({
         posthog.register({
           ...systemInfo,
           appVersion,
-          $ip: "0.0.0.0",
-          $geoip_disable: true,
         });
         // Capture initial session start
         posthog.capture("app_launched", {
           ...systemInfo,
           appVersion,
-          $ip: "0.0.0.0",
-          $geoip_disable: true,
         });
       },
     });
   }, []);
 
-  if (!enableContribution) return <>{children}</>;
+  if (enableContribution === false) return <>{children}</>;
 
   return <PostHogProvider client={posthog}>{children}</PostHogProvider>;
 };

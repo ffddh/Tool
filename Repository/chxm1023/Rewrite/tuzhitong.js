@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.tuzhitong\.com\/api\/User\/GetUserVipInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/tuzhitong.js
+^https?:\/\/api\.tuzhitong\.com\/api\/User\/GetUserVipInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/tuzhitong.js
 
 [mitm]
 hostname = api.tuzhitong.com

@@ -12,9 +12,9 @@
 hostname = wox2019.woxshare.com
 
 [Script]
-$悦然荟$ = type=http-request,pattern=^https?:\/\/wox2019\.woxshare\.com\/clientApi\/userCenterDetail,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js
+$悦然荟$ = type=http-request,pattern=^https?:\/\/wox2019\.woxshare\.com\/clientApi\/userCenterDetail,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js
 
-悦然荟 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js,script-update-interval=0
+悦然荟 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -22,9 +22,9 @@ $悦然荟$ = type=http-request,pattern=^https?:\/\/wox2019\.woxshare\.com\/clie
 hostname = wox2019.woxshare.com
 
 [Script]
-http-request ^https?:\/\/wox2019\.woxshare\.com\/clientApi\/userCenterDetail tag=$悦然荟$, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js,requires-body=0
+http-request ^https?:\/\/wox2019\.woxshare\.com\/clientApi\/userCenterDetail tag=$悦然荟$, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js,requires-body=0
 
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js,tag = 悦然荟,enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js,tag = 悦然荟,enable=true
 
 -------------- Quantumult X 配置 --------------
 
@@ -32,10 +32,10 @@ cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = wox2019.woxshare.com
 
 [rewrite_local]
-^https?:\/\/wox2019\.woxshare\.com\/clientApi\/userCenterDetail url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js
+^https?:\/\/wox2019\.woxshare\.com\/clientApi\/userCenterDetail url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js
 
 [task_local]
-17 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js, tag=悦然荟, enabled=true
+17 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js, tag=悦然荟, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -56,7 +56,7 @@ http:
 
 script-providers:
   悦然荟:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/yueran_sign.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/yueran_sign.js
     interval: 86400
 
  */

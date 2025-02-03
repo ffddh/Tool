@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/lentoapp\.com:8081\/getUserMemberShipInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/lento.js
+^https?:\/\/lentoapp\.com:8081\/getUserMemberShipInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/lento.js
 
 [mitm]
 hostname = lentoapp.com

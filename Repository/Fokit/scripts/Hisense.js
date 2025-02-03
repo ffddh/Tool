@@ -20,9 +20,9 @@ https://raw.githubusercontent.com/FoKit/Scripts/main/rewrite/get_hisense_cookie.
 hostname = sweixin.hisense.com
 
 [Script]
-海信数据 = type=http-response,pattern=^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js
+海信数据 = type=http-response,pattern=^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js
 
-海信爱家 = type=cron,cronexp=52 7 * * *,timeout=500,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js,script-update-interval=0
+海信爱家 = type=cron,cronexp=52 7 * * *,timeout=500,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -30,9 +30,9 @@ hostname = sweixin.hisense.com
 hostname = sweixin.hisense.com
 
 [Script]
-http-response ^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember tag=海信数据, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js,requires-body=1
+http-response ^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember tag=海信数据, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js,requires-body=1
 
-cron "52 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js,tag = 海信爱家,enable=true
+cron "52 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js,tag = 海信爱家,enable=true
 
 -------------- Quantumult X 配置 --------------
 
@@ -40,10 +40,10 @@ cron "52 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = sweixin.hisense.com
 
 [rewrite_local]
-^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js
+^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js
 
 [task_local]
-52 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js, tag=海信爱家, img-url=https://github.com/FoKit/Scripts/blob/main/images/hisense.png?raw=true, enabled=true
+52 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js, tag=海信爱家, img-url=https://github.com/FoKit/Scripts/blob/main/images/hisense.png?raw=true, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -64,7 +64,7 @@ http:
 
 script-providers:
   海信爱家:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/Hisense.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/Hisense.js
     interval: 86400
 
 */

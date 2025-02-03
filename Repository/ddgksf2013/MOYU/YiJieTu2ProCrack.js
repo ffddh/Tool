@@ -19,7 +19,7 @@
 [rewrite_local]
   
 # > 易截图2☆去除水印（2023-08-02）@ddgksf2013
-^https?:\/\/.*jietu.*com/apiv\d/user url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/ddgksf2013/MOYU/YiJieTu2ProCrack.js
+^https?:\/\/.*jietu.*com/apiv\d/user url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/ddgksf2013/MOYU/YiJieTu2ProCrack.js
 
 
 [mitm] 

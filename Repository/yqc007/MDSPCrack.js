@@ -18,7 +18,7 @@
 [rewrite_local]
 
 # 麻豆视频解锁会员
-^https?:\/\/api\.(md-ddd1|yh-bzd)\.com\/api\/web\/.+ url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/MDSPCrack.js
+^https?:\/\/api\.(md-ddd1|yh-bzd)\.com\/api\/web\/.+ url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/MDSPCrack.js
 
 [mitm] 
 

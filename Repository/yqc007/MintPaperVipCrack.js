@@ -9,7 +9,7 @@
 *******************************
 [rewrite_local]
 # > 薄荷壁纸解锁永久会员
-^https?:\/\/mars-prod\.whalean\.com\/hestia-service\/api\/(wpUser\/getUserInfo|wallpaper\/ai\/count\/detail) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/MintPaperVipCrack.js
+^https?:\/\/mars-prod\.whalean\.com\/hestia-service\/api\/(wpUser\/getUserInfo|wallpaper\/ai\/count\/detail) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/MintPaperVipCrack.js
 [mitm] 
 hostname = mars-prod.whalean.com
 *******************************/

@@ -3,7 +3,7 @@
 DreamFace：https://apps.apple.com/app/id1624172324
 
 [rewrite_local]
-^https?:\/\/dreamfaceapp\.com\/df-server\/user\/save_user_login url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/DreamFace.js
+^https?:\/\/dreamfaceapp\.com\/df-server\/user\/save_user_login url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/DreamFace.js
 
 [MITM]
 hostname = dreamfaceapp.com

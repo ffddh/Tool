@@ -5,7 +5,7 @@ Pixel Art - 数字填色&数字绘画游戏：https://apps.apple.com/app/id12749
 Groovepad - 用于创建电子音乐的移动应用：https://apps.apple.com/app/id1454398991
 
 [rewrite_local]
-^https?:\/\/storevalidator\.easybrain\.com\/api\/v1\/receipt_verify url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Easybrain.js
+^https?:\/\/storevalidator\.easybrain\.com\/api\/v1\/receipt_verify url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Easybrain.js
 
 [MITM]
 hostname = storevalidator.easybrain.com

@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/bellybook-app-api\.bellybook\.cn\/api\/v\d\/users\/(me|my_useage_info) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/StomachBook.js
+^https?:\/\/bellybook-app-api\.bellybook\.cn\/api\/v\d\/users\/(me|my_useage_info) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/StomachBook.js
 
 [mitm]
 hostname = bellybook-app-api.bellybook.cn

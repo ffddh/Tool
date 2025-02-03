@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-http:\/\/162\.209\.166\.196:6080\/pqys\.php\/v\d\/(app_config|top_notice) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Advertising/peiqitv.js
+http:\/\/162\.209\.166\.196:6080\/pqys\.php\/v\d\/(app_config|top_notice) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Advertising/peiqitv.js
 
 *************************************/
 

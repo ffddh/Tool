@@ -1,13 +1,11 @@
 # 规则名称: Emby
-# 规则统计: 166
+# 规则统计: 163
 
 DOMAIN,195.201.86.86
-DOMAIN,aca.misakaf.org
 DOMAIN,cc.coemn.com
 DOMAIN,cminf.sfcat.link
 DOMAIN,cuinf.sfcat.link
 DOMAIN,notnetflix.cos.cat
-DOMAIN,oversea.alphatvapp.top
 DOMAIN-SUFFIX,123456.al
 DOMAIN-SUFFIX,16bit.cfd
 DOMAIN-SUFFIX,20120714.xyz
@@ -25,6 +23,8 @@ DOMAIN-SUFFIX,agahk.odysseyplus.site
 DOMAIN-SUFFIX,agan2.vip
 DOMAIN-SUFFIX,agasg.odysseyplus.site
 DOMAIN-SUFFIX,agon.cf
+DOMAIN-SUFFIX,alphatvapp.top
+DOMAIN-SUFFIX,as174.de
 DOMAIN-SUFFIX,az-hk.embyclub.com
 DOMAIN-SUFFIX,azsgp.embyclub.com
 DOMAIN-SUFFIX,baisi.pro
@@ -49,7 +49,6 @@ DOMAIN-SUFFIX,em.ssky.me
 DOMAIN-SUFFIX,emby-cf.plusmedia.site
 DOMAIN-SUFFIX,emby-sg.plusmedia.site
 DOMAIN-SUFFIX,emby.aiyowei.ml
-DOMAIN-SUFFIX,emby.as174.com
 DOMAIN-SUFFIX,emby.bid
 DOMAIN-SUFFIX,emby.cjpc.cc
 DOMAIN-SUFFIX,emby.cl
@@ -99,7 +98,6 @@ DOMAIN-SUFFIX,gtlx.org
 DOMAIN-SUFFIX,gugumedia.link
 DOMAIN-SUFFIX,happyav.eu.org
 DOMAIN-SUFFIX,hovervan.org
-DOMAIN-SUFFIX,hxd.as174.com
 DOMAIN-SUFFIX,i109.com
 DOMAIN-SUFFIX,ii00.cc
 DOMAIN-SUFFIX,imetyou.top
@@ -113,7 +111,6 @@ DOMAIN-SUFFIX,lyrebirdemby.com
 DOMAIN-SUFFIX,magpie.cyou
 DOMAIN-SUFFIX,magpiecdn.tech
 DOMAIN-SUFFIX,mcjoker.xyz
-DOMAIN-SUFFIX,misakaf.org
 DOMAIN-SUFFIX,misty.ltd
 DOMAIN-SUFFIX,mius.uk
 DOMAIN-SUFFIX,mjjemby.org

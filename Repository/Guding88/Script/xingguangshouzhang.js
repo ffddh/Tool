@@ -3,7 +3,7 @@
 星光手帐：https://apps.apple.com/app/id1579846386
 
 [rewrite_local]
-^https?:\/\/sz\.szsszykj\.com\/api\/(user\/info|sign\/index|energy\/index|version\/popup) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/xingguangshouzhang.js
+^https?:\/\/sz\.szsszykj\.com\/api\/(user\/info|sign\/index|energy\/index|version\/popup) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/xingguangshouzhang.js
 
 [MITM]
 hostname = sz.szsszykj.com

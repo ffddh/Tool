@@ -3,8 +3,8 @@
 Subtrack：https://apps.apple.com/app/id1519946553
 
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Subtrack.js
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Subtrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Subtrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Subtrack.js
 
 [MITM]
 hostname = api.revenuecat.com

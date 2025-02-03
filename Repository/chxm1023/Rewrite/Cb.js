@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/cubox\.(pro|cc)\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/Cb.js
+^https:\/\/cubox\.(pro|cc)\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/Cb.js
 
 [mitm]
 hostname = cubox.*

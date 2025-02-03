@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/i\.at\.qq\.com\/pay\/memberinfo.+ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/wxts.js
+^https?:\/\/i\.at\.qq\.com\/pay\/memberinfo.+ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/wxts.js
 
 [mitm]
 hostname = i.at.qq.com

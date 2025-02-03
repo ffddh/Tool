@@ -10,7 +10,7 @@
  ******************************************
 [rewrite_local]
 # > 𝟗𝟏暗网破解全部视频
-^https?:\/\/.*(cloudfront|jiuyianwang).+\/api\/app\/(mine\/(info|wallet|announce)|ping\/domain\/h5) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/yqc007/91aw0101Crack.js
+^https?:\/\/.*(cloudfront|jiuyianwang).+\/api\/app\/(mine\/(info|wallet|announce)|ping\/domain\/h5) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/yqc007/91aw0101Crack.js
 [mitm] 
 hostname = jiuyianwang.static.wang, d32qxw0jezyiln.cloudfront.net, d3n6dfzpx82w4a.cloudfront.net, *.cloudfront.*
 ******************************************/

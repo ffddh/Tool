@@ -3,7 +3,7 @@
 Prisma：https://apps.apple.com/app/id1122649984
 
 [rewrite_local]
-^https?:\/\/api\.neuralprisma\.com\/receipt\/ios\/status\/prisma url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/Prisma.js
+^https?:\/\/api\.neuralprisma\.com\/receipt\/ios\/status\/prisma url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/Prisma.js
 
 [MITM]
 hostname = api.neuralprisma.com

@@ -8,7 +8,7 @@
 **************************************
 
 [rewrite_local]
-^http:\/\/iosv2\.cjapi\.5fun\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/wfzy.js
+^http:\/\/iosv2\.cjapi\.5fun\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/wfzy.js
 
 [mitm]
 hostname = iosv2.cjapi.5fun.com

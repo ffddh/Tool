@@ -13,9 +13,9 @@
 hostname = api.660pp.com
 
 [Script]
-PP 停车# = type=http-request,pattern=^https:\/\/api\.660pp\.com\/rest\/[\d\.]+?\/user\/token,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js
+PP 停车# = type=http-request,pattern=^https:\/\/api\.660pp\.com\/rest\/[\d\.]+?\/user\/token,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js
 
-PP 停车 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js,script-update-interval=0
+PP 停车 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js,script-update-interval=0
 
 ------------------ Loon 配置 ------------------
 
@@ -23,9 +23,9 @@ PP 停车 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.gith
 hostname = api.660pp.com
 
 [Script]
-http-request ^https:\/\/api\.660pp\.com\/rest\/[\d\.]+?\/user\/token tag=PP 停车#, script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js,requires-body=0
+http-request ^https:\/\/api\.660pp\.com\/rest\/[\d\.]+?\/user\/token tag=PP 停车#, script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js,requires-body=0
 
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js,tag = PP 停车,enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js,tag = PP 停车,enable=true
 
 -------------- Quantumult X 配置 --------------
 
@@ -33,10 +33,10 @@ cron "17 7 * * *" script-path=https://raw.githubusercontent.com/ffddh/Tool/main/
 hostname = api.660pp.com
 
 [rewrite_local]
-^https:\/\/api\.660pp\.com\/rest\/[\d\.]+?\/user\/token url script-request-header https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js
+^https:\/\/api\.660pp\.com\/rest\/[\d\.]+?\/user\/token url script-request-header https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js
 
 [task_local]
-17 7 * * * https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js, tag=PP 停车, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png, enabled=true
+17 7 * * * https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js, tag=PP 停车, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png, enabled=true
 
 ------------------ Stash 配置 -----------------
 
@@ -57,7 +57,7 @@ http:
 
 script-providers:
   PP 停车:
-    url: https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Fokit/scripts/pp_parking.js
+    url: https://raw.githubusercontent.com/axtyet/Luminous/main/Fokit/scripts/pp_parking.js
     interval: 86400
 
  */

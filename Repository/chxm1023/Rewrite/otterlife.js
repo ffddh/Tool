@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/otter-api\.codefuture\.top\/v\d\/user\/current url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/otterlife.js
+^https?:\/\/otter-api\.codefuture\.top\/v\d\/user\/current url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/otterlife.js
 
 [mitm]
 hostname = otter-api.codefuture.top

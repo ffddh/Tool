@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/bzpp2\.iwzbz\.com\/api\/.+\/(user\/getvipinfo|User\/getWXPW) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/wenzhenpaipan.js
+^https?:\/\/bzpp2\.iwzbz\.com\/api\/.+\/(user\/getvipinfo|User\/getWXPW) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/wenzhenpaipan.js
 
 [mitm]
 hostname = bzpp2.iwzbz.com

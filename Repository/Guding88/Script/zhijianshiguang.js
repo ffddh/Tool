@@ -3,7 +3,7 @@
 指尖时光：https://apps.apple.com/app/id1392166974
 
 [rewrite_local]
-^https?:\/\/integral2\.dasyibalang\.com\/v2\/User url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/zhijianshiguang.js
+^https?:\/\/integral2\.dasyibalang\.com\/v2\/User url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/zhijianshiguang.js
 
 [MITM]
 hostname = integral2.dasyibalang.com

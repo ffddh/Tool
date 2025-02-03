@@ -3,7 +3,7 @@
 朝暮计划：https://apps.apple.com/app/id1535727202
 
 [rewrite_local]
-^https?:\/\/www\.zomoplan\.com\/zhaoMuPlan_user\/info url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/zhaomujihua.js
+^https?:\/\/www\.zomoplan\.com\/zhaoMuPlan_user\/info url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/zhaomujihua.js
 
 [MITM]
 hostname = www.zomoplan.com

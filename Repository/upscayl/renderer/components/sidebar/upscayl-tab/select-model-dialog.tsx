@@ -48,9 +48,11 @@ const SelectModelDialog = () => {
         <DialogTrigger asChild>
           <button className="btn btn-primary justify-start border-border">
             <SwatchBookIcon className="mr-2 h-5 w-5" />
-            {t(
-              `APP.MODEL_SELECTION.MODELS.${MODELS[selectedModelId].id || selectedModelId}.NAME` as any,
-            ) || selectedModelId}
+            {selectedModelId in MODELS
+              ? t(
+                  `APP.MODEL_SELECTION.MODELS.${MODELS[selectedModelId]?.id}.NAME` as any,
+                )
+              : selectedModelId}
           </button>
         </DialogTrigger>
         <DialogContent className="z-50 sm:max-w-lg">
@@ -77,12 +79,12 @@ const SelectModelDialog = () => {
                     <div className="relative h-52 w-full overflow-hidden rounded-sm">
                       <div className="flex h-full w-full">
                         <img
-                          src={`/model-comparison/${model.id}/before.webp`}
+                          src={`public:///model-comparison/${model.id}/before.webp`}
                           alt={`Model Before`}
                           className="h-full w-1/2 object-cover"
                         />
                         <img
-                          src={`/model-comparison/${model.id}/after.webp`}
+                          src={`public:///model-comparison/${model.id}/after.webp`}
                           alt={`Model After`}
                           className="h-full w-1/2 object-cover"
                         />
@@ -111,9 +113,11 @@ const SelectModelDialog = () => {
                   </button>
                 );
               })}
-              <p className="font-semibold text-base-content">
-                {t("APP.MODEL_SELECTION.IMPORTED_CUSTOM_MODELS")}
-              </p>
+              {customModelIds.length > 0 && (
+                <p className="font-semibold text-base-content">
+                  {t("APP.MODEL_SELECTION.IMPORTED_CUSTOM_MODELS")}
+                </p>
+              )}
               {customModelIds.map((customModel) => {
                 return (
                   <button
@@ -142,7 +146,7 @@ const SelectModelDialog = () => {
             <div className="flex h-full w-full">
               <div className="relative h-full w-1/2">
                 <img
-                  src={`/model-comparison/${MODELS[zoomedModel]?.id}/before.webp`}
+                  src={`public:///model-comparison/${MODELS[zoomedModel]?.id}/before.webp`}
                   alt={`Zoomed in Image - Before`}
                   className="h-full w-full object-contain"
                 />
@@ -152,7 +156,7 @@ const SelectModelDialog = () => {
               </div>
               <div className="relative h-full w-1/2">
                 <img
-                  src={`/model-comparison/${MODELS[zoomedModel]?.id}/after.webp`}
+                  src={`public:///model-comparison/${MODELS[zoomedModel]?.id}/after.webp`}
                   alt={`Zoomed in Image - After`}
                   className="h-full w-full object-contain"
                 />

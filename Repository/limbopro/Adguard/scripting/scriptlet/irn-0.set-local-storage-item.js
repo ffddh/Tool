@@ -113,7 +113,7 @@ function setLocalStorageItemFn(
         } else {
             storage.setItem(key, `${value}`);
         }
-    } catch(ex) {
+    } catch {
     }
 }
 
@@ -136,6 +136,9 @@ function getSafeCookieValuesFn() {
         'on', 'off',
         'true', 't', 'false', 'f',
         'yes', 'y', 'no', 'n',
+        'all', 'none', 'functional',
+        'granted', 'done',
+        'decline', 'declined',
     ];
 }
 
@@ -239,7 +242,7 @@ function safeSelf() {
             try {
                 return new RegExp(match[1], match[2] || undefined);
             }
-            catch(ex) {
+            catch {
             }
             return /^/;
         },
@@ -317,7 +320,7 @@ function safeSelf() {
             }
         };
         bc.postMessage('areyouready?');
-    } catch(_) {
+    } catch {
         safe.sendToLogger = (type, ...args) => {
             const text = safe.toLogText(type, ...args);
             if ( text === undefined ) { return; }

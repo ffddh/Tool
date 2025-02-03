@@ -3,7 +3,7 @@
 奇妙P图：https://apps.apple.com/app/id1509179692
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/Guding88/Script/qimiaoPtu.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/Guding88/Script/qimiaoPtu.js
 
 [MITM]
 hostname = buy.itunes.apple.com

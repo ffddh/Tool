@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/film-api\.startupfun\.vip\/api\/v\d\/(wallpaper\/generator|user\/point\/info) url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/tjzs.js
+^https?:\/\/film-api\.startupfun\.vip\/api\/v\d\/(wallpaper\/generator|user\/point\/info) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/tjzs.js
 
 [mitm]
 hostname = film-api.startupfun.vip

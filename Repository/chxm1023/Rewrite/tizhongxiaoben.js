@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.jitizhong\.com url script-response-body https://raw.githubusercontent.com/ffddh/Tool/main/Repository/chxm1023/Rewrite/tizhongxiaoben.js
+^https:\/\/api\.jitizhong\.com url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/tizhongxiaoben.js
 
 [mitm]
 hostname = api.jitizhong.com
