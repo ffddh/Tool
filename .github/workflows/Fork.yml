@@ -1,4 +1,4 @@
-name: Fork & Edit 
+name: Fork & Edit lists
 on:
   workflow_dispatch:
   schedule:
@@ -11,10 +11,10 @@ jobs:
       TZ: 'Asia/Shanghai'
     
     steps: 
-    - name: Checkout target Repository
+    - name: Checkout target repository
       uses: actions/checkout@v4.1.0
       with:
-        Repository: ffddh/Tool
+        repository: ffddh/Tool
         path: Tool-repo
 
 ######
@@ -33,7 +33,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Rewrite\/main/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/chxm1023\/Rewrite/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Rewrite\/main/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/chxm1023\/Rewrite/g' "$file"
             else
               echo "$file not found."
             fi
@@ -45,7 +45,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Rewrite\/main\/Revenuecat/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/chxm1023\/Rewrite\/Revenuecat/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Rewrite\/main\/Revenuecat/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/chxm1023\/Rewrite\/Revenuecat/g' "$file"
             else
               echo "$file not found."
             fi
@@ -57,7 +57,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Rewrite\/main\/iTunes/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/chxm1023\/Rewrite\/iTunes/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Rewrite\/main\/iTunes/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/chxm1023\/Rewrite\/iTunes/g' "$file"
             else
               echo "$file not found."
             fi
@@ -77,7 +77,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Advertising\/main/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/chxm1023\/Advertising/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/chxm1023\/Advertising\/main/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/chxm1023\/Advertising/g' "$file"
             else
               echo "$file not found."
             fi
@@ -90,14 +90,6 @@ jobs:
         git clone -b main https://github.com/chxm1023/Script_X.git  yzc_Tmp
         cp -r yzc_Tmp/* Tool-repo/Repository/chxm1023/Script_X
         rm -rf yzc_Tmp   
-
-#      # Fork RuCu6 分流规则&重写规则
-#    - name: Fork RuCu6 Rules
-#      run: |
-#        mkdir -p Tool-repo/Repository/RuCu6
-#        git clone -b main https://github.com/RuCu6/QuanX.git  qwe_Tmp
-#        cp -r qwe_Tmp/* Tool-repo/Repository/RuCu6
-#        rm -rf qwe_Tmp
 
       # Fork yqc007 重写脚本
     - name: Fork yqc007 Rewrite
@@ -113,43 +105,11 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/yqc007\/QuantumultX\/master/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/yqc007/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/yqc007\/QuantumultX\/master/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/yqc007/g' "$file"
             else
               echo "$file not found."
             fi
           done
-
-#      # Fork 可莉插件、脚本
-#    - name: Fork lodepuly Plugin&Script
-#      run: |
-#        mkdir -p Tool-repo/Repository/KeLee
-#        git clone https://gitlab.com/lodepuly/vpn_tool.git lodepuly_Tmp
-#        cp -r lodepuly_Tmp/* Tool-repo/Repository/KeLee
-#        rm -rf lodepuly_Tmp
-#      # 修改脚本链接
-#    - name: Edit KeLee/QuantumultX
-#      run: |
-#        cd Tool-repo/Repository/KeLee/Tool/QuantumultX/Rewrite
-#        for file in *.snippet; do
-#            if [ "$file" ] ; then
-#              # 修改脚本链接
-#              sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/KeLee\/Resource\/Script/g' "$file"
-#            else
-#              echo "$file not found."
-#            fi
-#          done
-#      # 修改脚本链接
-#    - name: Edit KeLee/Loon
-#      run: |
-#        cd Tool-repo/Repository/KeLee/Tool/Loon/Plugin
-#        for file in *.plugin; do
-#            if [ "$file" ] ; then
-#              # 修改脚本链接
-#              sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/KeLee\/Resource\/Script/g' "$file"
-#            else
-#              echo "$file not found."
-#            fi
-#          done
 
       # Fork Peng-YM 定时任务&重写规则
     - name: Fork  Peng-YM Tasks&Rewrite
@@ -181,7 +141,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/Guding88\/Script\/main/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/Guding88\/Script/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/Guding88\/Script\/main/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/Guding88\/Script/g' "$file"
             else
               echo "$file not found."
             fi
@@ -194,7 +154,7 @@ jobs:
         git clone https://github.com/fmz200/wool_scripts.git asf_Tmp
         cp -r asf_Tmp/* Tool-repo/Repository/wool_scripts
         rm -rf asf_Tmp
-        
+
       # Fork zqzess 定时任务&分流规则
     - name: Fork zqzess Task&Filter
       run: |
@@ -307,7 +267,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/raw\.githubusercontent\.com\/FoKit\/Scripts\/main\/scripts/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/Fokit\/scripts/g' "$file"
+              sed -i 's/raw\.githubusercontent\.com\/FoKit\/Scripts\/main\/scripts/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/Fokit\/scripts/g' "$file"
             else
               echo "$file not found."
             fi
@@ -335,7 +295,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/github\.com\/ddgksf2013\/Scripts\/raw\/master/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/ddgksf2013\/Scripts/g' "$file"
+              sed -i 's/github\.com\/ddgksf2013\/Scripts\/raw\/master/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/ddgksf2013\/Scripts/g' "$file"
             else
               echo "$file not found."
             fi
@@ -371,7 +331,7 @@ jobs:
         for file in *.js; do
             if [ "$file" ] ; then
               # 修改脚本链接
-              sed -i 's/github\.com\/ddgksf2013\/MoYu\/raw\/master/raw.githubusercontent\.com\/ffddh\/Tool\/main\/Repository\/ddgksf2013\/MOYU/g' "$file"
+              sed -i 's/github\.com\/ddgksf2013\/MoYu\/raw\/master/raw.githubusercontent\.com\/axtyet\/Luminous\/main\/ddgksf2013\/MOYU/g' "$file"
             else
               echo "$file not found."
             fi
@@ -388,9 +348,9 @@ jobs:
       # Fork blackmatrix7 分流规则
     - name: Fork blackmatrix7 filter
       run: |
-        mkdir -p Tool-repo/Repository/blackmatrix7
+        mkdir -p Tool-repo/Repository/ios_rule_script
         git clone -b master https://github.com/blackmatrix7/ios_rule_script.git xcv_Tmp
-        cp -r xcv_Tmp/* Tool-repo/Repository/blackmatrix7
+        cp -r xcv_Tmp/* Tool-repo/Repository/ios_rule_script
         rm -rf xcv_Tmp
 
       # fork 毒奶去广告
@@ -436,7 +396,7 @@ jobs:
         mkdir -p Tool-repo/Repository/Moli-X
         git clone -b main https://github.com/Moli-X/Resources.git  dce_Tmp
         cp -r dce_Tmp/* Tool-repo/Repository/Moli-X
-        rm -rf dce_Tmp
+        rm -rf dce_Tmp  
 
      # fork Maasea script
     - name: Fork Maasea script
@@ -445,14 +405,14 @@ jobs:
         git clone -b master https://github.com/Maasea/sgmodule.git  ecd_Tmp
         cp -r ecd_Tmp/* Tool-repo/Repository/Maasea
         rm -rf ecd_Tmp  
-
-     # fork Keywos rule
+ 
+      # fork Keywos rule
     - name: Fork Keywos rule
       run: |
         mkdir -p Tool-repo/Repository/Keywos
-        git clone -b main https://github.com/Keywos/rule.git  ecd_Tmp
-        cp -r ecd_Tmp/* Tool-repo/Repository/Keywos
-        rm -rf ecd_Tmp  
+        git clone -b main https://github.com/Keywos/rule.git  ced_Tmp
+        cp -r ced_Tmp/* Tool-repo/Repository/Keywos
+        rm -rf ced_Tmp  
 
       # fork DualSubs YouTube字幕
     - name: Fork DualSubs YouTube
@@ -486,8 +446,8 @@ jobs:
         mkdir -p Tool-repo/Repository/DualSubs/BoxJS
         git clone -b main https://github.com/DualSubs/BoxJs.git  zcx_Tmp
         cp -r zcx_Tmp/* Tool-repo/Repository/DualSubs/BoxJS
-        rm -rf zcx_Tmp 
-  
+        rm -rf zcx_Tmp  
+
       # fork githubdulong
     - name: Fork githubdulong Script
       run: |
@@ -496,7 +456,6 @@ jobs:
         cp -r kmi_Tmp/* Tool-repo/Repository/githubdulong
         rm -rf kmi_Tmp  
 
-
       # fork axtyet Tool
     - name: Fork axtyet Tool
       run: |
@@ -504,7 +463,6 @@ jobs:
         git clone -b main https://github.com/axtyet/Tool.git  mik_Tmp
         cp -r mik_Tmp/* Tool-repo/Repository/axtyet/Tool
         rm -rf mik_Tmp  
-
 
       # fork upscayl
     - name: Fork upscayl
@@ -518,7 +476,7 @@ jobs:
       # 保存、推送   
     - name: Add and Commits
       run: |
-        cd Tool-repo
+        cd Luminous-repo
          if [[ -n $(git status -s) ]]; then
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -534,3 +492,4 @@ jobs:
       with:
         retain_days: 0
         keep_minimum_runs: 2
+  
