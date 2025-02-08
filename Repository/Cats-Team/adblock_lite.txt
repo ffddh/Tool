@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-02-08 08:03:37(GMT+8) 
-! Total count: 34089
+! ! Version: 2025-02-08 09:54:03(GMT+8) 
+! Total count: 34092
  
 ###ADtip
 ###AdBlockDialog
@@ -1138,7 +1138,6 @@
 ##DIV[style^='display: block; aspect-ratio: 728 / 90; background-image: url("/static/resources/lp.php']
 ##DIV[style^='position: fixed; bottom: 50%; z-index: 19999 !important; ']
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
-##I.fa.fa-close
 ##IFRAME[src^='/Banner/index.html'][allowfullscreen='true']
 ##IFRAME[src^='https://mydisplay.ctfile.com/popview.php']
 ##IMG#diads
@@ -11638,6 +11637,8 @@ iyf.tv#$#.player-side > .block { visibility: hidden !important; min-height: 390p
 iyf.tv#@#.share-top
 iyingdi.com##.downLoadApp
 iyingshi9.tv#$#override-property-read YZM.ads.state false
+izaiwen.cn##.item-box
+izaiwen.cn##DIV[carousel-item]
 izmailov.tv##.popupBlock
 jable.tv###jimds-slider
 jable.tv###site-content > div.container > section.pb-3.pb-e-lg-40.text-center
@@ -24917,6 +24918,7 @@ zzzyk.com###Tinfo
 ||huaban.com^*/ads
 ||huaerdadi.com^$third-party
 ||huaiduoduo.info/Runtime/js/
+||huakai2025.com/color.js
 ||huancaicp.com/?pid=$popup
 ||huanjugu.com/dm
 ||huanqiu.com/resource/js/base
@@ -32047,6 +32049,7 @@ zzzyk.com###Tinfo
 ||vjharl.xyz^
 ||vjie.com^$third-party
 ||vjvj.vj24co.com^
+||vjzqfh.icu^
 ||vjzvgvgz.icu^
 ||vk920.com/img1/
 ||vk922.com/img/
