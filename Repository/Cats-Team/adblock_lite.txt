@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-02-25 08:03:41(GMT+8) 
-! Total count: 33866
+! ! Version: 2025-02-26 08:03:41(GMT+8) 
+! Total count: 33875
  
 ###ADtip
 ###AdBlockDialog
@@ -6911,7 +6911,7 @@ animewld.club##.header-img
 animeworld.so#$#abort-on-property-read window.open
 animezone.pl#@#.myTestAd
 animixplay.*#$#abort-current-inline-script String.fromCharCode
-animixplay.*aniwatch.*,moviesjoy.*,tapeadvertisement.com#$#abort-on-property-read window.open; abort-current-inline-script document.documentElement break;case $.
+animixplay.*aniwatch.*,moviesjoy.*,movieshdwatch.*,tapeadvertisement.com#$#abort-on-property-read window.open; abort-current-inline-script document.documentElement break;case $.
 anisearch.com##.box-error
 anisearch.com#@##advertise
 anisearch.com#@#.adsbygoogle
@@ -16295,7 +16295,7 @@ vidshare.tv,govid.me,hdvid.tv,ovid.pro,gomovies.*,gostream.nu,openloadmovies.net
 vidshare.tv,vidshar.tv,series.movie,gowatchseries.movie,gowatchseries.tv#$#abort-current-inline-script Object.defineProperty XMLHttpRequest
 vidsrc.*#$#abort-current-inline-script EventTarget.prototype.addEventListener delete; abort-current-inline-script JSON.parse break;case $.;
 vidsrc.*,cucuflix.*#$#abort-current-inline-script document.createElement /referrerPolicy.*no-referrer-when-downgrade/;
-viet69.ps,truyengihotnay.com,dualeotruyenxxy.com,yurineko.my,xemsex.ai,hd.javhay.site,phimsexhay669.pro,cliphot69.bar,doctruyen3qui.pro,ihentai.nl,animehay.blue,jav.vc,top1sex.me,xemsex.ai,hentaivc.com,streamvl.top,www.buomtv.io,truyenvn.tech,javtiful.com,sex.tuoi69.store,quatvn.love,tenmientruyengi.net,top1phimsex.com,phim18hd.cam,coi.sexviet88.xyz,demo.14412882.com,mupnungvl.pro,ungtycomicsvip.org,xemphim18.vip,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuongz.club#$#abort-current-inline-script WebAssembly instantiate
+viet69.ps,truyengihotnay.com,dualeotruyenxxy.com,yurineko.my,xemsex.ai,hd.javhay.site,phimsexhay669.pro,cliphot69.bar,doctruyen3qui.pro,ihentai.nl,animehay.blue,jav.vc,top1sex.me,hentaivc.com,streamvl.top,www.buomtv.io,truyenvn.tech,javtiful.com,sex.tuoi69.store,quatvn.love,tenmientruyengi.net,top1phimsex.com,phim18hd.cam,coi.sexviet88.xyz,demo.14412882.com,mupnungvl.pro,ungtycomicsvip.org,xemphim18.vip,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuongz.club#$#abort-current-inline-script WebAssembly instantiate
 view.inews.qq.com##div[class^="article-recommend_wrapper"]
 view.inews.qq.com##div[class^="bottom-bar_buttonWrap"]
 view.inews.qq.com##div[class^="infinite-comment-list_subText"]
@@ -16727,7 +16727,7 @@ www.facebook.com,web.facebook.com#$#json-prune ' require.0.3.0.__bbox.require.[]
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains /Anzeige|Sponsored|Sponsorlu|Gesponsert|Patrocinado|Sponsorisé|Commandité|Gesponsord|Sponsorowane|Publicidad|Sponsrad|Sponsoreret|Sponsoroitu|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato/ 'div[aria-describedby][aria-labelledby]' 'span[aria-labelledby] svg[style] * ^^svg^^ * ^^svg^^'; hide-if-contains /Anzeige|Sponsored|Sponsorlu|Gesponsert|Patrocinado|Sponsorisé|Commandité|Gesponsord|Sponsorowane|Publicidad|Sponsrad|Sponsoreret|Sponsoroitu|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato/ 'div[aria-describedby][aria-labelledby]' 'span[aria-labelledby] svg[style] * ^^svg^^'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"] span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[aria-label][attributionsrc][href^="?__cft__"][role="link"]>span>span[aria-labelledby]'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href*="/ads/about/"][role="link"][tabindex="0"]>span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href="#"][role="link"][tabindex="0"]>span>span[aria-labelledby]>span[style]'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrwae]{12}|[Patrocind]{11}|[Sponsrizat]{13}|[Anzeig]{6}/ 'div[role=feed] div[role=article]' a[href^="?__cft__"]; race stop;
-www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(brs_content_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs)[^\n]+?("sponsored_data"|"data_spon")[^\n]+?("SponsoredData"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored)/'
+www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(brs_content_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs)[^\n]+?("sponsored_data"|"data_spon")[^\n]+?("SponsoredData"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored)/'
 www.ghxi.com##.wpcom_ad_wrap
 www.ghxi.com##DIV[style^='padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: ']
 www.goha.ru,3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,kufar.by,ura.news#$#abort-on-property-read Ya
@@ -18666,8 +18666,6 @@ zzzyk.com###Tinfo
 ||84zm8.xyz^
 ||85566.net/js/loadjs/jquery
 ||8585go.com/recommend
-||85tube.com/player/html.php?aid=*_html&video_id=*&*&referer
-||85tube.com/player/html.php?aid=*_html&video_id=*&*&referer$redirect=nooptext
 ||85wp.com/ad/
 ||8684.cn/id/ad_
 ||8684.com/com/sys_ad_
@@ -26371,6 +26369,7 @@ zzzyk.com###Tinfo
 ||kppt.cc/zb_system/script/common.js
 ||kppt.cc/zhifu.jpg
 ||kpshx.douguo.com^
+||kqgn.cn^
 ||kqubxdb.cn^
 ||kqzyfj.com^
 ||kr.sdykcloud.cn^
@@ -26836,6 +26835,7 @@ zzzyk.com###Tinfo
 ||lnifdlal.top^
 ||lnnahh.xyz^
 ||lnnsvj.xyz^
+||lnptph.icu^
 ||lnxkrd.xyz^
 ||lnzjlr.xyz^
 ||lnzqw.net/js/
@@ -26979,6 +26979,7 @@ zzzyk.com###Tinfo
 ||lvcha99.cc^
 ||lveodaz.icu^
 ||lvjtiaa.xyz^
+||lvnr.cn^
 ||lvnzrh.xyz^
 ||lvrvdn.xyz^
 ||lvse.cn/output/block/html/
@@ -28033,6 +28034,7 @@ zzzyk.com###Tinfo
 ||o.zjjrlx4.com^
 ||o02220aokk.com^
 ||o02231aokk.com^
+||o02251aokk.com^
 ||o1.jyjyj.cn^
 ||o1b04.cyou^
 ||o2.jyjyj.cn^
@@ -28140,6 +28142,7 @@ zzzyk.com###Tinfo
 ||okpp12311.xyz^
 ||okqwidvnsk.net^
 ||okwan.cn^
+||okwjmii.top^
 ||ol-img.com/channel/tuku/js/tukuPopup.js
 ||older-women-porn.com/black-credit-71cc^$domain=older-women-porn.com
 ||oldfashionedoffer.com^$third-party
@@ -28182,6 +28185,7 @@ zzzyk.com###Tinfo
 ||onetvb.com/assets/javascripts/
 ||oneyearonechange.com^
 ||onifdlak.top^
+||onjncgq.top^
 ||onkacspio.com^
 ||online.wsj.com/javascript/abm.js$script
 ||onmstgh.icu^
@@ -28509,6 +28513,7 @@ zzzyk.com###Tinfo
 ||phb123.com/skin/js/tongji.js
 ||phbkm.com/js/
 ||pheetuth.com^
+||pheidheat.com^
 ||pheqae.com^
 ||phfqumvi.xyz^
 ||phjtxx.xyz^
@@ -30901,6 +30906,7 @@ zzzyk.com###Tinfo
 ||tgyxpfjws.com^
 ||thacreks.com^
 ||thallus.net^
+||thampheth.com^
 ||thangrurs.com^
 ||thaqne.com^
 ||thavrils.com^
@@ -31952,6 +31958,7 @@ zzzyk.com###Tinfo
 ||vtdgfisz.icu^
 ||vtjbnb.xyz^
 ||vtlyrj.xyz^
+||vtrrxqbi.xyz^
 ||vtvnnl.xyz^
 ||vucve6is.icu^
 ||vudqth.icu^
@@ -33692,6 +33699,7 @@ zzzyk.com###Tinfo
 ||zlyk.com/Runtime/Js/m_footer_top.js
 ||zlyk.com/Runtime/Js/m_nav_bottom.js
 ||zlyk.com^*/ysapp.
+||zlzgfj.icu^
 ||zmbmoxij.icu^
 ||zmdjbl.xyz^
 ||zmhqhuq.cn^
@@ -33704,6 +33712,7 @@ zzzyk.com###Tinfo
 ||zndsssp.dangbei.net^
 ||znegiu.top^
 ||znhlxvb.xyz^
+||znlvhnej.icu^
 ||znnfzx.xyz^
 ||znnodl.xyz^
 ||znyjmbh.icu^
