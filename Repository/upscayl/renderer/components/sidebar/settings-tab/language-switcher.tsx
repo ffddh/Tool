@@ -6,6 +6,7 @@ const locales = {
   en: "English",
   tr: "Türkçe",
   ru: "Русский",
+  uk: "Українська",
   ja: "日本語",
   zh: "简体中文",
   es: "Español",
@@ -13,6 +14,7 @@ const locales = {
   de: "Deutsch",
   vi: "Tiếng Việt",
   pt: "Português (Portugal)",
+  ptBR: "Português (Brasil)",
   id: "Bahasa Indonesia",
 };
 
