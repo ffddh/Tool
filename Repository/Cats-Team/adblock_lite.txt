@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-03-15 16:00:34(GMT+8) 
-! Total count: 33750
+! ! Version: 2025-03-16 08:04:22(GMT+8) 
+! Total count: 33752
  
 ###ADtip
 ###AdBlockDialog
@@ -23872,6 +23872,7 @@ zzzyk.com###Tinfo
 ||ggwan.com^$third-party,domain=~linghit.com
 ||ggxwb.miguvideo.com^
 ||ghairqin.com^
+||ghegaintp.com^
 ||gheqien.com^
 ||gherkax.com^
 ||gheslosy.com^
@@ -31833,6 +31834,7 @@ zzzyk.com###Tinfo
 ||vmbzhfh.cn^
 ||vmcnl.xyz^
 ||vmdlxj.xyz^
+||vmjr.cn^
 ||vmvps.com/aoyohost-com-bann
 ||vmxvcjuf.icu^
 ||vnet.cn^*.html
