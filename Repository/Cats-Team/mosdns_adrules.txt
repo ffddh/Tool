@@ -1565,6 +1565,7 @@ domain:4dex.io
 domain:4dsbanner.net
 domain:4dsply.com
 domain:4dtrk.com
+domain:4e0c0b1247.com
 domain:4e8bjpldk.com
 domain:4ed5560812.com
 domain:4ef69e5814.c7b419036b.com
@@ -2048,6 +2049,7 @@ domain:73336zubo25326.com
 domain:7349.cosmicnewspulse.com
 domain:73503921.xyz
 domain:73568955.xyz
+domain:73a435bfaf.com
 domain:73a70e581b.com
 domain:73be0a6d8a.com
 domain:73fa81c29d.com
@@ -2353,6 +2355,7 @@ domain:89mtdab.xyz
 domain:8a43d8c952.b0b48016c5.com
 domain:8a97caf2b2.b5f1d2bb4d.com
 domain:8a9d20ab14.0b9b5eada8.com
+domain:8ab16250fe.com
 domain:8aea82753b.2ab91613ab.com
 domain:8ail6.icu
 domain:8b2f59b83b.55ef6cccfc.com
@@ -2474,6 +2477,7 @@ domain:9443.5clo0xmbf.com
 domain:94444717.xyz
 domain:9452.79j68qav2.com
 domain:94597672.xyz
+domain:94782806.xyz
 domain:94789b3f8f.com
 domain:9488.833enmhob.com
 domain:9489.bestinterestings.com
@@ -11648,6 +11652,7 @@ domain:anijjm.winkelstraat.nl
 domain:animatedjumpydisappointing.com
 domain:animaterecover.com
 domain:animaux.oworld.fr
+domain:animeshoppers.com
 domain:animits.com
 domain:animoseelegy.top
 domain:aninter.net
@@ -13707,6 +13712,7 @@ domain:asadirectrestof.com
 domain:asafesite.com
 domain:asajojgerewebnew.com
 domain:asamgd.rossmann.de
+domain:asanalytics.booking.com
 domain:asandcomemu.info
 domain:asansol.globalsearch.space
 domain:asaservicedg.csc.com
@@ -16734,6 +16740,7 @@ domain:binomo1.com
 domain:binomo2.zendesk.com
 domain:binomoidr.com
 domain:binomoindonesia.com
+domain:binomorupiah-id.com
 domain:binomotop.com
 domain:binomoweb.org
 domain:binomoweblogin.com
@@ -16889,7 +16896,6 @@ domain:bkjxpx.venda.cz
 domain:bklhnlv.com
 domain:bknpac.boylesports.com
 domain:bknqpb.dobredomy.pl
-domain:bknstore.com
 domain:bkogtr.vacationsbyrail.com
 domain:bkojzevpe.com
 domain:bkox.cn
@@ -23854,6 +23860,7 @@ domain:countercentral.com
 domain:countercrazy.com
 domain:counterfeitbear.com
 domain:counterfeitnearby.com
+domain:counters.booking.com
 domain:counters.freewebs.com
 domain:countertrck.com
 domain:countessrestrainasks.com
@@ -31671,6 +31678,7 @@ domain:dtbfpygjdxuxfbs.xyz
 domain:dtcc.fr
 domain:dtch.brunel.nl
 domain:dtckvpc.cn
+domain:dtdqpc.top
 domain:dtestpromo.fiat.it
 domain:dtfpvb.nicoleonlineshop.com
 domain:dtfyhdghsd.online
@@ -33913,7 +33921,6 @@ domain:en.btc-trader-app.club
 domain:en.btcprofit.we-trck.com
 domain:en.diebellendekatze.de
 domain:en.ultrex.ru
-domain:en407etr.com
 domain:en6.icu
 domain:enable.vertikal6.com
 domain:enablement.vmware.com
@@ -39954,6 +39961,7 @@ domain:glue.evansadhesive.com
 domain:gluedpixel.com
 domain:glugherg.net
 domain:glukropi.com
+domain:glum-mortgage.com
 domain:glumtitu.net
 domain:glumtoazaxom.net
 domain:gluoff.glucopureofficial.website
@@ -50542,6 +50550,7 @@ domain:kanzlei-borchers.de
 domain:kaocko.swaglift.com
 domain:kaorpyqtjjld.com
 domain:kaosts.com
+domain:kape.dataplane.rudderstack.com
 domain:kapetracking.com
 domain:kaplanindex.com
 domain:kapnqcbhdxjfokr.com
@@ -56656,6 +56665,7 @@ domain:lpmcr1h7z.com
 domain:lpmfqr.haru-shop.jp
 domain:lpmugcevks.com
 domain:lpmzt.cn
+domain:lpo03240aou.com
 domain:lpocne.top
 domain:lppfnf.icu
 domain:lps-info.arval.com
@@ -56769,6 +56779,7 @@ domain:lsv5.belambra.fr
 domain:lsvard.e-kinoshita.net
 domain:lswfmx.stuartweitzman.com
 domain:lsxvnzif.icu
+domain:lsyaicl.icu
 domain:lsyliel.top
 domain:lszjuj.chemnitzer-jobanzeiger.de
 domain:lszydrtzsh.com
@@ -63692,7 +63703,6 @@ domain:moneyclutchtrack.com
 domain:moneyexpert.com
 domain:moneymak3rstrack.com
 domain:moneymakercdn.com
-domain:moneymm1688.shop
 domain:moneyraid.com
 domain:moneytatorone.com
 domain:monfzx.pioro.co
@@ -64395,7 +64405,6 @@ domain:mustersvyrnwy.top
 domain:mutcheng.net
 domain:muteknife.com
 domain:mutenessdollyheadlong.com
-domain:muthaafoundation.org
 domain:mutinydisgraceeject.com
 domain:mutinygrannyhenceforward.com
 domain:mutsjeamenism.com
@@ -65155,6 +65164,7 @@ domain:navi36.ru
 domain:navi38.ru
 domain:navi39.ru
 domain:navi4.com
+domain:navi42.ru
 domain:navi45.ru
 domain:navi53.com
 domain:navi55.com
@@ -66399,7 +66409,6 @@ domain:noretia.com
 domain:norex-app.paihealth.no
 domain:norfotball.com
 domain:norgefotball.com
-domain:norgeshoes.com
 domain:norma-external-collect.meizu.com
 domain:normal-strength.com
 domain:normalfloat.com
@@ -83059,6 +83068,7 @@ domain:shoagooy.net
 domain:shoarsaiglep.net
 domain:shoathuftussux.net
 domain:shocked-failure.com
+domain:shocking-honey.com
 domain:shocking-profile.pro
 domain:shockinggrass.com
 domain:shockingrobes.com
@@ -103881,59 +103891,10 @@ domain:uniswap-v3.com
 domain:uniswap.cool
 domain:uniswap.markets
 domain:uniswap.ro
-domain:uniswap0120.com
-domain:uniswap0123.com
-domain:uniswap1.buzz
-domain:uniswap1.click
-domain:uniswap1.life
-domain:uniswap1.online
-domain:uniswap1.site
-domain:uniswap1.space
-domain:uniswap1.tokyo
 domain:uniswap100x.xyz
 domain:uniswap10x.xyz
-domain:uniswap2.buzz
-domain:uniswap2.click
-domain:uniswap2.cloud
-domain:uniswap2.life
-domain:uniswap2.online
-domain:uniswap2.space
-domain:uniswap2.tokyo
 domain:uniswap2025.xyz
-domain:uniswap3.buzz
-domain:uniswap3.click
-domain:uniswap3.online
-domain:uniswap3.site
-domain:uniswap3.space
-domain:uniswap3.tech
-domain:uniswap3.tokyo
 domain:uniswap365.xyz
-domain:uniswap5.biz
-domain:uniswap5.cloud
-domain:uniswap5.info
-domain:uniswap5.link
-domain:uniswap5.love
-domain:uniswap5.online
-domain:uniswap5.tokyo
-domain:uniswap5.website
-domain:uniswap5.work
-domain:uniswap5.xyz
-domain:uniswap7.biz
-domain:uniswap7.buzz
-domain:uniswap7.click
-domain:uniswap7.cloud
-domain:uniswap7.info
-domain:uniswap7.life
-domain:uniswap7.link
-domain:uniswap7.love
-domain:uniswap7.online
-domain:uniswap7.site
-domain:uniswap7.space
-domain:uniswap7.tech
-domain:uniswap7.tokyo
-domain:uniswap7.website
-domain:uniswap7.work
-domain:uniswap7.xyz
 domain:uniswap777.xyz
 domain:uniswapagent.com
 domain:uniswapai.xyz
@@ -106301,6 +106262,7 @@ domain:vwvj.cn
 domain:vwwoec.thahab.com
 domain:vwwzygltq.com
 domain:vx2vmoxd9x0cj7m3.pleasedonotblockme.com
+domain:vxcewh.cn
 domain:vxcjoz.nextadvisor.com
 domain:vxcsbi.northshorecare.com
 domain:vxcvd67.fun
