@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-03-23 08:04:32(GMT+8) 
-! Total count: 33897
+! ! Version: 2025-03-24 08:12:53(GMT+8) 
+! Total count: 33907
  
 ###ADtip
 ###AdBlockDialog
@@ -20663,6 +20663,7 @@ zzzyk.com###Tinfo
 ||bmqulua.icu^
 ||bmyrihf.icu^
 ||bnalzlv.top^
+||bnbwvp.top^
 ||bnds3.site^
 ||bnds4.site^
 ||bnds6.site^
@@ -23868,6 +23869,7 @@ zzzyk.com###Tinfo
 ||gepush.com^
 ||gepvgv.icu^
 ||geqshb22.fun^
+||gerqragpl.com^
 ||gesdxashb1.fun^
 ||gesfdashb5.fun^
 ||gessdashb6.fun^
@@ -24460,6 +24462,7 @@ zzzyk.com###Tinfo
 ||hccoeutg.com^
 ||hcdjy.xyz^
 ||hcgbhq.com^
+||hchus5739dmew.top^
 ||hciea.xyz^
 ||hcinmau.top^
 ||hcinvdu.top^
@@ -26276,6 +26279,7 @@ zzzyk.com###Tinfo
 ||kgymoc.xyz^
 ||khastreol.com^
 ||khcsvdc.icu^
+||khegritww.com^
 ||khengrull.com^
 ||khesuts.com^
 ||khgjfm16.com^
@@ -26362,6 +26366,7 @@ zzzyk.com###Tinfo
 ||knmwrkw.xyz^
 ||knowmore.cc/style/head.js
 ||knuinws.icu^
+||knul.cn^
 ||ko2v.eiya.net^
 ||koauq.top^
 ||kocpc.com.tw/adsbyso.js
@@ -27875,6 +27880,7 @@ zzzyk.com###Tinfo
 ||ng8f.top^
 ||ngbthf.xyz^
 ||nghdp.cn^
+||nghv.cn^
 ||ngishc.top^
 ||ngxzkaxf.icu^
 ||nh7.icu^
@@ -29827,6 +29833,7 @@ zzzyk.com###Tinfo
 ||screddoit.com^
 ||screechingfurniture.com^$third-party
 ||screechingstove.com^$third-party
+||screiltol.com^
 ||screspoy.com^
 ||scribblestring.com^$third-party
 ||script-bd.baixing.net^
@@ -31700,6 +31707,7 @@ zzzyk.com###Tinfo
 ||uqykeq.xyz^
 ||uraseszincy.com^
 ||urimnugocfr.com^
+||urkt.cn^
 ||urlbeat.net/Webservices/jsParseLinks.aspx$script,third-party
 ||urlbeat.net/visitScript/$script,third-party
 ||urlkwqi.cn^
@@ -32311,6 +32319,8 @@ zzzyk.com###Tinfo
 ||wlrjy.com/assets/images/*.gif
 ||wlrjy.com/assets/images/tuidc.png
 ||wlsyuule.cam^
+||wlwgloo.icu^
+||wlwgloo.top^
 ||wlxww.com/html/analytics/
 ||wm.mipcdn.com^
 ||wm.szdushi.com.cn^

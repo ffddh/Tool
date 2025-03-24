@@ -1,4 +1,4 @@
-# 最后更新时间：2025-01-21 23:35
+# 最后更新时间：2025-03-23 21:25
 
 ##### A #####
 
@@ -255,7 +255,7 @@ DOMAIN-SUFFIX,pornemby.club
 DOMAIN-SUFFIX,ii00.cc
 
 # PornEmby(网抑云)
-DOMAIN,195.201.86.86
+IP-CIDR,195.201.86.86/32,no-resolve
 
 # polo(儿童)
 DOMAIN-SUFFIX,poloemby.xyz
