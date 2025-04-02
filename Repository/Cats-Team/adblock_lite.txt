@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-04-02 08:12:36(GMT+8) 
-! Total count: 33979
+! ! Version: 2025-04-02 20:05:21(GMT+8) 
+! Total count: 33985
  
 ###ADtip
 ###AdBlockDialog
@@ -20534,6 +20534,7 @@ zzzyk.com###Tinfo
 ||bhukkeks.com^
 ||bhulgot.com^
 ||bi25.cc/js/hf
+||biabfqq.icu^
 ||bian-min.com/javascript/a/detail.js
 ||biancheng.net/templets/new/images/index_pc/fudaoban_
 ||biancheng.net/uploads/ggxc/
@@ -21363,6 +21364,7 @@ zzzyk.com###Tinfo
 ||chinaz.com/newshome/
 ||chinaz.com/sc_images/sc_font.js
 ||chinaz.com/section/
+||chinaz.com/statics/images/tuan
 ||chinaz.com/tool_img/alexa_a.js
 ||chinaz.com/tools_img/
 ||chinaz.com/zt/hanyi/images/sanji.jpg
@@ -21373,6 +21375,7 @@ zzzyk.com###Tinfo
 ||chingovernment.com^$third-party
 ||chinsnakes.com^$third-party
 ||chipperisle.com^$third-party
+||chitshuqh.com^
 ||chivalrouscord.com^$third-party
 ||chixingkeji.com^
 ||chmueyv.icu^
@@ -22294,6 +22297,7 @@ zzzyk.com###Tinfo
 ||dhl.135320.com^
 ||dhnnbfok.icu^
 ||dhonphehr.com^
+||dhorzivnn.com^
 ||dhukul.com^
 ||dhulzehgk.com^
 ||dhuquxqy.com^
@@ -28058,6 +28062,7 @@ zzzyk.com###Tinfo
 ||nrgv.cn^
 ||nrj.fr/nrj?Page=/rg.fake&
 ||nrjzkj.cn^
+||nrlupu.top^
 ||nroeoxk.icu^
 ||nrqrbwi.top^
 ||nrsfh.com/neirong/
@@ -28197,6 +28202,7 @@ zzzyk.com###Tinfo
 ||ohoyao.com^
 ||ohtusgy.icu^
 ||oi9rp7.online^
+||oieo.cn^
 ||oiewpw.com^
 ||oifyeldk.top^
 ||oijmds.com^
