@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-04-12 08:12:35(GMT+8) 
-! Total count: 33899
+! ! Version: 2025-04-12 20:04:40(GMT+8) 
+! Total count: 33908
  
 ###ADtip
 ###AdBlockDialog
@@ -5942,6 +5942,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
 @@||pagead2.googlesyndication.com/pagead/$script,domain=banid.pl
 @@||pagead2.googlesyndication.com/pagead/$script,domain=yellowbridge.com
+@@||pagead2.googlesyndication.com/pagead/*/show_ads_impl$domain=bilinovel.com
 @@||pagead2.googlesyndication.com/pagead/js/$domain=pogocheats.net
 @@||pagead2.googlesyndication.com/pagead/js/$script,domain=apkmirror.com
 @@||pagead2.googlesyndication.com/pagead/js/$script,domain=gtaxscripting.blogspot.com
@@ -5958,6 +5959,7 @@ $websocket,domain=wap.yushuwu.cloud
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=quebeccoupongratuit.com
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=sc2casts.com
 @@||pagead2.googlesyndication.com/pagead/js/*show_ads_impl.js$domain=buickforums.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bilinovel.com|mcappx.com|yeeach.com|blog.6ziz.com|docsmall.com|uiadmin.net|4horlover.com|23qb.net|4spaces.org|aboluowang.com|assbbs.com|chaojizhibo.net|chtoen.com|daxiaamu.com|demo.ama.pub|dizhishengcheng.com|doitwell.tw|ekamus.info|eu4cn.com|ff14angler.com|freedidi.com|fsbot.xyz|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|mens1069.com|monnsutogatya.com|mpyit.com|myqqjd.com|numberempire.com|ozabc.com|pansearch.me|patch.ali213.net|pc3mag.com|reh.tw|shenfendaquan.com|sistersbedroom.com|sto520.com|vaptcha.com|wandhi.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org|yummy.best|zaixianjisuan.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bricozone.fr
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dailydoge.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=elfqrin.com
@@ -5967,7 +5969,6 @@ $websocket,domain=wap.yushuwu.cloud
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mcappx.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mcappx.com|yeeach.com|blog.6ziz.com|docsmall.com|uiadmin.net|4horlover.com|23qb.net|4spaces.org|aboluowang.com|assbbs.com|chaojizhibo.net|chtoen.com|daxiaamu.com|demo.ama.pub|dizhishengcheng.com|doitwell.tw|ekamus.info|eu4cn.com|ff14angler.com|freedidi.com|fsbot.xyz|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|mens1069.com|monnsutogatya.com|mpyit.com|myqqjd.com|numberempire.com|ozabc.com|pansearch.me|patch.ali213.net|pc3mag.com|reh.tw|shenfendaquan.com|sistersbedroom.com|sto520.com|vaptcha.com|wandhi.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org|yummy.best|zaixianjisuan.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=miuipro.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onperiscope.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=robotcoingame.com|monstercoingame.com|wonderlandco.in
@@ -20509,6 +20510,7 @@ zzzyk.com###Tinfo
 ||bgidskiv.top^
 ||bh0874.online^
 ||bhaabom.cn^
+||bhaelkaers.com^
 ||bhaelnieth.com^
 ||bhakte.com^
 ||bhanphevg.com^
@@ -22362,6 +22364,7 @@ zzzyk.com###Tinfo
 ||dj155.com/gg/
 ||dj97.com/api.php?mod=ad&
 ||djbgfit.com^
+||djdedu.net/static/*.gif
 ||djecgyk.icu^
 ||djicdn.com/uploads/ad_image_file/
 ||djljz.cn/Plugins/Template/XJLY/js/app.
@@ -23139,6 +23142,7 @@ zzzyk.com###Tinfo
 ||evasivejar.com^$third-party
 ||evb0gxo.icu^
 ||evbb.xyz^
+||evcnmtw.top^
 ||eventexistence.com^$third-party
 ||events.hotjar.io^
 ||events.reddit.com^
@@ -25421,6 +25425,7 @@ zzzyk.com###Tinfo
 ||ir4.icu^
 ||irgidshiv.com^
 ||irgxwk.xyz^
+||irkp.cn^
 ||irkrellw.com^
 ||irkrors.com^
 ||irqaci.xyz^
@@ -28884,6 +28889,7 @@ zzzyk.com###Tinfo
 ||px.ucweb.com^
 ||pxhuiben.com^
 ||pxqqytk.icu^
+||pxrbnf.icu^
 ||pxtjfmv.xyz^
 ||pxx.tnklrs.cn^$third-party
 ||pxyjqea.icu^
@@ -30051,6 +30057,7 @@ zzzyk.com###Tinfo
 ||showguide.cn/templets/*/qqcenter.js
 ||showguide.cn/templets/*/sg-ad.js
 ||showhaotu.$domain=18board.com|18p2p.com
+||showkkkp.top^
 ||showsport-tv.com/js/detect.css$stylesheet
 ||showsport-tv.com/js/detect.js$script
 ||shproud.com^
@@ -30679,6 +30686,7 @@ zzzyk.com###Tinfo
 ||sv2fo.icu^
 ||sv5nm.icu^
 ||svarub.xyz^
+||svcnmtb.top^
 ||svdpgmt.cn^
 ||svjj.cn^
 ||svncowt.cn^
@@ -33823,6 +33831,7 @@ zzzyk.com###Tinfo
 ||zvhlzb.xyz^
 ||zvvg678.xyz^
 ||zvvlbf.xyz^
+||zvvsjz.top^
 ||zwdtvx.xyz^
 ||zwdu.com/getuserinfo.php
 ||zwfkxb.xyz^
