@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-04-17 08:12:47(GMT+8) 
-! Total count: 33966
+! ! Version: 2025-04-17 20:05:29(GMT+8) 
+! Total count: 33982
  
 ###ADtip
 ###AdBlockDialog
@@ -1875,6 +1875,7 @@ $websocket,domain=wap.yushuwu.cloud
 .com/zz/tcc2.js
 .com/zz/yd2.js
 .com:*.js?v=17*$third-party
+.com:*/api/v4/*?*=$third-party
 .com:*/cc/*?is_not=*&target=*
 .com:*/d/*?c=*$third-party
 .com:*/sc/*?n=$third-party
@@ -2003,6 +2004,7 @@ $websocket,domain=wap.yushuwu.cloud
 .top/*/*.js?ts=*$third-party
 .top/*/2022*/.js$third-party
 .top/*_*_vw*sbjs?$third-party
+.top/*cx?17$third-party
 .top/*q=*form=*&*url=http*$third-party
 .top/?token=$third-party
 .top/ad-
@@ -4495,6 +4497,7 @@ $websocket,domain=wap.yushuwu.cloud
 9xupload.me#$#abort-on-property-read eval
 9y01.xyz##.in-friends
 ://*.tv/ad/$domain=~moviedj.tv
+://*.yinghua*.*/bar$~third-party
 ://*.z*.xyz/$object,third-party
 ://*:*/chunyu.html?k=$csp=script-src
 ://*:*/oklist/vars.js
@@ -7814,6 +7817,8 @@ bioon.com##.grid_6
 biqgg.com##a[onclick="guangtui();"]
 biqle.org,biqle.ru#$#prevent-listener /click|mousedown/ 'popunder'
 biquge001.com###content > a
+biquge345.com##.puaxqbxs_b
+biquge345.com##div[style^="position:fixed;"]
 bitauto.com###advCarsumType1
 bitauto.com###bitAd_background
 bitauto.com###bitAd_floatFlash
@@ -8269,6 +8274,7 @@ chinanewsx.com##a[href="/about/"]
 chinanewsx.com##a[href^="/go/"]
 chinapdf.com###floatleft
 chinapdf.com###floatright
+chinapress.com.my##.ads-frame
 chinaqking.com###cnt-ad
 chinaqking.com###newsAD
 chinaqking.com###readerServiceDIV
@@ -18088,6 +18094,7 @@ zzzyk.com###Tinfo
 ||28t1ya.cn^
 ||29spp.com/js/tj.js
 ||2axpwa4.xyz^
+||2biqu.com/static/*/*.js
 ||2btu.com/gg.jpg
 ||2ccc.com/images/WebXone.gif
 ||2ccc.com/images/aobi.gif
@@ -22331,6 +22338,7 @@ zzzyk.com###Tinfo
 ||dig.qbao.com^
 ||dig.zjurl.cn^
 ||digestiondrawer.com^$third-party
+||dighavrap.com^
 ||digitaloceanspaces.com^*-Banner
 ||digithalo.com^$third-party
 ||dikematou.com^
@@ -23179,6 +23187,7 @@ zzzyk.com###Tinfo
 ||evreiks.com^
 ||evtubescms.phncdn.com^
 ||ewaterw.top^
+||ewdk.cn^
 ||eweisiw.top^
 ||eweizaw.top^
 ||ewerilxw.top^
@@ -23396,6 +23405,7 @@ zzzyk.com###Tinfo
 ||ffdm2.cc/ht_cpc.js
 ||ffgpol.com^
 ||ffjevt.icu^
+||fflbpi.top^
 ||ffmehcg.cn^
 ||ffmovies.lol/jss/dectector-2025.js
 ||ffnvhig.cn^
@@ -24452,6 +24462,7 @@ zzzyk.com###Tinfo
 ||hb8g86k.mom/mz.js
 ||hbandier.com^
 ||hbbynt.xyz^
+||hbeafcac.top^
 ||hbkunye.com^
 ||hboav.com/guga/
 ||hboav.com/guga/*.php$domain=5278.cc
@@ -24656,6 +24667,7 @@ zzzyk.com###Tinfo
 ||hilariouszinc.com^$third-party
 ||hinet.net/product/promotion/$popup
 ||hinet.net/radio/getAdcode.do
+||hiooq0417.com^
 ||hiqua.xyz^
 ||histats.com^
 ||histats.com^$third-party
@@ -25562,6 +25574,7 @@ zzzyk.com###Tinfo
 ||iwanshang8.asia^
 ||iwarship.net/wowsdb/static/img/banner.png
 ||iwatero.top^
+||iwcnmto.top^
 ||iweisio.top^
 ||iweiweb.com^
 ||iweizao.top^
@@ -26835,6 +26848,7 @@ zzzyk.com###Tinfo
 ||lkancklanklcav.com^
 ||lkdyft.xyz^
 ||lkiterl.top^
+||lkmgjfkhfh.top^
 ||lkmhn.com^
 ||lknhrnd.com^
 ||lknlkndasda.top^
@@ -30616,6 +30630,7 @@ zzzyk.com###Tinfo
 ||stiffstem.com^$third-party
 ||stigzeal.com^
 ||stildell.com^
+||stildreans.com^
 ||stimiyb.top^
 ||stimulatingsneeze.com^$third-party
 ||stingsquirrel.com^$third-party
@@ -31778,6 +31793,7 @@ zzzyk.com###Tinfo
 ||uuaisp.com^
 ||uuajq.top^
 ||uucatiqnd.com^
+||uucnmtt.top^
 ||uugtv.com/x/app/videoSpread?
 ||uuiaoq.top^
 ||uujhveglpo.xyz^
