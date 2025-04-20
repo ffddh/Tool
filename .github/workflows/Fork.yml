@@ -456,13 +456,7 @@ jobs:
         cp -r kmi_Tmp/* Tool-repo/Repository/githubdulong
         rm -rf kmi_Tmp  
 
-      # fork axtyet Tool
-    - name: Fork axtyet Tool
-      run: |
-        mkdir -p Tool-repo/Repository/axtyet/Tool
-        git clone -b main https://github.com/axtyet/Tool.git  mik_Tmp
-        cp -r mik_Tmp/* Tool-repo/Repository/axtyet/Tool
-        rm -rf mik_Tmp  
+
 
       # fork upscayl
     - name: Fork upscayl
