@@ -417,8 +417,8 @@ function shouldDebug(details) {
 /******************************************************************************/
 
 const scriptletGlobals = {}; // eslint-disable-line
-const argsList = [["message","t.origin===k"],["load","onload"],["","show"],["DOMContentLoaded","mdpDeBlocker"],["DOMContentLoaded","showFallbackImage"]];
-const hostnamesMap = new Map([["kafeteria.pl",0],["polygamia.pl",0],["open.fm",0],["pudelek.pl",0],["darmowa-telewizja.online",1],["dziennikbaltycki.pl",2],["dzienniklodzki.pl",2],["dziennikpolski24.pl",2],["dziennikzachodni.pl",2],["echodnia.eu",2],["expressbydgoski.pl",2],["expressilustrowany.pl",2],["gazetakrakowska.pl",2],["gazetalubuska.pl",2],["gazetawroclawska.pl",2],["gk24.pl",2],["gloswielkopolski.pl",2],["gol24.pl",2],["gp24.pl",2],["gra.pl",2],["gs24.pl",2],["kurierlubelski.pl",2],["motofakty.pl",2],["naszemiasto.pl",2],["nowiny24.pl",2],["nowosci.com.pl",2],["nto.pl",2],["polskatimes.pl",2],["pomorska.pl",2],["poranny.pl",2],["sportowy24.pl",2],["strefaagro.pl",2],["strefabiznesu.pl",2],["stronakobiet.pl",2],["telemagazyn.pl",2],["to.com.pl",2],["wspolczesna.pl",2],["exdb.net",3],["eska.pl",4]]);
+const argsList = [["message","t.origin===k"]];
+const hostnamesMap = new Map([["kafeteria.pl",0],["polygamia.pl",0],["open.fm",0],["pudelek.pl",0]]);
 const exceptionsMap = new Map([]);
 const hasEntities = false;
 const hasAncestors = false;
