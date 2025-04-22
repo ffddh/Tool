@@ -1,39 +1,37 @@
 /*
-# 2024-09-16
-# 京东比价
-# 仅适用于京东App版本≤V12.4.3
-# 2024-12-22
-# 发现13.8.3又支持此脚本了
-# 脚本修改来源 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
-# 1. 修复比价接口
-# 2. 之前只能QX，Surge，更换为Env,兼容Loon等，仅测试QX
-2025-01-04
-# 脚本抄袭来源 https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js
-# 1. 京东很奇怪，标题下面的比价时有时无  所以增加点击【详情】显示比价(显示在页内)
-# 2. 抄袭上面的部分代码，让显示格式尽量对其
-2025-04-10
-# 修复比价接口
-2025-04-18
-# 修复比价接口
-# 首次使用请打开【慢慢买】APP，点击【我的】，提示【获取ck成功🎉】即可正常比价
-2025-04-21
-# 修复比价接口，显示为表格
 
-[rewrite_local]
-^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
-^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ url script-request-body https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+# 2025-04-22 16:40
+# 京东购物助手，京推推转链+比价图表
 
-# ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html url script-response-body http://192.168.2.170:8080/jd_price.js
-# ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ url script-request-body http://192.168.2.170:8080/jd_price.js
-[mitm]
-hostname = in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com
+# 更新内容：
+# 比价脚本原作者@苍井灰灰，在基础上增加京推推商品返利转链（点通知）+比价折线图表格显示，适配暗黑与明亮模式（早7点、晚19点自动切换）
+
+# Surge模块设置参数，或自己折腾Boxjs配置京推推参数
+
+# 模块链接：https://raw.githubusercontent.com/githubdulong/Script/master/Surge/JD_Helper.sgmodule
+
+
 */
 
 const path1 = '/product/graphext/';
 const path2 = '/baoliao/center/menu'
 const manmanbuy_key = 'manmanbuy_val';
 const url = $request.url;
-const $ = new Env("京东比价");
+const $ = new Env("京东助手");
+// 获取模块传入参数
+const args = typeof $argument !== "undefined" ? $argument : "";
+$.log(`读取参数: ${args}`);
+const argObj = Object.fromEntries(
+args.split("&").map(item => item.split("=").map(decodeURIComponent))
+);
+const isEmpty = (val) => !val || val === "null";
+
+// 参数优先级：模块参数 > BoxJs 本地存储
+$.jd_unionId = !isEmpty(argObj["jd_union_id"]) ? argObj["jd_union_id"] : $.getdata("jd_unionId") || "";
+$.jd_positionId = !isEmpty(argObj["jd_position_id"]) ? argObj["jd_position_id"] : $.getdata("jd_positionId") || "";
+$.jtt_appid = !isEmpty(argObj["jtt_appid"]) ? argObj["jtt_appid"] : $.getdata("jtt_appid") || "";
+$.jtt_appkey = !isEmpty(argObj["jtt_appkey"]) ? argObj["jtt_appkey"] : $.getdata("jtt_appkey") || "";
+$.disableNotice = argObj["disable_notice"] === "false" ? false : true;
 
 if (url.includes(path2)) {
     const reqbody = $request.body;
@@ -44,6 +42,8 @@ if (url.includes(path2)) {
 if (url.includes(path1)) {
     intCryptoJS();
     $.manmanbuy = getck();
+    let url = $request.url;
+    $.appType = url.includes("lite-in.m.jd.com") ? "jdtj" : "jd";
 
     (async () => {
         const match = url.match(/product\/graphext\/(\d+)\.html/);
@@ -54,6 +54,13 @@ if (url.includes(path1)) {
 
         const shareUrl = `https://item.jd.com/${match[1]}.html`;
         try {
+            if ($.disableNotice && $.jd_unionId && $.jtt_appid && $.jtt_appkey) {
+    $.sku = match[1];
+    await jingfenJingTuiTui();
+    await notice();
+} else if (!$.disableNotice) {
+    $.log("已禁用京推推返利和通知，仅显示比价图表");
+}
             const parseRes = await SiteCommand_parse(shareUrl);
             const parse = checkRes(parseRes, '获取 stteId');
 
@@ -80,8 +87,77 @@ if (url.includes(path1)) {
     })();
 }
 
-// ================ 工具函数区域 ================
+/** 京推推转链 */
+async function jingfenJingTuiTui() {
+    $.log("转链开始");
+    return new Promise((resolve) => {
+        const options = {
+            url: `http://japi.jingtuitui.com/api/universal?appid=${$.jtt_appid}&appkey=${$.jtt_appkey}&v=v3&unionid=${$.jd_unionId}&positionid=${$.jd_positionId}&content=https://item.jd.com/${$.sku}.html`,
+            timeout: 5000,
+            headers: { "Content-Type": "application/json;charset=utf-8" },
+        };
+        $.get(options, (err, resp, data) => {
+            try {
+                if (err) {
+                    $.log("京推推 universal 请求失败：" + $.toStr(err));
+                } else {
+                    data = JSON.parse(data);
+                    if (data["return"] == 0) {
+                        const linkData = data?.result?.link_date?.[0] || {};
+                        const { chain_link, goods_info } = linkData;
+                        if (goods_info) {
+                            const { skuName = chain_link, imageInfo, commissionInfo, priceInfo } = goods_info;
+                            $.commissionShare = commissionInfo.commissionShare;
+                            $.commission = commissionInfo.couponCommission;
+                            $.price = priceInfo.lowestPrice;
+                            $.skuName = skuName;
+                            $.skuImg = imageInfo.imageList?.[0]?.url;
+                        }
+                        $.shortUrl = chain_link;
+                        $.log("转链完成，短链地址：" + $.shortUrl);
+                    } else {
+                        $.log("转链返回异常：" + $.toStr(data));
+                    }
+                }
+            } catch (e) {
+                $.logErr(e, resp);
+            } finally {
+                resolve();
+            }
+        });
+    });
+}
+/** 发送通知 */
+async function notice() {
+    $.log("发送通知");
+    $.title = $.skuName || "商品信息";
+    $.opts = { "auto-dismiss": 30 };
 
+    $.desc = $.desc || "";
+    if (/u\.jd\.com/.test($.shortUrl)) {
+        $.desc += `预计返利: ¥${(($.price * $.commissionShare) / 100).toFixed(2)}  ${$.commissionShare}%`;
+
+        // 根据平台生成跳转链接
+        if ($.appType === "jdtj") {
+            $.jumpUrl = `openjdlite://virtual?params=${encodeURIComponent(
+                '{"category":"jump","des":"m","url":"' + $.shortUrl + '"}'
+            )}`;
+        } else {
+            $.jumpUrl = `openApp.jdMobile://virtual?params=${encodeURIComponent(
+                '{"category":"jump","des":"m","sourceValue":"babel-act","sourceType":"babel","url":"' + $.shortUrl + '"}'
+            )}`;
+        }
+        $.opts["$open"] = $.jumpUrl;
+    } else {
+        $.desc += "\n预计返利: 暂无";
+        $.log("无佣金商品");
+    }
+    if ($.skuImg) $.opts["$media"] = $.skuImg;
+    if ($.isLoon() && $loon.split(" ")[1].split(".")[0] === "16") {
+        $.opts["$media"] = undefined;
+    }
+    $.msg($.title, $.subt, $.desc, $.opts);
+}
 function checkRes(res, desc = '') {
     if (res.code !== 2000 || !res.result && !res.data) {
         throw new Error(`慢慢买提示您：${res.msg || `${desc}失败`}`);
@@ -90,10 +166,23 @@ function checkRes(res, desc = '') {
 }
 
 function buildPriceTableHTML(priceList) {
+    // 校验 priceList
+    if (!Array.isArray(priceList) || priceList.length === 0) {
+        console.warn('priceList is empty or invalid, returning empty table');
+        return `
+<div class="price-container">
+  <table class="price-table">
+    <thead><tr><th>类型</th><th>日期</th><th>价格</th><th>差价</th></tr></thead>
+    <tbody><tr><td colspan="4">暂无数据</td></tr></tbody>
+  </table>
+</div>`;
+    }
+
     const rows = priceList.map(item => {
         let { Name: name, Date: date, Price: price = '', Difference: diff = '' } = item;
         if (name === '当前到手价') {
-            date = $.time('yyyy-MM-dd');
+            // 容错处理 $.time
+            date = typeof $.time === 'function' ? $.time('yyyy-MM-dd') : new Date().toISOString().split('T')[0];
             diff = '仅供参考';
         } else {
             date = date || '-';
@@ -108,7 +197,7 @@ function buildPriceTableHTML(priceList) {
     const chartData = priceList
         .filter(i => i.Price && !isNaN(parseFloat(String(i.Price).replace(/[¥\s]/g, ''))))
         .map(i => ({
-            date: i.Name === '当前到手价' ? $.time('yyyy-MM-dd') : (i.Date || '-'),
+            date: i.Name === '当前到手价' ? (typeof $.time === 'function' ? $.time('yyyy-MM-dd') : new Date().toISOString().split('T')[0]) : (i.Date || '-'),
             price: parseFloat(String(i.Price).replace(/[¥\s]/g, ''))
         }))
         .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -116,6 +205,7 @@ function buildPriceTableHTML(priceList) {
     const labels = chartData.map(i => i.date);
     const prices = chartData.map(i => i.price);
 
+    // 仅返回 HTML 结构，CSS 和 JS 逻辑分离
     return `
 <div class="price-container">
   <table class="price-table">
@@ -125,51 +215,110 @@ function buildPriceTableHTML(priceList) {
   <canvas id="priceChart" height="100"></canvas>
 </div>
 <style>
-body,table {
+body, table {
     font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* 主题变量 */
+:root {
+    --background-color: #FEFEFE;
+    --text-color: #333;
+    --border-color: #EEE;
+    --shadow-color: rgba(0,0,0,0.05);
+}
+
+/* 暗黑模式变量 */
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --border-color: #444;
+    --shadow-color: rgba(0,0,0,0.2);
+}
+
 .price-container {
     max-width: 800px;
     margin: 10px auto;
     padding: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    background: #FFF9F9;
-    color: #333;
+    background: var(--background-color);
+    color: var(--text-color);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .price-table {
     width: 100%;
-    border-collapse: separate;
+    border-collapse: collapse; 
     border-spacing: 0;
     border-radius: 8px;
     overflow: hidden;
 }
+
+.price-table thead tr {
+    background: linear-gradient(to right, #ff6666, #e61a23); 
+}
+
 .price-table th {
-    background: #e61a23;
+    background: none; 
     color: #fff;
     padding: 12px;
     text-align: left;
     font-weight: bold;
+    border: none; 
 }
+
 .price-table td {
     padding: 12px;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: color 0.3s ease;
 }
+
 .price-diff.up {
     color: #C91623;
 }
+
 .price-diff.down {
     color: #00aa00;
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-setTimeout(() => {
-    const ctx = document.getElementById('priceChart').getContext('2d');
-    new Chart(ctx, {
+const setTimeBasedTheme = () => {
+    const currentHour = new Date().getHours();
+    const isDarkTime = currentHour >= 19 || currentHour < 7;
+    document.documentElement.setAttribute('data-theme', isDarkTime ? 'dark' : 'light');
+    console.log('Theme set to:', document.documentElement.getAttribute('data-theme'));
+};
+
+// 图表初始化函数
+const initializeChart = () => {
+    const canvas = document.getElementById('priceChart');
+    if (!canvas) {
+        console.error('Canvas element not found for priceChart');
+        return;
+    }
+    const ctx = canvas.getContext('2d');
+    if (!ctx) {
+        console.error('Canvas context not found for priceChart');
+        return;
+    }
+
+    if (window.priceChartInstance) {
+        window.priceChartInstance.destroy();
+    }
+
+    const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+    console.log('isDarkMode:', isDarkMode);
+
+    // 获取 CSS 变量 --text-color
+    const themeTextColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
+    console.log('themeTextColor from CSS:', themeTextColor);
+
+    // 图表配置
+    window.priceChartInstance = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ${JSON.stringify(labels)},
@@ -191,38 +340,83 @@ setTimeout(() => {
                     display: true,
                     labels: {
                         boxWidth: 12,
-                        font: { size: 12 }
+                        font: { size: 12 },
+                        color: themeTextColor
                     }
                 },
                 tooltip: {
+                    backgroundColor: isDarkMode ? '#444' : '#fff',
+                    titleColor: themeTextColor,
+                    bodyColor: themeTextColor,
                     callbacks: {
                         label: ctx => '¥' + ctx.raw
                     }
                 }
             },
             scales: {
-    x: {
-        title: {
-            display: true,
-            text: '日期',
-            align: 'start'
-        },
-        ticks: {
-            autoSkip: false
-        }
-    },
-    y: {
-        title: {
-            display: true,
-            text: '价格（元）'
-        },
-        beginAtZero: false
-    }
-}
+                x: {
+                    title: {
+                        display: true,
+                        text: '日期（1年）',
+                        align: 'start',
+                        color: themeTextColor,
+                        font: { size: 12 }
+                    },
+                    ticks: {
+                        autoSkip: false,
+                        color: themeTextColor,
+                        font: { size: 12 }
+                    },
+                    grid: {
+                        color: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: '价格（元）',
+                        color: themeTextColor,
+                        font: { size: 12 }
+                    },
+                    ticks: {
+                        color: themeTextColor,
+                        font: { size: 12 }
+                    },
+                    grid: {
+                        color: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+                    },
+                    beginAtZero: false
+                }
+            }
         }
     });
-}, 0);
-</script>`;
+};
+
+// 初始化主题和图表
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeBasedTheme();
+    initializeChart();
+
+    // 动态监听主题变化
+    const observer = new MutationObserver(() => {
+        const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newThemeTextColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color').trim();
+        if (window.priceChartInstance) {
+            window.priceChartInstance.options.plugins.legend.labels.color = newThemeTextColor;
+            window.priceChartInstance.options.scales.x.title.color = newThemeTextColor;
+            window.priceChartInstance.options.scales.x.ticks.color = newThemeTextColor;
+            window.priceChartInstance.options.scales.y.title.color = newThemeTextColor;
+            window.priceChartInstance.options.scales.y.ticks.color = newThemeTextColor;
+            window.priceChartInstance.options.plugins.tooltip.titleColor = newThemeTextColor;
+            window.priceChartInstance.options.plugins.tooltip.bodyColor = newThemeTextColor;
+            window.priceChartInstance.options.plugins.tooltip.backgroundColor = isDarkMode ? '#444' : '#fff';
+            window.priceChartInstance.update();
+        }
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>`;
 }
 
 function get_options(extraParams = {}, url) {
@@ -300,7 +494,7 @@ function getck() {
         $.msg($.name, '数据异常', '请联系脚本作者检查ck格式');
         return null;
     }
-    $.log('慢慢买 c_mmbDevId：', Params.c_mmbDevId);
+    $.log('慢慢买CK：', Params.c_mmbDevId);
     return Params;
 }
 
