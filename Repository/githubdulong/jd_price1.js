@@ -1,6 +1,6 @@
 /*
 
-# 2025-04-22 20:37
+# 2025-04-24 15:19
 # 京东购物助手，京推推转链+比价图表
 
 # 更新内容：
@@ -18,8 +18,15 @@ const path2 = '/baoliao/center/menu'
 const manmanbuy_key = 'manmanbuy_val';
 const url = $request.url;
 const $ = new Env("京东助手");
-// 获取模块传入参数
-const args = typeof $argument !== "undefined" ? $argument : "";
+// 获取模块或插件传入参数
+let args = "";
+if (typeof $argument === "string") {
+  args = $argument;
+} else if (typeof $argument === "object" && $argument !== null) {
+  args = Object.entries($argument)
+    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
+    .join("&");
+}
 $.log(`读取参数: ${args}`);
 const argObj = Object.fromEntries(
 args.split("&").map(item => item.split("=").map(decodeURIComponent))
@@ -98,7 +105,7 @@ async function jingfenJingTuiTui() {
     return new Promise((resolve) => {
         const options = {
             url: `http://japi.jingtuitui.com/api/universal?appid=${$.jtt_appid}&appkey=${$.jtt_appkey}&v=v3&unionid=${$.jd_unionId}&positionid=${$.jd_positionId}&content=https://item.jd.com/${$.sku}.html`,
-            timeout: 10 * 1000,
+            timeout: 20000,
             headers: { "Content-Type": "application/json;charset=utf-8" },
         };
         $.get(options, (err, resp, data) => {
@@ -242,15 +249,15 @@ body, table {
 
 .price-container {
     max-width: 800px;
-    margin: 10px auto;
+    margin: 0 auto; /* 去除上下间距 */
     padding: 10px;
     font-size: 13px;
     font-weight: bold;
     background: var(--background-color);
     color: var(--text-color);
-    border-radius: 12px;
+    border-radius: 0; /* 去除圆角 */
     overflow: hidden;
-    box-shadow: 0 2px 8px var(--shadow-color);
+    box-shadow: none; /* 去除阴影 */
     transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -258,7 +265,7 @@ body, table {
     width: 100%;
     border-collapse: collapse; 
     border-spacing: 0;
-    border-radius: 8px;
+    border-radius: 8px; 
     overflow: hidden;
 }
 
@@ -522,7 +529,7 @@ async function httpRequest(options) {
         options = options.url ? options : { url: options };
         const _method = options?._method || ('body' in options ? 'post' : 'get');
         const _respType = options?._respType || 'body';
-        const _timeout = options?._timeout || 15000;
+        const _timeout = options?._timeout || 240000;
         const _http = [
             new Promise((_, reject) => setTimeout(() => reject(`⛔️ 请求超时: ${options['url']}`), _timeout)),
             new Promise((resolve, reject) => {
