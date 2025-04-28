@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-04-28 08:13:26(GMT+8) 
-! Total count: 34124
+! ! Version: 2025-04-28 20:06:43(GMT+8) 
+! Total count: 34128
  
 ###ADtip
 ###AdBlockDialog
@@ -1685,7 +1685,8 @@
 #@#.afs_ads
 #@#.has-ad
 #@#div[itemtype="http://schema.org/WPAdBlock"]
-$csp=script-src 'self' * 'unsafe-inline',domain=biqugezw.us|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
+$csp=script-src 'self' * 'unsafe-inline',domain=candoug.com|modaoshu.com|nipubook.com
+$csp=script-src 'self' * 'unsafe-inline',domain=yushuwu.cloud|yswxs.com|biqugezw.us|biquge2345.com|dingdian911.com|bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
 $domain=googleads.g.doubleclick.net
 $image,third-party,domain=258zw.com
@@ -2172,6 +2173,7 @@ $websocket,domain=wap.yushuwu.cloud
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/$script,third-party
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/$script,third-party
+/\.[a-z]+[\:\/]/$~image,third-party,domain=candoug.com|modaoshu.com|nipubook.com
 /\.[a-z]cinma[a-z].top\//$script,third-party
 /\.[a-z]dinma[a-z].top\//$script,third-party
 /\.[a-z]dinmi[a-z].top\//$script,third-party
@@ -2423,7 +2425,6 @@ $websocket,domain=wap.yushuwu.cloud
 /data/cache/myad-
 /dayu2.html?channelCode=$csp=script-src
 /db.js?_dc=
-/dbhf.js$script,third-party
 /deadblocker/*
 /delivery/afr.
 /demo_l.php?id=$script,third-party
@@ -2643,7 +2644,6 @@ $websocket,domain=wap.yushuwu.cloud
 /js/cpv_dl.js
 /js/cpv_fm_
 /js/customscript.js^$domain=pornwhite.com
-/js/db.js$script,third-party
 /js/dnsads.js?*^$domain=filmehd.to
 /js/dyguosj/*
 /js/easyAD.js
@@ -2661,7 +2661,6 @@ $websocket,domain=wap.yushuwu.cloud
 /js/js4.js
 /js/jsstyle-$third-party
 /js/layer1.js$domain=99re.com
-/js/lm.js$script,third-party
 /js/lmdas.js
 /js/mangoIndexBanner.js
 /js/mmdaohang_2.js
@@ -2687,10 +2686,8 @@ $websocket,domain=wap.yushuwu.cloud
 /js/utils78.js
 /js/wahha/*
 /js/wlfloat.js
-/js/xb.js$script,third-party
 /js/yueyupp_3.js
 /js/yzgg.js
-/js/zb.js$script,third-party
 /js_php/ajsf.php?id=$third-party
 /jsadv/*
 /jsvendor/app.^$script,image,domain=kickassanime.io
@@ -2866,7 +2863,6 @@ $websocket,domain=wap.yushuwu.cloud
 /s/i.php?id=$script,third-party
 /s/js/fshow.js$third-party
 /s/js/ssu.v2.js?v=*^$domain=bigtitslust.com|freeporn8.com|maturetubehere.com
-/sbhf.js$script,third-party
 /sc_ifeng/*
 /scr/wtixyd.js
 /scriptonline.js?uin=
@@ -2990,7 +2986,6 @@ $websocket,domain=wap.yushuwu.cloud
 /tops/fmt.js?v=
 /tourl.html?url=
 /tres/recommend/*$domain=ifeng.com
-/ttgg/*.js$script,third-party
 /tuiguang/*$domain=~jikexiu.com|~jikexiu.vip
 /tuiguang366.oss-
 /ty684.oss-
@@ -3057,7 +3052,6 @@ $websocket,domain=wap.yushuwu.cloud
 /wutime_adblock/*
 /wxh_asy.js
 /wxhfm.html?cid=
-/xbhf.js$script,third-party
 /xdy_yyo.php
 /xgrghru981_23.js
 /xianbao_theme/script/intelligence.
@@ -5986,7 +5980,6 @@ $websocket,domain=wap.yushuwu.cloud
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=exe-urls.com|fileink.com|phoneky.com|rockmods.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mcappx.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=miuipro.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onperiscope.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=robotcoingame.com|monstercoingame.com|wonderlandco.in
@@ -13020,7 +13013,8 @@ mbd.baidu.com###content_wrapper + div + .default-container
 mbd.baidu.com##.related-news > section:first-child + div
 mbd.baidu.com##div[class^="_"][style="visibility: visible;"]
 mc.163.com###NIE-topBar-news
-mcappx.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
+mcappx.com#%#//scriptlet('abort-on-stack-trace', 'alert', '.onerror')
+mcappx.com#%#//scriptlet('prevent-element-src-loading', 'script', '/pagead2\.googlesyndication\.com|r\.bat\.bing\.com\/\?ld=/')
 mcar.cc##.showhide > video + div[style="background-color:#FC0;margin-top:1px; width:500px; height:90px;"]
 mcar.cc##.showhide > video + div[style="background-color:#FC0;margin-top:1px; width:500px; height:90px;"] + div[style="background-color:#FF0;background-float:right;margin-top:-371px;margin-left:500px; width:234px; height:375px;"]
 mcbbs.net###lsform + .y
@@ -20938,6 +20932,7 @@ zzzyk.com###Tinfo
 ||bvvb9.com^
 ||bvzc.cn^
 ||bw66.cn/template/default_pc/bbs/
+||bwcnmtv.top^
 ||bwdhuanbao.com^
 ||bweriov.top^
 ||bwilmiv.top^
@@ -23937,6 +23932,7 @@ zzzyk.com###Tinfo
 ||geilicdn.com/img*_960_60.
 ||geinkroll.com^
 ||geiod.xyz^
+||gekhasaks.com^
 ||gemini.yahoo.com^
 ||generalprose.com^$third-party
 ||generateoffice.com^$third-party
@@ -24935,6 +24931,7 @@ zzzyk.com###Tinfo
 ||htvixv.xyz^
 ||htwjo.com^
 ||htxwzp.xyz^
+||hua4207.xyz^
 ||huaban.com^*/ads
 ||huaerdadi.com^$third-party
 ||huaiduoduo.info/Runtime/js/
@@ -26463,6 +26460,7 @@ zzzyk.com###Tinfo
 ||knowmore.cc/style/head.js
 ||knuinws.icu^
 ||knul.cn^
+||knwuamd.top^
 ||ko2v.eiya.net^
 ||koauq.top^
 ||kocpc.com.tw/adsbyso.js
@@ -26492,8 +26490,8 @@ zzzyk.com###Tinfo
 ||kowqd5.top^
 ||kowqd7.top^
 ||koyi.pub/wp-content/plugins/dh-anti-adblocker/
-||koyso.com/static/js/abc.
-||koyso.com/z-
+||koyso.com/aclib.js
+||koyso.com/static/js/abcd.
 ||koytqo.xyz^
 ||kpmsoq.xyz^
 ||kppt.cc/zb_system/script/common.js
@@ -27729,7 +27727,6 @@ zzzyk.com###Tinfo
 ||muddledaftermath.com^$third-party
 ||muddledmemory.com^$third-party
 ||mudroom.aquadisco.xyz^
-||muer.cdn-baidu.fs-sywh.com^
 ||muhnbc.cn^
 ||muiuim.icu^
 ||mujkdna.xyz^
@@ -28318,6 +28315,7 @@ zzzyk.com###Tinfo
 ||ol-img.com/channel/tuku/js/tukuPopup.js
 ||older-women-porn.com/black-credit-71cc^$domain=older-women-porn.com
 ||oldfashionedoffer.com^$third-party
+||oldh.cn^
 ||oldulgk.cn^
 ||olehdtv.com/index.php/index/userss|
 ||olelive.com/v1/pub/index/anchor/check/pc/e?
@@ -29428,6 +29426,7 @@ zzzyk.com###Tinfo
 ||qwoofao.top^
 ||qwrnkpow.com^
 ||qwsanan.top^
+||qwti.cn^
 ||qwursery.top^
 ||qxakzox.cn^
 ||qxaz2xcw.com^
@@ -29455,6 +29454,7 @@ zzzyk.com###Tinfo
 ||qzsvwo.xyz^
 ||qzwb.com/phpstat/
 ||r.99waiyu.com^
+||r.bat.bing.com/?ld=$script,redirect=noopjs,domain=mcappx.com
 ||r.trwl1.com/s1/$subdocument
 ||r0j.fun^
 ||r36ku.site^
@@ -31197,6 +31197,7 @@ zzzyk.com###Tinfo
 ||tianyaui.com/global/dashang/vip_seat/js/ds_vip_seat.js
 ||tianyuewangluo.top^
 ||tiao1.cc/static/default/js/loadLM.js
+||tiboha.top^
 ||ticketaunt.com^$third-party
 ||ticklesign.com^$third-party
 ||tieba.baidu.com/f/urlcheck?
@@ -32019,6 +32020,7 @@ zzzyk.com###Tinfo
 ||vbiakpu.icu^
 ||vbllxaaj.icu^
 ||vbnmjjda.xyz^
+||vcaqexl.com^
 ||vcdfsf99.fun^
 ||vcvbnmto.xyz^
 ||vcxv73.fun^
@@ -32080,6 +32082,7 @@ zzzyk.com###Tinfo
 ||vhsutpgui.xyz^
 ||vhulan.com^
 ||vhutitpu.icu^
+||vhxzfz.icu^
 ||vhzivz.xyz^
 ||vibrantgale.com^$third-party
 ||vibrantsundown.com^$third-party
@@ -32640,6 +32643,7 @@ zzzyk.com###Tinfo
 ||wwilmie.top^
 ||wwjtdjj.cn^
 ||wwkh9ku.xyz^
+||wwok04281kl.com^
 ||wwursere.top^
 ||www-dnwx-com.anquanbao.cn/pic
 ||www.*yydstxt*/js/cdn.js
