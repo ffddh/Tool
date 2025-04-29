@@ -44,21 +44,16 @@ export default function isResponseAvailability(response = {}) {
 						case "0":
 						case undefined: {
 							const body = JSON.parse(response?.body);
-							if (body?.result) {
-								switch (body?.result?.play_check?.play_detail) {
-									case "PLAY_NONE":
-										isAvailable = false;
-										break;
-									case "PLAY_WHOLE":
+							if (body?.code) {
+								switch (body?.code) {
+									case 0: // success
 										isAvailable = true;
 										break;
-								}
-								switch (body?.result?.play_check?.limit_play_reason) {
-									case "AREA_LIMIT":
+									case -404: // 啥都木有
+									case -10403: // 抱歉您所在地区不可观看！
+									case 10015001: // 版权地区受限
+									default:
 										isAvailable = false;
-										break;
-									case undefined:
-										isAvailable = true;
 										break;
 								}
 							}
@@ -100,10 +95,28 @@ export default function isResponseAvailability(response = {}) {
 										break;
 								}
 							}
+							if (body?.result?.play_check) {
+								switch (body?.result?.play_check?.play_detail) {
+									case "PLAY_NONE":
+										isAvailable = false;
+										break;
+									case "PLAY_WHOLE":
+										isAvailable = true;
+										break;
+								}
+								switch (body?.result?.play_check?.limit_play_reason) {
+									case "AREA_LIMIT":
+										isAvailable = false;
+										break;
+									case undefined:
+										isAvailable = true;
+										break;
+								}
+							}
 							break;
 						}
 						case "-404": // 啥都木有
-						case "-10403":
+						case "-10403": // 抱歉您所在地区不可观看！
 						case "10015001": // 版权地区受限
 						default:
 							isAvailable = false;
