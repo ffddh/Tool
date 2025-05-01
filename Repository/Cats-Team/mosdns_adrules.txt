@@ -475,7 +475,6 @@ domain:13js1lbtbj3.sparkloop.app
 domain:13p76nnir.de
 domain:14.y2sysv81v.com
 domain:14202444.xyz
-domain:142801df41.ca2865fb41.com
 domain:1437953666.rsc.cdn77.org
 domain:14381834.xyz
 domain:1438976156.recolution.de
@@ -2843,6 +2842,7 @@ domain:a07f42f76a.2638879a96.com
 domain:a08387be3d.com
 domain:a0905c77de.com
 domain:a0b22.com
+domain:a0b5779711.com
 domain:a0b8b4e910.b10ca28321.com
 domain:a0de95822c.856d79ad49.com
 domain:a1.289.com
@@ -4974,6 +4974,7 @@ domain:acodes.b2b.cn
 domain:acofrnsr44es3954b.com
 domain:acoossz.top
 domain:acoponposeur.com
+domain:acorusdawdler.com
 domain:acpolxakcl.com
 domain:acq-au.americanexpress.com
 domain:acq-hk.americanexpress.com
@@ -10012,6 +10013,7 @@ domain:alligator.bluehorn.digital
 domain:alligator.crousille.ch
 domain:alligator.remotecyberwork.com
 domain:allinsurance.allinsure.ca
+domain:allislagoons.top
 domain:allkindlecloud.com
 domain:allkmbr.icu
 domain:allkpop.fr
@@ -14198,6 +14200,7 @@ domain:async-px.dynamicyield.com
 domain:aszchp.hakengift.com
 domain:aszeeh.monacoanother.com
 domain:at-adserver.alltop.com
+domain:at-af.outfit7.com
 domain:at-cddc.actu-juridique.fr
 domain:at-cdn.swisscom.ch
 domain:at-ecomm.levi.com
@@ -16790,6 +16793,7 @@ domain:bidbrain.app
 domain:bidclickmedia.com
 domain:bidclix.com
 domain:bidclix.net
+domain:bidder.dsp.outfit7.com
 domain:bidder.mdspinc.com
 domain:bidder.newspassid.com
 domain:bidderads.com
@@ -16904,6 +16908,7 @@ domain:bindedge.com
 domain:binderyvisage.shop
 domain:bindfast.com
 domain:bindirect.click
+domain:binesyorker.com
 domain:bineukdwithme.com
 domain:bineukdwithmef.info
 domain:bineukdwithmef.org
@@ -17025,6 +17030,7 @@ domain:bitx.tv
 domain:bitzin.jjshouse.no
 domain:biucosmetics.fr
 domain:biv.gazeta.pl
+domain:bivinyltarve.com
 domain:bivos.xyz
 domain:bivqasthu.com
 domain:bivrhywwuwzo.com
@@ -17723,6 +17729,7 @@ domain:bordeaux.futurecdn.net
 domain:bordsnewsjule.com
 domain:boredborder.com
 domain:boredcrown.com
+domain:borelmazatec.com
 domain:boreusorgans.top
 domain:borhaj.com
 domain:boringbegglanced.com
@@ -18244,6 +18251,7 @@ domain:britishgrease.com
 domain:britishinquisitive.com
 domain:brittleraising.com
 domain:brittlesturdyunlovable.com
+domain:britzkanunting.com
 domain:brixfdbdfbtp.com
 domain:brjjkd.calzedonia.com
 domain:brkoev.minfin.com.ua
@@ -19259,6 +19267,7 @@ domain:ca.video-cdn.net
 domain:ca.yangshengtv.com
 domain:ca06ef821c.com
 domain:ca2686564a.com
+domain:ca2865fb41.com
 domain:ca3.revieworbit.com
 domain:ca3b526022.com
 domain:ca4.revieworbit.com
@@ -20846,7 +20855,9 @@ domain:chatgpt-premium.com
 domain:chatntr.com
 domain:chatroll.fr
 domain:chatsuptocachee.net
+domain:chatterfretten.com
 domain:chatwoot.hicity.vn
+domain:chaubaungoalt.com
 domain:chauckee.net
 domain:chauffeurreliancegreek.com
 domain:chaugroo.net
@@ -25102,6 +25113,7 @@ domain:culture.intermedes.com
 domain:culture.pandasuite.io
 domain:culturedcrayon.com
 domain:culwcoam.com
+domain:culxawxafsw.com
 domain:cumbersomecake.com
 domain:cumbersomecar.com
 domain:cumbersomecloud.com
@@ -39232,6 +39244,7 @@ domain:gadsabs.com
 domain:gadsatz.com
 domain:gadse.w1.at
 domain:gadslimz.com
+domain:gadsme.com
 domain:gadspms.com
 domain:gadspmz.com
 domain:gadssystems.com
@@ -43834,6 +43847,8 @@ domain:hazicu.hothomefuck.com
 domain:hazoopso.net
 domain:hazuro.online
 domain:hb-247.com
+domain:hb-af-us-central1.outfit7.com
+domain:hb-failover-stpceyl2ua-uw.a.run.app
 domain:hb.headbidder.net
 domain:hb.minutemedia-prebid.com
 domain:hb.openwebmp.com
@@ -45079,6 +45094,7 @@ domain:hoo1luha.com
 domain:hoodboth.com
 domain:hoodentangle.com
 domain:hoodingluster.com
+domain:hoodlumbragget.com
 domain:hoodoosdonsky.com
 domain:hoofexcessively.com
 domain:hooglaibou.net
@@ -46551,6 +46567,7 @@ domain:illuminateinconveniencenutrient.com
 domain:illuminatelocks.com
 domain:illuminous.xyz
 domain:illusiondramaexploration.com
+domain:illusorslacks.shop
 domain:illustrious-challenge.pro
 domain:illustriousoatmeal.com
 domain:illuzio.jegy.hu
@@ -52335,6 +52352,7 @@ domain:kousjcignye.com
 domain:koutobey.net
 domain:kovvild.com
 domain:kowhinauwoulsas.net
+domain:kowj.cn
 domain:kowqd1.top
 domain:kowqd5.top
 domain:kowqd7.top
@@ -59010,6 +59028,7 @@ domain:mapsgalaxy.com
 domain:mapupdatezone.com
 domain:mapvaa.reloj.es
 domain:maquiags.com
+domain:marangmarches.com
 domain:marapcana.online
 domain:marasgumpus.com
 domain:marathon.aomg5bzv7.com
@@ -69273,6 +69292,7 @@ domain:okmhnd.com
 domain:okmwfq.xyz
 domain:oko.net
 domain:okpl04301ai.com
+domain:okpl05010ai.com
 domain:okpoiione.com
 domain:okpp01021.xyz
 domain:okpp01030.xyz
@@ -69777,6 +69797,7 @@ domain:onclicksuper.com
 domain:onclkds.com
 domain:onclklnd.com
 domain:oncustomer.asia
+domain:ondatraflemish.com
 domain:ondbazxakr.com
 domain:ondermaat.nl
 domain:ondewottom.com
@@ -71107,6 +71128,7 @@ domain:ozctkohaqmc.com
 domain:ozcuxo.disturb.fi
 domain:ozdoir.meundies.com
 domain:ozectynptd.com
+domain:ozersookugnoox.net
 domain:ozhmig.cn
 domain:ozjzsu.intelligentsiacoffee.com
 domain:ozkbdxdu.icu
@@ -78969,6 +78991,7 @@ domain:rgmseo.thejewellershop.com
 domain:rgp-ign.fr
 domain:rgprah.directlampen.nl
 domain:rgrd.xyz
+domain:rgtghulduk.com
 domain:rgtm.cosmeta.hu
 domain:rgtm.de5smil.dk
 domain:rgtm.doggysafe.de
@@ -82369,6 +82392,7 @@ domain:sdj.saudedasjuntas.online
 domain:sdjbvskjvds.com
 domain:sdjthl.tvguide.dk
 domain:sdk-ab-config.qquanquan.com
+domain:sdk-api.kidoz.net
 domain:sdk-cache.video.ptqy.gitv.tv
 domain:sdk-log-inter.youdao.com
 domain:sdk-monitoring.ogury.co
@@ -99698,6 +99722,7 @@ domain:tns.simba.taobao.com
 domain:tns.tnsemployeeinsights.com
 domain:tnt.yemeksepeti.com
 domain:tnvzqz.chefline.it
+domain:tnwuami.top
 domain:tnxxtx.crepeerase.com
 domain:tnz3.carrefour-banque.fr
 domain:tnzjrj.xyz
@@ -105610,6 +105635,7 @@ domain:uanxss.klingel.cz
 domain:uaoaig.xyz
 domain:uaqcui.tennis-point.fr
 domain:uaqdgrfr.icu
+domain:uaqe.cn
 domain:uarating.com
 domain:uarrdg.landsofamerica.com
 domain:uasmdd.icaniwill.no
@@ -107505,6 +107531,7 @@ domain:v.adblockultimate.net
 domain:v.angha.me
 domain:v.cameo.com
 domain:v.ctrl.blog
+domain:v.kidoz.net
 domain:v.minu.be
 domain:v.myvoleo.com
 domain:v.oney.es
@@ -114717,6 +114744,7 @@ domain:yeabble.com
 domain:yeah1publishing.com
 domain:yealnk.com
 domain:yearnstocking.com
+domain:yeastedbushpig.top
 domain:yeastfeukufund.org
 domain:yebvpc.gardengoodsdirect.com
 domain:yeesihighlyre.info
