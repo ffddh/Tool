@@ -1,36 +1,60 @@
-// 2025-05-12 19:14:40
-// 捷径 https://www.icloud.com/shortcuts/4862991f0914475ea4fc6e7f99a8cf5a
+// 2025-05-13 17:04:26
 (async () => {
   // prettier-ignore
-  let body = { d: "", p: "" };
-  let response = { body: JSON.stringify(body) };
+  let body = { d: "", p: "" }, response = { body: JSON.stringify(body) }, ARGV, reqbody, notif = ""
   try {
-    let reqbody = JSON.parse($request?.body);
-
-    let ARGV = JSON.parse($argument);
+    const CACHE_KEY = "Rule-Cidr-Cache"; // whois cidr 缓存
+    const CACHE_TTL = 90 * 24 * 60 * 60 * 1000; // cidr 结果 缓存过期时间 90天 毫秒
+    try {
+      reqbody = JSON.parse($request?.body);
+    } catch (error) {
+      throw new Error("$request.body 解析错误" + error.message);
+    }
+    try {
+      ARGV = JSON.parse($argument);
+    } catch (error) {
+      throw new Error("$argument 解析错误" + error.message);
+    }
     // prettier-ignore
     const { CN = "CNN", FINAL = "FINAL", COUNT = 5, CNIP = 1, CNHOST = 1, FINALIP = 1,  FINALHOST = 1,} = ARGV;
-    const CACHE_KEY = "Rule-Cidr-Cache"; // whois cidr 缓存
-    const RCCK_KEY = "Rule-Count-Cache"; // 计数 缓存
-    const CACHE_TTL = 90 * 24 * 60 * 60 * 1000; // cidr 结果 缓存过期时间 90天 毫秒
-    var checkCacheCidrs = ReadValidCache();
+    var checkCacheCidrs = [];
+    if (FINALIP == 1 && CNIP == 1) checkCacheCidrs = ReadValidCache();
+
     var _cidr_cache = 0;
     var _cidr_get = 0;
     var _cidr_size = 0;
+    var rules_re_other_set = new Set([]); // 去重
+    var rules_re_domain_set = new Set([]); // 去重
+    var rules_re_keyword_set = new Set([]); // 去除 KEYWORD 命中的
     // - "it"
     // prettier-ignore
     const countryTLDList = [ "cn", "us", "uk", "jp", "de", "fr", "au", "ca", "ru", "kr", "sg", "in", "tw", "hk", "mo", "nl", "es", "ch", "se","no", "fi", "dk", "be", "br", "mx", "ar", "za", "nz", "il"];
-    const lines = reqbody.input_csv ? reqbody.input_csv.trim()?.split("\n") : [];
-    const file_directs = reqbody.file_direcr ? reqbody.file_direcr.split("\n") : []
-    const file_proxys = reqbody.file_proxy ? reqbody.file_proxy.split("\n") : []
-    console.log("INCSV: \t"+lines?.length)
-    console.log("PROXY: \t"+file_proxys?.length)
-    console.log("DIRECT: \t"+file_directs?.length)
+    const lines = reqbody.input_csv
+      ? reqbody.input_csv.trim()?.split("\n")
+      : [];
+
+    const {
+      excludeRules: file_directs_o,
+      otherRules: file_directs,
+      fileLength: file_directs_l,
+    } = parseRulesAll(reqbody.file_direcr);
+
+    const {
+      excludeRules: file_proxys_o,
+      otherRules: file_proxys,
+      fileLength: file_proxys_l,
+    } = parseRulesAll(reqbody.file_proxy);
+
+    console.log("INCSV: \t" + lines?.length);
+    console.log("PROXY: \t" + file_proxys_l);
+    console.log("DIRECT: \t" + file_directs_l);
+
     const today = new Date().toLocaleString("zh-CN", { hour12: false });
     const proxyList = [];
     const directList = [];
     const proxyRegex = new RegExp(FINAL);
     const directRegex = new RegExp(CN);
+
     const RULEOBJ = {
       DIRECT: { hosts: [], ips: [] },
       PROXY: { hosts: [], ips: [] },
@@ -58,7 +82,7 @@
     for (let i = 0; i < directList.length; i++) {
       const H = directList[i];
       if (isIPv4(H)) {
-        if (CNIP) RULEOBJ.DIRECT.ips.push(H);
+        if (CNIP == 1) RULEOBJ.DIRECT.ips.push(H);
       } else if (CNHOST && !isIPv6(H)) {
         RULEOBJ.DIRECT.hosts.push(`DOMAIN-SUFFIX,${H}`);
       }
@@ -67,19 +91,20 @@
     for (let i = 0; i < proxyList.length; i++) {
       const H = proxyList[i];
       if (isIPv4(H)) {
-        if (FINALIP) RULEOBJ.PROXY.ips.push(H);
+        if (FINALIP == 1) RULEOBJ.PROXY.ips.push(H);
       } else if (FINALHOST && !isIPv6(H)) {
         RULEOBJ.PROXY.hosts.push(`DOMAIN-SUFFIX,${H}`);
       }
     }
 
     const rule_direct_cidr = await CidrRules(RULEOBJ.DIRECT.ips);
-    var rules_re_domain_set = new Set(); // 去重
+
     var notif_text_a = [];
     var notif_text_b = [];
     var notif_text_c = [];
+    var notif_text_d = [];
     let dset;
-		
+
     try {
       dset = new Set([
         ...file_directs, // file_direcr
@@ -87,17 +112,15 @@
         ...RULEOBJ.DIRECT.hosts,
       ]);
     } catch (error) {
-      throw new Error("未传入数据.");
+      throw new Error("未传入数据." + error.message);
     }
-    // const
     let { rules: rules_direct, count: count_direct } = processRules(
       dset,
       (is_direct = true)
     );
-
     const rule_proxy_cidr = await CidrRules(RULEOBJ.PROXY.ips);
     let rset;
-		
+
     try {
       rset = new Set([
         ...file_proxys, //file_proxy
@@ -105,49 +128,49 @@
         ...RULEOBJ.PROXY.hosts,
       ]);
     } catch (error) {
-      throw new Error("未传入数据..");
+      throw new Error("未传入数据.." + error.message);
     }
     let { rules: rules_proxy, count: count_proxy } = processRules(rset);
 
     rules_direct =
-      `# 更新时间：${today}\n# 规则数量：当前共 ${
+      `# 手动规则: 以下规则优先级最高 不参与规则数量统计\n${file_directs_o.join(
+        "\n"
+      )}\n\n# 更新时间: ${today}\n# 规则数量：当前共 ${
         count_direct || 0
       } 条规则\n\n` + rules_direct;
 
     rules_proxy =
-      `# 更新时间：${today}\n# 规则数量：当前共 ${
+      `# 手动规则: 以下规则优先级最高 不参与规则数量统计\n${file_proxys_o.join(
+        "\n"
+      )}\n\n# 更新时间: ${today}\n# 规则数量：当前共 ${
         count_proxy || 0
       } 条规则\n\n` + rules_proxy;
 
-    let rcc = $persistentStore.read(RCCK_KEY);
-    if (rcc) {
-      try {
-        rcc = JSON.parse(rcc);
-      } catch (e) {
-        $persistentStore.write(null, RCCK_KEY);
-        rcc = null;
-      }
-    }
-    let rule_count_cache = {
-      d: count_direct,
-      p: count_proxy,
-    };
-    let hasRcc = rcc?.d && rcc?.p;
+    // console.log("\n🍉rules_direct\n");
+    // console.log(rules_direct);
+
+    // console.log("\nrules_proxy\n");
+    // console.log(rules_proxy);
 
     const notif_text =
-      hasRcc && count_direct != rcc.d
-        ? `${rcc.d} -> ${count_direct}`
+      count_direct != file_directs_l
+        ? `${file_directs_l} -> ${count_direct}`
         : `${count_direct}`;
     const notif_textp =
-      hasRcc && rcc.p != count_proxy
-        ? `${rcc.p} -> ${count_proxy}`
+      file_proxys_l != count_proxy
+        ? `${file_proxys_l} -> ${count_proxy}`
         : `${count_proxy}`;
-    !hasRcc && $persistentStore.write(null, RCCK_KEY);
-    $persistentStore.write(JSON.stringify(rule_count_cache), RCCK_KEY);
 
-    const notif = `${CN}: ${notif_text}, ${FINAL}: ${notif_textp}\nIP-CIDR: 请求查询:${_cidr_get}, 缓存${_cidr_cache}, 最终规则:${_cidr_size}`;
-
-    $notification.post("新增规则", "", notif);
+    if (notif_text != "0") {
+      notif += `${CN}: ${notif_text}  `;
+    }
+    if (notif_textp != "0") {
+      notif += `${FINAL}: ${notif_textp}  `;
+    }
+    if (_cidr_get > 0) {
+      notif += `\nIP-CIDR: 请求查询:${_cidr_get}, 缓存${_cidr_cache}, 最终规则:${_cidr_size}`;
+    }
+    $notification.post("FindRule", "", notif);
     let t =
       notif_text_a.length > 0
         ? `\n\n去掉 [${CN}] 里有的规则:\n${notif_text_a.join("\n")}\n`
@@ -160,16 +183,22 @@
       notif_text_c.length > 0
         ? `\n\n去掉命中 国家顶级域名 的规则: \n${notif_text_c.join("\n")}\n`
         : "";
-    t += "\n" + notif + "\n";
+    t +=
+      notif_text_d.length > 0
+        ? `\n\n去掉命中 手动规则 的规则: \n${notif_text_d.join("\n")}\n`
+        : "";
+    t += "\n\n" + notif + "\n";
 
     console.log(t);
 
     response.body = JSON.stringify({ d: rules_direct, p: rules_proxy });
 
     function processRules(ruleSet, is_direct = false) {
-      const rules_other_set = new Set();
-      const rules_direct_set = new Set(); // 最终规则
-      const rules_re_keyword_set = new Set(); // 去除 KEYWORD 命中的
+      let isdp = is_direct ? CN : FINAL;
+      const rules_other_set = new Set([]);
+      const rules_ipcidrs_set = new Set([]);
+      const rules_direct_set = new Set([]); // 最终规则
+
       let rule_split = [];
       for (const item of ruleSet) {
         const [type, ...domainParts] = item.split(",");
@@ -187,26 +216,48 @@
           const parts = domain.split(".");
           const parts_length = parts.length;
 
+          if (rules_re_other_set.has(domain)) {
+            notif_text_d.push(isdp + ": " + domain);
+            return;
+          }
+
           if (is_direct) {
             rules_re_domain_set.add(domain);
           } else {
             if (rules_re_domain_set.has(domain)) {
-              notif_text_a.push(domain);
+              notif_text_a.push(isdp + ": " + domain);
               return;
             }
           }
+
           if (parts_length > 0) {
             const tlddomain = parts[parts_length - 1];
             if (countryTLDList.includes(tlddomain)) {
-              notif_text_c.push(tlddomain + " -> " + domain);
-              rules_direct_set.add("DOMAIN-SUFFIX," + tlddomain);
+              if (parts_length > 1) {
+                if (is_direct) {
+                  rules_re_domain_set.add(tlddomain);
+                  rules_direct_set.add("DOMAIN-SUFFIX," + tlddomain);
+                } else if (rules_re_domain_set.has(tlddomain)) {
+                  notif_text_a.push(isdp + ": " + domain);
+                  return;
+                } else {
+                  notif_text_c.push(isdp + ": " + tlddomain + " -> " + domain);
+                  rules_direct_set.add("DOMAIN-SUFFIX," + tlddomain);
+                }
+              }
             } else {
               if (!checkMatch(domain)) {
                 if (parts_length > 2) {
                   // 提取主域名
                   const doma = parts.slice(-2).join(".");
-                  is_direct && rules_re_domain_set.add(doma);
-                  rules_direct_set.add("DOMAIN-SUFFIX," + doma);
+                  let mat = false;
+                  if (is_direct) {
+                    rules_re_domain_set.add(doma);
+                    mat = true;
+                  } else if (rules_re_domain_set.has(doma)) {
+                    mat = false;
+                  }
+                  mat && rules_direct_set.add("DOMAIN-SUFFIX," + doma);
                 } else {
                   rules_direct_set.add("DOMAIN-SUFFIX," + domain);
                 }
@@ -214,22 +265,27 @@
             }
           }
         } else {
-          let matchkey = false;
           if (type === "IP-CIDR") {
-            if (checkMatch(domain)) {
-              matchkey = true;
+            if (!checkMatch(domain)) {
+              rules_ipcidrs_set.add(type + "," + domain);
             }
+          } else {
+            rules_other_set.add(type + "," + domain);
           }
-          if (!matchkey) rules_other_set.add(type + "," + domain);
         }
       });
-      const rules_direct = [...rules_direct_set, ...rules_other_set].sort();
+
+      const rules_direct = [
+        ...rules_direct_set,
+        ...rules_other_set,
+        ...dedupeCIDRs([...rules_ipcidrs_set]),
+      ].sort();
       function checkMatch(target) {
         const str = String(target).toLowerCase();
         for (const keyword of rules_re_keyword_set) {
           const key = String(keyword).toLowerCase();
           if (str.includes(key)) {
-            notif_text_b.push(`${key} -> ${str}`);
+            notif_text_b.push(isdp + ": " + `${key} -> ${str}`);
             return true;
           }
         }
@@ -244,8 +300,8 @@
 
     async function CidrRules(ipList) {
       if (!ipList || ipList.length === 0) return [];
-      const cidrRuleSet = new Set();
-      let cidrSet = new Set();
+      const cidrRuleSet = new Set([]);
+      let cidrSet = new Set([]);
       for (const ip of ipList) {
         let matched = false;
         if (cidrSet.size > 0)
@@ -261,7 +317,7 @@
           }
         }
         if (!matched) {
-          console.log("查询请求：" + ip);
+          console.log("查询请求: " + ip);
           const cidr = await WhoisCidr(ip);
           if (cidr.length > 0) {
             _cidr_get++;
@@ -283,7 +339,54 @@
       }
       return [];
     }
+    function parseRulesAll(text) {
+      const lines = text?.split("\n") || [];
+      const excludeRules = [];
+      const otherRules = [];
+      let fileLength = 0;
 
+      let inExcludeSection = false;
+      let passedUpdate = false;
+
+      for (let line of lines) {
+        const trimmed = line.trim();
+
+        if (trimmed.startsWith("# 手动规则")) {
+          inExcludeSection = true;
+          continue;
+        }
+
+        if (trimmed.startsWith("# 规则数量")) {
+          fileLength = trimmed.match(/\d+/)?.[0] || 0;
+          inExcludeSection = false;
+          passedUpdate = true;
+          continue;
+        }
+
+        if (!trimmed || trimmed.startsWith("# 更新时间")) continue;
+
+        if (inExcludeSection) {
+          excludeRules.push(trimmed);
+          const [type, ...domainParts] = trimmed.split(",");
+          if (domainParts.length > 0) {
+            const domain = domainParts.join(",").trim().replace(/\s+/g, "");
+            if (type === "DOMAIN-KEYWORD") {
+              rules_re_keyword_set.add(domain);
+            } else if (type === "DOMAIN-SUFFIX") {
+              rules_re_other_set.add(domain);
+            }
+          }
+        } else if (passedUpdate) {
+          otherRules.push(trimmed);
+        }
+      }
+
+      return {
+        excludeRules,
+        otherRules,
+        fileLength,
+      };
+    }
     // 保存 CIDR 到缓存，并清理过期的
     function SaveCache(cidr) {
       const now = Date.now();
@@ -292,7 +395,7 @@
         checkCacheCidr = JSON.parse($persistentStore.read(CACHE_KEY)) || [];
       } catch (error) {
         checkCacheCidr = [];
-        console.log(CACHE_KEY + " err1");
+        console.log(CACHE_KEY + " err1" + error.message);
       }
       // 清除过期
       checkCacheCidr = checkCacheCidr.filter(
@@ -313,7 +416,7 @@
         checkCacheCidr = JSON.parse($persistentStore.read(CACHE_KEY)) || [];
       } catch (error) {
         checkCacheCidr = [];
-        console.log(CACHE_KEY + " err2");
+        console.log(CACHE_KEY + " err2" + error.message);
       }
       // 过滤过期的
       checkCacheCidr = checkCacheCidr.filter(
@@ -392,7 +495,7 @@
           )
         );
       } catch (error) {
-        console.log(error.message);
+        console.log("APIA err " + error.message);
         cidrs = [];
       }
       if (cidrs.length > 0) {
@@ -419,7 +522,7 @@
             return [];
           }
         } catch (error) {
-          console.log(error.message);
+          console.log("APIA err " + error.message);
           return [];
         }
       }
@@ -431,6 +534,40 @@
       const ipInt = ipToInt(ip);
       const cidrIpInt = ipToInt(cidrIp);
       return (ipInt & mask) === (cidrIpInt & mask);
+    }
+
+    function parseCIDR(cidrStr) {
+      const match = cidrStr.match(/IP-CIDR,([0-9.]+)\/(\d+)/);
+      if (!match) return null;
+      const [_, ip, prefixLength] = match;
+      const ipInt = ipToInt(ip);
+      const prefix = parseInt(prefixLength);
+      const mask = ~(2 ** (32 - prefix) - 1) >>> 0;
+      const start = ipInt & mask;
+      const end = start + 2 ** (32 - prefix) - 1;
+      return { raw: cidrStr, start, end, prefix };
+    }
+
+    function isSubset(a, b) {
+      return a.start >= b.start && a.end <= b.end;
+    }
+
+    function dedupeCIDRs(rawList) {
+      const cidrs = rawList.map(parseCIDR).filter(Boolean);
+      const excluded = new Set([]);
+      for (let i = 0; i < cidrs.length; i++) {
+        for (let j = 0; j < cidrs.length; j++) {
+          if (i !== j && isSubset(cidrs[i], cidrs[j])) {
+            excluded.add(cidrs[i].raw);
+            break;
+          }
+        }
+      }
+
+      const result = rawList.filter((item) => !excluded.has(item));
+      excluded.size > 0 &&
+        console.log("\n去除的 CIDR: \n" + [...excluded].join("\n") + "\n");
+      return result;
     }
 
     function ipToInt(ip) {
