@@ -1,4 +1,49 @@
-// 2025-05-14 19:11:29
+/**
+[首次使用需要设置以下参数]
+
+必须配置:
+   ├ [KEY_DIRECT] 默认: DIRECT
+   ├ [KEY_PROXY]  默认: 🇭🇰|🇸🇬|🇯🇵|🇺🇸
+   ├ 正则关键字 需要最终走向的节点名 策略组名不行 
+   └ Surge 内规则配置参考下面示例
+
+可选配置:
+   ├ [COUNT] 过滤 请求次数 > COUNT 的域名 默认 5
+   ├ [ON_DIRECT_IP] 生成直连 IP 规则 需要查询 Whois
+   ├ [ON_DIRECT_HOST] 生成 域名规则
+   ├ [ON_PROXY_IP] 生成代理 IP 规则 需要查询 Whois
+   ├ [ON_PROXY_HOST] 生成 域名规则
+   ├ 1：启用
+   └ 0：关闭
+
+捷径配置:
+   ├ 默认在 Surge 的 Rule / 下
+   ├ direct_file 为 直连规则集 文件名
+   └ proxy_file 为 代理规则集 文件名
+
+生成的规则说明
+   ├ 手动规则优先级最高
+   ├ 接下来是直连规则
+   ├ [直连 List] 里有的规则，[代理 List] 里不会有
+   ├ [KEYWORD] 命中的规则会排除掉
+   ├ [IP-CIDR] 重复包含的会去除
+   ├ [DOMAIN-SUFFIX,x.cn] 类似的会提取顶级域名[cn]
+   └ 首次请求需要一定的时间 有缓存后速度就快了
+
+[Proxy]
+CNN = direct // 为了区别正常的 DIRECT 策略 [可选]
+
+[Rule]
+RULE-SET, Rule/P.txt, Proxy, no-resolve  // [可选 可以捷径里设置对应对文件名]
+RULE-SET, Rule/D.txt, DIRECT, no-resolve //  
+GEOIP, CN, CNN // [可选] 对应 Proxy 的 CNN = direct
+FINAL, FINALUS, dns-failed // 需要节点名 包含 关键字 可以用 substore 加前缀 / 匹配国家国旗 [默认匹配: 🇭🇰|🇸🇬|🇯🇵|🇺🇸]
+
+捷径： https://www.icloud.com/shortcuts/4862991f0914475ea4fc6e7f99a8cf5a
+
+*/
+
+// 2025-05-14 21:51:12
 (async () => {
   // prettier-ignore
   let body = { d: "", p: "" },response = { body: JSON.stringify(body) },rule_direct_cidr = [], rule_proxy_cidr = [], ARGV = {}, reqbody, notif = "";
@@ -109,7 +154,7 @@
 
     function parseRulesAll(text) {
       const lines = text?.trim()?.split("\n") || [];
-      const excludeRules = [];
+      let excludeRules = [];
       const otherRules = [];
       let fileLength = 0;
 
@@ -141,8 +186,11 @@
           type === "DOMAIN-KEYWORD"
             ? key_set.add(domain)
             : type === "DOMAIN-SUFFIX" && more_set.add(domain);
-        } else if (passedUpdate) otherRules.push(trimmed);
+        } else if (passedUpdate) {
+          otherRules.push(trimmed);
+        }
       }
+      excludeRules.sort();
       return {
         excludeRules,
         otherRules,
@@ -159,7 +207,7 @@
       let rule_split = [];
       for (const item of ruleSet) {
         const [type, domain] = item.split(",");
-        add_tld_set(domain);
+        add_tld_set(domain, is_cn);
         rule_split.push([type, domain]);
         if (type === "DOMAIN-KEYWORD") key_set.add(domain);
       }
@@ -167,21 +215,23 @@
       rule_split.forEach((i) => {
         const type = i[0];
         const domain = i[1];
+
         if (checkMatch(domain)) return;
+
         if (type === "DOMAIN-SUFFIX") {
           const parts = domain.split(".");
           const part_len = parts.length;
           if (more_set.has(domain)) {
             nt_d.push(isdp + ": " + domain);
+
             return;
           }
+
           if (!is_cn && re_set.has(domain)) {
-            if (direct_set.has(domain)) {
-              nt_a.push(isdp + ": " + domain);
-              return;
-            }
-            add_d_s(domain);
-          } else re_set.add(domain);
+            nt_a.push(isdp + ": " + domain);
+            return;
+          }
+
           if (part_len === 0) return;
           const tld = parts[part_len - 1];
           if (TLDSet.has(tld)) {
@@ -334,7 +384,9 @@
       return checkCacheCidr.map((item) => item.cidr);
     }
 
-    function add_tld_set(domain) {
+    function add_tld_set(domain, is_cn) {
+      // console.log(domain);
+      if (is_cn) re_set.add(domain);
       // 如果有自定义 顶级域名去重
       if (domain?.split(".").length === 1) {
         re_set.add(domain);
