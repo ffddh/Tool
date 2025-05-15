@@ -13690,6 +13690,7 @@ domain:art-offer.com
 domain:art.b.inhaabit.com
 domain:art.carte-gr.total.fr
 domain:artax-evn.com
+domain:artdecorhome.store
 domain:artditement.info
 domain:arteltubman.top
 domain:artemis-cdn.ocdn.eu
@@ -18416,6 +18417,7 @@ domain:budsminepatent.com
 domain:budvawshes.ru
 domain:buf.lemonde.fr
 domain:bufetgarrigosa.com
+domain:buffatopmost.com
 domain:buffethypothesis.com
 domain:buffetreboundfoul.com
 domain:bufmjknaeprvyd.com
@@ -18845,6 +18847,7 @@ domain:bzuvlx.e-file.com
 domain:bzwo2lmwioxa.com
 domain:bzxvtj.xyz
 domain:bzydilasq.com
+domain:bzyfzusiqohk.com
 domain:c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com
 domain:c-adash.m.taobao.com
 domain:c-api-bit.shopeemobile.com
@@ -29784,6 +29787,7 @@ domain:delivery.dmkt-sp.jp
 domain:delivery.doisongphapluat.com.vn
 domain:delivery.email-pepipost.branch.rocks
 domain:delivery.gettopple.com
+domain:delivery.lsvn.vn
 domain:delivery.lululemon.com
 domain:delivery.marketing.boutiqaat.com
 domain:delivery.myswitchads.com
@@ -36318,6 +36322,7 @@ domain:faze1.com
 domain:faze10.com
 domain:faze2.com
 domain:faze24.com
+domain:faze3.com
 domain:faze4.com
 domain:faze40.com
 domain:faze47.com
@@ -38192,6 +38197,7 @@ domain:fri4esianewheywr90itrage.com
 domain:friday89.com
 domain:friday99.com
 domain:fridayarched.com
+domain:fridaylocalmanager.duckdns.org
 domain:fridayrefractscorer.com
 domain:fridaywake.com
 domain:fridgesbunt.top
@@ -38890,6 +38896,7 @@ domain:gamebox.kugou.com
 domain:gamecenter.iqiyi.com
 domain:gamecocks24.fun
 domain:gamedrive.org
+domain:gamee.forum
 domain:gamefowl.emailforward.mx
 domain:gamefowl.karlsutt.com
 domain:gamefowl.nonprofit.foundation
@@ -40229,6 +40236,7 @@ domain:gloytrkb.com
 domain:glozeryodling.shop
 domain:glpbvy.cuponatic.com
 domain:glpca.com
+domain:glpweawxkodtvta.com
 domain:glsfreeads.com
 domain:glssp.net
 domain:glucasegrammar.shop
@@ -41749,6 +41757,7 @@ domain:grfpr.com
 domain:grfx.mp3.com
 domain:grgnsht.nzxt.com
 domain:gricechupon.top
+domain:gridaisefty.com
 domain:gridder.co
 domain:gridedloamily.top
 domain:gridehornyidentifier.com
@@ -44605,7 +44614,6 @@ domain:hoofexcessively.com
 domain:hooglaibou.net
 domain:hoojique.xyz
 domain:hoojts.demmelhuber.net
-domain:hookahheroes.com
 domain:hookawep.net
 domain:hookjav12.fun
 domain:hookups-hots-searchs.com
@@ -51083,6 +51091,7 @@ domain:kdopag.xyz
 domain:kdoshbd.top
 domain:kdpic.pchome.com.tw
 domain:kdpxgr.travellink.no
+domain:kdpxksukngrg.com
 domain:kdqnaec.cn
 domain:kdqytm.vipre.com
 domain:kdtbpt.brogsitter.de
@@ -61975,6 +61984,7 @@ domain:metrics.creit.tech
 domain:metrics.crocs.com
 domain:metrics.crossmediaservices.com
 domain:metrics.cru.org
+domain:metrics.cs.money
 domain:metrics.csmonitor.com
 domain:metrics.csnhouston.com
 domain:metrics.css.ch
@@ -65788,6 +65798,7 @@ domain:nallahhypural.shop
 domain:nalraughaksie.net
 domain:nalroustaucmoux.net
 domain:nalyticaframeofm.com
+domain:nalyxg.top
 domain:nalzahqp.page.link
 domain:namcah.alipearlhair.com
 domain:nameads.com
@@ -65937,7 +65948,6 @@ domain:navi36.ru
 domain:navi38.ru
 domain:navi39.ru
 domain:navi4.com
-domain:navi42.ru
 domain:navi44.com
 domain:navi45.ru
 domain:navi48.com
@@ -66327,7 +66337,6 @@ domain:netshelter.net
 domain:netsponsors.com
 domain:netstam.com
 domain:netstat.yunnan.cn
-domain:netsugar.shop
 domain:nettokom-lp.information.nettokom.de
 domain:nettrackway.com
 domain:netund.com
@@ -66899,6 +66908,7 @@ domain:nitroclicks.com
 domain:nitrokod.com
 domain:nitrous-analytics.s3.amazonaws.com
 domain:niu05150jd.top
+domain:niu05151jd.top
 domain:niveausatan.shop
 domain:niveauultion.shop
 domain:niwooghu.com
@@ -68119,6 +68129,7 @@ domain:oblonnqw.com
 domain:obluk.equilist.cz
 domain:obmphi.xyz
 domain:obnamxombt.com
+domain:obnoljac.com
 domain:obnrap.neimanmarcus.com
 domain:obooom.robinmaybag.com
 domain:obosnovano.su
@@ -78832,7 +78843,6 @@ domain:rps.hpplay.cn
 domain:rpsctx.chamilia.com
 domain:rpsukimsjy.com
 domain:rpt.kidsfootlocker.com
-domain:rptbaa.shop
 domain:rptdhu.top
 domain:rptmoczqsf.com
 domain:rpts.org
@@ -84190,6 +84200,7 @@ domain:shtqpahos.com
 domain:shtrack.kingsoft.jp
 domain:shuanshu.com.com
 domain:shubadubadlskjfkf.com
+domain:shuceposhaiftoo.net
 domain:shudderconnecting.com
 domain:shudi8.com
 domain:shughaxiw.com
@@ -99453,6 +99464,7 @@ domain:touched35one.pro
 domain:touclick.com
 domain:tougaipteehuboo.xyz
 domain:toughhire.com
+domain:touphudipodou.net
 domain:tour.brazzers.com
 domain:tour.cineble.com
 domain:tour.xxxblackbook.com
@@ -102333,6 +102345,7 @@ domain:tracking.liwest.at
 domain:tracking.lonnogpersonalabc.visma.no
 domain:tracking.lorainccc.edu
 domain:tracking.lseg.com
+domain:tracking.lsvn.vn
 domain:tracking.lucky.nl
 domain:tracking.luminishealth.org
 domain:tracking.lythouse.com
