@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-05-22 20:05:32(GMT+8) 
-! Total count: 34245
+! ! Version: 2025-05-23 08:13:24(GMT+8) 
+! Total count: 34257
  
 ###ADtip
 ###AdBlockDialog
@@ -8697,7 +8697,6 @@ cpu.baidu.com##A[href*='cpro.baidu.com']
 cq.qq.com##div.clearfix[style*="1000"]
 cq.qq.com##div[class^="ad-box"]
 cq.qq.com##div[style*="1000"][style*="60"]
-cq.ru#$#prevent-listener DOMContentLoaded 'banners'
 cqjschungao.com##[style*='px no-repeat; position: relative;']
 cqjschungao.com##[style='bottom: 132px;']
 cqmmgo.com##.ad-160x40
@@ -9905,7 +9904,7 @@ firstrowfr.eu###fanback
 fishpi.cn##a[href*="guangdianhong.com"]
 fishpi.cn#?#.module:-abp-has(>.ad)
 fitacg.com##a[href*="ifift.com"]
-fiverr.com#$#hide-if-matches-xpath './/div[contains(@class, "gig-card-layout")]//span/div[@class="bmo8dz1" and string-length(@class) = 7]/ancestor-or-self::div[@class="gig-card-layout"][1]'
+fiverr.com#$#hide-if-contains-and-matches-style '' 'div.gig-card-layout' 'span>div' /./ /PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMTgiIGZpbGw9Im5vb/
 fixolas.net##[href="http://fixolas.net/"] > IMG
 fjsen.com,nuomi.com#@#.right-ad
 flashback.org###top-banner-container
@@ -16891,7 +16890,7 @@ www.facebook.com,web.facebook.com#$#json-prune 'require.0.3.0.__bbox.require.[].
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains /Anzeige|Sponsored|Sponsorlu|Gesponsert|Patrocinado|Sponsorisé|Commandité|Gesponsord|Sponsorowane|Publicidad|Sponsrad|Sponsoreret|Sponsoroitu|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato/ 'div[aria-describedby][aria-labelledby]' 'span[aria-labelledby] svg[style] * ^^svg^^ * ^^svg^^'; hide-if-contains /Anzeige|Sponsored|Sponsorlu|Gesponsert|Patrocinado|Sponsorisé|Commandité|Gesponsord|Sponsorowane|Publicidad|Sponsrad|Sponsoreret|Sponsoroitu|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato/ 'div[aria-describedby][aria-labelledby]' 'span[aria-labelledby] svg[style] * ^^svg^^'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"] span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[aria-label][attributionsrc][href^="?__cft__"][role="link"]>span>span[aria-labelledby]'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href*="/ads/about/"][role="link"][tabindex="0"]>span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href="#"][role="link"][tabindex="0"]>span>span[aria-labelledby]>span[style]'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrwae]{12}|[Patrocind]{11}|[Sponsrizat]{13}|[Anzeig]{6}/ 'div[role=feed] div[role=article]' a[href^="?__cft__"]; race stop;
-www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"SPONSORED"|"daspo_sto")[^\n]+?("SponsoredData"|"lbl_adv_iden")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon)/'
+www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto")[^\n]+?("SponsoredData"|"lbl_adv_iden")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl)/'
 www.ghxi.com##.wpcom_ad_wrap
 www.ghxi.com##DIV[style^='padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: ']
 www.goha.ru,3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,kufar.by,ura.news#$#abort-on-property-read Ya
@@ -20010,6 +20009,7 @@ zzzyk.com###Tinfo
 ||as1.wenku.baidu.com^
 ||as89de.top^
 ||asacdn.com/prod/redirect.html
+||asbfala.com^
 ||asd8900.oss-*.aliyuncs.com^
 ||asdffe22.com^
 ||asdx55.com^
@@ -20597,6 +20597,7 @@ zzzyk.com###Tinfo
 ||benpsbp.com^
 ||beqnnobwt.com^
 ||berjzj.xyz^
+||bermudaprimero.com^
 ||berserkhydrant.com^$third-party
 ||berylnbb.com^
 ||beryt111.fun^
@@ -21127,6 +21128,7 @@ zzzyk.com###Tinfo
 ||callousbrake.com^$third-party
 ||calmcactus.com^$third-party
 ||calypsocapsule.com^$third-party
+||calyxesdefames.com^
 ||camep.xyz^
 ||camspic.com/imguang/*.gif
 ||canimgs.com/images/
@@ -23735,6 +23737,7 @@ zzzyk.com###Tinfo
 ||franticroof.com^$third-party
 ||frazzleart.com^$third-party
 ||frcykpk.cn^
+||freaksgreed.com^
 ||free-cdn.oss-cn-shanghai.aliyuncs.com^
 ||free3dgame.xyz^
 ||freean.us/Webservices/jsParseLinks.aspx$script,third-party
@@ -24690,6 +24693,7 @@ zzzyk.com###Tinfo
 ||heioa.xyz^
 ||heipa666.xyz/hp/
 ||heirui.cn/static/hb_
+||heistedsignon.com^
 ||heiviek.com^
 ||heiye.cc/js/bancity.
 ||heiye.cc/js/bf.js
@@ -24784,6 +24788,7 @@ zzzyk.com###Tinfo
 ||hiad.myweb.hinet.net^
 ||hiad.vmall.com^
 ||hiao.com/node/node_27508.htm
+||hiaphrilloig.com^
 ||hiaxj.com/dbxf/
 ||hibiquan.com/uploads/images/
 ||hickeyhsu.top^
@@ -24910,6 +24915,7 @@ zzzyk.com###Tinfo
 ||honorablehydrant.com^$third-party
 ||honorableland.com^$third-party
 ||hoocaumakopaibu.com^
+||hoodlumbragget.com^
 ||hookconference.com^$third-party
 ||hoopchina.com.cn/common/lazyLoadAd.js
 ||hoopchina.com.cn/gamecenter/side-stg.js
@@ -25899,6 +25905,7 @@ zzzyk.com###Tinfo
 ||jgntjtyf.icu^
 ||jgsajfggv.xyz^
 ||jgstny.com^$third-party
+||jgtjw.com^
 ||jguhqbe.top^
 ||jgvkxp.xyz^
 ||jgxirv.icu^
@@ -26767,6 +26774,7 @@ zzzyk.com###Tinfo
 ||larbcc.xyz^
 ||launchingonsetwhirlwind.com^
 ||law-lib.com/wstyle/images/gffirm.jpg
+||lawscrax.com^
 ||lawtv.com.cn/jd_ceshi.html
 ||lawtv.com.cn/skin/newplayer/ads_dianshi.php
 ||layuicdn.com/layer/layer.js$domain=hanjutvn.com
@@ -28949,6 +28957,7 @@ zzzyk.com###Tinfo
 ||pocketfaucet.com^$third-party
 ||poco.cn/v1_1/rank/get_floating_layer_ad
 ||poco.cn^*_info_banner
+||poculalienly.com^
 ||poereawer.top^
 ||poeticpackage.com^$third-party
 ||pofbpx.icu^
@@ -30016,6 +30025,7 @@ zzzyk.com###Tinfo
 ||satfyxbt.icu^
 ||satisfycork.com^$third-party
 ||satroki.tech/api/JdUnion
+||sauwaistaugleet.net^
 ||sauyv.top^
 ||saviourketonic.com^
 ||savoryorange.com^$third-party
@@ -30668,6 +30678,7 @@ zzzyk.com###Tinfo
 ||sp.dnqc.com^
 ||sp.qf.56.com^
 ||sp5vip.com/h.js
+||spacemancreativedom.net^
 ||spanking.wiki/morning-bread-
 ||sparklingshelf.com^$third-party
 ||spcode.baidu.com^
@@ -31919,6 +31930,7 @@ zzzyk.com###Tinfo
 ||unarmedindustry.com^$third-party
 ||unbecominghall.com^$third-party
 ||unbecominglamp.com^$third-party
+||uncotorture.com^
 ||uncoveredexpert.com^$third-party
 ||understoodocean.com^$third-party
 ||undm.qibulo.com^
