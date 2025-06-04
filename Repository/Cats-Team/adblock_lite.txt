@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-06-04 09:23:50(GMT+8)
-! Total count: 34451
+! ! Version: 2025-06-04 20:31:06(GMT+8)
+! Total count: 34464
  
 ###ADtip
 ###AdBlockDialog
@@ -13326,7 +13326,7 @@ morningpost.com.cn##.gg-2
 morningpost.com.cn##.gg-stl
 morningpost.com.cn##div[style="margin:0;padding:0;width:648px;height:345px;overflow:hidden;background-color:#fff;"]
 motchill.ad#$#abort-current-inline-script document.addEventListener linksToOpen
-motchill.free,ohaytv.pro#$#abort-on-property-read sessionStorage
+motchill.spot,ohaytv.pro#$#abort-on-property-read sessionStorage
 motchill87.com,trumtruyen.live#$#abort-current-inline-script setTimeout Aff
 motobuy.com.tw##.AD1
 motobuy.com.tw##.adbig
@@ -18067,6 +18067,7 @@ zzzyk.com###Tinfo
 ||1990tu.com/i/*.png
 ||1990tu.com^$third-party
 ||1999019.com^
+||19o8hzj117.com^
 ||1biqug.com/js/ajax.js
 ||1buo.icu^
 ||1buu1.penyouw.com^
@@ -18233,6 +18234,7 @@ zzzyk.com###Tinfo
 ||2rbda.icu^
 ||2rwonuh.com^
 ||2sfpy.icu^
+||2u1h56851n.top^
 ||2u3v4w5x6y.com^
 ||2ueb.cn^
 ||2vqgtxw.cn^
@@ -18628,6 +18630,7 @@ zzzyk.com###Tinfo
 ||59gt.cn^
 ||5axxw.com/extends/ad/
 ||5brxi.icu^
+||5d7k30pv1u.com^
 ||5dm.link/html/20240*.gif
 ||5dm.tv/html/5dmm.jpg
 ||5dmail.net/image/$object
@@ -20132,6 +20135,7 @@ zzzyk.com###Tinfo
 ||atyun.com/wp-content/themes/xmag/js/ad.js
 ||au.adhacker.online^$third-party
 ||au6w0.xyz^
+||aubrommaiv.com^
 ||auction.unityads.unity3d.com^
 ||audid-api.taobao.com^
 ||audioarctic.com^$third-party
@@ -21935,6 +21939,7 @@ zzzyk.com###Tinfo
 ||cp2.eastmoney.com^
 ||cpatrendreklam.com^$third-party,script
 ||cpbl-elta.cdn.hinet.net/web/images/ad_
+||cpglqg.icu^
 ||cpm.cm.kankan.com^
 ||cpms.now.com^
 ||cpnn.com.cn/cpnn2015g/neiyegg.gif
@@ -22376,6 +22381,7 @@ zzzyk.com###Tinfo
 ||deeptack.com^$third-party
 ||deerbeginner.com^$third-party
 ||deeterno.cn^
+||def2g1kz2t.top^
 ||defeatedbadge.com^$third-party
 ||defensevest.com^$third-party
 ||degjidp.icu^
@@ -24868,6 +24874,7 @@ zzzyk.com###Tinfo
 ||hgjxp.cn^
 ||hgkzl.cn^
 ||hglm.com^
+||hgo06041uyi.com^
 ||hgpbhuj.cn^
 ||hgreils.com^
 ||hgyouxi.com/data/hgyouxiad/
@@ -28897,6 +28904,7 @@ zzzyk.com###Tinfo
 ||perlmaven.com/img/sticker-you.jpg
 ||peryt111.fun^
 ||petiteumbrella.com^$third-party
+||pevmdv.top^
 ||pevpbx.icu^
 ||pexels.com^*/sponsored-media/
 ||pexels.com^*/sponsored_
@@ -30042,6 +30050,7 @@ zzzyk.com###Tinfo
 ||runoob.com/images/re/
 ||runsky.com/phpstat/
 ||ruqaks.com^
+||ruqneakyp.com^
 ||ruralrobin.com^$third-party
 ||rusnext.ru/advar.js$script
 ||rusnuiyu.com^
@@ -31532,6 +31541,7 @@ zzzyk.com###Tinfo
 ||titan007.com/ad/
 ||titan007.com/js/indexshow.
 ||titan007.com/news.aspx
+||titroikan.com^
 ||tixoilll.com^
 ||tizru.com^$domain=pronpic.org
 ||tj-cyhg.com^
@@ -31659,6 +31669,7 @@ zzzyk.com###Tinfo
 ||tpkv.cn^
 ||tptoon.com/skin/js/tjtjkk.
 ||tptp002.cfd^
+||tpuo.cn^
 ||tpvuxt.xyz^
 ||tq.cn/floatcard?
 ||tq121.com.cn/j/ad/
@@ -32803,6 +32814,7 @@ zzzyk.com###Tinfo
 ||wiwlqc.xyz^
 ||wizardbuck.com^$third-party
 ||wj.jiancai365.cn^
+||wj9uod3838.com^
 ||wjimtye.top^
 ||wkabios.icu^
 ||wkitere.top^
@@ -33751,6 +33763,7 @@ zzzyk.com###Tinfo
 ||yjnhkd.com^
 ||yjnhndt.com^
 ||yjnkas.com^
+||yjnlk.com^
 ||yjoyse.icu^
 ||yjuhqy.xyz^
 ||yjwxegq.icu^
