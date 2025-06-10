@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-06-10 09:11:37(GMT+8)
-! Total count: 34190
+! ! Version: 2025-06-10 20:29:32(GMT+8)
+! Total count: 34199
  
 ###ADtip
 ###AdBlockDialog
@@ -7024,6 +7024,8 @@ anjuke.com##.adver-content
 anjuke.com##.list-item > .jx-sign
 anjuke.com##div[class$="-poster"]
 anjuke.com,sunofbeach.net##div[class$="-ad"]
+annesastronomynews.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+annesastronomynews.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 annuaire-bleu.net#@##adblocktest
 anny3805201314.pixnet.net###pilot
 anny3805201314.pixnet.net##.header_web_to_app__container
@@ -9609,8 +9611,6 @@ ettoday.net##div[id^="abp"]
 ettoday.net#@#AMP-AD
 ettoday.net#@#amp-ad
 eurabota.com##.abtop
-euro2024volunteers.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-euro2024volunteers.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 eurointegration.com.ua,pravda.com.ua#$#abort-on-property-read as_retry
 euroiphone.eu##.div-download-h
 euroiphone.eu##.div-download-v
@@ -16444,7 +16444,7 @@ vidmoly.to#$#abort-current-inline-script addEventListener DOMContentLoaded; abor
 vidshare.tv,govid.me,hdvid.tv,ovid.pro,gomovies.*,gostream.nu,openloadmovies.net,openloadmovies.review,flashx.tv,cloudvideo.tv#$#abort-on-property-write Fingerprint2
 vidshare.tv,vidshar.tv,series.movie,gowatchseries.movie,gowatchseries.tv#$#abort-current-inline-script Object.defineProperty XMLHttpRequest
 vidsrc.*,cucuflix.*#$#abort-current-inline-script document.createElement /referrerPolicy.*no-referrer-when-downgrade/;
-viet69.fo,truyengihotnay.com,dualeotruyenl.com,yurineko.my,sexpro.day,phimsexhay669.pro,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,animehay.ceo,hentaivc.net,streamvl.top,buomtv.club,truyenvn.shop,javtiful.com,quatvn.love,tenmientruyengi.net,vn31phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,demo.14412882.com,sexmup3x.net,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net#$#abort-current-inline-script WebAssembly instantiate
+viet69.fo,truyengihotnay.com,dualeotruyenl.com,yurineko.my,sexpro.us,phimsexhay669.pro,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,animehay.ceo,hentaivc.net,streamvl.top,buomtv.club,truyenvn.shop,javtiful.com,quatvn.love,tenmientruyengi.net,vn31phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,demo.14412882.com,sexmup3x.net,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net#$#abort-current-inline-script WebAssembly instantiate
 view.inews.qq.com##div[class^="article-recommend_wrapper"]
 view.inews.qq.com##div[class^="bottom-bar_buttonWrap"]
 view.inews.qq.com##div[class^="infinite-comment-list_subText"]
@@ -16942,6 +16942,7 @@ www.ydyse.com##.left,.bottom,.right,.ad,.adimage
 www.youtube.com##.ytlr-watch-default__ad-badge-for-tvae
 www.youtube.com##ytlr-ad-skip-or-preview
 www.youtube.com##ytlr-banner-cta-renderer
+www.youtube.com#$#override-property-read Object.prototype.QI emptyArray
 www.youtube.com#$#override-property-read Object.prototype.adPlacementConfig undefined;
 www.youtube.com#$#override-property-read Object.prototype.renderingContent.instreamVideoAdRenderer undefined;
 www.youtube.com#$#override-property-read ytplayer.config.args.raw_player_response.adPlacements emptyArray; override-property-read ytplayer.config.args.raw_player_response.adSlots emptyArray; override-property-read ytplayer.config.args.raw_player_response.playerAds emptyArray;
@@ -18379,6 +18380,7 @@ zzzyk.com###Tinfo
 ||4cx5.icu^
 ||4d0m.cn^
 ||4dyt.cn^
+||4e9ynqm47d.com^
 ||4etsr.xyz^
 ||4fr.icu^
 ||4fs3r.icu^
@@ -18787,6 +18789,7 @@ zzzyk.com###Tinfo
 ||7mmtv.tv/js/ad_js/
 ||7mmtv.tv/u_banner/
 ||7moor.com^$third-party
+||7o2l520r0a.com^
 ||7qo2met.com^
 ||7r227ut.cn^
 ||7scs.com/Public/img/list-
@@ -21714,6 +21717,7 @@ zzzyk.com###Tinfo
 ||coldbalance.com^$third-party
 ||coldcallpro.com^$third-party
 ||coldcreatives.com^$third-party
+||colkarneh.com^
 ||collector.dcdn.baidu.com^
 ||collegepre.net^
 ||colorfulafterthought.com^$third-party
@@ -26621,6 +26625,7 @@ zzzyk.com###Tinfo
 ||kwerilxd.top^
 ||kwflvcdn.000dn.com^*.flv
 ||kwgqaqf.icu^
+||kwhcgsqn2f.com^
 ||kwilmid.top^
 ||kwiqcoh.icu^
 ||kwo-0115.cc^
@@ -29555,6 +29560,7 @@ zzzyk.com###Tinfo
 ||rapsmnz.cyou^
 ||rarbt.cc/js/index960_
 ||raresummer.com^$third-party
+||raspberry55o.com^
 ||ratedxbiz.com/d/
 ||ratitesbogging.com^
 ||razlozhi.ru^$script,header=report-to
@@ -29665,6 +29671,7 @@ zzzyk.com###Tinfo
 ||retinaspealer.com^
 ||retrieval-bd.duote.com^
 ||retrievemint.com^$third-party
+||revk.cn^
 ||rewrwrt4.fun^
 ||rf.cnlongshou.com^
 ||rfgsdgg.top^
@@ -32307,6 +32314,7 @@ zzzyk.com###Tinfo
 ||vv.nettierbrakier.com^
 ||vv1.pyhfxdm.cn^
 ||vvadz.cc^
+||vvd68pv6lj.com^
 ||vvdzucs.cn^
 ||vvfgjzwa.icu^
 ||vvfht.fun^
@@ -32964,6 +32972,7 @@ zzzyk.com###Tinfo
 ||xfgctg.com^
 ||xflsj.com^
 ||xfqynrp.cn^
+||xftsjv.top^
 ||xfvod.pro/images/ad/
 ||xfxvpt.icu^
 ||xfztgxt.com^
