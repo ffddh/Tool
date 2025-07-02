@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-07-01 20:05:22(GMT+8)
-! Total count: 34509
+! ! Version: 2025-07-02 08:13:17(GMT+8)
+! Total count: 34522
  
 ###ADtip
 ###AdBlockDialog
@@ -14045,7 +14045,6 @@ pansearch.me#%#//scriptlet('prevent-xhr', 'adsbygoogle')
 paopaoche.net##.down_btn2.green
 papalah.com##.sponsor-outer
 papalah.com#%#//scriptlet("abort-on-property-read", "adBlockDetected")
-papalah.com,eservice.7-11.com.tw,4399pk.com,downkr.com,cardu.com.tw,cw.com.tw,hk.on.cc,share.acgnx.se##.banner
 papergeek.fr##[id^="padb_widget_"]
 parenting.pl#$#abort-on-property-read slot
 parenting.pl,echirurgia.pl,dobreprogramy.pl,abczdrowie.pl,wp.pl#$#override-property-read rekid 0
@@ -15486,6 +15485,7 @@ soundofhope.org###itb_ads_catfish
 soundofhope.org##.itb_ads
 soundofhope.org##div[class*="AD_"]
 sourceforge.net,dictionary.cambridge.org,bab.la,pons.com,loawa.com,gazetaprawna.pl,tz.de,winfuture.de,gutefrage.net,collinsdictionary.com#$#event-override message trusted /unfilled/; event-override visibilitychange disable;
+sourceforge.net,dictionary.cambridge.org,bab.la,pons.com,loawa.com,gazetaprawna.pl,tz.de,winfuture.de,gutefrage.net,collinsdictionary.com#$#override-property-read frameElement emptyObj;
 south-plus.net##a[onclick*="'ad'"]
 soutubot.moe##.bg-gray-800.overflow-hidden
 soyoung.com###pubWideBanner
@@ -16473,6 +16473,8 @@ view.inews.qq.com##div[class^="normal_buttonWrap"]
 view.inews.qq.com##div[class^="slider-top-bar_newSliderWrapper"]
 view.inews.qq.com##div[class^="slider-top-bar_sliderWrapper"]
 view.inews.qq.com#?#div[class^="_"]:-abp-has(>div[data-action-id]>div>.react-swipeable-view-container)
+vikacg.com#%#//scriptlet('prevent-window-open')
+vikacg.com,papalah.com,eservice.7-11.com.tw,4399pk.com,downkr.com,cardu.com.tw,cw.com.tw,hk.on.cc,share.acgnx.se##.banner
 ville-ideale.com###antyp
 ville-ideale.com###enc
 ville-ideale.com###espace
@@ -18635,6 +18637,7 @@ zzzyk.com###Tinfo
 ||5nj.com/js/cnzz33.js
 ||5pub.com^
 ||5s98.com/img/
+||5uazcu2o1.com^
 ||5uxmusq.cn^
 ||5vdd.com/360
 ||5vdd.com/ktt.png
@@ -18822,6 +18825,7 @@ zzzyk.com###Tinfo
 ||7o2l520r0a.com^
 ||7qo2met.com^
 ||7r227ut.cn^
+||7rag9q1on.com^
 ||7scs.com/Public/img/list-
 ||7tc.fun^
 ||7u4b8l1zt.com^
@@ -22290,6 +22294,7 @@ zzzyk.com###Tinfo
 ||dbmp4.com/js/foot.js
 ||dbnsd2viud.xyz^
 ||dbnwlp.xyz^
+||dbt6ga5v6d15f.cloudfront.net/slf^$domain=vikacg.com
 ||dbw.cn/eap/js/db/dbwad_
 ||dbw.cn/eap/js/hl/hlj_ad
 ||dbxok6uo.icu^
@@ -24043,6 +24048,7 @@ zzzyk.com###Tinfo
 ||gaoqing888.com/img/icmarkets.
 ||gaosan.com/js/b.js
 ||gaoyuhu.top^
+||gardenian8.top^
 ||gardenovens.com^$third-party
 ||garrafaspotted.com^
 ||gasaq.com/public/flash/
@@ -24493,6 +24499,7 @@ zzzyk.com###Tinfo
 ||gucheng.com/2016/ggimg/
 ||gucheng.com/gcwad/
 ||gucx.cn^
+||guekoe.icu^
 ||guess.h.qhimg.com^
 ||guessdetail.com^$third-party
 ||guhai.com.cn/AD/
@@ -25312,6 +25319,7 @@ zzzyk.com###Tinfo
 ||iaxmmw9fbx.com^
 ||ib3i33.cob.autojournal.fr^$script
 ||ibaotu.com/revision/js/ad/
+||iber07yk9.com^
 ||ibexabray.com^
 ||ibf.tw/js/jquery.blockUI.js
 ||ibkoiw.xyz^
@@ -25506,6 +25514,7 @@ zzzyk.com###Tinfo
 ||image.39.net/style/
 ||image.51cto.com/ad/
 ||image.yafytg.cn^
+||imagedelivery.net^$domain=vikacg.com
 ||imageoss.com/images/*_GIF2400x120_
 ||images.china.cn^*first/$subdocument
 ||images.jurong.cn/bbs/
@@ -28252,6 +28261,7 @@ zzzyk.com###Tinfo
 ||nghv.cn^
 ||ngishc.top^
 ||ngjcvn.top^
+||ngjfjf.icu^
 ||ngxzkaxf.icu^
 ||nh7.icu^
 ||nhbprf.xyz^
@@ -28489,6 +28499,7 @@ zzzyk.com###Tinfo
 ||oajv.cn^
 ||oakmn.top^
 ||oaokes.icu^
+||oaox.cn^
 ||oauqyw.xyz^
 ||oaxaubauls.com^
 ||obertsiamw.fun^
@@ -31754,6 +31765,7 @@ zzzyk.com###Tinfo
 ||trfmxf.xyz^
 ||tridroin.com^
 ||trimmoits.com^
+||tristaspd.com^
 ||tristoshink.online/libs/check.js
 ||tritebadge.com^$third-party
 ||tritethunder.com^$third-party
@@ -32263,6 +32275,7 @@ zzzyk.com###Tinfo
 ||uu22662.com^
 ||uuaisp.com^
 ||uuajq.top^
+||uub6hz5eu.com^
 ||uucatiqnd.com^
 ||uucnmtt.top^
 ||uucnwtt.top^
