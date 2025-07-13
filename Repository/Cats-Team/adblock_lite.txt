@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-07-12 20:04:57(GMT+8)
-! Total count: 34715
+! ! Version: 2025-07-13 08:15:21(GMT+8)
+! Total count: 34722
  
 ###ADtip
 ###AdBlockDialog
@@ -20221,6 +20221,7 @@ zzzyk.com###Tinfo
 ||awifi.cn^$third-party
 ||awiudbyqbpo.com^
 ||awolhalling.com^
+||awywlb89y.com^
 ||awyyzx.com^
 ||awzbijw.com^$third-party
 ||ax.*.ifeng.com^
@@ -21516,6 +21517,7 @@ zzzyk.com###Tinfo
 ||cheda1.icu^
 ||cheda10.icu^
 ||cheda7.icu^
+||chedethw.com^
 ||cheerycraze.com^$third-party
 ||cheh9k4t.com^
 ||chengdu.cn/acts/phoneqss/openCornerWin/
@@ -22651,6 +22653,7 @@ zzzyk.com###Tinfo
 ||dkasdeerw.xyz^
 ||dkasffredf.xyz^
 ||dkhffh.xyz^
+||dklhflksd.com^
 ||dklnxtcj.icu^
 ||dklwddl.cn^
 ||dktad.com^
@@ -25301,6 +25304,7 @@ zzzyk.com###Tinfo
 ||huo07111hy.com^
 ||huo07120hy.com^
 ||huo07121hy.com^
+||huo07130hy.com^
 ||huo720.com/back/ad_
 ||huo720.com/files/vidhub
 ||huobaowang.com/meeting/js/hbchat.
@@ -25881,6 +25885,7 @@ zzzyk.com###Tinfo
 ||iruacwa.xyz^
 ||irulws.xyz^
 ||irutvnco.top^
+||irzi.cn^
 ||is02041qqp.xyz^
 ||is02050qqp.xyz^
 ||isancio.top^
@@ -28956,6 +28961,7 @@ zzzyk.com###Tinfo
 ||p2peye.com/ajax.php?mod=advertisement&
 ||p2v.fun^
 ||p3-be-pack-sign.pglstatp-toutiao.com^
+||p4gdt4um6.com^
 ||p4p.sina.com.cn^
 ||p52q.cn^
 ||p8u.hinet.net^
@@ -30905,6 +30911,7 @@ zzzyk.com###Tinfo
 ||smilingcattle.com^$third-party
 ||smilingswim.com^$third-party
 ||smilingwaves.com^$third-party
+||smjfbjsfvrf.com^
 ||smoggysnakes.com^$third-party
 ||smoggystation.com^$third-party
 ||smqzj.com/seo.js
