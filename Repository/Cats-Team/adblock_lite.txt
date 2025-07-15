@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-07-15 08:14:20(GMT+8)
-! Total count: 34743
+! ! Version: 2025-07-15 20:05:30(GMT+8)
+! Total count: 34750
  
 ###ADtip
 ###AdBlockDialog
@@ -1276,6 +1276,8 @@
 ##[href^='https://www.qlspx.com:']
 ##[href^='https://xcc.'][href*='cn/']
 ##[href^='https://xxx.nunxun.com']
+##[id^="__ehbc0ejbc0hib"]
+##[id^="__ehbc0gjbc0ajb"]
 ##[onclick*="trackEvent', 'ad"]
 ##[onclick*='fjbglfrv.com']
 ##[onclick*='https://i.opiwb.com:']
@@ -8079,7 +8081,6 @@ bytzbiorowy.pl###stickymsg
 byxx.com##.byzwPC-banner-ADscroll
 byxx.com##.cataAD
 byzoo.org,videobug.net##div[style^="position: absolute; width: 300px;"]
-bzrus.pro#$#prevent-listener new 'window.location'; prevent-listener userpause 'Math.random'
 c.biancheng.net##.ggxc-box > a[target="_blank"] > img
 c.m.163.com##.commentBar
 c.m.163.com##.fixedOpenNewsapp
@@ -10665,7 +10666,6 @@ happymh.com##[src="https://c.nationaltcm.com/ad/tm1111dd.png"]
 happymh.com##a[href*=".taobao.com"]
 hardwareluxx.ru#$#abort-current-inline-script jQuery backgroundImage
 harimanga.*#$#hide-if-matches-xpath '//div[@style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 1839px; height: 92309px; z-index: 2147483647;"]/ancestor-or-self::div[1]'
-hatsunejima.com#$#abort-on-property-read adsRedirectPopups
 hawak.net,rotana.video#$#abort-on-property-read atob
 hax.co.id#@#.ad-box
 hax.co.id#@#.ad-wrapper
@@ -15969,7 +15969,7 @@ timedg.com##.middleCrossAdvertise
 timedg.com##.topCrossAd
 times.zt.ua,f1comp.ru,tagaev.com#$#abort-on-property-read PUM.getPopup
 timesofindia.indiatimes.com#$#abort-on-iframe-property-read localStorage;  override-property-read window.confirm noopFunc; override-property-read pbjs emptyObj; abort-on-iframe-property-read sessionStorage; override-property-read dataLayer emptyArray; abort-on-iframe-property-read caches;
-timesofindia.indiatimes.com,sankei.com,sourceforge.net,dictionary.cambridge.org,bab.la,pons.com,loawa.com,gazetaprawna.pl,tz.de,winfuture.de,gutefrage.net,collinsdictionary.com#$#override-property-read googletag emptyObj; event-override message disable /^r_/; prevent-listener message /postMessage|error-report|adb/; abort-on-iframe-property-write Object.prototype.toString;
+timesofindia.indiatimes.com,sankei.com,sourceforge.net,dictionary.cambridge.org,bab.la,pons.com,loawa.com,gazetaprawna.pl,tz.de,winfuture.de,gutefrage.net,collinsdictionary.com#$#override-property-read googletag emptyObj; event-override message disable /^r_/; prevent-listener message /postMessage|error-report|adb/;
 ting89.com##.ad8
 ting89.com,tingshuge.com##.banner250
 ting89.com,tingshuge.com##.banner688_1
@@ -17152,6 +17152,7 @@ xnxx-sex-videos.com#$#abort-current-inline-script setTimeout /window.location/
 xnxx-sex-videos.com#$#override-property-read user_out false
 xnxx-sexfilme.com#$#abort-on-property-read open; abort-on-property-write SpacialUp;
 xnxx-sexfilme.com#$#hide-if-matches-xpath './/span[contains(text(),"Advertisement")]/parent::div[@class][1]'; hide-if-matches-xpath './/div[contains(@class,"logo")]/ancestor::div[@data-ga_action="join"]/ancestor::aside[@id][1]';
+xoilacvvn.cc#$#abort-on-property-read adsRedirectPopups
 xpiaotian.net#@#.pagead
 xstud.org#$#abort-on-property-read _0xd07e
 xtuan.com###foot_zhaobiao_bar
@@ -17798,6 +17799,7 @@ zzzyk.com###Tinfo
 ||0w58wpq55.com^
 ||0x7iufg8hy.com^
 ||0yq00i.cn^
+||0z3zbnbkv.com^
 ||1.07swz.com^
 ||1.1010pic.com^
 ||1.11130.com.cn^
@@ -25313,6 +25315,7 @@ zzzyk.com###Tinfo
 ||huo07131hy.com^
 ||huo07140hy.com^
 ||huo07141hy.com^
+||huo07150hy.com^
 ||huo720.com/back/ad_
 ||huo720.com/files/vidhub
 ||huobaowang.com/meeting/js/hbchat.
@@ -25416,6 +25419,7 @@ zzzyk.com###Tinfo
 ||i322.com/ad_avshow/
 ||i3z.cn^$third-party
 ||i3zh.com/wp-content/plugins/cm-pop-up-banners/
+||i5q1t8vj9.com^
 ||i7akpd1.xyz^
 ||i7pnx0t.cn^
 ||i8m6.com^
@@ -25611,6 +25615,7 @@ zzzyk.com###Tinfo
 ||ijinshan.com/images/gk/game
 ||ijkmafsf.xyz^
 ||ijksec.xyz^
+||ijyj.cn^
 ||ik123.com/js/dd.js
 ||ikafan.com/js/novel.js
 ||ikafan.com/upload/image/iqiyi_
@@ -26961,6 +26966,7 @@ zzzyk.com###Tinfo
 ||kxcp365.com^
 ||kxd56.com/qq.js
 ||kxd56.com/tg.gif
+||kxkask.icu^
 ||kxm1b0u.com^
 ||kxmusic.cn/tc/js/script.js
 ||kxmusic.top/tc/js/script.js
@@ -32093,6 +32099,7 @@ zzzyk.com###Tinfo
 ||tvyan.com/images/jscss/tv-
 ||tvyun07.com/template/mytheme/statics/js/layer/
 ||tvzapt.icu^
+||tw-726620180914.*.run.app^
 ||tw.beanfun.com/bfweb/NEW/commonlogin
 ||tw.buy.yahoo.com/?z=
 ||tw.buy.yahoo.com/smartbanner/$domain=tw.news.yahoo.com|tw.stock.yahoo.com
