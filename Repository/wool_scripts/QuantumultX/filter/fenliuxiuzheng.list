@@ -96,7 +96,8 @@ host-keyword, gsa.apple.com, direct
 host-keyword, ess.apple.com, direct
 # > 苹果app store
 host, itunes.apple.com, direct
-
+# > 苹果播客
+host-keyword, amp-api.podcasts.apple.com, proxy
 
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
