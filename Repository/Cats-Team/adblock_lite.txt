@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-09-01 08:16:06(GMT+8)
-! Total count: 35190
+! ! Version: 2025-09-01 20:05:43(GMT+8)
+! Total count: 35200
  
 ###ADtip
 ###AdBlockDialog
@@ -2395,6 +2395,7 @@ $websocket,domain=wap.yushuwu.cloud
 /assets/publish/react.3.js$~third-party
 /assets/sidebar/*$domain=v2ex.com
 /assets/t_j/tongji.js
+/astyle/wap.js$~third-party
 /attachment/freeaddon_banner/*
 /attachments/ad/*$domain=~edushida.com
 /avple-images/ad.
@@ -2571,6 +2572,7 @@ $websocket,domain=wap.yushuwu.cloud
 /getcode.jsp?uid=$script,third-party
 /getfuolist|$xmlhttprequest
 /gg.php
+/gg/gg.js
 /gg54.oss-
 /gg7f5kv/*
 /gg_d.php
@@ -7733,7 +7735,7 @@ beeg.com,oral-amateure.com,upornia.com,hotmovs.com,voyeurhit.com,hdzog.com#$#abo
 beephone.com.tw##a[href^="http://www.beephone.com.tw/adlink.php?id="]
 beforeitsnews.com###fancybox-overlay
 beforeitsnews.com###fancybox-wrap
-beforeitsnews.com,canadafreepress.com,conservativefiringline.com,designbump.com,ipatriot.com,naturalblaze.com,patriotnationpress.com,rightwingnews.com,toptenz.net##div[class] > div[id] > main[class][id]
+beforeitsnews.com,canadafreepress.com,conservativefiringline.com,designbump.com,naturalblaze.com,patriotnationpress.com,rightwingnews.com,toptenz.net##div[class] > div[id] > main[class][id]
 beianbeian.com##div[style="height: 62px;margin-bottom: 20px;"] + .layui-table
 beinconnect.*,coroot.blogspot.com,ktarab.com,actionz.tv,brstej.com,movs4u.*,kora-online.tv,filmey.tv,animetak.net,arabseed.*#$#abort-current-inline-script Math zfgloaded
 bejson.com##.alert-dismissable
@@ -8918,8 +8920,6 @@ dailybitcoins.org#@#.ad-img
 dailydoge.org#@#.adsbygoogle
 dailygh.com###video_fade
 dailygh.com##.div_removeable
-dailylol.com##div > aside[class] > span[class*="mdeyheadline-"]
-dailylol.com##div[class] > div[id] > div[class][id][role]
 dailymail.co.uk###billBoard
 dailymail.co.uk###js-sky-left
 dailymail.co.uk###js-sky-right
@@ -11493,7 +11493,6 @@ ip.cn##.well > p > a
 ip.sb##.wwads_abp
 ip.sb##[style='text-align: center;margin: 20px 0;width: 100%;']
 ip138.com###banana
-ipatriot.com##div[class^="textwidget"] > div[class^="pi_"]
 ipcelou.com##.MODBanana
 ipcfun.com###crumb_r
 ipcfun.com###sidebar > ul > div[style]
@@ -13379,8 +13378,8 @@ morningpost.com.cn##.gg-2
 morningpost.com.cn##.gg-stl
 morningpost.com.cn##div[style="margin:0;padding:0;width:648px;height:345px;overflow:hidden;background-color:#fff;"]
 motchill.ad#$#abort-current-inline-script document.addEventListener linksToOpen
-motchill21.com,trumtruyen.live#$#abort-current-inline-script setTimeout Aff
-motchill21.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#$#abort-on-property-read localStorage
+motchill22.com,trumtruyen.live#$#abort-current-inline-script setTimeout Aff
+motchill22.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#$#abort-on-property-read localStorage
 motchillk.id#$#abort-on-property-read sessionStorage
 motobuy.com.tw##.AD1
 motobuy.com.tw##.adbig
@@ -14540,7 +14539,7 @@ privatestream.tv###timer3
 pro-ddl.ws###cboxOverlay + #colorbox + #fb-root + * + * + .fixe
 proboards.com,freeforums.net,boards.net###support-message
 procoinnews.com##div[id^="adcovery-"]
-procoinnews.com,dailylol.com#$#override-property-read setTimeout noopFunc; abort-on-property-read document.body.innerHTML; override-property-read Object.defineProperty undefined; hide-if-matches-xpath '//main[@class][@role][@id]/parent::div[1]/ancestor-or-self::div[@class][1]';
+procoinnews.com#$#override-property-read setTimeout noopFunc; abort-on-property-read document.body.innerHTML; override-property-read Object.defineProperty undefined; hide-if-matches-xpath '//main[@class][@role][@id]/parent::div[1]/ancestor-or-self::div[@class][1]';
 proewildfire.cn##.comiis_nav ~ a
 professorweb.ru###submain > div[class^="a"][style]
 proginn.com##div[style*="width:1000px;height: 250px;"]
@@ -16595,7 +16594,7 @@ vidmoly.to#$#abort-current-inline-script addEventListener DOMContentLoaded; abor
 vidshare.tv,govid.me,hdvid.tv,ovid.pro,gomovies.*,gostream.nu,openloadmovies.*,flashx.tv,cloudvideo.tv#$#abort-on-property-write Fingerprint2
 vidshare.tv,vidshar.tv,series.movie,gowatchseries.movie,gowatchseries.tv#$#abort-current-inline-script Object.defineProperty XMLHttpRequest
 vidsrc.*,cucuflix.*#$#abort-current-inline-script document.createElement /referrerPolicy.*no-referrer-when-downgrade/;
-viet69.lt,dualeotruyeng.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui13.pro,ihentai.cloud,animehay.sbs,hentaivc.net,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn88phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,demo.14412882.com,vlsexdam.net,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#$#abort-current-inline-script WebAssembly instantiate
+viet69.lt,dualeotruyeng.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui13.pro,ihentai.cloud,animehay.sbs,hentaivc.net,streamvl.top,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn86phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,demo.14412882.com,vlsexdam.net,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#$#abort-current-inline-script WebAssembly instantiate
 view.inews.qq.com##div[class^="article-recommend_wrapper"]
 view.inews.qq.com##div[class^="bottom-bar_buttonWrap"]
 view.inews.qq.com##div[class^="infinite-comment-list_subText"]
@@ -17068,8 +17067,8 @@ www.sina.com.cn##.mod-01
 www.sina.com.cn##.part-l
 www.sina.com.cn##.secondtj-wrapper
 www.sogou.com##.tgad-box + div
-www.toptruyentv8.com#$#abort-current-inline-script Promise instance
-www.toptruyentv8.com#$#abort-current-inline-script setTimeout open
+www.toptruyentv9.com#$#abort-current-inline-script Promise instance
+www.toptruyentv9.com#$#abort-current-inline-script setTimeout open
 www.truyen35zz.com#$#abort-current-inline-script jQuery click_ads
 www.wangjing.cn##.content > div[style*="980px;"]
 www.wdbay.com##[class][classname]
@@ -22432,6 +22431,7 @@ zzzyk.com###Tinfo
 ||d5.sina.com.cn^$object,script
 ||d56p.com/love/
 ||d5r.icu^
+||d5xogy0qi.com^
 ||d6.mobaders.com^
 ||d67p.com/love/
 ||d6hvvn5jvc.com^
@@ -23319,6 +23319,7 @@ zzzyk.com###Tinfo
 ||easyliao.com^$third-party
 ||eatablesquare.com^$third-party
 ||eatnontf.icu^
+||ebcf.cn^
 ||ebhaliragd.com^
 ||ebiotrade.com/jslibrary/js
 ||ebiotrade.com/netother/sy2013.ashx?type=quanping
@@ -28137,6 +28138,7 @@ zzzyk.com###Tinfo
 ||mghezaxh.com^
 ||mgivkqk.cn^
 ||mgqtcs.xyz^
+||mgrwaui4.top^
 ||mgux.cn^
 ||mgzjin.cn^$third-party
 ||mh3666.com^*.jsonp
@@ -28568,6 +28570,7 @@ zzzyk.com###Tinfo
 ||nahjzx.xyz^
 ||naiep.xyz^
 ||nainepidia.com^
+||naivtyu.icu^
 ||najnus.com^
 ||naljjd.top^
 ||nalyxg.top^
@@ -28736,6 +28739,8 @@ zzzyk.com###Tinfo
 ||nio08301lt.com^
 ||nio08310lt.com^
 ||nio08311lt.com^
+||nio09010lt.com^
+||nio09011lt.com^
 ||nisihu.com.cn^
 ||nissifresh.com^
 ||nithisp.cn^
@@ -28759,6 +28764,7 @@ zzzyk.com###Tinfo
 ||njdaily.cn/templates/njdaily2014/widget/njdaily-slideAds
 ||njnhzh.icu^
 ||njogejt.icu^
+||njpilt.icu^
 ||njtprv.xyz^
 ||njupt-sacc.com^
 ||njxzwh.com/pcsoft/statics/ycgg/
@@ -30618,6 +30624,7 @@ zzzyk.com###Tinfo
 ||rswqfiy.top^
 ||rsyepnq.icu^
 ||rszkhn.xyz^
+||rtau9pif4.com^
 ||rtborp.xyz^
 ||rte.fuoo1.top^
 ||rtfgvz.icu^
@@ -32228,6 +32235,7 @@ zzzyk.com###Tinfo
 ||toazdkl.top^
 ||tobapplog.ctobsnssdk.com^
 ||toblog.ctobsnssdk.com^
+||tocr.cn^
 ||today.line.me/dist/80980ed1/app.80980ed1.js$replace=/Vt={isLoaded:\!1/Vt={isLoaded:1/
 ||todayapp.tv^$popup,third-party
 ||togaefaffy.com^
@@ -34461,6 +34469,7 @@ zzzyk.com###Tinfo
 ||yiqifa.com^*.js$third-party
 ||yiren34.com/js/
 ||yirendajiankang.com^
+||yirst6pfi.com^
 ||yitongfang.com^$third-party
 ||yitongkan.com/splash.xml$redirect=noopjs,domain=yitongkan.com
 ||yitongwl.cn^
@@ -34908,6 +34917,7 @@ zzzyk.com###Tinfo
 ||zhangjiaqi.top^
 ||zhangqifeng12.top^
 ||zhangyumo.top^
+||zhangyuyidong.cn^$third-party
 ||zhangzishi.cc/cdn-cgi/apps/
 ||zhanqi.tv/api/static/v2.1/actives.lists/
 ||zhanzhang.baidu.com/push.js
