@@ -54,6 +54,7 @@ if (reg2.test($request.url)) {
   $.msg($.name, `已添加APP_ID: ${id}`, `当前所有APPID: ${appId}`, "");
   $.done({});
 }
+
 function unique(arr) {
   return Array.from(new Set(arr));
 }
