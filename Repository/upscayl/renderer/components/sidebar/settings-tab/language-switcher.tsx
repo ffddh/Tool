@@ -18,6 +18,7 @@ const locales = {
   id: "Bahasa Indonesia",
   caVAL: "Català (Valencià)",
   hu: "Magyar",
+  pl: "Polski",
 };
 
 const LanguageSwitcher = ({ hideLabel = false }: { hideLabel?: boolean }) => {
@@ -31,9 +32,8 @@ const LanguageSwitcher = ({ hideLabel = false }: { hideLabel?: boolean }) => {
           <p className="text-sm font-medium">{t("SETTINGS.LANGUAGE.TITLE")}</p>
         )}
         <select
-          data-choose-theme
           className="select select-primary"
-          value={useAtomValue(localeAtom)}
+          value={locale}
           onChange={(e) => setLocale(e.target.value as keyof typeof locales)}
         >
           {Object.entries(locales)
