@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-09-26 08:12:12(GMT+8)
-! Total count: 35068
+! ! Version: 2025-09-26 20:05:51(GMT+8)
+! Total count: 35085
  
 ###ADtip
 ###AdBlockDialog
@@ -3037,6 +3037,7 @@ $websocket,domain=wap.yushuwu.cloud
 /template/m1938pc/bd/*.js
 /template/mytheme/statics/js/listing.js
 /template/paody/aaaa/all-top.js
+/template/piankuwap/js/afixed.js
 /template/piankuwap/js/afoot.js
 /template/shoujigg/*
 /template/znfls/asd/*
@@ -4582,6 +4583,7 @@ $websocket,domain=wap.yushuwu.cloud
 ://rou*/_next/static/chunks/pages/home-
 ://s.htkk*.top:$script,third-party
 ://seai*/ads/float.js
+://tj.*.com$third-party
 ://www.*.js|$script,third-party,domain=159i.com|r3sub.com|thisav.com
 ://xingkong6688s.oss-
 :1010/openV5.js
@@ -7055,7 +7057,7 @@ animesonline22.com#$#abort-current-inline-script JSON.parse /atob|btoa|break/
 animetaro.com#$#abort-on-property-read window.open
 animeunity.cc#$#abort-on-property-read zfgstorage; abort-current-inline-script document.documentElement break;case; abort-on-property-read decodeURI;
 animeunity.tv#$#abort-on-property-read localStorage
-animevietsubs.net#$#abort-on-property-read _0x3f9b
+animevietsub9.com#$#abort-on-property-read _0x3f9b
 animew.ru,freehat.cc,hlamer.ru,lostpix.com,oxax.tv,cunofilms.ru,potokcdn.com,prostoporno.help,tivix.co,tt-cup.com,uploadimagex.com,vmusi.ru,volynpost.com,wowskill.ru,xittv.net,zerno-ua.com#$#abort-on-property-read open
 animewld.club##.header-img
 animeworld.so#$#abort-on-property-read window.open
@@ -7891,6 +7893,7 @@ bing.com,cn.bing.net##.adsMvC
 bing.com,cn.bing.net##.b_algo:has(.b_ads1line)
 bing.com,cn.bing.net##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com,cn.bing.net##.b_algo:has(.rms_img[src*="=AdsPlus"])
+bing.com,cn.bing.net##.b_algo:has([tabindex="0"][role="link"])
 bing.com,cn.bing.net##.b_ans:has([class^="xm_"][class*="_ansCont"])
 bing.com,cn.bing.net##.pa_sb
 bing.com,cn.bing.net##a[h$=",Ads"]
@@ -12612,6 +12615,7 @@ litecoiner.net,bitcoiner.net#@##ad-top
 litv.tv##.ad_impression
 litv.tv##.internal_bn
 litv.tv##body > .right_float_poster_container
+litv.tv#%#//scriptlet('trusted-replace-fetch-response', '"PlayAds":true', '"PlayAds":false', 'api/get-urls')
 liues.cn##.widget-graphic-cover
 live.bilibili.com##.container-wrapper[style="height:180px;min-width:1280px"]
 live.bilibili.com##.container-wrapper[style="height:446px;min-width:1280px"]
@@ -16260,7 +16264,7 @@ trovesaurus.com###blocked
 truyen-hentai.com#$#abort-on-property-read Math.random; prevent-listener getexoloader; abort-on-property-read initCustomEvent;
 truyen-hentai.com#$#hide-if-matches-xpath './/*[@class]/ancestor-or-self::div[contains(@class,"reklam")][1]'; hide-if-matches-xpath './/a[contains(@href,"zlinkd.com")][@rel="sponsored"]/ancestor::div[@class][1]';
 truyen247.pro#$#abort-current-inline-script eval
-truyenqqtto.com,haysextv.shop#$#abort-current-inline-script Promise break;case
+truyenqqtto.com,phim.haysex.asia#$#abort-current-inline-script Promise break;case
 truyensextv.com,yanhh3d.vip#$#abort-current-inline-script document.addEventListener opup
 truyensieuhay.com,quangcaoyenbai.com,phimmoi.ing,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.live,teamlanhlung8.shop,forum.timfshare.com,ungtycomicshot.com#$#abort-on-property-read document.cookie
 tsdm.live###ts_sidebar_base
@@ -18215,6 +18219,7 @@ zzzyk.com###Tinfo
 ||1dki0.icu^
 ||1dm6ccvy8.com^
 ||1dor1d6vc.com^
+||1f0l.top^
 ||1gmzo.icu^
 ||1gtp.icu^
 ||1htpkw6.$script,xmlhttprequest,domain=ign.com|ignboards.com
@@ -21917,6 +21922,7 @@ zzzyk.com###Tinfo
 ||ck.ads.oppomobile.com^
 ||ck180.net/mitao
 ||ck33.top^
+||ck4g3p2x92.com^
 ||ckerw.xyz^
 ||ckg.vipyl.com^
 ||ckxxbao.com/templets/default/js/wx.js
@@ -23769,6 +23775,7 @@ zzzyk.com###Tinfo
 ||fads315.com^
 ||fafvvt.icu^
 ||fagrirtn.com^
+||fahwlqf37l.com^
 ||fainaidea.com/wp-content/uploads/*/*?ver=$script,stylesheet,domain=fainaidea.com
 ||fairfeeling.com^$third-party
 ||fairiesbranch.com^$third-party
@@ -24537,6 +24544,7 @@ zzzyk.com###Tinfo
 ||gitcrumbs.com^$third-party
 ||githubusercontent.com/vip888vip/ug/main/*.gif
 ||givevacation.com^$third-party
+||giwl0p3gx7.com^
 ||gjh9v.tianshilv.cn^
 ||gjinuqg.top^
 ||gjipd.xyz^
@@ -24856,6 +24864,7 @@ zzzyk.com###Tinfo
 ||gustocooking.com^$third-party
 ||gustygrandmother.com^$third-party
 ||gutserrawnie.top^
+||guurniuvgo.com^
 ||guzsjdl.cn^
 ||gvbhae0.com^
 ||gw1jvhs.com^
@@ -25305,6 +25314,7 @@ zzzyk.com###Tinfo
 ||hlalliances.com^
 ||hlbbn6ii.icu^
 ||hlegsdh.icu^
+||hllu.cn^
 ||hlnr9q.icu^
 ||hlserve.com/Delivery/ClientPaths/Library/hook.js?$domain=golfgalaxy.com|dickssportinggoods.com
 ||hlstlyy.com^$third-party
@@ -27443,6 +27453,7 @@ zzzyk.com###Tinfo
 ||lirretsn.com^
 ||lishuaibin.cn^
 ||littlecdn.com^
+||litv.tv/library/comscore/
 ||liu16.com/vip.png
 ||liugaohao.com^
 ||liuxue86.com/css/liuxue_output.js
@@ -27814,6 +27825,7 @@ zzzyk.com###Tinfo
 ||m5.66077.cn^
 ||m51.icu^
 ||m6d.icu^
+||m6d3h9vc3z.com^
 ||m7g2v1b9.com^
 ||m7xssfiit.com^
 ||m8ryjf38a.com^
@@ -28848,6 +28860,8 @@ zzzyk.com###Tinfo
 ||nzfcvv.xyz^
 ||nzl09250oa.com^
 ||nzl09251oa.com^
+||nzl09260oa.com^
+||nzl09261oa.com^
 ||nzlelmarw.com^
 ||nzoj.cn^
 ||nzpvpp.icu^
@@ -29128,6 +29142,7 @@ zzzyk.com###Tinfo
 ||otheve.beacon.qq.com^
 ||otienlk.top^
 ||otimiyk.top^
+||otkwcg.icu^
 ||otlj.cn^
 ||otoieku.icu^
 ||otomacotelugu.com^
@@ -32321,6 +32336,7 @@ zzzyk.com###Tinfo
 ||tttddb.icu^
 ||tttppp.oss-cn-guangzhou.aliyuncs.com^
 ||ttvosc.com^
+||ttxjnt.icu^
 ||ttykabh.icu^
 ||ttzhongbao.com^
 ||tu1500919341.cc^
@@ -32661,6 +32677,7 @@ zzzyk.com###Tinfo
 ||union.china.com.cn^
 ||union.yihaodian.com^
 ||unionli.com^$third-party
+||universe7.top^
 ||uniway.cn.com^
 ||unjld.com^
 ||unjs.jingyanben.com^
