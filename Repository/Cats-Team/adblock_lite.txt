@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-09-28 08:13:43(GMT+8)
-! Total count: 35113
+! ! Version: 2025-09-28 20:05:06(GMT+8)
+! Total count: 35120
  
 ###ADtip
 ###AdBlockDialog
@@ -15959,6 +15959,8 @@ telesputnik.ru##.adbPopup
 telexplorer.com.ar##div[class] > div[id] > main[class][id]
 template/m1938pc/ads/*.js
 tencent.com##.cdc-commercial-swiper
+ternity.net###playerdavLayer
+ternity.net##.da
 terrikon.com#$#abort-on-property-read bdy
 tesco.com#$#hide-if-contains-visible-text /Sponsored/ ul[id^="list-content"]>li 'div>div>span'
 testpages.eyeo.com#$#hide-if-contains 'filter not applied' p[id]
@@ -19160,6 +19162,7 @@ zzzyk.com###Tinfo
 ||8v08mjri7.com^
 ||8x14khzwmi.com^
 ||8x3wolchw.com^
+||8x5vviy4r2.com^
 ||8xbook.org/scripts/ad/
 ||8xly.cn^
 ||8y3j.cn^
@@ -28299,6 +28302,7 @@ zzzyk.com###Tinfo
 ||mqwmgs.xyz^
 ||mrgecm.xyz^
 ||mrhboe.xyz^
+||mrlxc51byo.com^
 ||mrqbuf.xyz^
 ||mrtm4lylj.com^
 ||mryshl.com^
@@ -28882,6 +28886,7 @@ zzzyk.com###Tinfo
 ||nzl09270oa.com^
 ||nzl09271oa.com^
 ||nzl09280oa.com^
+||nzl09281oa.com^
 ||nzlelmarw.com^
 ||nzoj.cn^
 ||nzpvpp.icu^
@@ -29157,6 +29162,7 @@ zzzyk.com###Tinfo
 ||oss-ap-southeast-1.aliyuncs.com/js/copy.js
 ||ossfile001.com^
 ||ostlerscil.com^
+||osxl.cn^
 ||otfx.cn^
 ||otfy.cn^
 ||other.v.duowan.com^
@@ -34005,6 +34011,7 @@ zzzyk.com###Tinfo
 ||xmlsxar.cn^
 ||xmm.wxc.cc^
 ||xmmnsl.com^
+||xmpzln.icu^
 ||xmrc.com.cn/net/info/html/
 ||xmvqzd.icu^
 ||xmvxo.xyz^
