@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: AdRules AdBlock List's Lite Version, And Remove Some Filters
-! ! Version: 2025-10-12 20:05:20(GMT+8)
-! Total count: 35113
+! ! Version: 2025-10-13 08:13:35(GMT+8)
+! Total count: 35120
  
 ###ADtip
 ###AdBlockDialog
@@ -24516,6 +24516,7 @@ zzzyk.com###Tinfo
 ||ggo10110lq.com^
 ||ggo10111lq.com^
 ||ggo10120lq.com^
+||ggo10121lq.com^
 ||ggs.myzaker.com^
 ||ggsfq.xyz^$third-party
 ||ggtp-1255424916.cos.ap-chengdu.myqcloud.com^
@@ -27357,6 +27358,7 @@ zzzyk.com###Tinfo
 ||letv.com/pzt/hyhmzq/index.shtml
 ||letvcdn.com/lc02_live/201803/18/23/40/1521387641261new.
 ||lewenma.com/js/read.js
+||leyf5q4rk.com^
 ||lezbrja.cn^
 ||lf9-static.bytednsdoc.com/obj/tos-cn-i-0813
 ||lfbupf.icu^
@@ -30398,6 +30400,7 @@ zzzyk.com###Tinfo
 ||rentiyishu.org/*.js
 ||renwai.ren/cdn/pic/ad
 ||renzhen8.cn^
+||reorganizes64.com^
 ||repeatsweater.com^$third-party
 ||repian.com/a/
 ||replaceroute.com^$third-party
@@ -30449,6 +30452,7 @@ zzzyk.com###Tinfo
 ||rhetoricalveil.com^$third-party
 ||rhinogo.cn^
 ||rhlxm.top^
+||rhmt1jjyo.com^
 ||rhndvagz.icu^
 ||rhtc.quanminyouxi.cn^
 ||rhymezebra.com^$third-party
@@ -32789,6 +32793,7 @@ zzzyk.com###Tinfo
 ||urtr4hrq.com^
 ||us.l.qq.com/exapp^
 ||usancit.top^
+||usbpalsmfz.com^
 ||uscatherineaa.com^
 ||usejj.makepolo.cn^
 ||usejj.wangkl.com^
@@ -32980,6 +32985,7 @@ zzzyk.com###Tinfo
 ||verseballs.com^$third-party
 ||versinehopper.com^
 ||verysadfun.com/assets/publish/jquery.*.js
+||vetxpx.icu^
 ||vexilorath.com^
 ||vextslows.com^
 ||vezeqzyb.com^
@@ -35038,6 +35044,7 @@ zzzyk.com###Tinfo
 ||zuoyebang.cc/zyb_4953cbb8a9a2332469592196c056a906.jpg
 ||zupulu.com/scripts/app/app.js
 ||zvasuzb.icu^
+||zvciaoan1k.com^
 ||zvdc9y.icu^
 ||zvgvenibe.com^
 ||zvvg678.xyz^
